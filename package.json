@@ -1,0 +1,25 @@
+{
+  "name": "@datastream/guidelines",
+  "version": "0.0.1",
+  "description": "Calculate water quality guidelines.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://willfarrell@github.com/gordonfn/guidelines.git"
+  },
+  "keywords": [
+    "CCME",
+    "US EPA",
+    "water quality",
+    "DataStream"
+  ],
+  "author": "willfarrell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gordonfn/guidelines/issues"
+  },
+  "homepage": "https://github.com/gordonfn/guidelines#readme"
+}
