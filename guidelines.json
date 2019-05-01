@@ -1,0 +1,36 @@
+[
+  {
+    "name": "1,1,2,2-Tetrachloroethene",
+    "characteristic_name": "1,1,2,2-Tetrachloroethene",
+    "method_speciation": null,
+    "sample_fraction": null,
+    "unit": "µg/L",
+    "type": "value",
+    "guidelines": {
+      "ca_cronic": 110
+    }
+  },{
+    "name": "Aluminum",
+    "characteristic_name": "Aluminum",
+    "method_speciation": null,
+    "sample_fraction": "Total",
+    "unit": "µg/L",
+    "type": "formula",
+    "guidelines": {
+      "ca_cronic": "aluminumChronicCA"
+    },
+    "params": ["pH"]
+  },
+  {
+    "name": "Boron",
+    "characteristic_name": "Boron",
+    "method_speciation": null,
+    "sample_fraction": null,
+    "unit": "µg/L",
+    "type": "value",
+    "guidelines": {
+      "ca_acute": 29000,
+      "ca_cronic": 1500
+    }
+  }
+]

@@ -4,7 +4,7 @@
   "description": "Calculate water quality guidelines.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/gordonfn/guidelines/issues"
   },
-  "homepage": "https://github.com/gordonfn/guidelines#readme"
+  "homepage": "https://github.com/gordonfn/guidelines#readme",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "istanbul": "0.4.5",
+    "mocha": "6.1.4"
+  },
+  "dependencies": {}
 }
