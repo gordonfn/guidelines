@@ -1,105 +1,52 @@
-const metadata = require('guidelines.json')
-const formula = require('formula')
+const formula = require('./formula')
 
-// map datastream params to name
-export const findByDataStream = (characteristic_name, method_speciation, sample_fraction) => {
-  for(let i = 0, l = metadata.length; i<l; i++) {
-    if (
-      metadata[i].characteristic_name === characteristic_name
-      && metadata[i].method_speciation === method_speciation
-      && metadata[i].sample_fraction === sample_fraction
-    ) {
-      return metadata[i]
+const metadataArray = require('./metadata.json')
+const hardnessParams = require('./hardness_params.json')
+
+const convertUnits = require('./units')
+
+const filterMetadata = (params = {}, guidelineKeys = []) => {
+  const arr = []
+  for (let i = 0, l = metadataArray.length; i < l; i++) {
+    let match = true
+    Object.keys(params).forEach(key => {
+      //console.log(key, params[key], '==', metadataArray[i][key])
+      if (Array.isArray(params[key])) {
+        // cover case type: [value, range]
+        match = match && params[key].indexOf(metadataArray[i][key]) !== -1
+      } else {
+        match = match && metadataArray[i][key] === params[key]
+      }
+    })
+
+    if (guidelineKeys.length) {
+      match = match && Object.keys(metadataArray[i].guidelines).filter(key => !!metadataArray[i].guidelines[key]).some(key => guidelineKeys.includes(key))
+    }
+
+    if (match) {
+      arr.push(metadataArray[i])
     }
   }
-  return null
-}
-
-export const findByName = (name) => {
-  for(let i = 0, l = metadata.length; i<l; i++) {
-    if (metadata[i].name === name) {
-      return metadata[i]
-    }
-  }
-  return null
-}
-
-const paramMapping = {
-  pH: {
-    characteristic_name: 'pH',
-    method_speciation: null,
-    sample_fraction: null,
-    result_unit: 'None'
-  },
-  DOC:{
-    characteristic_name: 'Organic carbon',
-    method_speciation: null,
-    sample_fraction: 'Dissolved',
-    result_unit: 'mg/L'
-  },
-  TH: {
-    characteristic_name: 'Total hardness',
-    method_speciation: 'as CaCO3',
-    sample_fraction: null,
-    result_unit: 'mg/L'
-  },
-  CH:{
-    characteristic_name:'Hardness, carbonate',
-    method_speciation: null,
-    sample_fraction: null,
-    result_unit: 'mg/L'
-  },
-  NCH:{
-    characteristic_name:'Hardness, non-carbonate',
-    method_speciation: null,
-    sample_fraction: null,
-    result_unit: 'mg/L'
-  },
-  CaCO3: {
-    characteristic_name: 'Hardness, Ca, Mg',
-    method_speciation: null,
-    sample_fraction: null,
-    result_unit: 'mg/L'
-  },
-  Ca:{
-    characteristic_name: 'Hardness, Calcium',
-    method_speciation: null,
-    sample_fraction: null,
-    result_unit: 'mg/L'
-  },
-  Mg:{
-    characteristic_name: 'Hardness, magnesium',
-    method_speciation: null,
-    sample_fraction: null,
-    result_unit: 'mg/L'
-  },
-  CaIon:{
-    characteristic_name: 'Calcium',
-    method_speciation: null,
-    sample_fraction: null,
-    result_unit: 'mg/L'
-  },
-  MgIon:{
-    characteristic_name: 'Magnesium',
-    method_speciation: null,
-    sample_fraction: null,
-    result_unit: 'mg/L'
-  }
+  return arr
 }
 
 /**
  * Calculate guidelines
- * @param name
- * @param params={pH, DOC, Ca, Mg}
+ * @param filters={characteristic_name, method_speciation, sample_fraction, type}
+ * @param params={pH, DOC, Ca, Mg, ...}
  */
-export const calculate = (name, params) => {
-  const {unit, type, guidelines} = findByName(name)
+const calculate = (filters, params) => {
+  const {unit, guidelines} = filterMetadata(filters)[0]
 
-  if (type === 'formula') {
-    Object.keys(guidelines).forEach(key => {
-      guidelines[key] = formula[guidelines[key]](params)
-    })
-  }
+  const guides = {}
+  Object.keys(guidelines).forEach(key => {
+    if (guidelines[key]) guides[key] = guidelines[key]
+    if (typeof guides[key] === 'string') {  // aka type === formula
+      guides[key] = formula[guides[key]](params)
+    }
+  })
 
-  return {name, unit, guidelines}
+  return {name, unit, guidelines: guides}
 }
+
+module.exports = {hardnessParams, convertUnits, filterMetadata, calculate}

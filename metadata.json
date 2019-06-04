@@ -1,0 +1,1700 @@
+[
+  {
+    "type": "value",
+    "name": ".alpha.-Endosulfan",
+    "characteristic_name": ".alpha.-Endosulfan",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 0.22,
+      "US_chronic": 0.056
+    }
+  },
+  {
+    "type": "value",
+    "name": ".beta.-Endosulfan",
+    "characteristic_name": ".beta.-Endosulfan",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 0.22,
+      "US_chronic": 0.056
+    }
+  },
+  {
+    "type": "value",
+    "name": "1,1,2-Trichloroethane",
+    "characteristic_name": "1,1,2-Trichloroethane",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 21
+    }
+  },
+  {
+    "type": "value",
+    "name": "1,1,2,2-Tetrachloroethene",
+    "characteristic_name": "1,1,2,2-Tetrachloroethene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 110
+    }
+  },
+  {
+    "type": "value",
+    "name": "1,2-Dichloroethane",
+    "characteristic_name": "1,2-Dichloroethane",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 100
+    }
+  },
+  {
+    "type": "value",
+    "name": "1,2,3-Trichlorobenzene",
+    "characteristic_name": "1,2,3-Trichlorobenzene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 8
+    }
+  },
+  {
+    "type": "value",
+    "name": "1,2,3,4-Tetrachlorobenzene",
+    "characteristic_name": "1,2,3,4-Tetrachlorobenzene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 1.8
+    }
+  },
+  {
+    "type": "value",
+    "name": "1,2,4-Trichlorobenzene",
+    "characteristic_name": "1,2,4-Trichlorobenzene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 24
+    }
+  },
+  {
+    "type": "value",
+    "name": "2,4-D",
+    "characteristic_name": "2,4-D",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 4
+    }
+  },
+  {
+    "type": "value",
+    "name": "2,4-D",
+    "characteristic_name": "2,4-D",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA-AB_acute": null,
+      "CA-AB_chronic": 4
+    }
+  },
+  {
+    "type": "value",
+    "name": "Acenaphthene",
+    "characteristic_name": "Acenaphthene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 5.8
+    }
+  },
+  {
+    "type": "value",
+    "name": "Acridine",
+    "characteristic_name": "Acridine",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 4.4
+    }
+  },
+  {
+    "type": "value",
+    "name": "Acrolein",
+    "characteristic_name": "Acrolein",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 3,
+      "US_chronic": 3
+    }
+  },
+  {
+    "type": "value",
+    "name": "Aldicarb",
+    "characteristic_name": "Aldicarb",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 1
+    }
+  },
+  {
+    "type": "value",
+    "name": "Aldrin",
+    "characteristic_name": "Aldrin",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 3,
+      "US_chronic": null
+    }
+  },
+  {
+    "type": "formula",
+    "name": "Alkalinity, total",
+    "characteristic_name": "Alkalinity, total",
+    "method_speciation": "as CaCO3",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": null,
+      "US_chronic": "alkalinity totalChronicUS"
+    }
+  },
+  {
+    "type": "formula",
+    "name": "Al",
+    "characteristic_name": "Aluminum",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": "aluminumChronicCA"
+    }
+  },
+  {
+    "type": "value",
+    "name": "Ammonia",
+    "characteristic_name": "Ammonia",
+    "method_speciation": "as N",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 16
+    }
+  },
+  {
+    "type": "value",
+    "name": "Aniline",
+    "characteristic_name": "Aniline",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 2.2
+    }
+  },
+  {
+    "type": "value",
+    "name": "Anthracene",
+    "characteristic_name": "Anthracene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.012
+    }
+  },
+  {
+    "type": "value",
+    "name": "Arsenic",
+    "characteristic_name": "Arsenic",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 5
+    }
+  },
+  {
+    "type": "value",
+    "name": "Arsenic",
+    "characteristic_name": "Arsenic",
+    "method_speciation": "",
+    "sample_fraction": "Dissolved",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 340,
+      "US_chronic": 150
+    }
+  },
+  {
+    "type": "value",
+    "name": "Atrazine",
+    "characteristic_name": "Atrazine",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 1.8
+    }
+  },
+  {
+    "type": "value",
+    "name": "Azinphos-methyl",
+    "characteristic_name": "Azinphos-methyl",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": null,
+      "US_chronic": 0.01
+    }
+  },
+  {
+    "type": "value",
+    "name": "Benz[a]anthracene",
+    "characteristic_name": "Benz[a]anthracene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.018
+    }
+  },
+  {
+    "type": "value",
+    "name": "Benzene",
+    "characteristic_name": "Benzene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 370
+    }
+  },
+  {
+    "type": "value",
+    "name": "Benzo[a]pyrene",
+    "characteristic_name": "Benzo[a]pyrene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.015
+    }
+  },
+  {
+    "type": "value",
+    "name": "B",
+    "characteristic_name": "Boron",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": 29000,
+      "CA_chronic": 1500
+    }
+  },
+  {
+    "type": "value",
+    "name": "Bromacil",
+    "characteristic_name": "Bromacil",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 5
+    }
+  },
+  {
+    "type": "value",
+    "name": "Bromoxynil",
+    "characteristic_name": "Bromoxynil",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 5
+    }
+  },
+  {
+    "type": "formula",
+    "name": "Cadmium",
+    "characteristic_name": "Cadmium",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": "cadmiumAcuteCA",
+      "CA_chronic": "cadmiumChronicCA"
+    }
+  },
+  {
+    "type": "formula",
+    "name": "Cadmium",
+    "characteristic_name": "Cadmium",
+    "method_speciation": "",
+    "sample_fraction": "Dissolved",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": "cadmiumAcuteUS",
+      "US_chronic": "cadmiumChronicUS"
+    }
+  },
+  {
+    "type": "value",
+    "name": "Captan",
+    "characteristic_name": "Captan",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 1.3
+    }
+  },
+  {
+    "type": "value",
+    "name": "Carbamazepine",
+    "characteristic_name": "Carbamazepine",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 10
+    }
+  },
+  {
+    "type": "value",
+    "name": "Carbaryl",
+    "characteristic_name": "Carbaryl",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": 3.3,
+      "CA_chronic": 0.2,
+      "US_acute": 2.1,
+      "US_chronic": 2.1
+    }
+  },
+  {
+    "type": "value",
+    "name": "Carbofuran",
+    "characteristic_name": "Carbofuran",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 1.8
+    }
+  },
+  {
+    "type": "value",
+    "name": "Chloramine",
+    "characteristic_name": "Chloramine",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.5
+    }
+  },
+  {
+    "type": "value",
+    "name": "Chlordane",
+    "characteristic_name": "Chlordane",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 2.4,
+      "US_chronic": 0.0043
+    }
+  },
+  {
+    "type": "value",
+    "name": "Chloride",
+    "characteristic_name": "Chloride",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": 640000,
+      "CA_chronic": 120000,
+      "US_acute": 860000,
+      "US_chronic": 230000
+    }
+  },
+  {
+    "type": "value",
+    "name": "Chlorine",
+    "characteristic_name": "Chlorine",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 19,
+      "US_chronic": 11
+    }
+  },
+  {
+    "type": "value",
+    "name": "Chloroform",
+    "characteristic_name": "Chloroform",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 1.8
+    }
+  },
+  {
+    "type": "value",
+    "name": "Chlorophenol",
+    "characteristic_name": "Chlorophenol",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 7
+    }
+  },
+  {
+    "type": "value",
+    "name": "Chlorothalonil",
+    "characteristic_name": "Chlorothalonil",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.18
+    }
+  },
+  {
+    "type": "value",
+    "name": "Chlorpyrifos",
+    "characteristic_name": "Chlorpyrifos",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": 0.02,
+      "CA_chronic": 0.002,
+      "US_acute": 0.083,
+      "US_chronic": 0.041
+    }
+  },
+  {
+    "type": "value",
+    "name": "Cr(III)",
+    "characteristic_name": "Chromium(III)",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 8.9
+    }
+  },
+  {
+    "type": "formula",
+    "name": "Cr(III)",
+    "characteristic_name": "Chromium(III)",
+    "method_speciation": "",
+    "sample_fraction": "Dissolved",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": "chromiumiii)AcuteUS",
+      "US_chronic": "chromiumiii)ChronicUS"
+    }
+  },
+  {
+    "type": "value",
+    "name": "Cr(VI)",
+    "characteristic_name": "Chromium(IV)",
+    "method_speciation": "",
+    "sample_fraction": "Dissolved",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 16,
+      "US_chronic": 11
+    }
+  },
+  {
+    "type": "value",
+    "name": "Cr(VI)",
+    "characteristic_name": "Chromium(VI)",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 1
+    }
+  },
+  {
+    "type": "formula",
+    "name": "Cu",
+    "characteristic_name": "Copper",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": "copperChronicCA"
+    }
+  },
+  {
+    "type": "value",
+    "name": "Cyanazine",
+    "characteristic_name": "Cyanazine",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 2
+    }
+  },
+  {
+    "type": "value",
+    "name": "Cyanide",
+    "characteristic_name": "Cyanide",
+    "method_speciation": "as free CN",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 5
+    }
+  },
+  {
+    "type": "value",
+    "name": "Cyanide",
+    "characteristic_name": "Cyanide",
+    "method_speciation": "as free CN",
+    "sample_fraction": "Dissolved",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 22,
+      "US_chronic": 5.2
+    }
+  },
+  {
+    "type": "value",
+    "name": "Deltamethrin",
+    "characteristic_name": "Deltamethrin",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.0004
+    }
+  },
+  {
+    "type": "value",
+    "name": "Demeton",
+    "characteristic_name": "Demeton",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": null,
+      "US_chronic": 0.1
+    }
+  },
+  {
+    "type": "value",
+    "name": "Di(2-ethylhexyl) phthalate",
+    "characteristic_name": "Di(2-ethylhexyl) phthalate",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 16
+    }
+  },
+  {
+    "type": "value",
+    "name": "Diazinon",
+    "characteristic_name": "Diazinon",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 0.17,
+      "US_chronic": 0.17
+    }
+  },
+  {
+    "type": "value",
+    "name": "Dibutyl phthalate",
+    "characteristic_name": "Dibutyl phthalate",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 19
+    }
+  },
+  {
+    "type": "value",
+    "name": "Dicamba",
+    "characteristic_name": "Dicamba",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 10
+    }
+  },
+  {
+    "type": "value",
+    "name": "Dichlorophenol",
+    "characteristic_name": "Dichlorophenol",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.2
+    }
+  },
+  {
+    "type": "value",
+    "name": "Diclofop-methyl",
+    "characteristic_name": "Diclofop-methyl",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 6.1
+    }
+  },
+  {
+    "type": "value",
+    "name": "Dieldrin",
+    "characteristic_name": "Dieldrin",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 0.24,
+      "US_chronic": 0.056
+    }
+  },
+  {
+    "type": "value",
+    "name": "Dimethoate",
+    "characteristic_name": "Dimethoate",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 6.2
+    }
+  },
+  {
+    "type": "value",
+    "name": "Dinoseb",
+    "characteristic_name": "Dinoseb",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.05
+    }
+  },
+  {
+    "type": "value",
+    "name": "Endosulfan",
+    "characteristic_name": "Endosulfan",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": 0.06,
+      "CA_chronic": 0.003
+    }
+  },
+  {
+    "type": "value",
+    "name": "Endrin",
+    "characteristic_name": "Endrin",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 0.086,
+      "US_chronic": 0.036
+    }
+  },
+  {
+    "type": "value",
+    "name": "Ethylbenzene",
+    "characteristic_name": "Ethylbenzene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 90
+    }
+  },
+  {
+    "type": "value",
+    "name": "Ethylene glycol",
+    "characteristic_name": "Ethylene glycol",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 192000
+    }
+  },
+  {
+    "type": "value",
+    "name": "Fluoranthene",
+    "characteristic_name": "Fluoranthene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.04
+    }
+  },
+  {
+    "type": "value",
+    "name": "Fluorene",
+    "characteristic_name": "Fluorene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 3
+    }
+  },
+  {
+    "type": "value",
+    "name": "Fluoride",
+    "characteristic_name": "Fluoride",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 120
+    }
+  },
+  {
+    "type": "value",
+    "name": "Glyphosate",
+    "characteristic_name": "Glyphosate",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": 27000,
+      "CA_chronic": 800
+    }
+  },
+  {
+    "type": "value",
+    "name": "Heptachlor",
+    "characteristic_name": "Heptachlor",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 0.52,
+      "US_chronic": 0.0038
+    }
+  },
+  {
+    "type": "value",
+    "name": "Heptachlor Epoxide",
+    "characteristic_name": "Heptachlor Epoxide",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 0.52,
+      "US_chronic": 0.0038
+    }
+  },
+  {
+    "type": "value",
+    "name": "Hexachlorobutadiene",
+    "characteristic_name": "Hexachlorobutadiene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 1.3
+    }
+  },
+  {
+    "type": "value",
+    "name": "Hexachlorocyclohexane",
+    "characteristic_name": "Hexachlorocyclohexane",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.01
+    }
+  },
+  {
+    "type": "value",
+    "name": "Hydrogen Sulfide",
+    "characteristic_name": "Hydrogen Sulfide",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": null,
+      "US_chronic": 2
+    }
+  },
+  {
+    "type": "value",
+    "name": "Imidacloprid",
+    "characteristic_name": "Imidacloprid",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.23
+    }
+  },
+  {
+    "type": "value",
+    "name": "Fe",
+    "characteristic_name": "Iron",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 300
+    }
+  },
+  {
+    "type": "value",
+    "name": "Fe",
+    "characteristic_name": "Iron",
+    "method_speciation": "",
+    "sample_fraction": "Dissolved",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": null,
+      "US_chronic": 1000
+    }
+  },
+  {
+    "type": "formula",
+    "name": "Pb",
+    "characteristic_name": "Lead",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": "leadChronicCA"
+    }
+  },
+  {
+    "type": "formula",
+    "name": "Pb",
+    "characteristic_name": "Lead",
+    "method_speciation": "",
+    "sample_fraction": "Dissolved",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": "leadAcuteUS",
+      "US_chronic": "leadChronicUS"
+    }
+  },
+  {
+    "type": "value",
+    "name": "Lindane",
+    "characteristic_name": "Lindane",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 0.95,
+      "US_chronic": null
+    }
+  },
+  {
+    "type": "value",
+    "name": "Linuron",
+    "characteristic_name": "Linuron",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 7
+    }
+  },
+  {
+    "type": "value",
+    "name": "m-Dichlorobenzene",
+    "characteristic_name": "m-Dichlorobenzene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 150
+    }
+  },
+  {
+    "type": "value",
+    "name": "Malathion",
+    "characteristic_name": "Malathion",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": null,
+      "US_chronic": 0.1
+    }
+  },
+  {
+    "type": "value",
+    "name": "MCPA",
+    "characteristic_name": "MCPA",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 2.6
+    }
+  },
+  {
+    "type": "value",
+    "name": "Hg",
+    "characteristic_name": "Mercury",
+    "method_speciation": "",
+    "sample_fraction": "Inorganic",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.026
+    }
+  },
+  {
+    "type": "value",
+    "name": "Hg",
+    "characteristic_name": "Mercury",
+    "method_speciation": "",
+    "sample_fraction": "Dissolved",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 1.4,
+      "US_chronic": 0.77
+    }
+  },
+  {
+    "type": "value",
+    "name": "Methoprene",
+    "characteristic_name": "Methoprene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.09
+    }
+  },
+  {
+    "type": "value",
+    "name": "Methoxychlor",
+    "characteristic_name": "Methoxychlor",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": null,
+      "US_chronic": 0.03
+    }
+  },
+  {
+    "type": "value",
+    "name": "Methyl tert-butyl ether",
+    "characteristic_name": "Methyl tert-butyl ether",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 10000
+    }
+  },
+  {
+    "type": "value",
+    "name": "Methylene chloride",
+    "characteristic_name": "Methylene chloride",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 98.1
+    }
+  },
+  {
+    "type": "value",
+    "name": "Methylmercury(1+)",
+    "characteristic_name": "Methylmercury(1+)",
+    "method_speciation": "",
+    "sample_fraction": "Dissolved",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.004
+    }
+  },
+  {
+    "type": "value",
+    "name": "Metolachlor",
+    "characteristic_name": "Metolachlor",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 7.8
+    }
+  },
+  {
+    "type": "value",
+    "name": "Metribuzin",
+    "characteristic_name": "Metribuzin",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 1
+    }
+  },
+  {
+    "type": "value",
+    "name": "Mirex",
+    "characteristic_name": "Mirex",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": null,
+      "US_chronic": 0.001
+    }
+  },
+  {
+    "type": "value",
+    "name": "Molybdenum",
+    "characteristic_name": "Molybdenum",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 73
+    }
+  },
+  {
+    "type": "value",
+    "name": "Monochlorobenzene",
+    "characteristic_name": "Monochlorobenzene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 1.3
+    }
+  },
+  {
+    "type": "value",
+    "name": "Naphthalene",
+    "characteristic_name": "Naphthalene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 1.1
+    }
+  },
+  {
+    "type": "formula",
+    "name": "Ni",
+    "characteristic_name": "Nickel",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": "nickelChronicCA"
+    }
+  },
+  {
+    "type": "formula",
+    "name": "Ni",
+    "characteristic_name": "Nickel",
+    "method_speciation": "",
+    "sample_fraction": "Dissolved",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": "nickelAcuteUS",
+      "US_chronic": "nickelChronicUS"
+    }
+  },
+  {
+    "type": "value",
+    "name": "Nitrate",
+    "characteristic_name": "Nitrate",
+    "method_speciation": "as N",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": 124000,
+      "CA_chronic": 3000
+    }
+  },
+  {
+    "type": "value",
+    "name": "Nitrite",
+    "characteristic_name": "Nitrite",
+    "method_speciation": "as N",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 60
+    }
+  },
+  {
+    "type": "value",
+    "name": "Nonylphenol",
+    "characteristic_name": "Nonylphenol",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 28,
+      "US_chronic": 6.6
+    }
+  },
+  {
+    "type": "value",
+    "name": "Nonylphenol and its ethoxylates",
+    "characteristic_name": "Nonylphenol and its ethoxylates",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 1
+    }
+  },
+  {
+    "type": "value",
+    "name": "o-Dichlorobenzene",
+    "characteristic_name": "o-Dichlorobenzene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.7
+    }
+  },
+  {
+    "type": "value",
+    "name": "p-Dichlorobenzene",
+    "characteristic_name": "p-Dichlorobenzene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 26
+    }
+  },
+  {
+    "type": "value",
+    "name": "p,p'-DDT",
+    "characteristic_name": "p,p'-DDT",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 1.1,
+      "US_chronic": 0.001
+    }
+  },
+  {
+    "type": "value",
+    "name": "Parathion",
+    "characteristic_name": "Parathion",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 0.065,
+      "US_chronic": 0.013
+    }
+  },
+  {
+    "type": "value",
+    "name": "Pentachlorobenze",
+    "characteristic_name": "Pentachlorobenze",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 6
+    }
+  },
+  {
+    "type": "value",
+    "name": "Pentachlorophenol",
+    "characteristic_name": "Pentachlorophenol",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.5,
+      "US_acute": 19,
+      "US_chronic": 15
+    }
+  },
+  {
+    "type": "value",
+    "name": "Permethrin",
+    "characteristic_name": "Permethrin",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.004
+    }
+  },
+  {
+    "type": "range",
+    "name": "pH",
+    "characteristic_name": "pH",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": [
+        6.5,
+        9
+      ],
+      "US_acute": null,
+      "US_chronic": [
+        6.5,
+        9
+      ]
+    }
+  },
+  {
+    "type": "value",
+    "name": "Phenanthrene",
+    "characteristic_name": "Phenanthrene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.4
+    }
+  },
+  {
+    "type": "value",
+    "name": "Phenols",
+    "characteristic_name": "Phenols",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 4
+    }
+  },
+  {
+    "type": "value",
+    "name": "Picloram",
+    "characteristic_name": "Picloram",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 29
+    }
+  },
+  {
+    "type": "value",
+    "name": "Polycholorinated biphenyls",
+    "characteristic_name": "Polycholorinated biphenyls",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": null,
+      "US_chronic": 0.014
+    }
+  },
+  {
+    "type": "value",
+    "name": "Propylene glycol",
+    "characteristic_name": "Propylene glycol",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 500000
+    }
+  },
+  {
+    "type": "value",
+    "name": "Pyrene",
+    "characteristic_name": "Pyrene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.025
+    }
+  },
+  {
+    "type": "value",
+    "name": "Quinoline",
+    "characteristic_name": "Quinoline",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 3.4
+    }
+  },
+  {
+    "type": "value",
+    "name": "Se",
+    "characteristic_name": "Selenium",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 1
+    }
+  },
+  {
+    "type": "value",
+    "name": "Ag",
+    "characteristic_name": "Silver",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.25
+    }
+  },
+  {
+    "type": "formula",
+    "name": "Ag",
+    "characteristic_name": "Silver",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": "silverAcuteUS",
+      "US_chronic": null
+    }
+  },
+  {
+    "type": "value",
+    "name": "Simazine",
+    "characteristic_name": "Simazine",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 10
+    }
+  },
+  {
+    "type": "value",
+    "name": "Styrene",
+    "characteristic_name": "Styrene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 72
+    }
+  },
+  {
+    "type": "value",
+    "name": "Sulfolane",
+    "characteristic_name": "Sulfolane",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 50000
+    }
+  },
+  {
+    "type": "value",
+    "name": "Tebuthiuron",
+    "characteristic_name": "Tebuthiuron",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 1.6
+    }
+  },
+  {
+    "type": "value",
+    "name": "Tetrachloroethane",
+    "characteristic_name": "Tetrachloroethane",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 13.3
+    }
+  },
+  {
+    "type": "value",
+    "name": "Tetrachlorophenol",
+    "characteristic_name": "Tetrachlorophenol",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 1
+    }
+  },
+  {
+    "type": "value",
+    "name": "Thallium",
+    "characteristic_name": "Thallium",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.8
+    }
+  },
+  {
+    "type": "value",
+    "name": "Toluene",
+    "characteristic_name": "Toluene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 2
+    }
+  },
+  {
+    "type": "value",
+    "name": "Toxaphene",
+    "characteristic_name": "Toxaphene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": 0.73,
+      "US_chronic": 0.0002
+    }
+  },
+  {
+    "type": "value",
+    "name": "Triallate",
+    "characteristic_name": "Triallate",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.24
+    }
+  },
+  {
+    "type": "value",
+    "name": "Tributlytin",
+    "characteristic_name": "Tributlytin",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.008,
+      "US_acute": 0.46,
+      "US_chronic": 0.072
+    }
+  },
+  {
+    "type": "value",
+    "name": "Trichlorfon",
+    "characteristic_name": "Trichlorfon",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": 1.1,
+      "CA_chronic": 0.009
+    }
+  },
+  {
+    "type": "value",
+    "name": "Trichlorophenol",
+    "characteristic_name": "Trichlorophenol",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 18
+    }
+  },
+  {
+    "type": "value",
+    "name": "Trifluralin",
+    "characteristic_name": "Trifluralin",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": null,
+      "CA_chronic": 0.2
+    }
+  },
+  {
+    "type": "value",
+    "name": "U",
+    "characteristic_name": "Uranium",
+    "method_speciation": "",
+    "sample_fraction": "Total recoverable (unfiltered)",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": 33,
+      "CA_chronic": 15
+    }
+  },
+  {
+    "type": "formula",
+    "name": "Zn",
+    "characteristic_name": "Zinc",
+    "method_speciation": "",
+    "sample_fraction": "Dissolved",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_acute": "zincAcuteCA",
+      "CA_chronic": "zincChronicCA"
+    }
+  },
+  {
+    "type": "formula",
+    "name": "Zn",
+    "characteristic_name": "Zinc",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_acute": "zincAcuteUS",
+      "US_chronic": "zincChronicUS"
+    }
+  }
+]

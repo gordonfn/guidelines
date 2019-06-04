@@ -1,0 +1,62 @@
+{
+  "pH": {
+    "characteristic_name": "pH",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": ""
+  },
+  "DOC": {
+    "characteristic_name": "Organic carbon",
+    "method_speciation": "",
+    "sample_fraction": "Dissolved",
+    "unit": "mg/L"
+  },
+  "TH": {
+    "characteristic_name": "Total hardness",
+    "method_speciation": ["as CaCO3", "as CaO", ""],
+    "sample_fraction": "",
+    "unit": "mg/L"
+  },
+  "CaCO3": {
+    "characteristic_name": "Hardness, Ca, Mg",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "mg/L"
+  },
+  "CH": {
+    "characteristic_name": "Hardness, carbonate",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "mg/L"
+  },
+  "NCH": {
+    "characteristic_name": "Hardness, non-carbonate",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "mg/L"
+  },
+  "Ca": {
+    "characteristic_name": "Hardness, Calcium",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "mg/L"
+  },
+  "Mg": {
+    "characteristic_name": "Hardness, magnesium",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "mg/L"
+  },
+  "CaIon": {
+    "characteristic_name": "Calcium",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "mg/L"
+  },
+  "MgIon": {
+    "characteristic_name": "Magnesium",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "mg/L"
+  }
+}
