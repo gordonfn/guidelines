@@ -1,7 +1,7 @@
 const formula = require('./formula')
 
 const metadataArray = require('./metadata.json')
-const hardnessParams = require('./hardness_params.json')
+const formulaParams = require('./formula_params.json')
 
 const convertUnits = require('./units')
 
@@ -49,4 +49,4 @@ const calculate = (filters, params) => {
   return {name, unit, guidelines: guides}
 }
 
-module.exports = {hardnessParams, convertUnits, filterMetadata, calculate}
+module.exports = {formulaParams, convertUnits, filterMetadata, calculate}

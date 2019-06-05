@@ -27,7 +27,6 @@ const cadmiumAcuteCA = (params) => {
   } else {
     // 10^(1.016(log*(hardness))-1.71)
     return math.eval(`pow(10, (1.016 * log10(${hardness}) - 1.71))`).toNumber()
-    //return Math.pow(10, (1.016 * Math.LOG10E * hardness - 1.71))
   }
 }
 
@@ -109,36 +108,64 @@ const zincChronicCA = (params) => {
 }
 
 // US: US EPA
+const alkalinitytotalChronicUS = (params) => {
+  // need formula
+}
+
 const cadmiumAcuteUS = (params) => {
-  // EXP(.9789*LN(hardness)-3.866)*(1.136672-(LN(hardness)*(.041838)))
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
+  // EXP(.9789*LN(hardness)-3.866) * (1.136672-(LN(hardness)*(.041838)))
+  return math.eval(`exp(0.9789 * log1p(${hardness}) - 3.866 ) * ( 1.136672 - log1p(${hardness}) * 0.041838)`).toNumber()
 }
 
 const cadmiumChronicUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
   // EXP(.7977*(LN(hardness))-3.909)*(1.101672-(LN(hardness)*(.041838)))
+  return math.eval(`exp(0.7977 * log1p(${hardness}) - 3.909 ) * ( 1.101672 - log1p(${hardness}) * 0.041838)`).toNumber()
 }
 
 const chromiumIIIAcuteUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
   // EXP*(0.819*LN(hardness)+3.7256)*0.316
+  return math.eval(`exp(0.819 * log1p(${hardness}) + 3.7256 ) * 0.316`).toNumber()
 }
 
 const chromiumIIIChronicUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
   // EXP(.8190*(LN(hardness))+.6848)+.86
+  return math.eval(`exp(0.819 * log1p(${hardness}) + 0.6848 ) * 0.86`).toNumber()
 }
 
 const leadAcuteUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
   // EXP(1.273*(LN(hardness))-1.460)*(1.46203-(LN(hardness)*(.145712)))
+  return math.eval(`exp(1.273 * log1p(${hardness}) - 1.460 ) * ( 1.46203 - log1p(${hardness}) * 0.145712)`).toNumber()
 }
 
 const leadChronicUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
   // EXP(1.273*(LN(hardness))-4.705)*(1.46203-(LN(hardness))*(.145712))
+  return math.eval(`exp(1.273 * log1p(${hardness}) - 4.705 ) * ( 1.46203 - log1p(${hardness}) * 0.145712)`).toNumber()
 }
 
 const nickelAcuteUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
   // EXP(.846*(LN(hardness))+2.255)*(.998)
+  return math.eval(`exp(0.846 * log1p(${hardness}) + 2.255 ) * 0.998`).toNumber()
 }
 
 const nickelChronicUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
   // EXP(.846*(LN(hardness))+.0584)*(.997)
+  return math.eval(`exp(0.846 * log1p(${hardness}) + 0.0584 ) * 0.997`).toNumber()
 }
 
 const pentachlorophenolAcuteUS = (params) => {
@@ -150,15 +177,24 @@ const pentachlorophenolChronicUS = (params) => {
 }
 
 const silverAcuteUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
   // EXP(1.72*(LN(hardness))-6.59)*(.85)
+  return math.eval(`exp(1.72 * log1p(${hardness}) - 6.59 ) * 0.85`).toNumber()
 }
 
 const zincAcuteUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
   // EXP(.8473*(LN(hardness))+.884)*(.978)
+  return math.eval(`exp(0.8473 * log1p(${hardness}) + 0.884 ) * 0.978`).toNumber()
 }
 
 const zincChronicUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
   // EXP(.8473*(LN(hardness))+.884)*(.986)
+  return math.eval(`exp(0.8473 * log1p(${hardness}) + 0.884 ) * 0.986`).toNumber()
 }
 
 module.exports = {
@@ -178,6 +214,7 @@ module.exports = {
   // CA-BC
 
   // US: US EPA
+  alkalinitytotalChronicUS,
   cadmiumAcuteUS,
   cadmiumChronicUS,
   chromiumIIIAcuteUS,
@@ -186,6 +223,8 @@ module.exports = {
   leadChronicUS,
   nickelAcuteUS,
   nickelChronicUS,
+  pentachlorophenolAcuteUS,
+  pentachlorophenolChronicUS,
   silverAcuteUS,
   zincAcuteUS,
   zincChronicUS
