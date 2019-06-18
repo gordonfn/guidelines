@@ -38,6 +38,7 @@ Calculate water quality guidelines.
 ## Sources
 - [Water Hardness Summary](http://www.aqion.de/site/water-hardness)
 - [DataStream Mapping](https://docs.google.com/spreadsheets/d/1J5cNUYyzuPutKEnF5BSnvTW1JAbHX-p1cSfXhQIS8d8/edit#gid=1992238860)
+- [Dissolved Oxygen Calculation](https://water.usgs.gov/admin/memo/QW/qw81.11.html)
 
 ### Standards
 - [CCME](http://st-ts.ccme.ca/en/index.html)
