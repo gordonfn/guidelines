@@ -156,7 +156,7 @@
     "sample_fraction": "Total",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": "aluminumFreshwaterChronicCA"
+      "CA_freshwater_chronic": "aluminumTotalFreshwaterChronicCA"
     }
   },
   {
@@ -328,11 +328,11 @@
     "sample_fraction": "Total",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_acute": "cadmiumFreshwaterAcuteCA",
-      "CA_freshwater_chronic": "cadmiumFreshwaterChronicCA",
+      "CA_freshwater_acute": "cadmiumTotalFreshwaterAcuteCA",
+      "CA_freshwater_chronic": "cadmiumTotalFreshwaterChronicCA",
       "CA_marine_chronic": 0.12,
-      "US_freshwater_acute": "cadmiumFreshwaterAcuteUS",
-      "US_freshwater_chronic": "cadmiumFreshwaterChronicUS",
+      "US_freshwater_acute": "cadmiumTotalFreshwaterAcuteUS",
+      "US_freshwater_chronic": "cadmiumTotalFreshwaterChronicUS",
       "US_marine_acute": 33,
       "US_marine_chronic": 7.9
     }
@@ -344,8 +344,8 @@
     "sample_fraction": "Dissolved",
     "unit": "µg/L",
     "guidelines": {
-      "US_freshwater_acute": "cadmiumFreshwaterAcuteUS",
-      "US_freshwater_chronic": "cadmiumFreshwaterChronicUS",
+      "US_freshwater_acute": "cadmiumDissolvedFreshwaterAcuteUS",
+      "US_freshwater_chronic": "cadmiumDissolvedFreshwaterChronicUS",
       "US_marine_acute": 32.802,
       "US_marine_chronic": 7.8526
     }
@@ -536,8 +536,8 @@
     "guidelines": {
       "CA_freshwater_chronic": 8.9,
       "CA_marine_chronic": 56,
-      "US_freshwater_acute": "chromiumiiiFreshwaterAcuteUS",
-      "US_freshwater_chronic": "chromiumiiiFreshwaterChronicUS"
+      "US_freshwater_acute": "chromiumiiiTotalFreshwaterAcuteUS",
+      "US_freshwater_chronic": "chromiumiiiTotalFreshwaterChronicUS"
     }
   },
   {
@@ -547,8 +547,8 @@
     "sample_fraction": "Dissolved",
     "unit": "µg/L",
     "guidelines": {
-      "US_freshwater_acute": "chromiumiiiFreshwaterAcuteUS",
-      "US_freshwater_chronic": "chromiumiiiFreshwaterChronicUS"
+      "US_freshwater_acute": "chromiumiiiDissolvedFreshwaterAcuteUS",
+      "US_freshwater_chronic": "chromiumiiiDissolvedFreshwaterChronicUS"
     }
   },
   {
@@ -586,7 +586,7 @@
     "sample_fraction": "Total",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": "copperFreshwaterChronicCA",
+      "CA_freshwater_chronic": "copperTotalFreshwaterChronicCA",
       "US_marine_acute": 4.8,
       "US_marine_chronic": 3.1
     }
@@ -937,9 +937,9 @@
     "sample_fraction": "Total",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": "leadFreshwaterChronicCA",
-      "US_freshwater_acute": "leadFreshwaterAcuteUS",
-      "US_freshwater_chronic": "leadFreshwaterChronicUS",
+      "CA_freshwater_chronic": "leadTotalFreshwaterChronicCA",
+      "US_freshwater_acute": "leadTotalFreshwaterAcuteUS",
+      "US_freshwater_chronic": "leadTotalFreshwaterChronicUS",
       "US_marine_acute": 140,
       "US_marine_chronic": 5.6
     }
@@ -951,8 +951,8 @@
     "sample_fraction": "Dissolved",
     "unit": "µg/L",
     "guidelines": {
-      "US_freshwater_acute": "leadFreshwaterAcuteUS",
-      "US_freshwater_chronic": "leadFreshwaterChronicUS",
+      "US_freshwater_acute": "leadDissolvedFreshwaterAcuteUS",
+      "US_freshwater_chronic": "leadDissolvedFreshwaterChronicUS",
       "US_marine_acute": 133.14,
       "US_marine_chronic": 5.3256
     }
@@ -1158,9 +1158,9 @@
     "sample_fraction": "Total",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": "nickelFreshwaterChronicCA",
-      "US_freshwater_acute": "nickelFreshwaterAcuteUS",
-      "US_freshwater_chronic": "nickelFreshwaterChronicUS",
+      "CA_freshwater_chronic": "nickelTotalFreshwaterChronicCA",
+      "US_freshwater_acute": "nickelTotalFreshwaterAcuteUS",
+      "US_freshwater_chronic": "nickelTotalFreshwaterChronicUS",
       "US_marine_acute": 74,
       "US_marine_chronic": 8.2
     }
@@ -1172,8 +1172,8 @@
     "sample_fraction": "Dissolved",
     "unit": "µg/L",
     "guidelines": {
-      "US_freshwater_acute": "nickelFreshwaterAcuteUS",
-      "US_freshwater_chronic": "nickelFreshwaterChronicUS",
+      "US_freshwater_acute": "nickelDissolvedFreshwaterAcuteUS",
+      "US_freshwater_chronic": "nickelDissolvedFreshwaterChronicUS",
       "US_marine_acute": 73.26,
       "US_marine_chronic": 8.118
     }
@@ -1469,7 +1469,7 @@
     "guidelines": {
       "CA_freshwater_chronic": 0.25,
       "CA_marine_acute": 7.5,
-      "US_freshwater_acute": "silverFreshwaterAcuteUS",
+      "US_freshwater_acute": "silverTotalFreshwaterAcuteUS",
       "US_marine_acute": 1.9
     }
   },
@@ -1480,7 +1480,7 @@
     "sample_fraction": "Dissolved",
     "unit": "µg/L",
     "guidelines": {
-      "US_freshwater_acute": "silverFreshwaterAcuteUS",
+      "US_freshwater_acute": "silverDissolvedFreshwaterAcuteUS",
       "US_marine_acute": 1.615
     }
   },
@@ -1642,10 +1642,10 @@
     "sample_fraction": "Dissolved",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_acute": "zincFreshwaterAcuteCA",
-      "CA_freshwater_chronic": "zincFreshwaterChronicCA",
-      "US_freshwater_acute": "zincFreshwaterAcuteUS",
-      "US_freshwater_chronic": "zincFreshwaterChronicUS",
+      "CA_freshwater_acute": "zincDissolvedFreshwaterAcuteCA",
+      "CA_freshwater_chronic": "zincDissolvedFreshwaterChronicCA",
+      "US_freshwater_acute": "zincDissolvedFreshwaterAcuteUS",
+      "US_freshwater_chronic": "zincDissolvedFreshwaterChronicUS",
       "US_marine_acute": 85.14,
       "US_marine_chronic": 76.626
     }
@@ -1657,8 +1657,8 @@
     "sample_fraction": "Total",
     "unit": "µg/L",
     "guidelines": {
-      "US_freshwater_acute": "zincFreshwaterAcuteUS",
-      "US_freshwater_chronic": "zincFreshwaterChronicUS",
+      "US_freshwater_acute": "zincTotalFreshwaterAcuteUS",
+      "US_freshwater_chronic": "zincTotalFreshwaterChronicUS",
       "US_marine_acute": 90,
       "US_marine_chronic": 81
     }

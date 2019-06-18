@@ -11,6 +11,7 @@ const parseGuideline = (col, row) => {
     if (row['Type'] === 'range') return row[col].split('-').map(v => Number.parseFloat(v))
     if (row['Type'] === 'formula') {
       const formula = row['Characteristic Name'].toLowerCase().replace(/[^a-z0-9]/g, '')
+        + row['Sample Fraction'].replace(' ', '')
         + col.replace(' ', '')
         + row['Region'].replace('-', '')
       if (Object.keys(formulas).indexOf(formula) === -1) console.log(`Missing: ${formula}()`)

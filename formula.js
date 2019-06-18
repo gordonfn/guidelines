@@ -9,7 +9,7 @@ const convertUnits = require('./units')
 const calculateHardness = require('./hardness')
 
 // CA: CCME
-const aluminumFreshwaterChronicCA = ({pH}) => {
+const aluminumTotalFreshwaterChronicCA = ({pH}) => {
   if (pH < 6.5) {
     return 5
   } else if (6.5 <= pH) {
@@ -17,9 +17,9 @@ const aluminumFreshwaterChronicCA = ({pH}) => {
   }
 }
 
-const cadmiumFreshwaterAcuteCA = (params) => {
+const cadmiumTotalFreshwaterAcuteCA = (params) => {
   const hardness = calculateHardness(params)
-  if (hardness === null) return null
+  if (hardness === null) return null  // The short-term benchmark concentration of 1.0 µg·L-1  is for waters of 50 mg CaCO3·L-1 hardness.
   if (hardness < 5.3) {
     return 0.11
   } else if (360 < hardness) {
@@ -30,9 +30,9 @@ const cadmiumFreshwaterAcuteCA = (params) => {
   }
 }
 
-const cadmiumFreshwaterChronicCA = (params) => {
+const cadmiumTotalFreshwaterChronicCA = (params) => {
   const hardness = calculateHardness(params)
-  if (hardness === null) return null
+  if (hardness === null) return null  // The CWQG for cadmium (i.e. long-term guideline) of 0.09 µg·L-1 is for waters of 50 mg CaCO3·L-1 hardness.
   if (0 < hardness && hardness < 17) {
     return 0.04
   } else if (280 < hardness) {
@@ -43,10 +43,11 @@ const cadmiumFreshwaterChronicCA = (params) => {
   }
 }
 
-const copperFreshwaterChronicCA = (params) => {
+const copperTotalFreshwaterChronicCA = (params) => {
   const hardness = calculateHardness(params)
-  if (hardness === null) return null
-  if (hardness < 82) {
+  if (hardness === null) {  // If the hardness is unknown, the CWQG is 2 µg/L
+    return 2
+  } else if (hardness < 82) {
     return 2
   } else if (180 < hardness) {
     return 4
@@ -56,10 +57,11 @@ const copperFreshwaterChronicCA = (params) => {
   }
 }
 
-const leadFreshwaterChronicCA = (params) => {
+const leadTotalFreshwaterChronicCA = (params) => {
   const hardness = calculateHardness(params)
-  if (hardness === null) return null
-  if (hardness <= 60) {
+  if (hardness === null) {  // If the hardness is unknown, the CWQG is 1 µg/L
+    return 1
+  } else if (hardness <= 60) {
     return 1
   } else if (180 < hardness) {
     return 7
@@ -69,10 +71,11 @@ const leadFreshwaterChronicCA = (params) => {
   }
 }
 
-const nickelFreshwaterChronicCA = (params) => {
+const nickelTotalFreshwaterChronicCA = (params) => {
   const hardness = calculateHardness(params)
-  if (hardness === null) return null
-  if (hardness <= 60) {
+  if (hardness === null) {  // If the hardness is unknown, the CWQG is 25 µg/L
+    return 25
+  } else if (hardness <= 60) {
     return 25
   } else if (180 < hardness) {
     return 150
@@ -82,7 +85,7 @@ const nickelFreshwaterChronicCA = (params) => {
   }
 }
 
-const zincFreshwaterAcuteCA = (params) => {
+const zincDissolvedFreshwaterAcuteCA = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   const {DOC} = params
@@ -94,7 +97,7 @@ const zincFreshwaterAcuteCA = (params) => {
   }
 }
 
-const zincFreshwaterChronicCA = (params) => {
+const zincDissolvedFreshwaterChronicCA = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   const {pH, DOC} = params
@@ -111,56 +114,112 @@ const alkalinitytotalFreshwaterChronicUS = (params) => {
   // need formula
 }
 
-const cadmiumFreshwaterAcuteUS = (params) => {
+const cadmiumTotalFreshwaterAcuteUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
+  // EXP(.9789*LN(hardness)-3.866)
+  return math.eval(`exp9789 * log(${hardness}) - 3.866 ))`).toNumber()
+}
+
+const cadmiumDissolvedFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.9789*LN(hardness)-3.866) * (1.136672-(LN(hardness)*(.041838)))
-  return math.eval(`exp(0.9789 * log(${hardness}) - 3.866 ) * ( 1.136672 - log(${hardness}) * 0.041838)`).toNumber()
+  return math.eval(`exp9789 * log(${hardness}) - 3.866 )) * ( 1.136672 - log(${hardness}) * 0.041838)`).toNumber()
 }
 
-const cadmiumFreshwaterChronicUS = (params) => {
+const cadmiumTotalFreshwaterChronicUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
+  // EXP(.7977*(LN(hardness))-3.909)
+  return math.eval(`exp(0.7977 * log(${hardness}) - 3.909 )`).toNumber()
+}
+
+const cadmiumDissolvedFreshwaterChronicUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.7977*(LN(hardness))-3.909)*(1.101672-(LN(hardness)*(.041838)))
   return math.eval(`exp(0.7977 * log(${hardness}) - 3.909 ) * ( 1.101672 - log(${hardness}) * 0.041838)`).toNumber()
 }
 
-const chromiumiiiFreshwaterAcuteUS = (params) => {
+const chromiumiiiTotalFreshwaterAcuteUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
+  // EXP*(0.819*LN(hardness)+3.7256)
+  return math.eval(`exp(0.819 * log(${hardness}) + 3.7256 )`).toNumber()
+}
+
+const chromiumiiiDissolvedFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP*(0.819*LN(hardness)+3.7256)*0.316
   return math.eval(`exp(0.819 * log(${hardness}) + 3.7256 ) * 0.316`).toNumber()
 }
 
-const chromiumiiiFreshwaterChronicUS = (params) => {
+const chromiumiiiTotalFreshwaterChronicUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
-  // EXP(.8190*(LN(hardness))+.6848)+.86
+  // EXP(.8190*(LN(hardness))+.6848)
+  return math.eval(`exp(0.819 * log(${hardness}) + 0.6848 )`).toNumber()
+}
+
+const chromiumiiiDissolvedFreshwaterChronicUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
+  // EXP(.8190*(LN(hardness))+.6848)*.86
   return math.eval(`exp(0.819 * log(${hardness}) + 0.6848 ) * 0.86`).toNumber()
 }
 
-const leadFreshwaterAcuteUS = (params) => {
+const leadTotalFreshwaterAcuteUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
+  // EXP(1.273*(LN(hardness))-1.460)
+  return math.eval(`exp(1.273 * log(${hardness}) - 1.460 )`).toNumber()
+}
+
+const leadDissolvedFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(1.273*(LN(hardness))-1.460)*(1.46203-(LN(hardness)*(.145712)))
   return math.eval(`exp(1.273 * log(${hardness}) - 1.460 ) * ( 1.46203 - log(${hardness}) * 0.145712)`).toNumber()
 }
 
-const leadFreshwaterChronicUS = (params) => {
+const leadTotalFreshwaterChronicUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
+  // EXP(1.273*(LN(hardness))-4.705)
+  return math.eval(`exp(1.273 * log(${hardness}) - 4.705 )`).toNumber()
+}
+
+const leadDissolvedFreshwaterChronicUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(1.273*(LN(hardness))-4.705)*(1.46203-(LN(hardness))*(.145712))
   return math.eval(`exp(1.273 * log(${hardness}) - 4.705 ) * ( 1.46203 - log(${hardness}) * 0.145712)`).toNumber()
 }
 
-const nickelFreshwaterAcuteUS = (params) => {
+const nickelTotalFreshwaterAcuteUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
+  // EXP(.846*(LN(hardness))+2.255)
+  return math.eval(`exp(0.846 * log(${hardness}) + 2.255 )`).toNumber()
+}
+
+const nickelDissolvedFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.846*(LN(hardness))+2.255)*(.998)
   return math.eval(`exp(0.846 * log(${hardness}) + 2.255 ) * 0.998`).toNumber()
 }
 
-const nickelFreshwaterChronicUS = (params) => {
+const nickelTotalFreshwaterChronicUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
+  // EXP(.846*(LN(hardness))+.0584)
+  return math.eval(`exp(0.846 * log(${hardness}) + 0.0584 )`).toNumber()
+}
+
+const nickelDissolvedFreshwaterChronicUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.846*(LN(hardness))+.0584)*(.997)
@@ -175,21 +234,42 @@ const pentachlorophenolFreshwaterChronicUS = (params) => {
   // table lookup
 }
 
-const silverFreshwaterAcuteUS = (params) => {
+const silverTotalFreshwaterAcuteUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
+  // EXP(1.72*(LN(hardness))-6.59)
+  return math.eval(`exp(1.72 * log(${hardness}) - 6.59 )`).toNumber()
+}
+
+const silverDissolvedFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(1.72*(LN(hardness))-6.59)*(.85)
   return math.eval(`exp(1.72 * log(${hardness}) - 6.59 ) * 0.85`).toNumber()
 }
 
-const zincFreshwaterAcuteUS = (params) => {
+const zincTotalFreshwaterAcuteUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
+  // EXP(.8473*(LN(hardness))+.884)
+  return math.eval(`exp(0.8473 * log(${hardness}) + 0.884 )`).toNumber()
+}
+
+const zincDissolvedFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.8473*(LN(hardness))+.884)*(.978)
   return math.eval(`exp(0.8473 * log(${hardness}) + 0.884 ) * 0.978`).toNumber()
 }
 
-const zincFreshwaterChronicUS = (params) => {
+const zincTotalFreshwaterChronicUS = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness === null) return null
+  // EXP(.8473*(LN(hardness))+.884)
+  return math.eval(`exp(0.8473 * log(${hardness}) + 0.884 )`).toNumber()
+}
+
+const zincDissolvedFreshwaterChronicUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.8473*(LN(hardness))+.884)*(.986)
@@ -200,31 +280,42 @@ module.exports = {
   convertUnits,
   calculateHardness,
   // CA: CCME
-  aluminumFreshwaterChronicCA,
-  cadmiumFreshwaterAcuteCA,
-  cadmiumFreshwaterChronicCA,
-  copperFreshwaterChronicCA,
-  leadFreshwaterChronicCA,
-  nickelFreshwaterChronicCA,
-  zincFreshwaterAcuteCA,
-  zincFreshwaterChronicCA,
+  aluminumTotalFreshwaterChronicCA,
+  cadmiumTotalFreshwaterAcuteCA,
+  cadmiumTotalFreshwaterChronicCA,
+  copperTotalFreshwaterChronicCA,
+  leadTotalFreshwaterChronicCA,
+  nickelTotalFreshwaterChronicCA,
+  zincDissolvedFreshwaterAcuteCA,
+  zincDissolvedFreshwaterChronicCA,
   // CA-AB
 
   // CA-BC
 
   // US: US EPA
   alkalinitytotalFreshwaterChronicUS,
-  cadmiumFreshwaterAcuteUS,
-  cadmiumFreshwaterChronicUS,
-  chromiumiiiFreshwaterAcuteUS,
-  chromiumiiiFreshwaterChronicUS,
-  leadFreshwaterAcuteUS,
-  leadFreshwaterChronicUS,
-  nickelFreshwaterAcuteUS,
-  nickelFreshwaterChronicUS,
-  pentachlorophenolFreshwaterAcuteUS,
-  pentachlorophenolFreshwaterChronicUS,
-  silverFreshwaterAcuteUS,
-  zincFreshwaterAcuteUS,
-  zincFreshwaterChronicUS
+  cadmiumTotalFreshwaterAcuteUS,
+  cadmiumTotalFreshwaterChronicUS,
+  cadmiumDissolvedFreshwaterAcuteUS,
+  cadmiumDissolvedFreshwaterChronicUS,
+  chromiumiiiTotalFreshwaterAcuteUS,
+  chromiumiiiTotalFreshwaterChronicUS,
+  chromiumiiiDissolvedFreshwaterAcuteUS,
+  chromiumiiiDissolvedFreshwaterChronicUS,
+  leadTotalFreshwaterAcuteUS,
+  leadTotalFreshwaterChronicUS,
+  leadDissolvedFreshwaterAcuteUS,
+  leadDissolvedFreshwaterChronicUS,
+  nickelTotalFreshwaterAcuteUS,
+  nickelTotalFreshwaterChronicUS,
+  nickelDissolvedFreshwaterAcuteUS,
+  nickelDissolvedFreshwaterChronicUS,
+  //pentachlorophenolFreshwaterAcuteUS,
+  //pentachlorophenolFreshwaterChronicUS,
+  silverTotalFreshwaterAcuteUS,
+  silverDissolvedFreshwaterAcuteUS,
+  zincTotalFreshwaterAcuteUS,
+  zincTotalFreshwaterChronicUS,
+  zincDissolvedFreshwaterAcuteUS,
+  zincDissolvedFreshwaterChronicUS,
 }
