@@ -19,7 +19,7 @@ const aluminumTotalFreshwaterChronicCA = ({pH}) => {
 
 const cadmiumTotalFreshwaterAcuteCA = (params) => {
   const hardness = calculateHardness(params)
-  if (hardness === null) return null  // The short-term benchmark concentration of 1.0 µg·L-1  is for waters of 50 mg CaCO3·L-1 hardness.
+  if (hardness === null) return null
   if (hardness < 5.3) {
     return 0.11
   } else if (360 < hardness) {
@@ -32,7 +32,7 @@ const cadmiumTotalFreshwaterAcuteCA = (params) => {
 
 const cadmiumTotalFreshwaterChronicCA = (params) => {
   const hardness = calculateHardness(params)
-  if (hardness === null) return null  // The CWQG for cadmium (i.e. long-term guideline) of 0.09 µg·L-1 is for waters of 50 mg CaCO3·L-1 hardness.
+  if (hardness === null) return null
   if (0 < hardness && hardness < 17) {
     return 0.04
   } else if (280 < hardness) {
@@ -45,9 +45,8 @@ const cadmiumTotalFreshwaterChronicCA = (params) => {
 
 const copperTotalFreshwaterChronicCA = (params) => {
   const hardness = calculateHardness(params)
-  if (hardness === null) {  // If the hardness is unknown, the CWQG is 2 µg/L
-    return 2
-  } else if (hardness < 82) {
+  // If the hardness is unknown, the CWQG is 2 µg/L
+  if (hardness === null || hardness < 82) {
     return 2
   } else if (180 < hardness) {
     return 4
@@ -59,9 +58,8 @@ const copperTotalFreshwaterChronicCA = (params) => {
 
 const leadTotalFreshwaterChronicCA = (params) => {
   const hardness = calculateHardness(params)
-  if (hardness === null) {  // If the hardness is unknown, the CWQG is 1 µg/L
-    return 1
-  } else if (hardness <= 60) {
+  // If the hardness is unknown, the CWQG is 1 µg/L
+  if (hardness === null || hardness <= 60) {
     return 1
   } else if (180 < hardness) {
     return 7
@@ -73,9 +71,8 @@ const leadTotalFreshwaterChronicCA = (params) => {
 
 const nickelTotalFreshwaterChronicCA = (params) => {
   const hardness = calculateHardness(params)
-  if (hardness === null) {  // If the hardness is unknown, the CWQG is 25 µg/L
-    return 25
-  } else if (hardness <= 60) {
+  // If the hardness is unknown, the CWQG is 25 µg/L
+  if (hardness === null || hardness <= 60) {
     return 25
   } else if (180 < hardness) {
     return 150

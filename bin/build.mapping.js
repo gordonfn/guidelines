@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS datastream.guidelines (
   characteristic_name    VARCHAR(118) NOT NULL DEFAULT '',
   method_speciation      VARCHAR(10)   NOT NULL DEFAULT '',
   sample_fraction        VARCHAR(25)  NOT NULL DEFAULT '',
-  values                 JSONB        NOT NULL
+  values                 JSONB        NOT NULL DEFAULT '{}'
 );
 
 CREATE UNIQUE INDEX IF NOT EXISTS guidelines_pkey
