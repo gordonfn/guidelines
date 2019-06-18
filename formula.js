@@ -1,8 +1,8 @@
 const math = require('mathjs')
-math.config({
+/*math.config({
   number: 'BigNumber',
   precision: 64        // Number of significant digits for BigNumbers
-})
+})*/
 // Docs: https://mathjs.org/docs/reference/functions.html
 
 const convertUnits = require('./units')
