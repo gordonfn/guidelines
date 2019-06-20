@@ -1,8 +1,4 @@
 const math = require('mathjs')
-/*math.config({
-  number: 'BigNumber',
-  precision: 64        // Number of significant digits for BigNumbers
-})*/
 // Docs: https://mathjs.org/docs/reference/functions.html
 
 const convertUnits = require('./units')
@@ -107,8 +103,18 @@ const zincDissolvedFreshwaterChronicCA = (params) => {
 }
 
 // US: US EPA
-const alkalinitytotalFreshwaterChronicUS = (params) => {
-  // need formula
+
+const ammoniaFreshwaterAcuteUS = (params) => {
+  const {pH, temperature} = params
+
+  // MIN({0.275/[1+10^(7.204-ph)]}+{39/[1+10^(ph-7.204)]}, 0.7249*{0.0114/[1+10^(7.204-ph)]+1.6181/[1+10^(ph-7.204)]}*{23.12*10^[0.036*(20-T)]})
+  return math.eval(`min( (0.275 / (1 + pow(10, (7.204 - ${pH})))) + (39 / (1 + pow(10, (${pH} - 7.204)) )), 0.7249 * (0.0114 / (1 + pow(10, (7.204 - ${pH}))) + 1.6181 / (1 + pow(10, ( ${pH} - 7.204)))) * (23.12 * pow(10, (0.036 * (20 - ${temperature})))) )`)
+}
+
+const ammoniaFreshwaterChronicUS = (params) => {
+  const {pH, temperature} = params
+  // 0.8876*{0.0278/[1+10^(7.688-pH)]+1.1994/[1+10^(pH-7.688)]}*{2.126*10^[0.028*(10-MAX(T,7))]}
+  return math.eval(`0.8876 * (0.0278 / (1 + pow(10, (7.688 - ${pH})) + 1.1994 / (1 + pow(10, (${pH} - 7.688)))) * (2.126 * pow(10, (0.028 * (10 - max(${temperature}, 7)))))`)
 }
 
 const cadmiumTotalFreshwaterAcuteUS = (params) => {
@@ -224,11 +230,13 @@ const nickelDissolvedFreshwaterChronicUS = (params) => {
 }
 
 const pentachlorophenolFreshwaterAcuteUS = (params) => {
-  // table lookup
+  const {pH} = params
+  return math.eval(`log(1.005 * ${pH} - 4.869)`)
 }
 
 const pentachlorophenolFreshwaterChronicUS = (params) => {
-  // table lookup
+  const {pH} = params
+  return math.eval(`log(1.005 * ${pH} - 5.134)`)
 }
 
 const silverTotalFreshwaterAcuteUS = (params) => {
@@ -290,7 +298,8 @@ module.exports = {
   // CA-BC
 
   // US: US EPA
-  alkalinitytotalFreshwaterChronicUS,
+  ammoniaFreshwaterAcuteUS,
+  ammoniaFreshwaterChronicUS,
   cadmiumTotalFreshwaterAcuteUS,
   cadmiumTotalFreshwaterChronicUS,
   cadmiumDissolvedFreshwaterAcuteUS,
@@ -307,8 +316,8 @@ module.exports = {
   nickelTotalFreshwaterChronicUS,
   nickelDissolvedFreshwaterAcuteUS,
   nickelDissolvedFreshwaterChronicUS,
-  //pentachlorophenolFreshwaterAcuteUS,
-  //pentachlorophenolFreshwaterChronicUS,
+  pentachlorophenolFreshwaterAcuteUS,
+  pentachlorophenolFreshwaterChronicUS,
   silverTotalFreshwaterAcuteUS,
   silverDissolvedFreshwaterAcuteUS,
   zincTotalFreshwaterAcuteUS,

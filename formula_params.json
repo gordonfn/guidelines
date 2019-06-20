@@ -11,6 +11,12 @@
     "sample_fraction": "Dissolved",
     "unit": "mg/L"
   },
+  "temperature": {
+    "characteristic_name": "Temperature, water",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "degC"
+  },
   "TH": {
     "characteristic_name": "Total hardness",
     "method_speciation": ["as CaCO3", "as CaO", ""],

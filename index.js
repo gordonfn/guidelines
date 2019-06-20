@@ -5,7 +5,7 @@ const formulaParams = require('./formula_params.json')
 
 const convertUnits = require('./units')
 
-const filterMetadata = (params = {}, guidelineKeys = []) => {
+const filterMetadata = (params = {}/*, guidelineKeys = ['CA_']*/) => {
   const arr = []
   for (let i = 0, l = metadataArray.length; i < l; i++) {
     let match = true
@@ -19,9 +19,9 @@ const filterMetadata = (params = {}, guidelineKeys = []) => {
       }
     })
 
-    if (guidelineKeys.length) {
+    /*if (guidelineKeys.length) {
       match = match && Object.keys(metadataArray[i].guidelines).filter(key => !!metadataArray[i].guidelines[key]).some(key => guidelineKeys.includes(key))
-    }
+    }*/
 
     if (match) {
       arr.push(metadataArray[i])
@@ -36,6 +36,7 @@ const filterMetadata = (params = {}, guidelineKeys = []) => {
  * @param params={pH, DOC, Ca, Mg, ...}
  */
 const calculate = (filters, params) => {
+  console.log('calculate', filters, params)
   const {unit, guidelines} = filterMetadata(filters)[0]
 
   const guides = {}
@@ -46,7 +47,7 @@ const calculate = (filters, params) => {
     }
   })
 
-  return {name, unit, guidelines: guides}
+  return {unit, guidelines: guides}
 }
 
-module.exports = {formulaParams, convertUnits, filterMetadata, calculate}
+module.exports = {formulaParams, metadataArray, convertUnits, filterMetadata, calculate}

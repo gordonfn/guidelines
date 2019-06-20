@@ -5,11 +5,11 @@ describe('Guideline Formulas', function () {
 
   describe('CA: CCME', function () {
     it('Should calculate Aluminum (Chronic)', function (done) {
-      expect(formula.aluminumChronicCA({
+      expect(formula.aluminumTotalFreshwaterChronicCA({
         pH: 1
       })).to.equal(5)
 
-      expect(formula.aluminumChronicCA({
+      expect(formula.aluminumTotalFreshwaterChronicCA({
         pH: 6.5
       })).to.equal(100)
 
@@ -17,15 +17,15 @@ describe('Guideline Formulas', function () {
     })
 
     it('Should calculate Cadmium (Acute)', function (done) {
-      expect(formula.cadmiumAcuteCA({
+      expect(formula.cadmiumTotalFreshwaterAcuteCA({
         CaCO3: 5
       })).to.equal(0.11)
 
-      expect(formula.cadmiumAcuteCA({
+      expect(formula.cadmiumTotalFreshwaterAcuteCA({
         CaCO3: 100
       }).toFixed(16)).to.equal((2.0989398836235242).toFixed(16))
 
-      expect(formula.cadmiumAcuteCA({
+      expect(formula.cadmiumTotalFreshwaterAcuteCA({
         CaCO3: 361
       })).to.equal(7.7)
 
