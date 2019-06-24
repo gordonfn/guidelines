@@ -10,6 +10,8 @@ const aluminumTotalFreshwaterChronicCA = ({pH}) => {
     return 5
   } else if (6.5 <= pH) {
     return 100
+  } else {
+    return null
   }
 }
 
