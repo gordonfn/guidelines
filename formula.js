@@ -123,14 +123,14 @@ const cadmiumTotalFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.9789*LN(hardness)-3.866)
-  return math.eval(`exp9789 * log(${hardness}) - 3.866 ))`).toNumber()
+  return math.eval(`exp(.9789 * log(${hardness}) - 3.866 )`).toNumber()
 }
 
 const cadmiumDissolvedFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.9789*LN(hardness)-3.866) * (1.136672-(LN(hardness)*(.041838)))
-  return math.eval(`exp9789 * log(${hardness}) - 3.866 )) * ( 1.136672 - log(${hardness}) * 0.041838)`).toNumber()
+  return math.eval(`exp(.9789 * log(${hardness}) - 3.866 ) * ( 1.136672 - log(${hardness}) * 0.041838)`).toNumber()
 }
 
 const cadmiumTotalFreshwaterChronicUS = (params) => {

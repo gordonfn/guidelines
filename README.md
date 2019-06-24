@@ -47,20 +47,5 @@ Calculate water quality guidelines.
 
 
 ## TODO
-- [ ] feat: add in formulas
-- [ ] fix: verify formulas
-- [ ] fix: hardness formula - verify
 - [ ] feat: add in regional guidelines
-- [ ] feat: add in default hardness values
-```
-"cadmium": 1,
-"copper": 2,
-"lead": 2,
-"nickel": 25,
-"zinc": 30,
-"ammonia": 0.019,
-"nitrite": 0.197,
-"uranium": 15,
-"aluminiumQC": 87
-```
 - [ ] doc: ADD links to each spec sheet per formula
