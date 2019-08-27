@@ -27,6 +27,7 @@ parse(data, {
 }, (err, output) => {
   let count = 0
   output.forEach((row) => {
+    row['Characteristic Name'] = row['DataStream Characteristic Name']
     if (!row['Characteristic Name']) {
       console.log(`skip '${row['Guideline Name']}' from ${row['Region']}`)
       return

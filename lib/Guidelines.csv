@@ -1,171 +1,171 @@
-Short Name,Characteristic Name,Method Speciation,Sample Fraction,Guideline Name,Unit,Region,Type,Freshwater Acute,Freshwater Chronic,Freshwater Notes,Marine Acute,Marine Chronic,Marine Notes,Spec Sheet Url
-C9H6Cl6O3S,.alpha.-Endosulfan,,,alpha-Endosulfan,µg/L,US,value,0.22,0.056,This value was derived from data for endosulfan and is most appropriately applied to the sum of alpha-endosulfan and beta-endosulfan.,0.034,0.0087,,
-C9H6Cl6O3S,.beta.-Endosulfan,,,beta-Endosulfan,µg/L,US,value,0.22,0.056,This value was derived from data for endosulfan and is most appropriately applied to the sum of alpha-endosulfan and beta-endosulfan.,0.034,0.0087,,
-,"1,1,2-Trichloroethane",,,"1,1,2-Trichloroethane",µg/L,CA,value,-,21,,-,-,,
-,"1,2-Dichloroethane",,,"1,2-Dichloroethane",µg/L,CA,value,-,100,,-,-,,
-,"1,2,3-Trichlorobenzene",,,"1,2,3-Trichlorobenzene",µg/L,CA,value,-,8,,-,-,,
-,"1,2,3,4-Tetrachlorobenzene",,,"1,2,3,4-Tetrachlorobenzene",µg/L,CA,value,-,1.8,,-,-,,
-,"1,2,4-Trichlorobenzene",,,"1,2,4-Trichlorobenzene",µg/L,CA,value,-,24,,-,5.4,,
-"2,4-D","2,4-D",,,Phenoxy herbicides,µg/L,CA,value,-,4,,-,-,,
-,3-Iodo-2-propynyl butyl carbamate,,,3-Iodo-2-propynyl butyl carbamate,µg/L,CA,value,-,1.9,,-,-,,
-,Acenaphthene,,,Acenaphthene,µg/L,CA,value,-,5.8,,-,-,,
-,Acridine,,,Acridine (substituted PAH),µg/L,CA,value,-,4.4,,-,-,,
-C3H4O,Acrolein,,,Acrolein,µg/L,US,value,3,3,,-,-,,
-,Aldicarb,,Total,Aldicarb,µg/L,CA,value,-,1,"Applies to the concentration of total aldicarb residues (comprising aldicarb, aldicarb sulphoxide (ASO), and aldicarb sulphone (ASO2)",-,0.15,,
-C12H8Cl6,Aldrin,,,Aldrin,µg/L,US,value,3,-,,1.3,-,,
-,"Alkalinity, total",as CaCO3,,Alkalinity,mg/L,US,value,-,20,"The CCC of 20mg/L is a minimum value except where alkalinity is naturally lower, in which case the criterion cannot be lower than 25% of the natural level. NO FORMULA - too complicated",-,-,,
-Al,Aluminum,,Total,Aluminum,µg/L,CA,formula,-,if (pH < 6.5) {5;} else if (pH ≥ 6.5) {100;},,-,-,,
-,Ammonia,as N,,Ammonia (un-ionized),mg/l,CA,value,-,16000,was in ug/l,-,-,,
-,Ammonia,as NH3,,Ammonia (un-ionized),mg/l,CA,value,-,19000,was in ug/l,-,-,,
-,Ammonia,as N,,Ammonia,mg/l,US,formula,"MIN({0.275/[1+10^(7.204-ph)]}+{39/[1+10^(ph-7.204)]}, 0.7249*{0.0114/[1+10^(7.204-ph)]+1.6181/[1+10^(ph-7.204)]}*{23.12*10^[0.036*(20-T)]})","0.8876*{0.0278/[1+10^(7.688-pH)]+1.1994/[1+10^(pH-7.688)]}*{2.126*10^[0.028*(10-MAX(T,7))]}",,-,-,, https://www.epa.gov/sites/production/files/2015-08/documents/aquatic-life-ambient-water-quality-criteria-for-ammonia-freshwater-2013.pdf (page 53/255)
-,Aniline,,,Aniline,µg/L,CA,value,-,2.2,,-,-,,
-,Anthracene,,,Anthracene,µg/L,CA,value,-,0.012,,-,-,,
-As,Arsenic,,Total,Arsenic,µg/L,CA,value,-,5,,-,12.5,,
-Diss. As,Arsenic,,"Total, Dissolved",Arsenic,µg/L,US,value,340,150,,69,36,,
-,Atrazine,,,Atrazine,µg/L,CA,value,-,1.8,,-,-,,
-,Azinphos-methyl,,,Guthion,µg/L,US,value,-,0.01,,-,0.01,,
-,Benz[a]anthracene,,,Benz(a)anthracene,µg/L,CA,value,-,0.018,,-,-,,
-,Benzene,,,Benzene,µg/L,CA,value,-,370,,-,110,,
-,Benzo[a]pyrene,,,Benz(a)pyrene,µg/L,CA,value,-,0.015,,-,-,,
-B,Boron,,,Boron,µg/L,CA,value,29000,1500,,-,-,,
-,Branched p-nonylphenol,,,Nonylphenol and its ethoxylates,µg/L,CA,value,-,1,,-,0.7,,
-,Bromacil,,,Bromacil,µg/L,CA,value,-,5,,-,-,,
-,Bromoxynil,,,Bromoxynil,µg/L,CA,value,-,5,,-,-,,
-Cd,Cadmium,,Total,Cadmium,µg/L,CA,formula,if (hardness < 5.3) {0.11;} else if (hardness > 360) {7.7;} else {10^(1.016(log*(hardness))-1.71)},if (hardness > 0 and < 17) {0.04;} else if (hardness > 280) {0.37;} else {10^(0.83(log*(hardness))-2.46)},,-,0.12,,
-Cd,Cadmium,,Total,Cadmium,µg/L,US,formula,EXP(.9789*LN(hardness)-3.866),EXP(.7977*(LN(hardness))-3.909),,33,7.9,,
-Diss. Cd,Cadmium,,Dissolved,Cadmium,µg/L,US,formula,EXP(.9789*LN(hardness)-3.866)*(1.136672-(LN(hardness)*(.041838))),EXP(.7977*(LN(hardness))-3.909)*(1.101672-(LN(hardness)*(.041838))),,32.802,7.8526,,
-,Captan,,,Captan,µg/L,CA,value,-,1.3,,-,-,,
-,Carbamazepine,,,Carbamazepine,µg/L,CA,value,NRG,10,,-,-,,
-,Carbaryl,,,Carbaryl,µg/L,CA,value,3.3,0.2,,5.7,0.29,,
-C12H11NO2,Carbaryl,,,Carbaryl,µg/L,US,value,2.1,2.1,,1.6,-,,
-,Carbofuran,,,Carbofuran,µg/L,CA,value,-,1.8,,-,-,,
-,Chloramine,,,Reactive Chlorine Species,µg/L,CA,value,-,0.5,,-,0.5,,
-C10H6Cl8,Chlordane,,,Chlordane,µg/L,US,value,2.4,0.0043,,0.09,0.004,,
-Cl-,Chloride,,,Chloride,mg/L,CA,value,640,120,Unit change to mg/l,-,-,,
-Cl-,Chloride,,,Chloride,mg/L,US,value,860,230,,-,-,,
-,Chlorine,,"Total Residual, Comb Available, Free Available",Reactive Chlorine Species,µg/L,CA,value,-,0.5,,-,0.5,,
-Cl2,Chlorine,,,Chlorine,µg/L,US,value,19,11,,13,7.5,,
-,Chloroform,,,Trichloromethane,µg/L,CA,value,-,1.8,,-,-,,
-,Chlorophenol,,,Monochlorophenols,µg/L,CA,value,-,7,,-,-,,
-,Chlorothalonil,,,Chlorothalonil,µg/L,CA,value,-,0.18,,-,0.36,,
-,Chlorpyrifos,,,Chlorpyrifos,µg/L,CA,value,0.02,0.002,,-,0.002,,
-C9H11Cl3NO3PS,Chlorpyrifos,,,Chlorpyrifos,µg/L,US,value,0.083,0.041,,0.011,0.0056,,
-Cr(III),Chromium(III),,Total,"Chromium, trivalent (Cr(III))",µg/L,CA,value,-,8.9,,-,56,,
-Cr(III),Chromium(III),,Total,Chromium (III),µg/L,US,formula,EXP*(0.819*LN(hardness)+3.7256),EXP(.8190*(LN(hardness))+.6848),,-,-,,
-Diss. Cr(III),Chromium(III),,Dissolved,Chromium (III),µg/L,US,formula,EXP*(0.819*LN(hardness)+3.7256)*0.316,EXP(.8190*(LN(hardness))+.6848)*0.86,,-,-,,
-Cr(VI),Chromium(VI),,Total,"Chromium, hexavalent (Cr(VI))",µg/L,CA,value,-,1,,-,1.5,,
-Cr(IV),Chromium(VI),,Total,Chromium (VI),µg/L,US,value,16,11,,1100,50,,
-Diss. Cr(VI),Chromium(VI),,Dissolved,Chromium (VI),µg/L,US,value,15.712,10.582,,1092.3,49.65,,
-Cu,Copper,,Total,Copper,µg/L,CA,formula,-,if (hardness < 82) {2;} else if (hardness > 180) {4;} else {0.2*EXP(0.8545*(ln(hardness))-1.465)}if(hardness == NULL){2;},,-,-,,http://st-ts.ccme.ca/en/index.html?factsheet=71
-Cu,Copper,,Total,Copper,µg/L,US,value,-,-,,4.8,3.1,,
-Diss. Cu,Copper,,Dissolved,Copper,µg/L,US,value,-,-,,3.984,2.573,,
-,Cyanazine,,,Cyanazine,µg/L,CA,value,-,2,,-,0.5,,
-,Cyanide,as free CN,,Cyanide,µg/L,CA,value,-,5,,-,-,,
-,Cyanide,as free CN,Dissolved,Cyanide,µg/L,US,value,22,5.2,,1,1,,
-,Deltamethrin,,,Deltamethrin,µg/L,CA,value,-,0.0004,,-,-,,
-,Demeton,,,Demeton,µg/L,US,value,-,0.1,,-,0.1,,
-,Di(2-ethylhexyl) phthalate,,,Di(2-ethylhexyl) phthalate,µg/L,CA,value,-,16,,-,-,,
-,Diazinon,,,Diazinon,µg/L,US,value,0.17,0.17,,0.82,0.82,,
-,Dibutyl phthalate,,,Di-n-butyl phthalate,µg/L,CA,value,-,19,,-,-,,
-,Dicamba,,,Dicamba,µg/L,CA,value,-,10,,-,-,,
-,Dichlorophenol,,,Dichlorophenols,µg/L,CA,value,-,0.2,,-,-,,
-,Diclofop-methyl,,,Diclofop-methyl,µg/L,CA,value,-,6.1,,-,-,,
-,Dieldrin,,,Dieldrin,µg/L,US,value,0.24,0.056,,0.71,0.0019,,
-,Dimethoate,,,Dimethoate,µg/L,CA,value,-,6.2,,-,-,,
-,Dinoseb,,,Dinoseb,µg/L,CA,value,-,0.05,,-,-,,
-,Dissolved Oxygen (DO),,,Dissolved Oxygen,µg/L,CA,value,-,-,,-,8000,,
-,Endosulfan,,,Endosulfan,µg/L,CA,value,0.06,0.003,,0.09,0.002,,
-,Endrin,,,Endrin,µg/L,US,value,0.086,0.036,,0.037,0.0023,,
-,Ethylbenzene,,,Ethylbenzene,µg/L,CA,value,-,90,,-,25,,
-,Ethylene glycol,,,Ethylene glycol,µg/L,CA,value,-,192000,,-,-,,
-,Fluoranthene,,,Fluoranthene,µg/L,CA,value,-,0.04,,-,-,,
-,Fluorene,,,Fluorene,µg/L,CA,value,-,3,,-,-,,
-F-,Fluoride,,,Fluoride,µg/L,CA,value,-,120,,-,-,,
-,Glyphosate,,,Glyphosate,µg/L,CA,value,27000,800,,-,-,,
-,Heptachlor,,,Heptachlor,µg/L,US,value,0.52,0.0038,,0.053,0.0036,,
-,Heptachlor Epoxide,,,Heptachlor Epoxide,µg/L,US,value,0.52,0.0038,,0.053,0.0036,,
-,Hexachlorobutadiene,,,Hexachlorobutadiene,µg/L,CA,value,-,1.3,,-,-,,
-,Hexachlorocyclohexane,,Total,Hexachlorocyclohexane,µg/L,CA,value,-,0.01,,-,-,,
-,Hydrogen Sulfide,,,Sulfide-Hydrogen Sulfide,µg/L,US,value,-,2,,-,2,,
-,Imidacloprid,,,Imidacloprid,µg/L,CA,value,-,0.23,,-,0.65,,
-Fe,Iron,,Total,Iron,µg/L,CA,value,-,300,,-,-,,
-Fe,Iron,,Total,Iron,µg/L,US,value,-,1000,,-,-,,
-Pb,Lead,,Total,Lead,µg/L,CA,formula,-,if (hardness ≤ 60) {1;} else if (hardness > 180) {7;} else {EXP(1.273(ln(hardness))-4.705)},,-,-,,
-Pb,Lead,,Total,Lead,µg/L,US,formula,EXP(1.273*(LN(hardness))-1.460),EXP(1.273*(LN(hardness))-4.705),,140,5.6,,
-Diss. Pb,Lead,,Dissolved,Lead,µg/L,US,formula,EXP(1.273*(LN(hardness))-1.460)*(1.46203-(LN(hardness)*(.145712))),EXP(1.273*(LN(hardness))-4.705)*(1.46203-(LN(hardness))*(.145712)),,133.14,5.3256,,
-,Lindane,,,gamma-BHC,µg/L,US,value,0.95,-,,0.16,-,,
-,Linuron,,,Linuron,µg/L,CA,value,-,7,,-,-,,
-,m-Dichlorobenzene,,,"1,3-Dichlorobenzene",µg/L,CA,value,-,150,,-,-,,
-,Malathion,,,Malathion,µg/L,US,value,-,0.1,,-,0.1,,
-MCPA,MCPA,,,2-methyl-4-chlorophenoxyacetic acid (MCPA),µg/L,CA,value,-,2.6,,-,4.2,,
-Hg,Mercury,,Inorganic,Mercury,µg/L,CA,value,-,0.026,,-,0.016,,
-Hg,Mercury,,Total,Mercury,µg/L,US,value,1.4,0.77,,1.8,0.94,,
-Diss. Hg,Mercury,,Dissolved,Mercury,µg/L,US,value,1.19,0.6545,,1.53,0.799,,
-,Methoprene,,,Methoprene,µg/L,CA,value,-,0.09,target organism management value: 0.53,-,-,,
-,Methoxychlor,,,Methoxychlor,µg/L,US,value,-,0.03,,-,0.03,,
-,Methyl tert-butyl ether,,,Methyl tertiary-butyl ether,µg/L,CA,value,-,10000,,-,5000,,
-,Methylene chloride,,,Dichloromethane,µg/L,CA,value,-,98.1,,-,-,,
-,Methylmercury(1+),,Total,Methylmercury,µg/L,CA,value,-,0.004,,-,-,,
-,Metolachlor,,,Metolachlor,µg/L,CA,value,-,7.8,,-,-,,
-,Metribuzin,,,Metribuzin,µg/L,CA,value,-,1,,-,-,,
-,Mirex,,,Mirex,µg/L,US,value,-,0.001,,-,0.001,,
-Mo,Molybdenum,,Total,Molybdenum,µg/L,CA,value,-,73,,-,-,,
-,Naphthalene,,,Naphthalene,µg/L,CA,value,-,1.1,,-,1.4,,
-Ni,Nickel,,Total,Nickel,µg/L,CA,formula,-,if (hardness ≤ 60) {25;} else if (hardness > 180) {150;} else {EXP(0.76*(ln(hardness))+1.06)},,-,-,,
-Ni,Nickel,,Total,Nickel,µg/L,US,formula,EXP(.846*(LN(hardness))+2.255),EXP(.846*(LN(hardness))+.0584),,74,8.2,,
-Diss. Ni,Nickel,,Dissolved,Nickel,µg/L,US,formula,EXP(.846*(LN(hardness))+2.255)*(.998),EXP(.846*(LN(hardness))+.0584)*(.997),,73.26,8.118,,
-,Nitrate,as N,,Nitrate,µg/L,CA,value,124000,3000,,339000,45000,,
-,Nitrate,as NO3,,Nitrate,µg/L,CA,value,550000,13000,,1500000,200000,,
-,Nitrite,as NO2,,Nitrite,µg/L,CA,value,-,197,,-,-,,
-,Nitrite,as N,,Nitrite,µg/L,CA,value,-,60,,-,-,,
-,Nonylphenol,,,Nonylphenol,µg/L,US,value,28,6.6,,7,1.7,,
-,Nonylphenol,,,Nonylphenol and its ethoxylates,µg/L,CA,value,-,1,,-,0.7,,
-,Nonylphenol diethoxylate,,,Nonylphenol and its ethoxylates,µg/L,CA,value,-,1,,-,0.7,,
-,o-Dichlorobenzene,,,"1,2-Dichlorobenzene",µg/L,CA,value,-,0.7,,-,42,,
-,p-Dichlorobenzene,,,"1,4-Dichlorobenzene",µg/L,CA,value,-,26,,-,-,,
-,p-Nonylphenol,,,Nonylphenol and its ethoxylates,µg/L,CA,value,-,1,,-,0.7,,
-,"p,p'-DDT",,,"4,4'-DDT",µg/L,US,value,1.1,0.001,,0.13,0.001,,
-,Parathion,,,Parathion,µg/L,US,value,0.065,0.013,,-,-,,
-,Pentachlorobenzene,,,Pentachlorobenzene,µg/L,CA,value,-,6,,-,-,,
-C6HOCl5,Pentachlorophenol,,,Pentachlorophenol,µg/L,CA,value,-,0.5,,-,-,,
-C6HOCl5,Pentachlorophenol,,,Pentachlorophenol,µg/L,US,formula,ln(1.005*pH - 4.869),ln(1.005*pH - 5.134),varies with pH - values given for pH 7.8,13,7.9,,https://cfpub.epa.gov/ncea/iris2/chemicalLanding.cfm?substance_nmbr=86
-,Permethrin,,,Permethrin,µg/L,CA,value,-,0.004,,-,0.001,,
-pH,pH,,,pH,,CA,range,-,6.5-9,,-,7-8.7,,
-pH,pH,,,pH,,US,range,-,6.5-9,,-,6.5-8.5,,
-,Phenanthrene,,,Phenanthrene,µg/L,CA,value,-,0.4,,-,-,,
-,Phenols,,Total,Phenols (mono- & dihydric),µg/L,CA,value,-,4,,-,-,,
-,Picloram,,,Picloram,µg/L,CA,value,-,29,,-,-,,
-,Polychlorinated biphenyls,,Total,Polycholorinated biphenyls (PCBs),µg/L,US,value,-,0.014,"This criterion applies to total PCBs, (e.g., the sum of all congener or all isomer or homolog or Aroclor analyses.)",-,0.03,,
-,Propylene glycol,,,Propylene glycol,µg/L,CA,value,-,500000,,-,-,,
-,Pyrene,,,Pyrene,µg/L,CA,value,-,0.025,,-,-,,
-,Quinoline,,,Quinoline,µg/L,CA,value,-,3.4,,-,-,,
-Se,Selenium,,Total,Selenium,µg/L,CA,value,-,1,,-,-,,
-Se,Selenium,,Total,Selenium,µg/L,US,value,-,-,,290,71,,
-Diss. Se,Selenium,,Dissolved,Selenium,µg/L,US,value,-,-,,289.42,70.858,,
-Ag,Silver,,Total,Silver,µg/L,CA,value,-,0.25,,7.5,-,,
-Ag,Silver,,Total,Silver,µg/L,US,formula,EXP(1.72*(LN(hardness))-6.59),-,,1.9,-,,
-Diss. Ag,Silver,,Dissolved,Silver,µg/L,US,formula,EXP(1.72*(LN(hardness))-6.59)*(.85),-,,1.615,-,,
-,Simazine,,,Simazine,µg/L,CA,value,-,10,,-,-,,
-,Styrene,,,Styrene,µg/L,CA,value,-,72,,-,-,,
-,Tebuthiuron,,,Tebuthiuron,µg/L,CA,value,-,1.6,,-,-,,
-,Tetrachloroethane,,,Tetrachloroethane,µg/L,CA,value,-,13.3,,-,-,,
-,Tetrachlorophenol,,,Tetrachlorophenols,µg/L,CA,value,-,1,,-,-,,
-Tl,Thallium,,,Thallium,µg/L,CA,value,-,0.8,,-,-,,
-,Toluene,,,Toluene,µg/L,CA,value,-,2,,-,215,,
-,Toxaphene,,,Toxaphene,µg/L,US,value,0.73,0.0002,,0.21,0.0002,,
-,Triallate,,,Triallate,µg/L,CA,value,-,0.24,,-,-,,
-,Tributlytin,,,Tributyltin,µg/L,CA,value,-,0.008,*Two similar commonly reported names,-,0.001,,
-,Tributlytin,,,Tributyltin (TBT),µg/L,US,value,0.46,0.072,*Two similar commonly reported names,0.42,0.0074,,
-,Trichlorfon,,,Trichlorfon,µg/L,CA,value,1.1,0.009,,-,-,,
-,Trichlorophenol,,,Trichlorophenols,µg/L,CA,value,-,18,,-,-,,
-,Trifluralin,,,Trifluralin,µg/L,CA,value,-,0.2,,-,-,,
-U,Uranium,,Total Recoverable,Uranium,µg/L,CA,value,33,15,,-,-,,
-Diss. Zn,Zinc,,Dissolved,Zinc,µg/L,CA,formula,if (hardness ≥ 13.8 and ≤ 250.5) (DOC ≥ 0.3 and ≤ 17.3) {EXP(0.833*(ln(hardness mg/L))+0.240*(DOC mg/L)+0.526);} else {37},if (hardness ≥ 23.4 and ≤ 399) (DOC ≥ 0.3 and ≤ 22.9) (pH ≥ 6.5 and ≤ 8.13) {EXP(0.947*(ln(hardness mg/L))-0.815*(pH)+0.398*(ln(DOC mg/L))+4.625);} else {7},,-,-,,
-Zn,Zinc,,Total,Zinc,µg/L,US,formula,EXP(.8473*(LN(hardness))+.884),EXP(.8473*(LN(hardness))+.884),,90,81,,
-Diss. Zn,Zinc,,Dissolved,Zinc,µg/L,US,formula,EXP(.8473*(LN(hardness))+.884)*(.978),EXP(.8473*(LN(hardness))+.884)*(.986),,85.14,76.626,,
-,"1,1,2,2-Tetrachloroethene",,,"1,1,2,2-Tetrachloroethene",µg/L,CA,value,-,110,,-,-,,
-,Didecyl dimethyl ammonium chloride,,,Didecyl dimethyl ammonium chloride,µg/L,CA,value,-,1.5,,-,-,,
-,Diisopropanolamine,,,Diisopropanolamine,µg/L,CA,value,-,1600,,-,-,,
-,Monochlorobenzene,,,Monochlorobenzene,µg/L,CA,value,-,1.3,,-,25,,
-,Sulfolane,,,Sulfolane,µg/L,CA,value,-,50000,,-,-,,
-,Triphenyltin,,,Triphenyltin,µg/L,CA,value,-,0.022,,-,-,,
+Short Name,DataStream Characteristic Name,Method Speciation,Sample Fraction,Guideline Name,Unit,Region,Guideline Publisher,Type,Freshwater Acute,Freshwater Chronic,Freshwater Notes,Marine Acute,Marine Chronic,Marine Notes,Spec Sheet Url
+C9H6Cl6O3S,.alpha.-Endosulfan,,,alpha-Endosulfan,µg/L,US,USEPA,value,0.22,0.056,This value was derived from data for endosulfan and is most appropriately applied to the sum of alpha-endosulfan and beta-endosulfan.,0.034,0.0087,,https://www.epa.gov/sites/production/files/2015-10/documents/45fedreg7.pdf
+C9H6Cl6O3S,.beta.-Endosulfan,,,beta-Endosulfan,µg/L,US,USEPA,value,0.22,0.056,This value was derived from data for endosulfan and is most appropriately applied to the sum of alpha-endosulfan and beta-endosulfan.,0.034,0.0087,,https://www.epa.gov/sites/production/files/2015-10/documents/45fedreg7.pdf
+,"1,1,2-Trichloroethane",,,"1,1,2-Trichloroethane",µg/L,CA,CCME,value,-,21,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/161/
+,"1,2-Dichloroethane",,,"1,2-Dichloroethane",µg/L,CA,CCME,value,-,100,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/160/
+,"1,2,3-Trichlorobenzene",,,"1,2,3-Trichlorobenzene",µg/L,CA,CCME,value,-,8,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=33
+,"1,2,3,4-Tetrachlorobenzene",,,"1,2,3,4-Tetrachlorobenzene",µg/L,CA,CCME,value,-,1.8,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/158/
+,"1,2,4-Trichlorobenzene",,,"1,2,4-Trichlorobenzene",µg/L,CA,CCME,value,-,24,,-,5.4,,http://ceqg-rcqe.ccme.ca/download/en/157/
+"2,4-D","2,4-D",,,Phenoxy herbicides,µg/L,CA,CCME,value,-,4,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=165
+,3-Iodo-2-propynyl butyl carbamate,,,3-Iodo-2-propynyl butyl carbamate,µg/L,CA,CCME,value,-,1.9,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/188/
+,Acenaphthene,,,Acenaphthene,µg/L,CA,CCME,value,-,5.8,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/201/
+,Acridine,,,Acridine (substituted PAH),µg/L,CA,CCME,value,-,4.4,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/201/
+C3H4O,Acrolein,,,Acrolein,µg/L,US,USEPA,value,3,3,,-,-,,https://www.epa.gov/sites/production/files/2018-12/documents/ambient-wqc-acrolein.pdf
+,Aldicarb,,Total,Aldicarb,µg/L,CA,CCME,value,-,1,"Applies to the concentration of total aldicarb residues (comprising aldicarb, aldicarb sulphoxide (ASO), and aldicarb sulphone (ASO2)",-,0.15,,http://ceqg-rcqe.ccme.ca/download/en/140/
+C12H8Cl6,Aldrin,,,Aldrin,µg/L,US,USEPA,value,3,-,,1.3,-,,https://www.epa.gov/sites/production/files/2019-03/documents/ambient-wqc-aldrin-1980.pdf
+,"Alkalinity, total",as CaCO3,,Alkalinity,mg/L,US,USEPA,value,-,20,"The CCC of 20mg/L is a minimum value except where alkalinity is naturally lower, in which case the criterion cannot be lower than 25% of the natural level. NO FORMULA - too complicated",-,-,,https://www.epa.gov/sites/production/files/2018-10/documents/quality-criteria-water-1986.pdf
+Al,Aluminum,,Total,Aluminum,µg/L,CA,CCME,formula,-,if (pH < 6.5) {5;} else if (pH ≥ 6.5) {100;},,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=4
+,Ammonia,as N,,Ammonia (un-ionized),mg/l,CA,CCME,value,-,16000,was in ug/l,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=6
+,Ammonia,as NH3,,Ammonia (un-ionized),mg/l,CA,CCME,value,-,19000,was in ug/l,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=6
+,Ammonia,as N,,Ammonia,mg/l,US,USEPA,formula,"MIN({0.275/[1+10^(7.204-ph)]}+{39/[1+10^(ph-7.204)]}, 0.7249*{0.0114/[1+10^(7.204-ph)]+1.6181/[1+10^(ph-7.204)]}*{23.12*10^[0.036*(20-T)]})","0.8876*{0.0278/[1+10^(7.688-pH)]+1.1994/[1+10^(pH-7.688)]}*{2.126*10^[0.028*(10-MAX(T,7))]}",,-,-,,https://www.epa.gov/sites/production/files/2015-08/documents/aquatic-life-ambient-water-quality-criteria-for-ammonia-freshwater-2013.pdf (page 53/25
+,Aniline,,,Aniline,µg/L,CA,CCME,value,-,2.2,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/142/
+,Anthracene,,,Anthracene,µg/L,CA,CCME,value,-,0.012,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/201/
+As,Arsenic,,Total,Arsenic,µg/L,CA,CCME,value,-,5,,-,12.5,,http://ceqg-rcqe.ccme.ca/download/en/143/
+Diss. As,Arsenic,,"Total, Dissolved",Arsenic,µg/L,US,USEPA,value,340,150,,69,36,,https://www.epa.gov/sites/production/files/2019-03/documents/metals-criteria-interpret-aqlife-memo.pdf
+,Atrazine,,,Atrazine,µg/L,CA,CCME,value,-,1.8,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/144/
+,Azinphos-methyl,,,Guthion,µg/L,US,USEPA,value,-,0.01,,-,0.01,,https://www.epa.gov/sites/production/files/2018-10/documents/quality-criteria-water-1986.pdf
+,Benz[a]anthracene,,,Benz(a)anthracene,µg/L,CA,CCME,value,-,0.018,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/201/
+,Benzene,,,Benzene,µg/L,CA,CCME,value,-,370,,-,110,,http://ceqg-rcqe.ccme.ca/download/en/145/
+,Benzo[a]pyrene,,,Benz(a)pyrene,µg/L,CA,CCME,value,-,0.015,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/201/
+B,Boron,,,Boron,µg/L,CA,CCME,value,29000,1500,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/324/
+,Branched p-nonylphenol,,,Nonylphenol and its ethoxylates,µg/L,CA,CCME,value,-,1,,-,0.7,,http://ceqg-rcqe.ccme.ca/download/en/198/
+,Bromacil,,,Bromacil,µg/L,CA,CCME,value,-,5,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/146/
+,Bromoxynil,,,Bromoxynil,µg/L,CA,CCME,value,-,5,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/147/
+Cd,Cadmium,,Total,Cadmium,µg/L,CA,CCME,formula,if (hardness < 5.3) {0.11;} else if (hardness > 360) {7.7;} else {10^(1.016(log*(hardness))-1.71)},if (hardness > 0 and < 17) {0.04;} else if (hardness > 280) {0.37;} else {10^(0.83(log*(hardness))-2.46)},,-,0.12,,http://ceqg-rcqe.ccme.ca/download/en/148/
+Cd,Cadmium,,Total,Cadmium,µg/L,US,USEPA,formula,EXP(.9789*LN(hardness)-3.866),EXP(.7977*(LN(hardness))-3.909),,33,7.9,,https://www.epa.gov/sites/production/files/2016-03/documents/cadmium-final-factsheet.pdf
+Diss. Cd,Cadmium,,Dissolved,Cadmium,µg/L,US,USEPA,formula,EXP(.9789*LN(hardness)-3.866)*(1.136672-(LN(hardness)*(.041838))),EXP(.7977*(LN(hardness))-3.909)*(1.101672-(LN(hardness)*(.041838))),,32.802,7.8526,,https://www.epa.gov/sites/production/files/2016-03/documents/cadmium-final-factsheet.pdf
+,Captan,,,Captan,µg/L,CA,CCME,value,-,1.3,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/149/
+,Carbamazepine,,,Carbamazepine,µg/L,CA,CCME,value,NRG,10,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/358
+,Carbaryl,,,Carbaryl,µg/L,CA,CCME,value,3.3,0.2,,5.7,0.29,,http://ceqg-rcqe.ccme.ca/download/en/150/
+C12H11NO2,Carbaryl,,,Carbaryl,µg/L,US,USEPA,value,2.1,2.1,,1.6,-,,https://www.epa.gov/sites/production/files/2015-08/documents/fact_sheet_final-national-recommended-ambient-water-quality-criteria-for-carbaryl-2012.pdf
+,Carbofuran,,,Carbofuran,µg/L,CA,CCME,value,-,1.8,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/151/
+,Chloramine,,,Reactive Chlorine Species,µg/L,CA,CCME,value,-,0.5,,-,0.5,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=194
+C10H6Cl8,Chlordane,,,Chlordane,µg/L,US,USEPA,value,2.4,0.0043,,0.09,0.004,,https://www.epa.gov/sites/production/files/2019-03/documents/ambient-wqc-chlordane-1980.pdf
+Cl-,Chloride,,,Chloride,mg/L,CA,CCME,value,640,120,Unit change to mg/l,-,-,,http://ceqg-rcqe.ccme.ca/download/en/337/
+Cl-,Chloride,,,Chloride,mg/L,US,USEPA,value,860,230,,-,-,,https://www.epa.gov/sites/production/files/2018-08/documents/chloride-aquatic-life-criteria-1988.pdf
+,Chlorine,,"Total Residual, Comb Available, Free Available",Reactive Chlorine Species,µg/L,CA,CCME,value,-,0.5,,-,0.5,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=194
+Cl2,Chlorine,,,Chlorine,µg/L,US,USEPA,value,19,11,,13,7.5,,https://www.epa.gov/sites/production/files/2018-10/documents/quality-criteria-water-1986.pdf
+,Chloroform,,,Trichloromethane,µg/L,CA,CCME,value,-,1.8,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/184/
+,Chlorophenol,,,Monochlorophenols,µg/L,CA,CCME,value,-,7,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=51
+,Chlorothalonil,,,Chlorothalonil,µg/L,CA,CCME,value,-,0.18,,-,0.36,,http://ceqg-rcqe.ccme.ca/download/en/163/
+,Chlorpyrifos,,,Chlorpyrifos,µg/L,CA,CCME,value,0.02,0.002,,-,0.002,,http://ceqg-rcqe.ccme.ca/download/en/164/
+C9H11Cl3NO3PS,Chlorpyrifos,,,Chlorpyrifos,µg/L,US,USEPA,value,0.083,0.041,,0.011,0.0056,,https://www.epa.gov/sites/production/files/2018-10/documents/quality-criteria-water-1986.pdf
+Cr(III),Chromium(III),,Total,"Chromium, trivalent (Cr(III))",µg/L,CA,CCME,value,-,8.9,,-,56,,http://ceqg-rcqe.ccme.ca/download/en/165/
+Cr(III),Chromium(III),,Total,Chromium (III),µg/L,US,USEPA,formula,EXP*(0.819*LN(hardness)+3.7256),EXP(.8190*(LN(hardness))+.6848),,-,-,,https://www.epa.gov/sites/production/files/2019-03/documents/1995-updates-wqc-protection-al.pdf
+Diss. Cr(III),Chromium(III),,Dissolved,Chromium (III),µg/L,US,USEPA,formula,EXP*(0.819*LN(hardness)+3.7256)*0.316,EXP(.8190*(LN(hardness))+.6848)*0.86,,-,-,,https://www.epa.gov/sites/production/files/2019-03/documents/1995-updates-wqc-protection-al.pdf
+Cr(VI),Chromium(VI),,Total,"Chromium, hexavalent (Cr(VI))",µg/L,CA,CCME,value,-,1,,-,1.5,,http://ceqg-rcqe.ccme.ca/download/en/165/
+Cr(IV),Chromium(VI),,Total,Chromium (VI),µg/L,US,USEPA,value,16,11,,1100,50,,https://epa.gov/sites/production/files/2019-03/documents/1995-updates-wqc-protection-al.pdf
+Diss. Cr(VI),Chromium(VI),,Dissolved,Chromium (VI),µg/L,US,USEPA,value,15.712,10.582,,1092.3,49.65,,https://epa.gov/sites/production/files/2019-03/documents/1995-updates-wqc-protection-al.pdf
+Cu,Copper,,Total,Copper,µg/L,CA,CCME,formula,-,if (hardness < 82) {2;} else if (hardness > 180) {4;} else {0.2*EXP(0.8545*(ln(hardness))-1.465)}if(hardness == NULL){2;},,-,-,,http://st-ts.ccme.ca/en/index.html?factsheet=71
+Cu,Copper,,Total,Copper,µg/L,US,USEPA,value,-,-,,4.8,3.1,,https://www.epa.gov/sites/production/files/2019-02/documents/al-freshwater-copper-2007-revision.pdf
+Diss. Cu,Copper,,Dissolved,Copper,µg/L,US,USEPA,value,-,-,,3.984,2.573,,https://www.epa.gov/sites/production/files/2019-02/documents/al-freshwater-copper-2007-revision.pdf
+,Cyanazine,,,Cyanazine,µg/L,CA,CCME,value,-,2,,-,0.5,,http://ceqg-rcqe.ccme.ca/download/en/167/
+,Cyanide,as CN,Free Available,Cyanide,µg/L,CA,CCME,value,-,5,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=73
+,Cyanide,as CN,Free Available,Cyanide,µg/L,US,USEPA,value,22,5.2,,1,1,,https://www.epa.gov/sites/production/files/2019-03/documents/ambient-wqc-cyanide-1984.pdf
+,Deltamethrin,,,Deltamethrin,µg/L,CA,CCME,value,-,0.0004,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/170/
+,Demeton,,,Demeton,µg/L,US,USEPA,value,-,0.1,,-,0.1,,https://www.epa.gov/sites/production/files/2018-10/documents/quality-criteria-water-1986.pdf
+,Di(2-ethylhexyl) phthalate,,,Di(2-ethylhexyl) phthalate,µg/L,CA,CCME,value,-,16,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/206/
+,Diazinon,,,Diazinon,µg/L,US,USEPA,value,0.17,0.17,,0.82,0.82,,https://www.epa.gov/sites/production/files/2019-03/documents/ambient-wqc-diazinon-final.pdf
+,Dibutyl phthalate,,,Di-n-butyl phthalate,µg/L,CA,CCME,value,-,19,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/206/
+,Dicamba,,,Dicamba,µg/L,CA,CCME,value,-,10,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/171/
+,Dichlorophenol,,,Dichlorophenols,µg/L,CA,CCME,value,-,0.2,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=52
+,Diclofop-methyl,,,Diclofop-methyl,µg/L,CA,CCME,value,-,6.1,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/172/
+,Dieldrin,,,Dieldrin,µg/L,US,USEPA,value,0.24,0.056,,0.71,0.0019,,https://www.epa.gov/sites/production/files/2019-03/documents/1995-updates-wqc-protection-al.pdf
+,Dimethoate,,,Dimethoate,µg/L,CA,CCME,value,-,6.2,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/173/
+,Dinoseb,,,Dinoseb,µg/L,CA,CCME,value,-,0.05,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/174/
+,Dissolved Oxygen (DO),,,Dissolved Oxygen,µg/L,CA,CCME,value,-,-,,-,8000,,http://ceqg-rcqe.ccme.ca/download/en/177/
+,Endosulfan,,,Endosulfan,µg/L,CA,CCME,value,0.06,0.003,,0.09,0.002,,http://ceqg-rcqe.ccme.ca/download/en/327/
+,Endrin,,,Endrin,µg/L,US,USEPA,value,0.086,0.036,,0.037,0.0023,,https://www.epa.gov/sites/production/files/2019-03/documents/1995-updates-wqc-protection-al.pdf
+,Ethylbenzene,,,Ethylbenzene,µg/L,CA,CCME,value,-,90,,-,25,,http://ceqg-rcqe.ccme.ca/download/en/179/
+,Ethylene glycol,,,Ethylene glycol,µg/L,CA,CCME,value,-,192000,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/181/
+,Fluoranthene,,,Fluoranthene,µg/L,CA,CCME,value,-,0.04,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=186
+,Fluorene,,,Fluorene,µg/L,CA,CCME,value,-,3,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=187
+F-,Fluoride,,,Fluoride,µg/L,CA,CCME,value,-,120,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/180/
+,Glyphosate,,,Glyphosate,µg/L,CA,CCME,value,27000,800,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/182/
+,Heptachlor,,,Heptachlor,µg/L,US,USEPA,value,0.52,0.0038,,0.053,0.0036,,https://www.epa.gov/sites/production/files/2015-10/documents/45fedreg7.pdf
+,Heptachlor Epoxide,,,Heptachlor Epoxide,µg/L,US,USEPA,value,0.52,0.0038,,0.053,0.0036,,https://www.epa.gov/sites/production/files/2018-10/documents/quality-criteria-water-1986.pdf
+,Hexachlorobutadiene,,,Hexachlorobutadiene,µg/L,CA,CCME,value,-,1.3,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/186/
+,Hexachlorocyclohexane,,Total,Hexachlorocyclohexane,µg/L,CA,CCME,value,-,0.01,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=125
+,Hydrogen Sulfide,,,Sulfide-Hydrogen Sulfide,µg/L,US,USEPA,value,-,2,,-,2,,https://www.epa.gov/sites/production/files/2018-10/documents/quality-criteria-water-1986.pdf
+,Imidacloprid,,,Imidacloprid,µg/L,CA,CCME,value,-,0.23,,-,0.65,,http://ceqg-rcqe.ccme.ca/download/en/187/
+Fe,Iron,,Total,Iron,µg/L,CA,CCME,value,-,300,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=123
+Fe,Iron,,Total,Iron,µg/L,US,USEPA,value,-,1000,,-,-,,https://www.epa.gov/sites/production/files/2018-10/documents/quality-criteria-water-1986.pdf
+Pb,Lead,,Total,Lead,µg/L,CA,CCME,formula,-,if (hardness ≤ 60) {1;} else if (hardness > 180) {7;} else {EXP(1.273(ln(hardness))-4.705)},,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=124
+Pb,Lead,,Total,Lead,µg/L,US,USEPA,formula,EXP(1.273*(LN(hardness))-1.460),EXP(1.273*(LN(hardness))-4.705),,140,5.6,,https://www.epa.gov/sites/production/files/2019-02/documents/ambient-wqc-lead-1984.pdf
+Diss. Pb,Lead,,Dissolved,Lead,µg/L,US,USEPA,formula,EXP(1.273*(LN(hardness))-1.460)*(1.46203-(LN(hardness)*(.145712))),EXP(1.273*(LN(hardness))-4.705)*(1.46203-(LN(hardness))*(.145712)),,133.14,5.3256,,https://www.epa.gov/sites/production/files/2019-02/documents/ambient-wqc-lead-1984.pdf
+,Lindane,,,gamma-BHC,µg/L,US,USEPA,value,0.95,-,,0.16,-,,https://www.epa.gov/sites/production/files/2019-03/documents/1995-updates-wqc-protection-al.pdf
+,Linuron,,,Linuron,µg/L,CA,CCME,value,-,7,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/189/
+,m-Dichlorobenzene,,,"1,3-Dichlorobenzene",µg/L,CA,CCME,value,-,150,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/154/
+,Malathion,,,Malathion,µg/L,US,USEPA,value,-,0.1,,-,0.1,,https://www.epa.gov/sites/production/files/2018-10/documents/quality-criteria-water-1986.pdf
+MCPA,MCPA,,,2-methyl-4-chlorophenoxyacetic acid (MCPA),µg/L,CA,CCME,value,-,2.6,,-,4.2,,http://ceqg-rcqe.ccme.ca/download/en/190/
+Hg,Mercury,,Total,Mercury,µg/L,CA,CCME,value,-,0.026,,-,0.016,,http://ceqg-rcqe.ccme.ca/download/en/191/
+Hg,Mercury,,Total,Mercury,µg/L,US,USEPA,value,1.4,0.77,,1.8,0.94,,https://www.epa.gov/sites/production/files/2019-03/documents/1995-updates-wqc-protection-al.pdf
+Diss. Hg,Mercury,,Dissolved,Mercury,µg/L,US,USEPA,value,1.19,0.6545,,1.53,0.799,,https://www.epa.gov/sites/production/files/2019-03/documents/1995-updates-wqc-protection-al.pdf
+,Methoprene,,,Methoprene,µg/L,CA,CCME,value,-,0.09,target organism management value: 0.53,-,-,,http://ceqg-rcqe.ccme.ca/download/en/192/
+,Methoxychlor,,,Methoxychlor,µg/L,US,USEPA,value,-,0.03,,-,0.03,,https://www.epa.gov/sites/production/files/2018-10/documents/quality-criteria-water-1986.pdf
+,Methyl tert-butyl ether,,,Methyl tertiary-butyl ether,µg/L,CA,CCME,value,-,10000,,-,5000,,http://ceqg-rcqe.ccme.ca/download/en/196/
+,Methylene chloride,,,Dichloromethane,µg/L,CA,CCME,value,-,98.1,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/183/
+,Methylmercury(1+),,Total,Methylmercury,µg/L,CA,CCME,value,-,0.004,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/191/
+,Metolachlor,,,Metolachlor,µg/L,CA,CCME,value,-,7.8,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/193/
+,Metribuzin,,,Metribuzin,µg/L,CA,CCME,value,-,1,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/194/
+,Mirex,,,Mirex,µg/L,US,USEPA,value,-,0.001,,-,0.001,,https://www.epa.gov/sites/production/files/2018-10/documents/quality-criteria-water-1986.pdf
+Mo,Molybdenum,,Total,Molybdenum,µg/L,CA,CCME,value,-,73,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/195/
+,Naphthalene,,,Naphthalene,µg/L,CA,CCME,value,-,1.1,,-,1.4,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=190
+Ni,Nickel,,Total,Nickel,µg/L,CA,CCME,formula,-,if (hardness ≤ 60) {25;} else if (hardness > 180) {150;} else {EXP(0.76*(ln(hardness))+1.06)},,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=139
+Ni,Nickel,,Total,Nickel,µg/L,US,USEPA,formula,EXP(.846*(LN(hardness))+2.255),EXP(.846*(LN(hardness))+.0584),,74,8.2,,https://www.epa.gov/sites/production/files/2019-03/documents/1995-updates-wqc-protection-al.pdf
+Diss. Ni,Nickel,,Dissolved,Nickel,µg/L,US,USEPA,formula,EXP(.846*(LN(hardness))+2.255)*(.998),EXP(.846*(LN(hardness))+.0584)*(.997),,73.26,8.118,,https://www.epa.gov/sites/production/files/2019-03/documents/1995-updates-wqc-protection-al.pdf
+,Nitrate,as N,,Nitrate,µg/L,CA,CCME,value,124000,3000,,339000,45000,,http://ceqg-rcqe.ccme.ca/download/en/197/
+,Nitrate,as NO3,,Nitrate,µg/L,CA,CCME,value,550000,13000,,1500000,200000,,http://ceqg-rcqe.ccme.ca/download/en/197/
+,Nitrite,as NO2,,Nitrite,µg/L,CA,CCME,value,-,197,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=143
+,Nitrite,as N,,Nitrite,µg/L,CA,CCME,value,-,60,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=143
+,Nonylphenol,,,Nonylphenol,µg/L,US,USEPA,value,28,6.6,,7,1.7,,https://www.epa.gov/sites/production/files/2019-03/documents/ambient-wqc-nonylphenol-final.pdf
+,Nonylphenol,,,Nonylphenol and its ethoxylates,µg/L,CA,CCME,value,-,1,,-,0.7,,http://ceqg-rcqe.ccme.ca/download/en/198/
+,Nonylphenol diethoxylate,,,Nonylphenol and its ethoxylates,µg/L,CA,CCME,value,-,1,,-,0.7,,http://ceqg-rcqe.ccme.ca/download/en/198/
+,o-Dichlorobenzene,,,"1,2-Dichlorobenzene",µg/L,CA,CCME,value,-,0.7,,-,42,,http://ceqg-rcqe.ccme.ca/download/en/153/
+,p-Dichlorobenzene,,,"1,4-Dichlorobenzene",µg/L,CA,CCME,value,-,26,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/155/
+,p-Nonylphenol,,,Nonylphenol and its ethoxylates,µg/L,CA,CCME,value,-,1,,-,0.7,,http://ceqg-rcqe.ccme.ca/download/en/198/
+,"p,p'-DDT",,,"4,4'-DDT",µg/L,US,USEPA,value,1.1,0.001,,0.13,0.001,,https://www.epa.gov/sites/production/files/2019-03/documents/ambient-wqc-ddt-1980.pdf
+,Parathion,,,Parathion,µg/L,US,USEPA,value,0.065,0.013,,-,-,,https://www.epa.gov/sites/production/files/2019-03/documents/1995-updates-wqc-protection-al.pdf
+,Pentachlorobenzene,,,Pentachlorobenzene,µg/L,CA,CCME,value,-,6,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/159/
+C6HOCl5,Pentachlorophenol,,,Pentachlorophenol,µg/L,CA,CCME,value,-,0.5,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=58
+C6HOCl5,Pentachlorophenol,,,Pentachlorophenol,µg/L,US,USEPA,formula,ln(1.005*pH - 4.869),ln(1.005*pH - 5.134),,13,7.9,,https://cfpub.epa.gov/ncea/iris2/chemicalLanding.cfm?substance_nmbr=86
+,Permethrin,,,Permethrin,µg/L,CA,CCME,value,-,0.004,,-,0.001,,http://ceqg-rcqe.ccme.ca/download/en/202/
+pH,pH,,,pH,,CA,CCME,range,-,6.5-9,,-,7-8.7,,http://ceqg-rcqe.ccme.ca/download/en/203/
+pH,pH,,,pH,,US,USEPA,range,-,6.5-9,,-,6.5-8.5,,https://www.epa.gov/sites/production/files/2018-10/documents/quality-criteria-water-1986.pdf
+,Phenanthrene,,,Phenanthrene,µg/L,CA,CCME,value,-,0.4,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=191
+,Phenols,,Total,Phenols (mono- & dihydric),µg/L,CA,CCME,value,-,4,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/204/
+,Picloram,,,Picloram,µg/L,CA,CCME,value,-,29,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/207/
+,Polychlorinated biphenyls,,Total,Polycholorinated biphenyls (PCBs),µg/L,US,USEPA,value,-,0.014,"This criterion applies to total PCBs, (e.g., the sum of all congener or all isomer or homolog or Aroclor analyses.)",-,0.03,,https://www.epa.gov/wqc/national-recommended-water-quality-criteria-aquatic-life-criteria-table
+,Propylene glycol,,,Propylene glycol,µg/L,CA,CCME,value,-,500000,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/181/
+,Pyrene,,,Pyrene,µg/L,CA,CCME,value,-,0.025,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/201/
+,Quinoline,,,Quinoline,µg/L,CA,CCME,value,-,3.4,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/201/
+Se,Selenium,,Total,Selenium,µg/L,CA,CCME,value,-,1,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=197
+Se,Selenium,,Total,Selenium,µg/L,US,USEPA,value,-,-,,290,71,,https://www.epa.gov/sites/production/files/2016-06/documents/se_2016_fact_sheet_final.pdf
+Diss. Se,Selenium,,Dissolved,Selenium,µg/L,US,USEPA,value,-,-,,289.42,70.858,,https://www.epa.gov/sites/production/files/2016-06/documents/se_2016_fact_sheet_final.pdf
+Ag,Silver,,Total,Silver,µg/L,CA,CCME,value,-,0.25,,7.5,-,,http://ceqg-rcqe.ccme.ca/download/en/355
+Ag,Silver,,Total,Silver,µg/L,US,USEPA,formula,EXP(1.72*(LN(hardness))-6.59),-,,1.9,-,,https://www.epa.gov/sites/production/files/2019-03/documents/ambient-wqc-silver-1980.pdf
+Diss. Ag,Silver,,Dissolved,Silver,µg/L,US,USEPA,formula,EXP(1.72*(LN(hardness))-6.59)*(.85),-,,1.615,-,,https://www.epa.gov/sites/production/files/2019-03/documents/ambient-wqc-silver-1980.pdf
+,Simazine,,,Simazine,µg/L,CA,CCME,value,-,10,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/210/
+,Styrene,,,Styrene,µg/L,CA,CCME,value,-,72,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/211/
+,Tebuthiuron,,,Tebuthiuron,µg/L,CA,CCME,value,-,1.6,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/213/
+,Carbon tetrachloride,,,Tetrachloromethane,µg/L,CA,CCME,value,-,13.3,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/185/
+,Tetrachlorophenol,,,Tetrachlorophenols,µg/L,CA,CCME,value,-,1,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=56
+Tl,Thallium,,,Thallium,µg/L,CA,CCME,value,-,0.8,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/215/
+,Toluene,,,Toluene,µg/L,CA,CCME,value,-,2,,-,215,,http://ceqg-rcqe.ccme.ca/download/en/216/
+,Toxaphene,,,Toxaphene,µg/L,US,USEPA,value,0.73,0.0002,,0.21,0.0002,,https://www.epa.gov/sites/production/files/2019-03/documents/ambient-wqc-toxaphene-1986.pdf
+,Triallate,,,Triallate,µg/L,CA,CCME,value,-,0.24,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/218/
+,Tributlytin,,,Tributyltin,µg/L,CA,CCME,value,-,0.008,*Two similar commonly reported names,-,0.001,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=151
+,Tributlytin,,,Tributyltin (TBT),µg/L,US,USEPA,value,0.46,0.072,*Two similar commonly reported names,0.42,0.0074,,https://www.epa.gov/sites/production/files/2019-02/documents/ambient-wqc-tributyltin-final.pdf
+,Trichlorfon,,,Trichlorfon,µg/L,CA,CCME,value,1.1,0.009,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/345/
+,Trichlorophenol,,,Trichlorophenols,µg/L,CA,CCME,value,-,18,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=54
+,Trifluralin,,,Trifluralin,µg/L,CA,CCME,value,-,0.2,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/219/
+U,Uranium,,Total Recoverable,Uranium,µg/L,CA,CCME,value,33,15,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/328/
+Diss. Zn,Zinc,,Dissolved,Zinc,µg/L,CA,CCME,formula,if (hardness ≥ 13.8 and ≤ 250.5) (DOC ≥ 0.3 and ≤ 17.3) {EXP(0.833*(ln(hardness mg/L))+0.240*(DOC mg/L)+0.526);} else {37},if (hardness ≥ 23.4 and ≤ 399) (DOC ≥ 0.3 and ≤ 22.9) (pH ≥ 6.5 and ≤ 8.13) {EXP(0.947*(ln(hardness mg/L))-0.815*(pH)+0.398*(ln(DOC mg/L))+4.625);} else {7},,-,-,,http://ceqg-rcqe.ccme.ca/download/en/360/
+Zn,Zinc,,Total,Zinc,µg/L,US,USEPA,formula,EXP(.8473*(LN(hardness))+.884),EXP(.8473*(LN(hardness))+.884),,90,81,,https://www.epa.gov/sites/production/files/2019-03/documents/1995-updates-wqc-protection-al.pdf
+Diss. Zn,Zinc,,Dissolved,Zinc,µg/L,US,USEPA,formula,EXP(.8473*(LN(hardness))+.884)*(.978),EXP(.8473*(LN(hardness))+.884)*(.986),,85.14,76.626,,https://www.epa.gov/sites/production/files/2019-03/documents/1995-updates-wqc-protection-al.pdf
+,"1,1,2,2-Tetrachloroethene",,,"1,1,2,2-Tetrachloroethene",µg/L,CA,CCME,value,-,110,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=50
+,Didecyl dimethyl ammonium chloride,,,Didecyl dimethyl ammonium chloride,µg/L,CA,CCME,value,-,1.5,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/168/
+,Diisopropanolamine,,,Diisopropanolamine,µg/L,CA,CCME,value,-,1600,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/175/
+,Monochlorobenzene,,,Monochlorobenzene,µg/L,CA,CCME,value,-,1.3,,-,25,,http://ceqg-rcqe.ccme.ca/download/en/152/
+,Sulfolane,,,Sulfolane,µg/L,CA,CCME,value,-,50000,,-,-,,http://ceqg-rcqe.ccme.ca/download/en/212/
+,Triphenyltin,,,Triphenyltin,µg/L,CA,CCME,value,-,0.022,,-,-,,http://st-ts.ccme.ca/en/index.html?lang=en&factsheet=153

@@ -1,7 +1,6 @@
 const math = require('mathjs')
 // Docs: https://mathjs.org/docs/reference/functions.html
 
-const convertUnits = require('./units')
 const calculateHardness = require('./hardness')
 
 // CA: CCME
@@ -284,7 +283,6 @@ const zincDissolvedFreshwaterChronicUS = (params) => {
 }
 
 module.exports = {
-  convertUnits,
   calculateHardness,
   // CA: CCME
   aluminumTotalFreshwaterChronicCA,

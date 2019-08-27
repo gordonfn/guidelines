@@ -1,119 +1,155 @@
 [
   {
     "type": "value",
-    "characteristic_name": ".alpha.-Endosulfan",
+    "characteristic_name": "Heptachlor",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "US_freshwater_acute": 0.22,
-      "US_freshwater_chronic": 0.056,
-      "US_marine_acute": 0.034,
-      "US_marine_chronic": 0.0087
+      "US_freshwater_acute": 0.52,
+      "US_freshwater_chronic": 0.0038,
+      "US_marine_acute": 0.053,
+      "US_marine_chronic": 0.0036
     }
   },
   {
     "type": "value",
-    "characteristic_name": ".beta.-Endosulfan",
+    "characteristic_name": "Triphenyltin",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "US_freshwater_acute": 0.22,
-      "US_freshwater_chronic": 0.056,
-      "US_marine_acute": 0.034,
-      "US_marine_chronic": 0.0087
+      "CA_freshwater_chronic": 0.022
+    }
+  },
+  {
+    "type": "formula",
+    "characteristic_name": "Zinc",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_freshwater_acute": "zincTotalFreshwaterAcuteUS",
+      "US_freshwater_chronic": "zincTotalFreshwaterChronicUS",
+      "US_marine_acute": 90,
+      "US_marine_chronic": 81
+    }
+  },
+  {
+    "type": "formula",
+    "characteristic_name": "Zinc",
+    "method_speciation": "",
+    "sample_fraction": "Dissolved",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_freshwater_acute": "zincDissolvedFreshwaterAcuteCA",
+      "CA_freshwater_chronic": "zincDissolvedFreshwaterChronicCA",
+      "US_freshwater_acute": "zincDissolvedFreshwaterAcuteUS",
+      "US_freshwater_chronic": "zincDissolvedFreshwaterChronicUS",
+      "US_marine_acute": 85.14,
+      "US_marine_chronic": 76.626
     }
   },
   {
     "type": "value",
-    "characteristic_name": "1,1,2-Trichloroethane",
+    "characteristic_name": "Uranium",
     "method_speciation": "",
-    "sample_fraction": "",
+    "sample_fraction": "Total Recoverable",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 21
+      "CA_freshwater_acute": 33,
+      "CA_freshwater_chronic": 15
+    }
+  },
+  {
+    "type": "range",
+    "characteristic_name": "pH",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "",
+    "guidelines": {
+      "CA_freshwater_chronic": [
+        6.5,
+        9
+      ],
+      "CA_marine_chronic": [
+        7,
+        8.7
+      ],
+      "US_freshwater_chronic": [
+        6.5,
+        9
+      ],
+      "US_marine_chronic": [
+        6.5,
+        8.5
+      ]
     }
   },
   {
     "type": "value",
-    "characteristic_name": "1,2-Dichloroethane",
+    "characteristic_name": "p,p'-DDT",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 100
+      "US_freshwater_acute": 1.1,
+      "US_freshwater_chronic": 0.001,
+      "US_marine_acute": 0.13,
+      "US_marine_chronic": 0.001
     }
   },
   {
     "type": "value",
-    "characteristic_name": "1,2,3-Trichlorobenzene",
+    "characteristic_name": "p-Nonylphenol",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 8
+      "CA_freshwater_chronic": 1,
+      "CA_marine_chronic": 0.7
     }
   },
   {
     "type": "value",
-    "characteristic_name": "1,2,3,4-Tetrachlorobenzene",
+    "characteristic_name": "p-Dichlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 1.8
+      "CA_freshwater_chronic": 26
     }
   },
   {
     "type": "value",
-    "characteristic_name": "1,2,4-Trichlorobenzene",
+    "characteristic_name": "o-Dichlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 24,
-      "CA_marine_chronic": 5.4
+      "CA_freshwater_chronic": 0.7,
+      "CA_marine_chronic": 42
     }
   },
   {
     "type": "value",
-    "characteristic_name": "2,4-D",
+    "characteristic_name": "m-Dichlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 4
+      "CA_freshwater_chronic": 150
     }
   },
   {
     "type": "value",
-    "characteristic_name": "3-Iodo-2-propynyl butyl carbamate",
+    "characteristic_name": "Imidacloprid",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 1.9
-    }
-  },
-  {
-    "type": "value",
-    "characteristic_name": "Acenaphthene",
-    "method_speciation": "",
-    "sample_fraction": "",
-    "unit": "µg/L",
-    "guidelines": {
-      "CA_freshwater_chronic": 5.8
-    }
-  },
-  {
-    "type": "value",
-    "characteristic_name": "Acridine",
-    "method_speciation": "",
-    "sample_fraction": "",
-    "unit": "µg/L",
-    "guidelines": {
-      "CA_freshwater_chronic": 4.4
+      "CA_freshwater_chronic": 0.23,
+      "CA_marine_chronic": 0.65
     }
   },
   {
@@ -125,17 +161,6 @@
     "guidelines": {
       "US_freshwater_acute": 3,
       "US_freshwater_chronic": 3
-    }
-  },
-  {
-    "type": "value",
-    "characteristic_name": "Aldicarb",
-    "method_speciation": "",
-    "sample_fraction": "Total",
-    "unit": "µg/L",
-    "guidelines": {
-      "CA_freshwater_chronic": 1,
-      "CA_marine_chronic": 0.15
     }
   },
   {
@@ -628,20 +653,11 @@
   {
     "type": "value",
     "characteristic_name": "Cyanide",
-    "method_speciation": "as free CN",
-    "sample_fraction": "",
+    "method_speciation": "as CN",
+    "sample_fraction": "Free Available",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 5
-    }
-  },
-  {
-    "type": "value",
-    "characteristic_name": "Cyanide",
-    "method_speciation": "as free CN",
-    "sample_fraction": "Dissolved",
-    "unit": "µg/L",
-    "guidelines": {
+      "CA_freshwater_chronic": 5,
       "US_freshwater_acute": 22,
       "US_freshwater_chronic": 5.2,
       "US_marine_acute": 1,
@@ -865,15 +881,12 @@
   },
   {
     "type": "value",
-    "characteristic_name": "Heptachlor",
+    "characteristic_name": "Sulfolane",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "US_freshwater_acute": 0.52,
-      "US_freshwater_chronic": 0.0038,
-      "US_marine_acute": 0.053,
-      "US_marine_chronic": 0.0036
+      "CA_freshwater_chronic": 50000
     }
   },
   {
@@ -922,13 +935,13 @@
   },
   {
     "type": "value",
-    "characteristic_name": "Imidacloprid",
+    "characteristic_name": "Aldicarb",
     "method_speciation": "",
-    "sample_fraction": "",
+    "sample_fraction": "Total",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 0.23,
-      "CA_marine_chronic": 0.65
+      "CA_freshwater_chronic": 1,
+      "CA_marine_chronic": 0.15
     }
   },
   {
@@ -992,12 +1005,13 @@
   },
   {
     "type": "value",
-    "characteristic_name": "m-Dichlorobenzene",
+    "characteristic_name": "Monochlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 150
+      "CA_freshwater_chronic": 1.3,
+      "CA_marine_chronic": 25
     }
   },
   {
@@ -1026,20 +1040,11 @@
     "type": "value",
     "characteristic_name": "Mercury",
     "method_speciation": "",
-    "sample_fraction": "Inorganic",
-    "unit": "µg/L",
-    "guidelines": {
-      "CA_freshwater_chronic": 0.026,
-      "CA_marine_chronic": 0.016
-    }
-  },
-  {
-    "type": "value",
-    "characteristic_name": "Mercury",
-    "method_speciation": "",
     "sample_fraction": "Total",
     "unit": "µg/L",
     "guidelines": {
+      "CA_freshwater_chronic": 0.026,
+      "CA_marine_chronic": 0.016,
       "US_freshwater_acute": 1.4,
       "US_freshwater_chronic": 0.77,
       "US_marine_acute": 1.8,
@@ -1264,47 +1269,42 @@
   },
   {
     "type": "value",
-    "characteristic_name": "o-Dichlorobenzene",
+    "characteristic_name": "Diisopropanolamine",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 0.7,
-      "CA_marine_chronic": 42
+      "CA_freshwater_chronic": 1600
     }
   },
   {
     "type": "value",
-    "characteristic_name": "p-Dichlorobenzene",
+    "characteristic_name": "Didecyl dimethyl ammonium chloride",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 26
+      "CA_freshwater_chronic": 1.5
     }
   },
   {
     "type": "value",
-    "characteristic_name": "p-Nonylphenol",
+    "characteristic_name": "Trifluralin",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 1,
-      "CA_marine_chronic": 0.7
+      "CA_freshwater_chronic": 0.2
     }
   },
   {
     "type": "value",
-    "characteristic_name": "p,p'-DDT",
+    "characteristic_name": "Trichlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "US_freshwater_acute": 1.1,
-      "US_freshwater_chronic": 0.001,
-      "US_marine_acute": 0.13,
-      "US_marine_chronic": 0.001
+      "CA_freshwater_chronic": 18
     }
   },
   {
@@ -1354,28 +1354,14 @@
     }
   },
   {
-    "type": "range",
-    "characteristic_name": "pH",
+    "type": "value",
+    "characteristic_name": "Trichlorfon",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "",
+    "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": [
-        6.5,
-        9
-      ],
-      "CA_marine_chronic": [
-        7,
-        8.7
-      ],
-      "US_freshwater_chronic": [
-        6.5,
-        9
-      ],
-      "US_marine_chronic": [
-        6.5,
-        8.5
-      ]
+      "CA_freshwater_acute": 1.1,
+      "CA_freshwater_chronic": 0.009
     }
   },
   {
@@ -1528,7 +1514,7 @@
   },
   {
     "type": "value",
-    "characteristic_name": "Tetrachloroethane",
+    "characteristic_name": "Carbon tetrachloride",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
@@ -1607,76 +1593,6 @@
   },
   {
     "type": "value",
-    "characteristic_name": "Trichlorfon",
-    "method_speciation": "",
-    "sample_fraction": "",
-    "unit": "µg/L",
-    "guidelines": {
-      "CA_freshwater_acute": 1.1,
-      "CA_freshwater_chronic": 0.009
-    }
-  },
-  {
-    "type": "value",
-    "characteristic_name": "Trichlorophenol",
-    "method_speciation": "",
-    "sample_fraction": "",
-    "unit": "µg/L",
-    "guidelines": {
-      "CA_freshwater_chronic": 18
-    }
-  },
-  {
-    "type": "value",
-    "characteristic_name": "Trifluralin",
-    "method_speciation": "",
-    "sample_fraction": "",
-    "unit": "µg/L",
-    "guidelines": {
-      "CA_freshwater_chronic": 0.2
-    }
-  },
-  {
-    "type": "value",
-    "characteristic_name": "Uranium",
-    "method_speciation": "",
-    "sample_fraction": "Total Recoverable",
-    "unit": "µg/L",
-    "guidelines": {
-      "CA_freshwater_acute": 33,
-      "CA_freshwater_chronic": 15
-    }
-  },
-  {
-    "type": "formula",
-    "characteristic_name": "Zinc",
-    "method_speciation": "",
-    "sample_fraction": "Dissolved",
-    "unit": "µg/L",
-    "guidelines": {
-      "CA_freshwater_acute": "zincDissolvedFreshwaterAcuteCA",
-      "CA_freshwater_chronic": "zincDissolvedFreshwaterChronicCA",
-      "US_freshwater_acute": "zincDissolvedFreshwaterAcuteUS",
-      "US_freshwater_chronic": "zincDissolvedFreshwaterChronicUS",
-      "US_marine_acute": 85.14,
-      "US_marine_chronic": 76.626
-    }
-  },
-  {
-    "type": "formula",
-    "characteristic_name": "Zinc",
-    "method_speciation": "",
-    "sample_fraction": "Total",
-    "unit": "µg/L",
-    "guidelines": {
-      "US_freshwater_acute": "zincTotalFreshwaterAcuteUS",
-      "US_freshwater_chronic": "zincTotalFreshwaterChronicUS",
-      "US_marine_acute": 90,
-      "US_marine_chronic": 81
-    }
-  },
-  {
-    "type": "value",
     "characteristic_name": "1,1,2,2-Tetrachloroethene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -1687,53 +1603,119 @@
   },
   {
     "type": "value",
-    "characteristic_name": "Didecyl dimethyl ammonium chloride",
+    "characteristic_name": "1,2,3,4-Tetrachlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 1.5
+      "CA_freshwater_chronic": 1.8
     }
   },
   {
     "type": "value",
-    "characteristic_name": "Diisopropanolamine",
+    "characteristic_name": "2,4-D",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 1600
+      "CA_freshwater_chronic": 4
     }
   },
   {
     "type": "value",
-    "characteristic_name": "Monochlorobenzene",
+    "characteristic_name": "1,2,3-Trichlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 1.3,
-      "CA_marine_chronic": 25
+      "CA_freshwater_chronic": 8
     }
   },
   {
     "type": "value",
-    "characteristic_name": "Sulfolane",
+    "characteristic_name": "1,2-Dichloroethane",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 50000
+      "CA_freshwater_chronic": 100
     }
   },
   {
     "type": "value",
-    "characteristic_name": "Triphenyltin",
+    "characteristic_name": "Acridine",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "µg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 0.022
+      "CA_freshwater_chronic": 4.4
+    }
+  },
+  {
+    "type": "value",
+    "characteristic_name": "1,2,4-Trichlorobenzene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_freshwater_chronic": 24,
+      "CA_marine_chronic": 5.4
+    }
+  },
+  {
+    "type": "value",
+    "characteristic_name": "3-Iodo-2-propynyl butyl carbamate",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_freshwater_chronic": 1.9
+    }
+  },
+  {
+    "type": "value",
+    "characteristic_name": "Acenaphthene",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_freshwater_chronic": 5.8
+    }
+  },
+  {
+    "type": "value",
+    "characteristic_name": "1,1,2-Trichloroethane",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "CA_freshwater_chronic": 21
+    }
+  },
+  {
+    "type": "value",
+    "characteristic_name": ".beta.-Endosulfan",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_freshwater_acute": 0.22,
+      "US_freshwater_chronic": 0.056,
+      "US_marine_acute": 0.034,
+      "US_marine_chronic": 0.0087
+    }
+  },
+  {
+    "type": "value",
+    "characteristic_name": ".alpha.-Endosulfan",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "µg/L",
+    "guidelines": {
+      "US_freshwater_acute": 0.22,
+      "US_freshwater_chronic": 0.056,
+      "US_marine_acute": 0.034,
+      "US_marine_chronic": 0.0087
     }
   }
 ]
