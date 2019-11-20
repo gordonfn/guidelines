@@ -10,7 +10,9 @@ const filterMetadata = (params = {}/*, guidelineKeys = ['CA_']*/) => {
     let match = true
     Object.keys(params).forEach(key => {
       //console.log(key, params[key], '==', metadataArray[i][key])
-      if (Array.isArray(params[key])) {
+      if (params[key] === '') { // make matching more flexible
+        match = match && true
+      } else if (Array.isArray(params[key])) {
         // cover case type: [value, range]
         match = match && params[key].indexOf(metadataArray[i][key]) !== -1
       } else {

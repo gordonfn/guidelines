@@ -1,6 +1,6 @@
 {
   "name": "@datastream/guidelines",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Calculate water quality guidelines.",
   "main": "index.js",
   "scripts": {
@@ -12,9 +12,14 @@
     "url": "git+https://willfarrell@github.com/gordonfn/guidelines.git"
   },
   "keywords": [
-    "CCME", "CWQG",
-    "US EPA", "CMC", "CCC",
-    "water quality", "Acute", "Chronic",
+    "CCME",
+    "CWQG",
+    "US EPA",
+    "CMC",
+    "CCC",
+    "water quality",
+    "Acute",
+    "Chronic",
     "DataStream"
   ],
   "author": "willfarrell",
@@ -25,11 +30,11 @@
   "homepage": "https://github.com/gordonfn/guidelines#readme",
   "devDependencies": {
     "chai": "4.2.0",
-    "csv-parse": "4.4.3",
+    "csv-parse": "4.8.2",
     "istanbul": "0.4.5",
-    "mocha": "6.1.4"
+    "mocha": "6.2.2"
   },
   "dependencies": {
-    "mathjs": "5.9.0"
+    "mathjs": "6.2.5"
   }
 }
