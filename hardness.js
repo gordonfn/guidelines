@@ -1,4 +1,5 @@
-const math = require('mathjs')
+const {create, all} = require('mathjs')
+const math = create(all)
 math.config({
   number: 'BigNumber',
   precision: 64        // Number of significant digits for BigNumbers
@@ -33,11 +34,11 @@ const calculate = (params) => {
   } else if (CaCO3 !== null) {
     return CaCO3
   } else if (Ca !== null && Mg !== null) {
-    return math.eval(`${Ca} + ${Mg}`).toNumber()
+    return math.evaluate(`${Ca} + ${Mg}`).toNumber()
   } else if (CaIon !== null && MgIon !== null) {
-    return math.eval(`2.497 * ${CaIon} + 4.118 * ${MgIon}`).toNumber()
+    return math.evaluate(`2.497 * ${CaIon} + 4.118 * ${MgIon}`).toNumber()
   } else if (CH !== null && NCH !== null) {
-    return math.eval(`${CH} + ${NCH}`).toNumber()
+    return math.evaluate(`${CH} + ${NCH}`).toNumber()
   }
   return null
 }

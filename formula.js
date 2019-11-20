@@ -23,7 +23,7 @@ const cadmiumTotalFreshwaterAcuteCA = (params) => {
     return 7.7
   } else {
     // 10^(1.016(log*(hardness))-1.71)
-    return math.eval(`pow(10, (1.016 * log10(${hardness}) - 1.71))`).toNumber()
+    return math.evaluate(`pow(10, (1.016 * log10(${hardness}) - 1.71))`)
   }
 }
 
@@ -36,7 +36,7 @@ const cadmiumTotalFreshwaterChronicCA = (params) => {
     return 0.37
   } else {
     // 10^(0.83(log*(hardness))-2.46)
-    return math.eval(`pow(10, (0.83 * log10(${hardness}) - 2.46))`).toNumber()
+    return math.evaluate(`pow(10, (0.83 * log10(${hardness}) - 2.46))`)
   }
 }
 
@@ -49,7 +49,7 @@ const copperTotalFreshwaterChronicCA = (params) => {
     return 4
   } else {
     // 0.2*EXP(0.8545*(ln(hardness))-1.465)
-    return math.eval(`0.2 * exp(0.8545 * log(${hardness}) - 1.465)`).toNumber()
+    return math.evaluate(`0.2 * exp(0.8545 * log(${hardness}) - 1.465)`)
   }
 }
 
@@ -62,7 +62,7 @@ const leadTotalFreshwaterChronicCA = (params) => {
     return 7
   } else {
     // EXP(1.273*ln(hardness)-4.705)
-    return math.eval(`exp(1.273 * log(${hardness}) - 4.705)`).toNumber()
+    return math.evaluate(`exp(1.273 * log(${hardness}) - 4.705)`)
   }
 }
 
@@ -75,7 +75,7 @@ const nickelTotalFreshwaterChronicCA = (params) => {
     return 150
   } else {
     // EXP(0.76*(ln(hardness))+1.06)
-    return math.eval(`exp(0.76 * log(${hardness}) + 1.06)`).toNumber()
+    return math.evaluate(`exp(0.76 * log(${hardness}) + 1.06)`)
   }
 }
 
@@ -85,7 +85,7 @@ const zincDissolvedFreshwaterAcuteCA = (params) => {
   const {DOC} = params
   if (13.8 <= hardness && hardness <= 250.5 && 0.3 <= DOC && DOC <= 17.3) {
     // EXP(0.833*(ln(hardness))+0.240*(DOC)+0.526);
-    return math.eval(`exp(0.833 * log(${hardness}) + 0.24 * ${DOC} + 0.5260)`).toNumber()
+    return math.evaluate(`exp(0.833 * log(${hardness}) + 0.24 * ${DOC} + 0.5260)`)
   } else {
     return 37
   }
@@ -97,7 +97,7 @@ const zincDissolvedFreshwaterChronicCA = (params) => {
   const {pH, DOC} = params
   if (23.4 <= hardness && hardness <= 399 && 0.3 <= DOC && DOC <= 22.9 && 6.5 <= pH && pH <= 8.13) {
     // EXP(0.947*(ln(hardness))-0.815*(pH)+0.398*(ln(DOC))+4.625)
-    return math.eval(`exp(0.947 * log(${hardness}) - 0.815 * ${pH} + 0.398 * log(${DOC}) + 4.625)`).toNumber()
+    return math.evaluate(`exp(0.947 * log(${hardness}) - 0.815 * ${pH} + 0.398 * log(${DOC}) + 4.625)`)
   } else {
     return 7
   }
@@ -109,177 +109,177 @@ const ammoniaFreshwaterAcuteUS = (params) => {
   const {pH, temperature} = params
 
   // MIN({0.275/[1+10^(7.204-ph)]}+{39/[1+10^(ph-7.204)]}, 0.7249*{0.0114/[1+10^(7.204-ph)]+1.6181/[1+10^(ph-7.204)]}*{23.12*10^[0.036*(20-T)]})
-  return math.eval(`min( (0.275 / (1 + pow(10, (7.204 - ${pH})))) + (39 / (1 + pow(10, (${pH} - 7.204)) )), 0.7249 * (0.0114 / (1 + pow(10, (7.204 - ${pH}))) + 1.6181 / (1 + pow(10, ( ${pH} - 7.204)))) * (23.12 * pow(10, (0.036 * (20 - ${temperature})))) )`)
+  return math.evaluate(`min( (0.275 / (1 + pow(10, (7.204 - ${pH})))) + (39 / (1 + pow(10, (${pH} - 7.204)) )), 0.7249 * (0.0114 / (1 + pow(10, (7.204 - ${pH}))) + 1.6181 / (1 + pow(10, ( ${pH} - 7.204)))) * (23.12 * pow(10, (0.036 * (20 - ${temperature})))) )`)
 }
 
 const ammoniaFreshwaterChronicUS = (params) => {
   const {pH, temperature} = params
   // 0.8876*{0.0278/[1+10^(7.688-pH)]+1.1994/[1+10^(pH-7.688)]}*{2.126*10^[0.028*(10-MAX(T,7))]}
-  return math.eval(`0.8876 * (0.0278 / (1 + pow(10, (7.688 - ${pH})) + 1.1994 / (1 + pow(10, (${pH} - 7.688)))) * (2.126 * pow(10, (0.028 * (10 - max(${temperature}, 7)))))`)
+  return math.evaluate(`0.8876 * (0.0278 / (1 + pow(10, (7.688 - ${pH})) + 1.1994 / (1 + pow(10, (${pH} - 7.688)))) * (2.126 * pow(10, (0.028 * (10 - max(${temperature}, 7)))))`)
 }
 
 const cadmiumTotalFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.9789*LN(hardness)-3.866)
-  return math.eval(`exp(.9789 * log(${hardness}) - 3.866 )`).toNumber()
+  return math.evaluate(`exp(.9789 * log(${hardness}) - 3.866 )`)
 }
 
 const cadmiumDissolvedFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.9789*LN(hardness)-3.866) * (1.136672-(LN(hardness)*(.041838)))
-  return math.eval(`exp(.9789 * log(${hardness}) - 3.866 ) * ( 1.136672 - log(${hardness}) * 0.041838)`).toNumber()
+  return math.evaluate(`exp(.9789 * log(${hardness}) - 3.866 ) * ( 1.136672 - log(${hardness}) * 0.041838)`)
 }
 
 const cadmiumTotalFreshwaterChronicUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.7977*(LN(hardness))-3.909)
-  return math.eval(`exp(0.7977 * log(${hardness}) - 3.909 )`).toNumber()
+  return math.evaluate(`exp(0.7977 * log(${hardness}) - 3.909 )`)
 }
 
 const cadmiumDissolvedFreshwaterChronicUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.7977*(LN(hardness))-3.909)*(1.101672-(LN(hardness)*(.041838)))
-  return math.eval(`exp(0.7977 * log(${hardness}) - 3.909 ) * ( 1.101672 - log(${hardness}) * 0.041838)`).toNumber()
+  return math.evaluate(`exp(0.7977 * log(${hardness}) - 3.909 ) * ( 1.101672 - log(${hardness}) * 0.041838)`)
 }
 
 const chromiumiiiTotalFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP*(0.819*LN(hardness)+3.7256)
-  return math.eval(`exp(0.819 * log(${hardness}) + 3.7256 )`).toNumber()
+  return math.evaluate(`exp(0.819 * log(${hardness}) + 3.7256 )`)
 }
 
 const chromiumiiiDissolvedFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP*(0.819*LN(hardness)+3.7256)*0.316
-  return math.eval(`exp(0.819 * log(${hardness}) + 3.7256 ) * 0.316`).toNumber()
+  return math.evaluate(`exp(0.819 * log(${hardness}) + 3.7256 ) * 0.316`)
 }
 
 const chromiumiiiTotalFreshwaterChronicUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.8190*(LN(hardness))+.6848)
-  return math.eval(`exp(0.819 * log(${hardness}) + 0.6848 )`).toNumber()
+  return math.evaluate(`exp(0.819 * log(${hardness}) + 0.6848 )`)
 }
 
 const chromiumiiiDissolvedFreshwaterChronicUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.8190*(LN(hardness))+.6848)*.86
-  return math.eval(`exp(0.819 * log(${hardness}) + 0.6848 ) * 0.86`).toNumber()
+  return math.evaluate(`exp(0.819 * log(${hardness}) + 0.6848 ) * 0.86`)
 }
 
 const leadTotalFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(1.273*(LN(hardness))-1.460)
-  return math.eval(`exp(1.273 * log(${hardness}) - 1.460 )`).toNumber()
+  return math.evaluate(`exp(1.273 * log(${hardness}) - 1.460 )`)
 }
 
 const leadDissolvedFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(1.273*(LN(hardness))-1.460)*(1.46203-(LN(hardness)*(.145712)))
-  return math.eval(`exp(1.273 * log(${hardness}) - 1.460 ) * ( 1.46203 - log(${hardness}) * 0.145712)`).toNumber()
+  return math.evaluate(`exp(1.273 * log(${hardness}) - 1.460 ) * ( 1.46203 - log(${hardness}) * 0.145712)`)
 }
 
 const leadTotalFreshwaterChronicUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(1.273*(LN(hardness))-4.705)
-  return math.eval(`exp(1.273 * log(${hardness}) - 4.705 )`).toNumber()
+  return math.evaluate(`exp(1.273 * log(${hardness}) - 4.705 )`)
 }
 
 const leadDissolvedFreshwaterChronicUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(1.273*(LN(hardness))-4.705)*(1.46203-(LN(hardness))*(.145712))
-  return math.eval(`exp(1.273 * log(${hardness}) - 4.705 ) * ( 1.46203 - log(${hardness}) * 0.145712)`).toNumber()
+  return math.evaluate(`exp(1.273 * log(${hardness}) - 4.705 ) * ( 1.46203 - log(${hardness}) * 0.145712)`)
 }
 
 const nickelTotalFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.846*(LN(hardness))+2.255)
-  return math.eval(`exp(0.846 * log(${hardness}) + 2.255 )`).toNumber()
+  return math.evaluate(`exp(0.846 * log(${hardness}) + 2.255 )`)
 }
 
 const nickelDissolvedFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.846*(LN(hardness))+2.255)*(.998)
-  return math.eval(`exp(0.846 * log(${hardness}) + 2.255 ) * 0.998`).toNumber()
+  return math.evaluate(`exp(0.846 * log(${hardness}) + 2.255 ) * 0.998`)
 }
 
 const nickelTotalFreshwaterChronicUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.846*(LN(hardness))+.0584)
-  return math.eval(`exp(0.846 * log(${hardness}) + 0.0584 )`).toNumber()
+  return math.evaluate(`exp(0.846 * log(${hardness}) + 0.0584 )`)
 }
 
 const nickelDissolvedFreshwaterChronicUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.846*(LN(hardness))+.0584)*(.997)
-  return math.eval(`exp(0.846 * log(${hardness}) + 0.0584 ) * 0.997`).toNumber()
+  return math.evaluate(`exp(0.846 * log(${hardness}) + 0.0584 ) * 0.997`)
 }
 
 const pentachlorophenolFreshwaterAcuteUS = (params) => {
   const {pH} = params
-  return math.eval(`log(1.005 * ${pH} - 4.869)`)
+  return math.evaluate(`log(1.005 * ${pH} - 4.869)`)
 }
 
 const pentachlorophenolFreshwaterChronicUS = (params) => {
   const {pH} = params
-  return math.eval(`log(1.005 * ${pH} - 5.134)`)
+  return math.evaluate(`log(1.005 * ${pH} - 5.134)`)
 }
 
 const silverTotalFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(1.72*(LN(hardness))-6.59)
-  return math.eval(`exp(1.72 * log(${hardness}) - 6.59 )`).toNumber()
+  return math.evaluate(`exp(1.72 * log(${hardness}) - 6.59 )`)
 }
 
 const silverDissolvedFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(1.72*(LN(hardness))-6.59)*(.85)
-  return math.eval(`exp(1.72 * log(${hardness}) - 6.59 ) * 0.85`).toNumber()
+  return math.evaluate(`exp(1.72 * log(${hardness}) - 6.59 ) * 0.85`)
 }
 
 const zincTotalFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.8473*(LN(hardness))+.884)
-  return math.eval(`exp(0.8473 * log(${hardness}) + 0.884 )`).toNumber()
+  return math.evaluate(`exp(0.8473 * log(${hardness}) + 0.884 )`)
 }
 
 const zincDissolvedFreshwaterAcuteUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.8473*(LN(hardness))+.884)*(.978)
-  return math.eval(`exp(0.8473 * log(${hardness}) + 0.884 ) * 0.978`).toNumber()
+  return math.evaluate(`exp(0.8473 * log(${hardness}) + 0.884 ) * 0.978`)
 }
 
 const zincTotalFreshwaterChronicUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.8473*(LN(hardness))+.884)
-  return math.eval(`exp(0.8473 * log(${hardness}) + 0.884 )`).toNumber()
+  return math.evaluate(`exp(0.8473 * log(${hardness}) + 0.884 )`)
 }
 
 const zincDissolvedFreshwaterChronicUS = (params) => {
   const hardness = calculateHardness(params)
   if (hardness === null) return null
   // EXP(.8473*(LN(hardness))+.884)*(.986)
-  return math.eval(`exp(0.8473 * log(${hardness}) + 0.884 ) * 0.986`).toNumber()
+  return math.evaluate(`exp(0.8473 * log(${hardness}) + 0.884 ) * 0.986`)
 }
 
 module.exports = {

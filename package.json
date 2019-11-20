@@ -1,6 +1,6 @@
 {
   "name": "@datastream/guidelines",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Calculate water quality guidelines.",
   "main": "index.js",
   "scripts": {

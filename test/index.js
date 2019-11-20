@@ -6,11 +6,11 @@ describe('Guidelines', function () {
     it('Should get all static metadata', function (done) {
       expect(guidelines.filterMetadata({
         type:['value','range']
-      }).length).to.equal(138)
+      }).length).to.equal(136)
 
       expect(guidelines.filterMetadata({
         type:'value'
-      }, ['CA_freshwater_acute']).length).to.equal(137)
+      }, ['CA_freshwater_acute']).length).to.equal(135)
 
       done()
     })

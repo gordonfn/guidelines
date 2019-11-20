@@ -1,5 +1,6 @@
 const { create, all } = require('mathjs')
-const math = create(all, {
+const math = create(all)
+math.config({
   number: 'BigNumber'
 })
 
