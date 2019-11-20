@@ -37,7 +37,6 @@ const filterMetadata = (params = {}/*, guidelineKeys = ['CA_']*/) => {
  * @param params={pH, DOC, Ca, Mg, ...}
  */
 const calculate = (filters, params) => {
-  console.log('calculate', filters, params)
   const {unit, guidelines} = filterMetadata(filters)[0]
 
   const guides = {}
