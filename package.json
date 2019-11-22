@@ -1,15 +1,26 @@
 {
-  "name": "@datastream/guidelines",
+  "name": "@gordonfn/guidelines",
   "version": "0.0.4",
   "description": "Calculate water quality guidelines.",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
   "main": "index.js",
+  "files": [
+    "index.js",
+    "formula.js",
+    "formula_params.json",
+    "hardness.js",
+    "metadata.json",
+    "units.js"
+  ],
   "scripts": {
     "build": "node bin/build.mapping.js",
     "test": "npm run build && mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://willfarrell@github.com/gordonfn/guidelines.git"
+    "url": "git+https://github.com/gordonfn/guidelines.git"
   },
   "keywords": [
     "CCME",

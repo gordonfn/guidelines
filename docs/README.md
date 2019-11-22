@@ -35,6 +35,14 @@ Calculate water quality guidelines.
 
 ```
 
+## Publish
+```bash
+# Bump version in package.json
+npm test
+npm publish
+
+```
+
 ## Sources
 - [Water Hardness Summary](http://www.aqion.de/site/water-hardness)
 - [DataStream Mapping](https://docs.google.com/spreadsheets/d/1J5cNUYyzuPutKEnF5BSnvTW1JAbHX-p1cSfXhQIS8d8/edit#gid=1992238860)
