@@ -199,7 +199,7 @@
     "characteristic_name": "Ammonia",
     "method_speciation": "as N",
     "sample_fraction": "",
-    "unit": "mg/l",
+    "unit": "mg/L",
     "guidelines": {
       "CA_freshwater_chronic": 16000,
       "US_freshwater_acute": "ammoniaFreshwaterAcuteUS",
@@ -211,7 +211,7 @@
     "characteristic_name": "Ammonia",
     "method_speciation": "as NH3",
     "sample_fraction": "",
-    "unit": "mg/l",
+    "unit": "mg/L",
     "guidelines": {
       "CA_freshwater_chronic": 19000
     }

@@ -69,7 +69,7 @@ parse(data, {
 
   fs.writeFileSync(__dirname + '/../metadata.json', JSON.stringify(arr, null, 2))
 
-  console.log('Write SQL Table')
+  /*console.log('Write SQL Table')
   let sql = `
 CREATE SCHEMA IF NOT EXISTS datastream;
 CREATE TABLE IF NOT EXISTS datastream.guidelines (
@@ -109,7 +109,7 @@ VALUES ('${characteristic_name.replace("'", "''")}', '${method_speciation}', '${
 ON CONFLICT (characteristic_name, method_speciation, sample_fraction) DO NOTHING;\n`
   })
 
-  fs.writeFileSync(__dirname + '/../guidelines.sql', sql)
+  fs.writeFileSync(__dirname + '/../guidelines.sql', sql)*/
 
   console.log('Done!')
   process.exit(0)

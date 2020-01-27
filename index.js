@@ -3,7 +3,6 @@ const formula = require('./formula')
 const metadataArray = require('./metadata.json')
 const formulaParams = require('./formula_params.json')
 
-
 const filterMetadata = (params = {}/*, guidelineKeys = ['CA_']*/) => {
   const arr = []
   for (let i = 0, l = metadataArray.length; i < l; i++) {
@@ -37,7 +36,9 @@ const filterMetadata = (params = {}/*, guidelineKeys = ['CA_']*/) => {
  * @param params={pH, DOC, Ca, Mg, ...}
  */
 const calculate = (filters, params) => {
-  const {unit, guidelines} = filterMetadata(filters)[0]
+  const metadata = filterMetadata(filters)
+  if (!metadata.length) return {}
+  const {unit, guidelines} = metadata[0]
 
   const guides = {}
   Object.keys(guidelines).forEach(key => {
