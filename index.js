@@ -37,8 +37,8 @@ const filterMetadata = (params = {}/*, guidelineKeys = ['CA_']*/) => {
  */
 const calculate = (filters, params) => {
   const metadata = filterMetadata(filters)
-  if (!metadata.length) return {}
-  const {unit, guidelines} = metadata[0]
+  if (!metadata.length) return {  unit: '', guidelines: {} }
+  const { unit, guidelines } = metadata[0]
 
   const guides = {}
   Object.keys(guidelines).forEach(key => {
@@ -48,7 +48,7 @@ const calculate = (filters, params) => {
     }
   })
 
-  return {unit, guidelines: guides}
+  return { unit, guidelines: guides }
 }
 
-module.exports = {formulaParams, metadataArray, filterMetadata, calculate}
+module.exports = { formulaParams, metadataArray, filterMetadata, calculate }

@@ -26,6 +26,12 @@ parse(data, {
   columns: true
 }, (err, output) => {
   let count = 0
+  let varchar = {
+    characteristic_name:118,
+    method_speciation:9,
+    sample_fraction:25,
+    unit:11
+  }
   output.forEach((row) => {
     row['Characteristic Name'] = row['DataStream Characteristic Name']
     if (!row['Characteristic Name']) {
@@ -43,6 +49,11 @@ parse(data, {
       obj.method_speciation = row['Method Speciation'] || ''
       obj.sample_fraction = sampleFraction || ''
       obj.unit = row['Unit'] || ''
+
+      varchar.characteristic_name = Math.max(varchar.characteristic_name, obj.characteristic_name.length)
+      varchar.method_speciation = Math.max(varchar.method_speciation, obj.method_speciation.length)
+      varchar.sample_fraction = Math.max(varchar.sample_fraction, obj.sample_fraction.length)
+      varchar.unit = Math.max(varchar.unit, obj.unit.length)
 
       const types = ['','value', 'range', 'formula']
       obj.type = types.indexOf(obj.type) < types.indexOf(row['Type']) ? obj.type = row['Type'] : obj.type
@@ -69,13 +80,14 @@ parse(data, {
 
   fs.writeFileSync(__dirname + '/../metadata.json', JSON.stringify(arr, null, 2))
 
-  /*console.log('Write SQL Table')
+  console.log('Write SQL Table')
   let sql = `
 CREATE SCHEMA IF NOT EXISTS datastream;
 CREATE TABLE IF NOT EXISTS datastream.guidelines (
-  characteristic_name    VARCHAR(118) NOT NULL DEFAULT '',
-  method_speciation      VARCHAR(10)   NOT NULL DEFAULT '',
-  sample_fraction        VARCHAR(25)  NOT NULL DEFAULT '',
+  characteristic_name    VARCHAR(${varchar.characteristic_name}) NOT NULL DEFAULT '',
+  method_speciation      VARCHAR(${varchar.method_speciation})  NOT NULL DEFAULT '',
+  sample_fraction        VARCHAR(${varchar.sample_fraction})  NOT NULL DEFAULT '',
+  unit                   VARCHAR(${varchar.unit})   NOT NULL DEFAULT '',
   values                 JSONB        NOT NULL DEFAULT '{}'
 );
 
@@ -95,7 +107,7 @@ CREATE INDEX IF NOT EXISTS guideline_sample_fraction_idx
 
 `
   arr.forEach(char => {
-    const {name,characteristic_name, method_speciation, sample_fraction, type, guidelines} = char
+    const {name,characteristic_name, method_speciation, sample_fraction, unit, type, guidelines} = char
     const values = {}
     Object.keys(guidelines).forEach(key => {
       const value = guidelines[key]
@@ -104,12 +116,12 @@ CREATE INDEX IF NOT EXISTS guideline_sample_fraction_idx
       else values[key] = value
     })
     //db.push({name, characteristic_name, method_speciation, sample_fraction, values})
-    sql += `INSERT INTO datastream.guidelines (characteristic_name, method_speciation, sample_fraction, values)
-VALUES ('${characteristic_name.replace("'", "''")}', '${method_speciation}', '${sample_fraction}', '${JSON.stringify(values)}')
+    sql += `INSERT INTO datastream.guidelines (characteristic_name, method_speciation, sample_fraction, unit, values)
+VALUES ('${characteristic_name.replace("'", "''")}', '${method_speciation}', '${sample_fraction}', '${unit}', '${JSON.stringify(values)}')
 ON CONFLICT (characteristic_name, method_speciation, sample_fraction) DO NOTHING;\n`
   })
 
-  fs.writeFileSync(__dirname + '/../guidelines.sql', sql)*/
+  fs.writeFileSync(__dirname + '/../guidelines.sql', sql)
 
   console.log('Done!')
   process.exit(0)

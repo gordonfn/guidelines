@@ -201,7 +201,7 @@
     "sample_fraction": "",
     "unit": "mg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 16000,
+      "CA_freshwater_chronic": 0.016,
       "US_freshwater_acute": "ammoniaFreshwaterAcuteUS",
       "US_freshwater_chronic": "ammoniaFreshwaterChronicUS"
     }
@@ -213,7 +213,7 @@
     "sample_fraction": "",
     "unit": "mg/L",
     "guidelines": {
-      "CA_freshwater_chronic": 19000
+      "CA_freshwater_chronic": 0.019
     }
   },
   {

@@ -1,6 +1,6 @@
 {
   "name": "@gordonfn/guidelines",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Calculate water quality guidelines.",
   "publishConfig": {
     "registry":"https://npm.pkg.github.com/"
