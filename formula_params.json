@@ -56,13 +56,13 @@
   "CaIon": {
     "characteristic_name": "Calcium",
     "method_speciation": "*",
-    "sample_fraction": "*",
+    "sample_fraction": "Total",
     "unit": "mg/L"
   },
   "MgIon": {
     "characteristic_name": "Magnesium",
     "method_speciation": "*",
-    "sample_fraction": "*",
+    "sample_fraction": "Total",
     "unit": "mg/L"
   }
 }
