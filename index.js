@@ -37,7 +37,7 @@ const filterMetadata = (params = {}/*, guidelineKeys = ['CA_']*/) => {
  */
 const calculate = (filters, params) => {
   const metadata = filterMetadata(filters)
-  if (!metadata.length) return {  unit: '', guidelines: {} }
+  if (!metadata.length) return { unit: null, guidelines: {} }
   const { unit, guidelines } = metadata[0]
 
   const guides = {}
@@ -45,7 +45,10 @@ const calculate = (filters, params) => {
     if (guidelines[key]) guides[key] = guidelines[key]
     if (typeof guides[key] === 'string') {  // aka type === formula
       try {
-        guides[key] = formula[guides[key]](params)
+        const value = formula[guides[key]](params)
+        if (value) {
+          guides[key] = value
+        }
       } catch (e) {
         console.error(`Error: Failed to calculate ${guides[key]} (`, params, ')', e.message)
       }

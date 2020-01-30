@@ -4,7 +4,7 @@ const math = require('mathjs')
 const calculateHardness = require('./hardness')
 
 // CA: CCME
-const aluminumTotalFreshwaterChronicCA = ({pH}) => {
+const aluminumTotalFreshwaterChronicCA = ({ pH }) => {
   if (pH < 6.5) {
     return 5
   } else if (6.5 <= pH) {
@@ -70,8 +70,10 @@ const nickelTotalFreshwaterChronicCA = (params) => {
   const hardness = calculateHardness(params)
   // If the hardness is unknown, the CWQG is 25 µg/L
   if (isNaN(hardness) || hardness <= 60) {
-    return 25
-  } else if (180 < hardness) {
+    return null
+  }
+
+  if (180 < hardness) {
     return 150
   } else {
     // EXP(0.76*(ln(hardness))+1.06)
@@ -81,34 +83,36 @@ const nickelTotalFreshwaterChronicCA = (params) => {
 
 const zincDissolvedFreshwaterAcuteCA = (params) => {
   const hardness = calculateHardness(params)
-  const {DOC} = params
-  if (isNaN(hardness)|| isNaN(DOC)) {
-    return 37
-  } else if (13.8 <= hardness && hardness <= 250.5 && 0.3 <= DOC && DOC <= 17.3) {
+  const { DOC } = params
+  if (isNaN(hardness) || isNaN(DOC)) {
+    return null
+  }
+
+  if (13.8 <= hardness && hardness <= 250.5 && 0.3 <= DOC && DOC <= 17.3) {
     // EXP(0.833*(ln(hardness))+0.240*(DOC)+0.526);
     return math.evaluate(`exp(0.833 * log(${hardness}, e) + 0.24 * ${DOC} + 0.5260)`)
-  } else {
-    return 37
   }
+  return 37
 }
 
 const zincDissolvedFreshwaterChronicCA = (params) => {
   const hardness = calculateHardness(params)
-  const {pH, DOC} = params
+  const { pH, DOC } = params
   if (isNaN(hardness) || isNaN(pH) || isNaN(DOC)) {
-    return 7
-  } else if (23.4 <= hardness && hardness <= 399 && 0.3 <= DOC && DOC <= 22.9 && 6.5 <= pH && pH <= 8.13) {
+    return null
+  }
+
+  if (23.4 <= hardness && hardness <= 399 && 0.3 <= DOC && DOC <= 22.9 && 6.5 <= pH && pH <= 8.13) {
     // EXP(0.947*(ln(hardness))-0.815*(pH)+0.398*(ln(DOC))+4.625)
     return math.evaluate(`exp(0.947 * log(${hardness}, e) - 0.815 * ${pH} + 0.398 * log(${DOC}, e) + 4.625)`)
-  } else {
-    return 7
   }
+  return 7
 }
 
 // US: US EPA
 
 const ammoniaFreshwaterAcuteUS = (params) => {
-  const {pH, temperature} = params
+  const { pH, temperature } = params
   if (isNaN(pH) || isNaN(temperature)) return null
 
   // MIN({0.275/[1+10^(7.204-ph)]}+{39/[1+10^(ph-7.204)]}, 0.7249*{0.0114/[1+10^(7.204-ph)]+1.6181/[1+10^(ph-7.204)]}*{23.12*10^[0.036*(20-T)]})
@@ -116,7 +120,7 @@ const ammoniaFreshwaterAcuteUS = (params) => {
 }
 
 const ammoniaFreshwaterChronicUS = (params) => {
-  const {pH, temperature} = params
+  const { pH, temperature } = params
   if (isNaN(pH) || isNaN(temperature)) return null
   // 0.8876*{0.0278/[1+10^(7.688-pH)]+1.1994/[1+10^(pH-7.688)]}*{2.126*10^[0.028*(10-MAX(T,7))]}
   return math.evaluate(`0.8876 * (0.0278 / (1 + pow(10, (7.688 - ${pH}))) + 1.1994 / (1 + pow(10, (${pH} - 7.688)))) * (2.126 * pow(10, (0.028 * (10 - max(${temperature}, 7)))))`)
@@ -235,12 +239,12 @@ const nickelDissolvedFreshwaterChronicUS = (params) => {
 }
 
 const pentachlorophenolFreshwaterAcuteUS = (params) => {
-  const {pH} = params
+  const { pH } = params
   return math.evaluate(`log(1.005 * ${pH} - 4.869)`)
 }
 
 const pentachlorophenolFreshwaterChronicUS = (params) => {
-  const {pH} = params
+  const { pH } = params
   return math.evaluate(`log(1.005 * ${pH} - 5.134)`)
 }
 
@@ -297,9 +301,12 @@ module.exports = {
   nickelTotalFreshwaterChronicCA,
   zincDissolvedFreshwaterAcuteCA,
   zincDissolvedFreshwaterChronicCA,
+
   // CA-AB
 
   // CA-BC
+
+  // CA-*
 
   // US: US EPA
   ammoniaFreshwaterAcuteUS,

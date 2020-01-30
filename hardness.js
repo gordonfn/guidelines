@@ -1,4 +1,4 @@
-const {create, all} = require('mathjs')
+const { create, all } = require('mathjs')
 const math = create(all)
 math.config({
   number: 'BigNumber',
@@ -20,28 +20,19 @@ math.config({
  * MgIon {Numeric} `Magnesium` in units mg/L
  */
 const calculate = (params) => {
-  // ensure 0 is preserved
-  ['TH', 'CaCO3', 'CH', 'NCH', 'Ca', 'Mg', 'CaIon', 'MgIon'].forEach(key => {
-    if (isNaN(params[key])) {
-      params[key] = null
-    }
-  })
-
-  const {TH, CaCO3, CH, NCH, Ca, Mg, CaIon, MgIon} = params
-  //console.log('calculateHardness', {TH, CaCO3, CH, NCH, Ca, Mg, CaIon, MgIon})
-  if (TH !== null) {
+  const { TH, CaCO3, CH, NCH, Ca, Mg, CaIon, MgIon } = params
+  if (!isNaN(TH)) {
     return TH
-  } else if (CaCO3 !== null) {
+  } else if (!isNaN(CaCO3)) {
     return CaCO3
-  } else if (Ca !== null && Mg !== null) {
+  } else if (!isNaN(Ca) && !isNaN(Mg)) {
     return math.evaluate(`${Ca} + ${Mg}`).toNumber()
-  } else if (CaIon !== null && MgIon !== null) {
+  } else if (!isNaN(CaIon) && !isNaN(MgIon)) {
     return math.evaluate(`2.497 * ${CaIon} + 4.118 * ${MgIon}`).toNumber()
-  } else if (CH !== null && NCH !== null) {
+  } else if (!isNaN(CH) && !isNaN(NCH)) {
     return math.evaluate(`${CH} + ${NCH}`).toNumber()
   }
   return null
 }
-
 
 module.exports = calculate
