@@ -47,7 +47,7 @@ const calculate = (filters, params) => {
       try {
         guides[key] = formula[guides[key]](params)
       } catch (e) {
-        console.error(`Error: Failed to calculate ${guides[key]} ( ${params} )`, e.message)
+        console.error(`Error: Failed to calculate ${guides[key]} (`, params, ')', e.message)
       }
     }
   })
