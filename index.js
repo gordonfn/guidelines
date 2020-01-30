@@ -44,7 +44,11 @@ const calculate = (filters, params) => {
   Object.keys(guidelines).forEach(key => {
     if (guidelines[key]) guides[key] = guidelines[key]
     if (typeof guides[key] === 'string') {  // aka type === formula
-      guides[key] = formula[guides[key]](params)
+      try {
+        guides[key] = formula[guides[key]](params)
+      } catch (e) {
+        console.error(`Error: Failed to calculate ${guides[key]} ( ${params} )`, e.message)
+      }
     }
   })
 
