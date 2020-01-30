@@ -81,8 +81,8 @@ const nickelTotalFreshwaterChronicCA = (params) => {
 
 const zincDissolvedFreshwaterAcuteCA = (params) => {
   const hardness = calculateHardness(params)
-  if (hardness === null) return null
   const {DOC} = params
+  if (hardness === null || DOC === null) return null
   if (13.8 <= hardness && hardness <= 250.5 && 0.3 <= DOC && DOC <= 17.3) {
     // EXP(0.833*(ln(hardness))+0.240*(DOC)+0.526);
     return math.evaluate(`exp(0.833 * log(${hardness}) + 0.24 * ${DOC} + 0.5260)`)
@@ -93,8 +93,8 @@ const zincDissolvedFreshwaterAcuteCA = (params) => {
 
 const zincDissolvedFreshwaterChronicCA = (params) => {
   const hardness = calculateHardness(params)
-  if (hardness === null) return null
   const {pH, DOC} = params
+  if (hardness === null || pH === null || DOC === null) return null
   if (23.4 <= hardness && hardness <= 399 && 0.3 <= DOC && DOC <= 22.9 && 6.5 <= pH && pH <= 8.13) {
     // EXP(0.947*(ln(hardness))-0.815*(pH)+0.398*(ln(DOC))+4.625)
     return math.evaluate(`exp(0.947 * log(${hardness}) - 0.815 * ${pH} + 0.398 * log(${DOC}) + 4.625)`)
@@ -107,6 +107,7 @@ const zincDissolvedFreshwaterChronicCA = (params) => {
 
 const ammoniaFreshwaterAcuteUS = (params) => {
   const {pH, temperature} = params
+  if (pH === null || temperature === null) return null
 
   // MIN({0.275/[1+10^(7.204-ph)]}+{39/[1+10^(ph-7.204)]}, 0.7249*{0.0114/[1+10^(7.204-ph)]+1.6181/[1+10^(ph-7.204)]}*{23.12*10^[0.036*(20-T)]})
   return math.evaluate(`min( (0.275 / (1 + pow(10, (7.204 - ${pH})))) + (39 / (1 + pow(10, (${pH} - 7.204)) )), 0.7249 * (0.0114 / (1 + pow(10, (7.204 - ${pH}))) + 1.6181 / (1 + pow(10, ( ${pH} - 7.204)))) * (23.12 * pow(10, (0.036 * (20 - ${temperature})))) )`)
@@ -114,6 +115,7 @@ const ammoniaFreshwaterAcuteUS = (params) => {
 
 const ammoniaFreshwaterChronicUS = (params) => {
   const {pH, temperature} = params
+  if (pH === null || temperature === null) return null
   // 0.8876*{0.0278/[1+10^(7.688-pH)]+1.1994/[1+10^(pH-7.688)]}*{2.126*10^[0.028*(10-MAX(T,7))]}
   return math.evaluate(`0.8876 * (0.0278 / (1 + pow(10, (7.688 - ${pH}))) + 1.1994 / (1 + pow(10, (${pH} - 7.688)))) * (2.126 * pow(10, (0.028 * (10 - max(${temperature}, 7)))))`)
 }
