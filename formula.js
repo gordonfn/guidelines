@@ -115,7 +115,7 @@ const ammoniaFreshwaterAcuteUS = (params) => {
 const ammoniaFreshwaterChronicUS = (params) => {
   const {pH, temperature} = params
   // 0.8876*{0.0278/[1+10^(7.688-pH)]+1.1994/[1+10^(pH-7.688)]}*{2.126*10^[0.028*(10-MAX(T,7))]}
-  return math.evaluate(`0.8876 * (0.0278 / (1 + pow(10, (7.688 - ${pH})) + 1.1994 / (1 + pow(10, (${pH} - 7.688)))) * (2.126 * pow(10, (0.028 * (10 - max(${temperature}, 7)))))`)
+  return math.evaluate(`0.8876 * (0.0278 / (1 + pow(10, (7.688 - ${pH}))) + 1.1994 / (1 + pow(10, (${pH} - 7.688)))) * (2.126 * pow(10, (0.028 * (10 - max(${temperature}, 7)))))`)
 }
 
 const cadmiumTotalFreshwaterAcuteUS = (params) => {
