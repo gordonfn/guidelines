@@ -241,7 +241,7 @@ const pentachlorophenolFreshwaterAcuteUS = (params) => {
   const value = math.evaluate(`log(1.005 * ${pH} - 4.869, e)`)
 
   // Imaginary
-  if (typeof value === 'object' && (value.re || value.im)) {
+  if (typeof value === 'object' && value.im) {
     return null
   }
 
@@ -255,7 +255,7 @@ const pentachlorophenolFreshwaterChronicUS = (params) => {
   const value = math.evaluate(`log(1.005 * ${pH} - 5.134, e)`)
 
   // Imaginary
-  if (typeof value === 'object' && (value.re || value.im)) {
+  if (typeof value === 'object' && value.im) {
     return null
   }
 
