@@ -1,10 +1,4 @@
-const { create, all } = require('mathjs')
-const math = create(all)
-math.config({
-  number: 'BigNumber',
-  precision: 64        // Number of significant digits for BigNumbers
-})
-// Docs: https://mathjs.org/docs/reference/functions.html
+const math = require('./lib/math')
 
 /**
  * Harness
@@ -21,15 +15,15 @@ math.config({
  */
 const calculate = (params) => {
   const { TH, CaCO3, CH, NCH, Ca, Mg, CaIon, MgIon } = params
-  if (!isNaN(TH)) {
+  if (math.isValid(TH)) {
     return TH
-  } else if (!isNaN(CaCO3)) {
+  } else if (math.isValid(CaCO3)) {
     return CaCO3
-  } else if (!isNaN(Ca) && !isNaN(Mg)) {
+  } else if (math.isValid(Ca) && math.isValid(Mg)) {
     return math.evaluate(`${Ca} + ${Mg}`).toNumber()
-  } else if (!isNaN(CaIon) && !isNaN(MgIon)) {
+  } else if (math.isValid(CaIon) && math.isValid(MgIon)) {
     return math.evaluate(`2.497 * ${CaIon} + 4.118 * ${MgIon}`).toNumber()
-  } else if (!isNaN(CH) && !isNaN(NCH)) {
+  } else if (math.isValid(CH) && math.isValid(NCH)) {
     return math.evaluate(`${CH} + ${NCH}`).toNumber()
   }
   return null

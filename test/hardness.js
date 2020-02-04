@@ -2,6 +2,31 @@ const expect = require('chai').expect
 const formula = require('../formula.js')
 
 describe('Hardness', function () {
+
+  it('Should not calculate', function (done) {
+    expect(formula.calculateHardness({})).to.equal(null)
+
+    expect(formula.calculateHardness({
+      Ca: 0.1,
+      CaIon: 1,
+      CH: 2,
+    })).to.equal(null)
+
+    expect(formula.calculateHardness({
+      TH: '1'
+    })).to.equal(null)
+
+    expect(formula.calculateHardness({
+      TH: Infinity
+    })).to.equal(null)
+
+    expect(formula.calculateHardness({
+      TH: null
+    })).to.equal(null)
+
+    done()
+  })
+
   it('Should calculate from `Total Hardness` (TH)', function (done) {
     expect(formula.calculateHardness({
       TH: 1
