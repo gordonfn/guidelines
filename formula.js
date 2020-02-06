@@ -1,4 +1,4 @@
-const math = require('./lib/math')
+const math = require('./math')
 
 const calculateHardness = require('./hardness')
 
