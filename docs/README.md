@@ -57,3 +57,8 @@ npm publish
 ## TODO
 - [ ] feat: add in regional guidelines
 - [ ] doc: ADD links to each spec sheet per formula
+
+
+<div align="center">
+  <a href="http://gordonfoundation.ca"><img src="https://raw.githubusercontent.com/gordonfn/guidelines/master/docs/images/the-gordon-foundation.svg?sanitize=true" alt="The Gordon Foundation Logo" width="200"></a>
+</div>
