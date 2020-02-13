@@ -113,6 +113,7 @@ describe('Guideline Formulas', function () {
       expect(formula.zincDissolvedFreshwaterAcuteCA({})).to.equal(null)
       expect(formula.zincDissolvedFreshwaterAcuteCA({TH:1})).to.equal(null)
       expect(formula.zincDissolvedFreshwaterAcuteCA({DOC:1})).to.equal(null)
+      expect(formula.zincDissolvedFreshwaterAcuteCA({TH:0,DOC:1})).to.equal(null)
 
       expect(formula.zincDissolvedFreshwaterAcuteCA({
         TH: 100,
@@ -133,11 +134,7 @@ describe('Guideline Formulas', function () {
       expect(formula.zincDissolvedFreshwaterChronicCA({DOC:1})).to.equal(null)
       expect(formula.zincDissolvedFreshwaterChronicCA({pH:1})).to.equal(null)
 
-      expect(formula.zincDissolvedFreshwaterChronicCA({
-        TH: 0,
-        DOC: 0,
-        pH: 0
-      })).to.equal(7)
+      expect(formula.zincDissolvedFreshwaterAcuteCA({TH:0,DOC:0,pH:0})).to.equal(null)
 
       expect(formula.zincDissolvedFreshwaterChronicCA({
         TH: 100,
@@ -196,10 +193,7 @@ describe('Guideline Formulas', function () {
 
     it('Should calculate Cadmium Total (Freshwater Acute)', function (done) {
       expect(formula.cadmiumTotalFreshwaterAcuteUS({})).to.equal(null)
-
-      expect(formula.cadmiumTotalFreshwaterAcuteUS({
-        TH: 0
-      })).to.equal(0)
+      expect(formula.cadmiumTotalFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
 
       expect(formula.cadmiumTotalFreshwaterAcuteUS({
         TH:1
@@ -210,25 +204,18 @@ describe('Guideline Formulas', function () {
 
     it('Should calculate Cadmium Dissolved (Freshwater Acute)', function (done) {
       expect(formula.cadmiumDissolvedFreshwaterAcuteUS({})).to.equal(null)
+      expect(formula.cadmiumDissolvedFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
 
       expect(formula.cadmiumDissolvedFreshwaterAcuteUS({
         TH:1
       }).toFixed(15)).to.equal((0.023804150915409).toFixed(15))
-
-      // NaN
-      expect(formula.cadmiumDissolvedFreshwaterAcuteUS({
-        TH: 0
-      })).to.equal(null)
 
       done()
     })
 
     it('Should calculate Cadmium Total (Freshwater Chronic)', function (done) {
       expect(formula.cadmiumTotalFreshwaterChronicUS({})).to.equal(null)
-
-      expect(formula.cadmiumTotalFreshwaterChronicUS({
-        TH: 0
-      })).to.equal(0)
+      expect(formula.cadmiumTotalFreshwaterChronicUS({ TH: 0 })).to.equal(null)
 
       expect(formula.cadmiumTotalFreshwaterChronicUS({
         TH:1
@@ -239,25 +226,18 @@ describe('Guideline Formulas', function () {
 
     it('Should calculate Cadmium Dissolved (Freshwater Chronic)', function (done) {
       expect(formula.cadmiumDissolvedFreshwaterChronicUS({})).to.equal(null)
+      expect(formula.cadmiumDissolvedFreshwaterChronicUS({ TH: 0 })).to.equal(null)
 
       expect(formula.cadmiumDissolvedFreshwaterChronicUS({
         TH:1
       }).toFixed(15)).to.equal((0.022100147987223).toFixed(15))
-
-      // NaN
-      expect(formula.cadmiumDissolvedFreshwaterChronicUS({
-        TH: 0
-      })).to.equal(null)
 
       done()
     })
 
     it('Should calculate Chromium(III) Total (Freshwater Acute)', function (done) {
       expect(formula.chromiumiiiTotalFreshwaterAcuteUS({})).to.equal(null)
-
-      expect(formula.chromiumiiiTotalFreshwaterAcuteUS({
-        TH: 0
-      })).to.equal(0)
+      expect(formula.chromiumiiiTotalFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
 
       expect(formula.chromiumiiiTotalFreshwaterAcuteUS({
         TH:1
@@ -268,10 +248,7 @@ describe('Guideline Formulas', function () {
 
     it('Should calculate Chromium(III) Dissolved (Freshwater Acute)', function (done) {
       expect(formula.chromiumiiiDissolvedFreshwaterAcuteUS({})).to.equal(null)
-
-      expect(formula.chromiumiiiDissolvedFreshwaterAcuteUS({
-        TH: 0
-      })).to.equal(0)
+      expect(formula.chromiumiiiDissolvedFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
 
       expect(formula.chromiumiiiDissolvedFreshwaterAcuteUS({
         TH:1
@@ -282,10 +259,7 @@ describe('Guideline Formulas', function () {
 
     it('Should calculate Chromium(III) Total (Freshwater Chronic)', function (done) {
       expect(formula.chromiumiiiTotalFreshwaterChronicUS({})).to.equal(null)
-
-      expect(formula.chromiumiiiTotalFreshwaterChronicUS({
-        TH: 0
-      })).to.equal(0)
+      expect(formula.chromiumiiiTotalFreshwaterChronicUS({ TH: 0 })).to.equal(null)
 
       expect(formula.chromiumiiiTotalFreshwaterChronicUS({
         TH:1
@@ -296,10 +270,7 @@ describe('Guideline Formulas', function () {
 
     it('Should calculate Chromium(III) Dissolved (Freshwater Chronic)', function (done) {
       expect(formula.chromiumiiiDissolvedFreshwaterChronicUS({})).to.equal(null)
-
-      expect(formula.chromiumiiiDissolvedFreshwaterChronicUS({
-        TH: 0
-      })).to.equal(0)
+      expect(formula.chromiumiiiDissolvedFreshwaterChronicUS({ TH: 0 })).to.equal(null)
 
       expect(formula.chromiumiiiDissolvedFreshwaterChronicUS({
         TH:1
@@ -311,9 +282,7 @@ describe('Guideline Formulas', function () {
     it('Should calculate Lead Total (Freshwater Acute)', function (done) {
       expect(formula.leadTotalFreshwaterAcuteUS({})).to.equal(null)
 
-      expect(formula.leadTotalFreshwaterAcuteUS({
-        TH: 0
-      })).to.equal(0)
+      expect(formula.leadTotalFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
 
       expect(formula.leadTotalFreshwaterAcuteUS({
         TH:1
@@ -324,25 +293,18 @@ describe('Guideline Formulas', function () {
 
     it('Should calculate Lead Dissolved (Freshwater Acute)', function (done) {
       expect(formula.leadDissolvedFreshwaterAcuteUS({})).to.equal(null)
+      expect(formula.leadDissolvedFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
 
       expect(formula.leadDissolvedFreshwaterAcuteUS({
         TH:1
       }).toFixed(15)).to.equal((0.339536400743149).toFixed(15))
-
-      // NaN
-      expect(formula.leadDissolvedFreshwaterAcuteUS({
-        TH: 0
-      })).to.equal(null)
 
       done()
     })
 
     it('Should calculate Lead Total (Freshwater Chronic)', function (done) {
       expect(formula.leadTotalFreshwaterChronicUS({})).to.equal(null)
-
-      expect(formula.leadTotalFreshwaterChronicUS({
-        TH: 0
-      })).to.equal(0)
+      expect(formula.leadTotalFreshwaterChronicUS({ TH: 0 })).to.equal(null)
 
       expect(formula.leadTotalFreshwaterChronicUS({
         TH:1
@@ -353,24 +315,19 @@ describe('Guideline Formulas', function () {
 
     it('Should calculate Lead Dissolved (Freshwater Chronic)', function (done) {
       expect(formula.leadDissolvedFreshwaterChronicUS({})).to.equal(null)
+      expect(formula.leadDissolvedFreshwaterChronicUS({ TH: 0 })).to.equal(null)
 
       expect(formula.leadDissolvedFreshwaterChronicUS({
         TH:1
       }).toFixed(15)).to.equal((0.013231246084000).toFixed(15))
 
-      expect(formula.leadDissolvedFreshwaterChronicUS({
-        TH: 0
-      })).to.equal(null)
 
       done()
     })
 
     it('Should calculate Nickel Total (Freshwater Acute)', function (done) {
       expect(formula.nickelTotalFreshwaterAcuteUS({})).to.equal(null)
-
-      expect(formula.nickelTotalFreshwaterAcuteUS({
-        TH: 0
-      })).to.equal(0)
+      expect(formula.nickelTotalFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
 
       expect(formula.nickelTotalFreshwaterAcuteUS({
         TH:1
@@ -381,10 +338,7 @@ describe('Guideline Formulas', function () {
 
     it('Should calculate Nickel Dissolved (Freshwater Acute)', function (done) {
       expect(formula.nickelDissolvedFreshwaterAcuteUS({})).to.equal(null)
-
-      expect(formula.nickelDissolvedFreshwaterAcuteUS({
-        TH: 0
-      })).to.equal(0)
+      expect(formula.nickelDissolvedFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
 
       expect(formula.nickelDissolvedFreshwaterAcuteUS({
         TH:1
@@ -393,26 +347,9 @@ describe('Guideline Formulas', function () {
       done()
     })
 
-    it('Should calculate Nickel Total (Freshwater Chronic)', function (done) {
-      expect(formula.nickelTotalFreshwaterChronicUS({})).to.equal(null)
-
-      expect(formula.nickelTotalFreshwaterChronicUS({
-        TH: 0
-      })).to.equal(0)
-
-      expect(formula.nickelTotalFreshwaterChronicUS({
-        TH:1
-      }).toFixed(15)).to.equal((1.060138966497076).toFixed(15))
-
-      done()
-    })
-
     it('Should calculate Nickel Dissolved (Freshwater Chronic)', function (done) {
       expect(formula.nickelDissolvedFreshwaterChronicUS({})).to.equal(null)
-
-      expect(formula.nickelDissolvedFreshwaterChronicUS({
-        TH: 0
-      })).to.equal(0)
+      expect(formula.nickelDissolvedFreshwaterChronicUS({ TH: 0 })).to.equal(null)
 
       expect(formula.nickelDissolvedFreshwaterChronicUS({
         TH:1
@@ -421,17 +358,27 @@ describe('Guideline Formulas', function () {
       done()
     })
 
+    it('Should calculate Nickel Total (Freshwater Chronic)', function (done) {
+      expect(formula.nickelTotalFreshwaterChronicUS({})).to.equal(null)
+      expect(formula.nickelTotalFreshwaterChronicUS({ TH: 0 })).to.equal(null)
+
+      expect(formula.nickelTotalFreshwaterChronicUS({
+        TH:1
+      }).toFixed(15)).to.equal((1.060138966497076).toFixed(15))
+
+      done()
+    })
+
     it('Should calculate Pentachlorophenol (Freshwater Acute)', function (done) {
       expect(formula.pentachlorophenolFreshwaterAcuteUS({})).to.equal(null)
 
       expect(formula.pentachlorophenolFreshwaterAcuteUS({
-        pH:7
-      }).toFixed(15)).to.equal((0.772882148578799).toFixed(15))
-
-      // Imaginary
-      expect(formula.pentachlorophenolFreshwaterAcuteUS({
         pH: 0
-      })).to.equal(null)
+      }).toFixed(15)).to.equal((0.007681042491145243).toFixed(15))
+
+      expect(formula.pentachlorophenolFreshwaterAcuteUS({
+        pH:7
+      }).toFixed(15)).to.equal((8.723320877521848).toFixed(15))
 
       done()
     })
@@ -440,23 +387,19 @@ describe('Guideline Formulas', function () {
       expect(formula.pentachlorophenolFreshwaterChronicUS({})).to.equal(null)
 
       expect(formula.pentachlorophenolFreshwaterChronicUS({
-        pH:7
-      }).toFixed(15)).to.equal((0.642380063506292).toFixed(15))
-
-      // Imaginary
-      expect(formula.pentachlorophenolFreshwaterChronicUS({
         pH: 0
-      })).to.equal(null)
+      }).toFixed(15)).to.equal((0.0058929415012239994).toFixed(15))
+
+      expect(formula.pentachlorophenolFreshwaterChronicUS({
+        pH:7
+      }).toFixed(15)).to.equal((6.692583680783364).toFixed(15))
 
       done()
     })
 
     it('Should calculate Silver Total (Freshwater Acute)', function (done) {
       expect(formula.silverTotalFreshwaterAcuteUS({})).to.equal(null)
-
-      expect(formula.silverTotalFreshwaterAcuteUS({
-        TH: 0
-      })).to.equal(0)
+      expect(formula.silverTotalFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
 
       expect(formula.silverTotalFreshwaterAcuteUS({
         TH:1
@@ -467,10 +410,7 @@ describe('Guideline Formulas', function () {
 
     it('Should calculate Silver Dissolved (Freshwater Acute)', function (done) {
       expect(formula.silverDissolvedFreshwaterAcuteUS({})).to.equal(null)
-
-      expect(formula.silverDissolvedFreshwaterAcuteUS({
-        TH: 0
-      })).to.equal(0)
+      expect(formula.silverDissolvedFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
 
       expect(formula.silverDissolvedFreshwaterAcuteUS({
         TH:1
@@ -481,10 +421,7 @@ describe('Guideline Formulas', function () {
 
     it('Should calculate Zinc Total (Freshwater Acute)', function (done) {
       expect(formula.zincTotalFreshwaterAcuteUS({})).to.equal(null)
-
-      expect(formula.zincTotalFreshwaterAcuteUS({
-        TH: 0
-      })).to.equal(0)
+      expect(formula.zincTotalFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
 
       expect(formula.zincTotalFreshwaterAcuteUS({
         TH:1
@@ -495,10 +432,7 @@ describe('Guideline Formulas', function () {
 
     it('Should calculate Zinc Dissolved (Freshwater Acute)', function (done) {
       expect(formula.zincDissolvedFreshwaterAcuteUS({})).to.equal(null)
-
-      expect(formula.zincDissolvedFreshwaterAcuteUS({
-        TH: 0
-      })).to.equal(0)
+      expect(formula.zincDissolvedFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
 
       expect(formula.zincDissolvedFreshwaterAcuteUS({
         TH:1
@@ -509,10 +443,7 @@ describe('Guideline Formulas', function () {
 
     it('Should calculate Zinc Total (Freshwater Chronic)', function (done) {
       expect(formula.zincTotalFreshwaterChronicUS({})).to.equal(null)
-
-      expect(formula.zincTotalFreshwaterChronicUS({
-        TH: 0
-      })).to.equal(0)
+      expect(formula.zincTotalFreshwaterChronicUS({ TH: 0 })).to.equal(null)
 
       expect(formula.zincTotalFreshwaterChronicUS({
         TH:1
@@ -523,10 +454,7 @@ describe('Guideline Formulas', function () {
 
     it('Should calculate Zinc Dissolved (Freshwater Chronic)', function (done) {
       expect(formula.zincDissolvedFreshwaterChronicUS({})).to.equal(null)
-
-      expect(formula.zincDissolvedFreshwaterChronicUS({
-        TH: 0
-      })).to.equal(0)
+      expect(formula.zincDissolvedFreshwaterChronicUS({ TH: 0 })).to.equal(null)
 
       expect(formula.zincDissolvedFreshwaterChronicUS({
         TH:1
