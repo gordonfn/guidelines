@@ -5,6 +5,8 @@ const formulaParams = require('./formula_params.json')
 
 // TODO add in region filter
 const filterMetadata = (params = {}, media = null) => {
+  media = media || params.media || null
+
   const arr = []
   for (let i = 0, l = metadataArray.length; i < l; i++) {
     let match = true
@@ -40,7 +42,7 @@ const filterMetadata = (params = {}, media = null) => {
 
 /**
  * Calculate guidelines
- * @param filters={characteristic_name, method_speciation, sample_fraction, type}
+ * @param filters={media, characteristic, method_speciation, sample_fraction, type}
  * @param params={pH, DOC, Ca, Mg, ...}
  */
 const calculate = (filters, params) => {
@@ -49,21 +51,32 @@ const calculate = (filters, params) => {
   const { unit, guidelines } = metadata[0]
 
   const guides = {}
-  Object.keys(guidelines).forEach(key => {
-    if (guidelines[key]) guides[key] = guidelines[key]
-    if (typeof guides[key] === 'string') {  // aka type === formula
-      try {
-        const value = formula[guides[key]](params)
-        if (value) {
-          guides[key] = value
+  for (const region of Object.keys(guidelines)) {
+    for (const kind of Object.keys(guidelines[region])) {
+      if (guidelines[region][kind]) updateObjProp(guides, `${region}.${kind}`,  guidelines[region][kind])
+      if (typeof guides[region][kind] === 'string') {
+        try {
+          const value = formula[guides[region][kind]](params)
+          if (value) {
+            guides[region][kind] = value
+          }
+        } catch (e) {
+          console.error(`Error: Failed to calculate ${guides[region][kind]} (`, params, ')', e.message)
         }
-      } catch (e) {
-        console.error(`Error: Failed to calculate ${guides[key]} (`, params, ')', e.message)
       }
     }
-  })
-
+  }
   return { unit, guidelines: guides }
+}
+
+updateObjProp = (obj, propPath, value) => {
+  const [head, ...rest] = propPath.split('.')
+
+  if (rest.length && !obj[head]) obj[head] = {}
+
+  !rest.length
+    ? obj[head] = value
+    : updateObjProp(obj[head], rest.join('.'), value)
 }
 
 module.exports = { formulaParams, metadataArray, filterMetadata, calculate }

@@ -6,7 +6,7 @@ describe('Guidelines', function () {
     it('Should get all static metadata', function (done) {
       expect(guidelines.filterMetadata({
         type:['value','range']
-      }).length).to.equal(539)
+      }).length).to.equal(531)
 
       done()
     })
@@ -20,13 +20,13 @@ describe('Guidelines', function () {
 
     it('Should one specific metadata', function (done) {
       expect(guidelines.filterMetadata({
-        'characteristic_name': 'Aluminum',
+        'characteristic': 'Aluminum',
         'method_speciation': '',
         'sample_fraction': 'Total',
       }).length).to.equal(1)
 
       expect(guidelines.filterMetadata({
-        'characteristic_name': 'Cadmium',
+        'characteristic': 'Cadmium',
         'method_speciation': '',
         'sample_fraction': 'Total',
       }).length).to.equal(1)

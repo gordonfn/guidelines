@@ -71,7 +71,7 @@ parse(data, {
       const key = `${row['Characteristic Name']} ${row['Method Speciation']} (${sampleFraction}) ${row['Unit']}`
 
       const obj = json[key] || {}
-      obj.characteristic_name = row['Characteristic Name'] || ''
+      obj.characteristic = row['Characteristic Name'] || ''
       obj.method_speciation = row['Method Speciation'] || ''
       obj.sample_fraction = sampleFraction || ''
       obj.unit = row['Unit'] || ''
@@ -80,12 +80,12 @@ parse(data, {
 
       let types = []
       let guidelines = {}
-      ;[types[0], guidelines.freshwater_acute] = parseGuideline('Freshwater Acute', row)
-      ;[types[1], guidelines.freshwater_chronic] = parseGuideline('Freshwater Chronic', row)
-      ;[types[2], guidelines.marine_acute] = parseGuideline('Marine Acute', row)
-      ;[types[3], guidelines.marine_chronic] = parseGuideline('Marine Chronic', row)
-      ;[types[4], guidelines.sediment_acute] = parseGuideline('Sediment Acute', row)
-      ;[types[5], guidelines.sediment_chronic] = parseGuideline('Sediment Chronic', row)
+      ;[types[0], guidelines.Freshwater_acute] = parseGuideline('Freshwater Acute', row)
+      ;[types[1], guidelines.Freshwater_chronic] = parseGuideline('Freshwater Chronic', row)
+      ;[types[2], guidelines.Marine_acute] = parseGuideline('Marine Acute', row)
+      ;[types[3], guidelines.Marine_chronic] = parseGuideline('Marine Chronic', row)
+      ;[types[4], guidelines.Sediment_acute] = parseGuideline('Sediment Acute', row)
+      ;[types[5], guidelines.Sediment_chronic] = parseGuideline('Sediment Chronic', row)
       obj.type = [...new Set(types.sort())].filter(v => v != null)
 
       guidelines = clean(guidelines)
@@ -104,8 +104,8 @@ parse(data, {
   }
 
   let arr = Object.values(json).sort((a, b) => {
-    return `${a.characteristic_name} ${a.method_speciation} (${a.sample_fraction})`
-      < `${b.characteristic_name} ${b.method_speciation} (${b.sample_fraction})`
+    return `${a.characteristic} ${a.method_speciation} (${a.sample_fraction})`
+      < `${b.characteristic} ${b.method_speciation} (${b.sample_fraction})`
   })
 
   console.log('count', count, '=>', arr.length)
