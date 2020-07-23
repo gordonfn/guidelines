@@ -3,169 +3,34 @@ const formula = require('../formula.js')
 
 describe('Guideline Formulas', function () {
 
-  describe('CA: CCME', function () {
-    it('Should calculate Aluminum Total (Freshwater Chronic)', function (done) {
+  describe('Freshwater', function () {
+    it('Should calculate Aluminum Total Chronic (CA)', function (done) {
 
-      expect(formula.aluminumTotalFreshwaterChronicCA({})).to.equal(null)
+      expect(formula.freshwater_Aluminum__Total_CA_Chronic({})).to.equal(null)
 
-      expect(formula.aluminumTotalFreshwaterChronicCA({
+      expect(formula.freshwater_Aluminum__Total_CA_Chronic({
         pH: 1
       })).to.equal(5)
 
-      expect(formula.aluminumTotalFreshwaterChronicCA({
+      expect(formula.freshwater_Aluminum__Total_CA_Chronic({
         pH: 6.5
       })).to.equal(100)
 
       done()
     })
 
-    it('Should calculate Cadmium Total (Freshwater Acute)', function (done) {
-      expect(formula.cadmiumTotalFreshwaterAcuteCA({})).to.equal(null)
 
-      expect(formula.cadmiumTotalFreshwaterAcuteCA({
-        TH: 5
-      })).to.equal(0.11)
+    it('Should calculate Ammonia Acute (US)', function (done) {
+      expect(formula.freshwater_Ammonia_asN_Unfiltered_US_Acute({})).to.equal(null)
+      expect(formula.freshwater_Ammonia_asN_Unfiltered_US_Acute({pH:1})).to.equal(null)
+      expect(formula.freshwater_Ammonia_asN_Unfiltered_US_Acute({temperature:1})).to.equal(null)
 
-      expect(formula.cadmiumTotalFreshwaterAcuteCA({
-        TH: 100
-      }).toFixed(15)).to.equal((2.0989398836235241).toFixed(15))
-
-      expect(formula.cadmiumTotalFreshwaterAcuteCA({
-        TH: 361
-      })).to.equal(7.7)
-
-      done()
-    })
-
-    it('Should calculate Cadmium Total (Freshwater Chronic)', function (done) {
-      expect(formula.cadmiumTotalFreshwaterChronicCA({})).to.equal(null)
-
-      expect(formula.cadmiumTotalFreshwaterChronicCA({
-        TH: 10
-      })).to.equal(0.04)
-
-      expect(formula.cadmiumTotalFreshwaterChronicCA({
-        TH: 100
-      }).toFixed(15)).to.equal((0.158489319246111).toFixed(15))
-
-      expect(formula.cadmiumTotalFreshwaterChronicCA({
-        TH: 300
-      })).to.equal(0.37)
-
-      done()
-    })
-
-    it('Should calculate Copper Total (Freshwater Chronic)', function (done) {
-      expect(formula.copperTotalFreshwaterChronicCA({})).to.equal(2)
-
-      expect(formula.copperTotalFreshwaterChronicCA({
-        TH: 10
-      })).to.equal(2)
-
-      expect(formula.copperTotalFreshwaterChronicCA({
-        TH: 100
-      }).toFixed(15)).to.equal((2.364768216641758).toFixed(15))
-
-      expect(formula.copperTotalFreshwaterChronicCA({
-        TH: 300
-      })).to.equal(4)
-
-      done()
-    })
-
-    it('Should calculate Lead Total (Freshwater Chronic)', function (done) {
-      expect(formula.leadTotalFreshwaterChronicCA({})).to.equal(1)
-
-      expect(formula.leadTotalFreshwaterChronicCA({
-        TH: 10
-      })).to.equal(1)
-
-      expect(formula.leadTotalFreshwaterChronicCA({
-        TH: 100
-      }).toFixed(15)).to.equal((3.181591829189213).toFixed(15))
-
-      expect(formula.leadTotalFreshwaterChronicCA({
-        TH: 300
-      })).to.equal(7)
-
-      done()
-    })
-
-    it('Should calculate Nickel Total (Freshwater Chronic)', function (done) {
-      expect(formula.nickelTotalFreshwaterChronicCA({})).to.equal(25)
-
-      expect(formula.nickelTotalFreshwaterChronicCA({
-        TH: 10
-      })).to.equal(25)
-
-      expect(formula.nickelTotalFreshwaterChronicCA({
-        TH: 100
-      }).toFixed(15)).to.equal((95.576726269111492).toFixed(15))
-
-      expect(formula.nickelTotalFreshwaterChronicCA({
-        TH: 300
-      })).to.equal(150)
-
-      done()
-    })
-
-    it('Should calculate Zinc Dissolved (Freshwater Acute)', function (done) {
-      expect(formula.zincDissolvedFreshwaterAcuteCA({})).to.equal(null)
-      expect(formula.zincDissolvedFreshwaterAcuteCA({TH:1})).to.equal(null)
-      expect(formula.zincDissolvedFreshwaterAcuteCA({DOC:1})).to.equal(null)
-      expect(formula.zincDissolvedFreshwaterAcuteCA({TH:0,DOC:1})).to.equal(null)
-
-      expect(formula.zincDissolvedFreshwaterAcuteCA({
-        TH: 100,
-        DOC: 1
-      }).toFixed(15)).to.equal((99.694126642648090).toFixed(15))
-
-      expect(formula.zincDissolvedFreshwaterAcuteCA({
-        TH: 1,
-        DOC: 1
-      })).to.equal(37)
-
-      done()
-    })
-
-    it('Should calculate Zinc Dissolved (Freshwater Chronic)', function (done) {
-      expect(formula.zincDissolvedFreshwaterChronicCA({})).to.equal(null)
-      expect(formula.zincDissolvedFreshwaterChronicCA({TH:1})).to.equal(null)
-      expect(formula.zincDissolvedFreshwaterChronicCA({DOC:1})).to.equal(null)
-      expect(formula.zincDissolvedFreshwaterChronicCA({pH:1})).to.equal(null)
-
-      expect(formula.zincDissolvedFreshwaterAcuteCA({TH:0,DOC:0,pH:0})).to.equal(null)
-
-      expect(formula.zincDissolvedFreshwaterChronicCA({
-        TH: 100,
-        DOC: 1,
-        pH: 7
-      }).toFixed(15)).to.equal((26.604920134101859).toFixed(15))
-
-      expect(formula.zincDissolvedFreshwaterChronicCA({
-        TH: 1,
-        DOC: 1,
-        pH: 1
-      })).to.equal(7)
-
-      done()
-    })
-  })
-
-
-
-  describe('US: EPA', function () {
-    it('Should calculate Ammonia (Freshwater Acute)', function (done) {
-      expect(formula.ammoniaFreshwaterAcuteUS({})).to.equal(null)
-      expect(formula.ammoniaFreshwaterAcuteUS({pH:1})).to.equal(null)
-      expect(formula.ammoniaFreshwaterAcuteUS({temperature:1})).to.equal(null)
-
-      expect(formula.ammoniaFreshwaterAcuteUS({
+      expect(formula.freshwater_Ammonia_asN_Unfiltered_US_Acute({
         temperature: 0,
         pH: 0
       }).toFixed(15)).to.equal((38.999997579018896).toFixed(15))
 
-      expect(formula.ammoniaFreshwaterAcuteUS({
+      expect(formula.freshwater_Ammonia_asN_Unfiltered_US_Acute({
         temperature: 100,
         pH: 7
       }).toFixed(15)).to.equal((0.022094309501517).toFixed(15))
@@ -173,17 +38,17 @@ describe('Guideline Formulas', function () {
       done()
     })
 
-    it('Should calculate Ammonia (Freshwater Chronic)', function (done) {
-      expect(formula.ammoniaFreshwaterChronicUS({})).to.equal(null)
-      expect(formula.ammoniaFreshwaterChronicUS({pH:1})).to.equal(null)
-      expect(formula.ammoniaFreshwaterChronicUS({temperature:1})).to.equal(null)
+    it('Should calculate Ammonia Chronic (US)', function (done) {
+      expect(formula.freshwater_Ammonia_asN_Unfiltered_US_Chronic({})).to.equal(null)
+      expect(formula.freshwater_Ammonia_asN_Unfiltered_US_Chronic({pH:1})).to.equal(null)
+      expect(formula.freshwater_Ammonia_asN_Unfiltered_US_Chronic({temperature:1})).to.equal(null)
 
-      expect(formula.ammoniaFreshwaterChronicUS({
+      expect(formula.freshwater_Ammonia_asN_Unfiltered_US_Chronic({
         temperature: 0,
         pH: 0
       }).toFixed(15)).to.equal((2.746278579842297).toFixed(15))
 
-      expect(formula.ammoniaFreshwaterChronicUS({
+      expect(formula.freshwater_Ammonia_asN_Unfiltered_US_Chronic({
         temperature: 100,
         pH: 7
       }).toFixed(15)).to.equal((0.005698696304634).toFixed(15))
@@ -191,274 +56,500 @@ describe('Guideline Formulas', function () {
       done()
     })
 
-    it('Should calculate Cadmium Total (Freshwater Acute)', function (done) {
-      expect(formula.cadmiumTotalFreshwaterAcuteUS({})).to.equal(null)
-      expect(formula.cadmiumTotalFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
+    it('Should calculate Ammonia and ammonium as N Unfiltered (CA)', function (done) {
+      expect(formula.freshwater_Ammoniaandammonium_asN_Unfiltered_CA_Chronic({})).to.equal(null)
+      expect(formula.freshwater_Ammoniaandammonium_asN_Unfiltered_CA_Chronic({pH:1})).to.equal(null)
+      expect(formula.freshwater_Ammoniaandammonium_asN_Unfiltered_CA_Chronic({temperature:1})).to.equal(null)
 
-      expect(formula.cadmiumTotalFreshwaterAcuteUS({
-        TH:1
-      }).toFixed(15)).to.equal((0.020941969992583).toFixed(15))
+      expect(formula.freshwater_Ammoniaandammonium_asN_Unfiltered_CA_Chronic({
+        temperature: 0,
+        pH: 0
+      }).toFixed(15)).to.equal((2.746278579842297).toFixed(15))
+
+      expect(formula.freshwater_Ammoniaandammonium_asN_Unfiltered_CA_Chronic({
+        temperature: 100,
+        pH: 7
+      }).toFixed(15)).to.equal((0.005698696304634).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Cadmium Dissolved (Freshwater Acute)', function (done) {
-      expect(formula.cadmiumDissolvedFreshwaterAcuteUS({})).to.equal(null)
-      expect(formula.cadmiumDissolvedFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
+    it('Should calculate Ammonia and ammonium as NH3 Unfiltered (CA)', function (done) {
+      expect(formula.freshwater_Ammoniaandammonium_asNH3_Unfiltered_CA_Chronic({})).to.equal(null)
+      expect(formula.freshwater_Ammoniaandammonium_asNH3_Unfiltered_CA_Chronic({pH:1})).to.equal(null)
+      expect(formula.freshwater_Ammoniaandammonium_asNH3_Unfiltered_CA_Chronic({temperature:1})).to.equal(null)
 
-      expect(formula.cadmiumDissolvedFreshwaterAcuteUS({
+      expect(formula.freshwater_Ammoniaandammonium_asNH3_Unfiltered_CA_Chronic({
+        temperature: 0,
+        pH: 0
+      }).toFixed(15)).to.equal((2.746278579842297).toFixed(15))
+
+      expect(formula.freshwater_Ammoniaandammonium_asNH3_Unfiltered_CA_Chronic({
+        temperature: 100,
+        pH: 7
+      }).toFixed(15)).to.equal((0.005698696304634).toFixed(15))
+
+      done()
+      done()
+    })
+
+    it('Should calculate Cadmium Total Acute (CA)', function (done) {
+      expect(formula.freshwater_Cadmium__Total_CA_Acute({})).to.equal(null)
+
+      expect(formula.freshwater_Cadmium__Total_CA_Acute({
+        TH: 5
+      })).to.equal(0.11)
+
+      expect(formula.freshwater_Cadmium__Total_CA_Acute({
+        TH: 100
+      }).toFixed(15)).to.equal((2.0989398836235241).toFixed(15))
+
+      expect(formula.freshwater_Cadmium__Total_CA_Acute({
+        TH: 361
+      })).to.equal(7.7)
+
+      done()
+    })
+
+    it('Should calculate Cadmium Total Chronic (CA)', function (done) {
+      expect(formula.freshwater_Cadmium__Total_CA_Chronic({})).to.equal(null)
+
+      expect(formula.freshwater_Cadmium__Total_CA_Chronic({
+        TH: 10
+      })).to.equal(0.04)
+
+      expect(formula.freshwater_Cadmium__Total_CA_Chronic({
+        TH: 100
+      }).toFixed(15)).to.equal((0.158489319246111).toFixed(15))
+
+      expect(formula.freshwater_Cadmium__Total_CA_Chronic({
+        TH: 300
+      })).to.equal(0.37)
+
+      done()
+    })
+
+    it('Should calculate Cadmium Dissolved Acute (US)', function (done) {
+      expect(formula.freshwater_Cadmium__Dissolved_US_Acute({})).to.equal(null)
+      expect(formula.freshwater_Cadmium__Dissolved_US_Acute({ TH: 0 })).to.equal(null)
+
+      expect(formula.freshwater_Cadmium__Dissolved_US_Acute({
         TH:1
       }).toFixed(15)).to.equal((0.023804150915409).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Cadmium Total (Freshwater Chronic)', function (done) {
-      expect(formula.cadmiumTotalFreshwaterChronicUS({})).to.equal(null)
-      expect(formula.cadmiumTotalFreshwaterChronicUS({ TH: 0 })).to.equal(null)
+    it('Should calculate Cadmium Dissolved Chronic (US)', function (done) {
+      expect(formula.freshwater_Cadmium__Dissolved_US_Chronic({})).to.equal(null)
+      expect(formula.freshwater_Cadmium__Dissolved_US_Chronic({ TH: 0 })).to.equal(null)
 
-      expect(formula.cadmiumTotalFreshwaterChronicUS({
-        TH:1
-      }).toFixed(15)).to.equal((0.020060551586337).toFixed(15))
-
-      done()
-    })
-
-    it('Should calculate Cadmium Dissolved (Freshwater Chronic)', function (done) {
-      expect(formula.cadmiumDissolvedFreshwaterChronicUS({})).to.equal(null)
-      expect(formula.cadmiumDissolvedFreshwaterChronicUS({ TH: 0 })).to.equal(null)
-
-      expect(formula.cadmiumDissolvedFreshwaterChronicUS({
+      expect(formula.freshwater_Cadmium__Dissolved_US_Chronic({
         TH:1
       }).toFixed(15)).to.equal((0.022100147987223).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Chromium(III) Total (Freshwater Acute)', function (done) {
-      expect(formula.chromiumiiiTotalFreshwaterAcuteUS({})).to.equal(null)
-      expect(formula.chromiumiiiTotalFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
+    it('Should calculate Cadmium Total Acute (US)', function (done) {
+      expect(formula.freshwater_Cadmium__Total_US_Acute({})).to.equal(null)
+      expect(formula.freshwater_Cadmium__Total_US_Acute({ TH: 0 })).to.equal(null)
 
-      expect(formula.chromiumiiiTotalFreshwaterAcuteUS({
+      expect(formula.freshwater_Cadmium__Total_US_Acute({
         TH:1
-      }).toFixed(15)).to.equal((41.496122950792731).toFixed(15))
+      }).toFixed(15)).to.equal((0.020941969992583).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Chromium(III) Dissolved (Freshwater Acute)', function (done) {
-      expect(formula.chromiumiiiDissolvedFreshwaterAcuteUS({})).to.equal(null)
-      expect(formula.chromiumiiiDissolvedFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
+    it('Should calculate Cadmium Total Chronic (US)', function (done) {
+      expect(formula.freshwater_Cadmium__Total_US_Chronic({})).to.equal(null)
+      expect(formula.freshwater_Cadmium__Total_US_Chronic({ TH: 0 })).to.equal(null)
 
-      expect(formula.chromiumiiiDissolvedFreshwaterAcuteUS({
+      expect(formula.freshwater_Cadmium__Total_US_Chronic({
+        TH:1
+      }).toFixed(15)).to.equal((0.020060551586337).toFixed(15))
+
+      done()
+    })
+
+    it('Should calculate Chromium(III) Dissolved Acute (US)', function (done) {
+      expect(formula.freshwater_ChromiumIII__Dissolved_US_Acute({})).to.equal(null)
+      expect(formula.freshwater_ChromiumIII__Dissolved_US_Acute({ TH: 0 })).to.equal(null)
+
+      expect(formula.freshwater_ChromiumIII__Dissolved_US_Acute({
         TH:1
       }).toFixed(15)).to.equal((13.112774852450503).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Chromium(III) Total (Freshwater Chronic)', function (done) {
-      expect(formula.chromiumiiiTotalFreshwaterChronicUS({})).to.equal(null)
-      expect(formula.chromiumiiiTotalFreshwaterChronicUS({ TH: 0 })).to.equal(null)
+    it('Should calculate Chromium(III) Dissolved Chronic (US)', function (done) {
+      expect(formula.freshwater_ChromiumIII__Dissolved_US_Chronic({})).to.equal(null)
+      expect(formula.freshwater_ChromiumIII__Dissolved_US_Chronic({ TH: 0 })).to.equal(null)
 
-      expect(formula.chromiumiiiTotalFreshwaterChronicUS({
-        TH:1
-      }).toFixed(15)).to.equal((1.983375120842844).toFixed(15))
-
-      done()
-    })
-
-    it('Should calculate Chromium(III) Dissolved (Freshwater Chronic)', function (done) {
-      expect(formula.chromiumiiiDissolvedFreshwaterChronicUS({})).to.equal(null)
-      expect(formula.chromiumiiiDissolvedFreshwaterChronicUS({ TH: 0 })).to.equal(null)
-
-      expect(formula.chromiumiiiDissolvedFreshwaterChronicUS({
+      expect(formula.freshwater_ChromiumIII__Dissolved_US_Chronic({
         TH:1
       }).toFixed(15)).to.equal((1.705702603924846).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Lead Total (Freshwater Acute)', function (done) {
-      expect(formula.leadTotalFreshwaterAcuteUS({})).to.equal(null)
+    it('Should calculate Chromium(III) Total Acute (US)', function (done) {
+      expect(formula.freshwater_ChromiumIII__Total_US_Acute({})).to.equal(null)
+      expect(formula.freshwater_ChromiumIII__Total_US_Acute({ TH: 0 })).to.equal(null)
 
-      expect(formula.leadTotalFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
-
-      expect(formula.leadTotalFreshwaterAcuteUS({
+      expect(formula.freshwater_ChromiumIII__Total_US_Acute({
         TH:1
-      }).toFixed(15)).to.equal((0.232236274729759).toFixed(15))
+      }).toFixed(15)).to.equal((41.496122950792731).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Lead Dissolved (Freshwater Acute)', function (done) {
-      expect(formula.leadDissolvedFreshwaterAcuteUS({})).to.equal(null)
-      expect(formula.leadDissolvedFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
+    it('Should calculate Chromium(III) Total Chronic (US)', function (done) {
+      expect(formula.freshwater_ChromiumIII__Total_US_Chronic({})).to.equal(null)
+      expect(formula.freshwater_ChromiumIII__Total_US_Chronic({ TH: 0 })).to.equal(null)
 
-      expect(formula.leadDissolvedFreshwaterAcuteUS({
+      expect(formula.freshwater_ChromiumIII__Total_US_Chronic({
+        TH:1
+      }).toFixed(15)).to.equal((1.983375120842844).toFixed(15))
+
+      done()
+    })
+
+    it('Should calculate Cobalt Total Chronic (CA)', function (done) {
+      expect(formula.freshwater_Cobalt__Total_CA_Chronic({})).to.equal(null)
+
+      expect(formula.freshwater_Cobalt__Total_CA_Chronic({
+        TH: 10
+      })).to.equal(null)
+
+      expect(formula.freshwater_Cobalt__Total_CA_Chronic({
+        TH: 100
+      }).toFixed(15)).to.equal((1.019732621347850).toFixed(15))
+
+      done()
+    })
+
+    it('Should calculate Copper Total Chronic (CA)', function (done) {
+      expect(formula.freshwater_Copper__Total_CA_Chronic({})).to.equal(2)
+
+      expect(formula.freshwater_Copper__Total_CA_Chronic({
+        TH: 10
+      })).to.equal(2)
+
+      expect(formula.freshwater_Copper__Total_CA_Chronic({
+        TH: 100
+      }).toFixed(15)).to.equal((2.364768216641758).toFixed(15))
+
+      expect(formula.freshwater_Copper__Total_CA_Chronic({
+        TH: 300
+      })).to.equal(4)
+
+      done()
+    })
+
+    it('Should calculate Iron Total Chronic (CA)', function (done) {
+      expect(formula.freshwater_Iron__Total_CA_Chronic({})).to.equal(null)
+
+      expect(formula.freshwater_Iron__Total_CA_Chronic({
+        DOC: 0,
+        pH: 0
+      })).to.equal(0)
+
+      expect(formula.freshwater_Iron__Total_CA_Chronic({
+        DOC: 10,
+        pH: 7
+      }).toFixed(15)).to.equal((4138.276175584722296).toFixed(15))
+
+      done()
+    })
+
+    it('Should calculate Lead Dissolved Acute (US)', function (done) {
+      expect(formula.freshwater_Lead__Dissolved_US_Acute({})).to.equal(null)
+      expect(formula.freshwater_Lead__Dissolved_US_Acute({ TH: 0 })).to.equal(null)
+
+      expect(formula.freshwater_Lead__Dissolved_US_Acute({
         TH:1
       }).toFixed(15)).to.equal((0.339536400743149).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Lead Total (Freshwater Chronic)', function (done) {
-      expect(formula.leadTotalFreshwaterChronicUS({})).to.equal(null)
-      expect(formula.leadTotalFreshwaterChronicUS({ TH: 0 })).to.equal(null)
+    it('Should calculate Lead Dissolved Chronic (CA)', function (done) {
+      expect(formula.freshwater_Lead__Dissolved_CA_Chronic({})).to.equal(null)
 
-      expect(formula.leadTotalFreshwaterChronicUS({
+      expect(formula.freshwater_Lead__Dissolved_CA_Chronic({
+        DOC: 0,
+        pH: 0
+      })).to.equal(0)
+
+      expect(formula.freshwater_Lead__Dissolved_CA_Chronic({
+        DOC: 10,
+        pH: 7
+      }).toFixed(15)).to.equal((2.054367888118551).toFixed(15))
+
+      done()
+    })
+
+    it('Should calculate Lead Dissolved Chronic (US)', function (done) {
+      expect(formula.freshwater_Lead__Dissolved_US_Chronic({})).to.equal(null)
+      expect(formula.freshwater_Lead__Dissolved_US_Chronic({ TH: 0 })).to.equal(null)
+
+      expect(formula.freshwater_Lead__Dissolved_US_Chronic({
+        TH:1
+      }).toFixed(15)).to.equal((0.013231246084000).toFixed(15))
+
+      done()
+    })
+
+    it('Should calculate Lead Total Acute (US)', function (done) {
+      expect(formula.freshwater_Lead__Total_US_Acute({})).to.equal(null)
+
+      expect(formula.freshwater_Lead__Total_US_Acute({ TH: 0 })).to.equal(null)
+
+      expect(formula.freshwater_Lead__Total_US_Acute({
+        TH:1
+      }).toFixed(15)).to.equal((0.232236274729759).toFixed(15))
+
+      done()
+    })
+
+    it('Should calculate Lead Total Chronic (CA)', function (done) {
+      expect(formula.freshwater_Lead__Total_CA_Chronic({})).to.equal(1)
+
+      expect(formula.freshwater_Lead__Total_CA_Chronic({
+        TH: 10
+      })).to.equal(1)
+
+      expect(formula.freshwater_Lead__Total_CA_Chronic({
+        TH: 100
+      }).toFixed(15)).to.equal((3.181591829189213).toFixed(15))
+
+      expect(formula.freshwater_Lead__Total_CA_Chronic({
+        TH: 300
+      })).to.equal(7)
+
+      done()
+    })
+
+    it('Should calculate Lead Total Chronic (US)', function (done) {
+      expect(formula.freshwater_Lead__Total_US_Chronic({})).to.equal(null)
+      expect(formula.freshwater_Lead__Total_US_Chronic({ TH: 0 })).to.equal(null)
+
+      expect(formula.freshwater_Lead__Total_US_Chronic({
         TH:1
       }).toFixed(15)).to.equal((0.009049914217903).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Lead Dissolved (Freshwater Chronic)', function (done) {
-      expect(formula.leadDissolvedFreshwaterChronicUS({})).to.equal(null)
-      expect(formula.leadDissolvedFreshwaterChronicUS({ TH: 0 })).to.equal(null)
+    it('Should calculate Manganese Acute (CA)', function (done) {
+      expect(formula.freshwater_Manganese___CA_Acute({})).to.equal(null)
+      expect(formula.freshwater_Manganese___CA_Acute({ TH: 0 })).to.equal(null)
 
-      expect(formula.leadDissolvedFreshwaterChronicUS({
+      expect(formula.freshwater_Manganese___CA_Acute({
         TH:1
-      }).toFixed(15)).to.equal((0.013231246084000).toFixed(15))
-
+      }).toFixed(15)).to.equal((116.745925898989910).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Nickel Total (Freshwater Acute)', function (done) {
-      expect(formula.nickelTotalFreshwaterAcuteUS({})).to.equal(null)
-      expect(formula.nickelTotalFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
+    it('Should calculate Nickel Dissolved Acute (US)', function (done) {
+      expect(formula.freshwater_Nickel__Dissolved_US_Acute({})).to.equal(null)
+      expect(formula.freshwater_Nickel__Dissolved_US_Acute({ TH: 0 })).to.equal(null)
 
-      expect(formula.nickelTotalFreshwaterAcuteUS({
-        TH:1
-      }).toFixed(15)).to.equal((9.535293310146759).toFixed(15))
-
-      done()
-    })
-
-    it('Should calculate Nickel Dissolved (Freshwater Acute)', function (done) {
-      expect(formula.nickelDissolvedFreshwaterAcuteUS({})).to.equal(null)
-      expect(formula.nickelDissolvedFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
-
-      expect(formula.nickelDissolvedFreshwaterAcuteUS({
+      expect(formula.freshwater_Nickel__Dissolved_US_Acute({
         TH:1
       }).toFixed(15)).to.equal((9.516222723526466).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Nickel Dissolved (Freshwater Chronic)', function (done) {
-      expect(formula.nickelDissolvedFreshwaterChronicUS({})).to.equal(null)
-      expect(formula.nickelDissolvedFreshwaterChronicUS({ TH: 0 })).to.equal(null)
+    it('Should calculate Nickel Dissolved Chronic (US)', function (done) {
+      expect(formula.freshwater_Nickel__Dissolved_US_Chronic({})).to.equal(null)
+      expect(formula.freshwater_Nickel__Dissolved_US_Chronic({ TH: 0 })).to.equal(null)
 
-      expect(formula.nickelDissolvedFreshwaterChronicUS({
+      expect(formula.freshwater_Nickel__Dissolved_US_Chronic({
         TH:1
       }).toFixed(15)).to.equal((1.056958549597585).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Nickel Total (Freshwater Chronic)', function (done) {
-      expect(formula.nickelTotalFreshwaterChronicUS({})).to.equal(null)
-      expect(formula.nickelTotalFreshwaterChronicUS({ TH: 0 })).to.equal(null)
+    it('Should calculate Nickel Total Acute (US)', function (done) {
+      expect(formula.freshwater_Nickel__Total_US_Acute({})).to.equal(null)
+      expect(formula.freshwater_Nickel__Total_US_Acute({ TH: 0 })).to.equal(null)
 
-      expect(formula.nickelTotalFreshwaterChronicUS({
+      expect(formula.freshwater_Nickel__Total_US_Acute({
+        TH:1
+      }).toFixed(15)).to.equal((9.535293310146759).toFixed(15))
+
+      done()
+    })
+
+    it('Should calculate Nickel Total Chronic (CA)', function (done) {
+      expect(formula.freshwater_Nickel__Total_CA_Chronic({})).to.equal(25)
+
+      expect(formula.freshwater_Nickel__Total_CA_Chronic({
+        TH: 10
+      })).to.equal(25)
+
+      expect(formula.freshwater_Nickel__Total_CA_Chronic({
+        TH: 100
+      }).toFixed(15)).to.equal((95.576726269111492).toFixed(15))
+
+      expect(formula.freshwater_Nickel__Total_CA_Chronic({
+        TH: 300
+      })).to.equal(150)
+
+      done()
+    })
+
+    it('Should calculate Nickel Total Chronic (US)', function (done) {
+      expect(formula.freshwater_Nickel__Total_US_Chronic({})).to.equal(null)
+      expect(formula.freshwater_Nickel__Total_US_Chronic({ TH: 0 })).to.equal(null)
+
+      expect(formula.freshwater_Nickel__Total_US_Chronic({
         TH:1
       }).toFixed(15)).to.equal((1.060138966497076).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Pentachlorophenol (Freshwater Acute)', function (done) {
-      expect(formula.pentachlorophenolFreshwaterAcuteUS({})).to.equal(null)
 
-      expect(formula.pentachlorophenolFreshwaterAcuteUS({
+    it('Should calculate Pentachlorophenol Acute (US)', function (done) {
+      expect(formula.freshwater_Pentachlorophenol___US_Acute({})).to.equal(null)
+
+      expect(formula.freshwater_Pentachlorophenol___US_Acute({
         pH: 0
       }).toFixed(15)).to.equal((0.007681042491145243).toFixed(15))
 
-      expect(formula.pentachlorophenolFreshwaterAcuteUS({
+      expect(formula.freshwater_Pentachlorophenol___US_Acute({
         pH:7
       }).toFixed(15)).to.equal((8.723320877521848).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Pentachlorophenol (Freshwater Chronic)', function (done) {
-      expect(formula.pentachlorophenolFreshwaterChronicUS({})).to.equal(null)
+    it('Should calculate Pentachlorophenol Chronic (US)', function (done) {
+      expect(formula.freshwater_Pentachlorophenol___US_Chronic({})).to.equal(null)
 
-      expect(formula.pentachlorophenolFreshwaterChronicUS({
+      expect(formula.freshwater_Pentachlorophenol___US_Chronic({
         pH: 0
       }).toFixed(15)).to.equal((0.0058929415012239994).toFixed(15))
 
-      expect(formula.pentachlorophenolFreshwaterChronicUS({
+      expect(formula.freshwater_Pentachlorophenol___US_Chronic({
         pH:7
       }).toFixed(15)).to.equal((6.692583680783364).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Silver Total (Freshwater Acute)', function (done) {
-      expect(formula.silverTotalFreshwaterAcuteUS({})).to.equal(null)
-      expect(formula.silverTotalFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
+    it('Should calculate Silver Dissolved Acute (US)', function (done) {
+      expect(formula.freshwater_Silver__Dissolved_US_Acute({})).to.equal(null)
+      expect(formula.freshwater_Silver__Dissolved_US_Acute({ TH: 0 })).to.equal(null)
 
-      expect(formula.silverTotalFreshwaterAcuteUS({
-        TH:1
-      }).toFixed(15)).to.equal((0.001374039963621).toFixed(15))
-
-      done()
-    })
-
-    it('Should calculate Silver Dissolved (Freshwater Acute)', function (done) {
-      expect(formula.silverDissolvedFreshwaterAcuteUS({})).to.equal(null)
-      expect(formula.silverDissolvedFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
-
-      expect(formula.silverDissolvedFreshwaterAcuteUS({
+      expect(formula.freshwater_Silver__Dissolved_US_Acute({
         TH:1
       }).toFixed(15)).to.equal((0.001167933969078).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Zinc Total (Freshwater Acute)', function (done) {
-      expect(formula.zincTotalFreshwaterAcuteUS({})).to.equal(null)
-      expect(formula.zincTotalFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
+    it('Should calculate Silver Total Acute (US)', function (done) {
+      expect(formula.freshwater_Silver__Total_US_Acute({})).to.equal(null)
+      expect(formula.freshwater_Silver__Total_US_Acute({ TH: 0 })).to.equal(null)
 
-      expect(formula.zincTotalFreshwaterAcuteUS({
+      expect(formula.freshwater_Silver__Total_US_Acute({
         TH:1
-      }).toFixed(15)).to.equal((2.420562618182530).toFixed(15))
+      }).toFixed(15)).to.equal((0.001374039963621).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Zinc Dissolved (Freshwater Acute)', function (done) {
-      expect(formula.zincDissolvedFreshwaterAcuteUS({})).to.equal(null)
-      expect(formula.zincDissolvedFreshwaterAcuteUS({ TH: 0 })).to.equal(null)
+    it('Should calculate Zinc Dissolved Acute (CA)', function (done) {
+      expect(formula.freshwater_Zinc__Dissolved_CA_Acute({})).to.equal(null)
+      expect(formula.freshwater_Zinc__Dissolved_CA_Acute({TH:1})).to.equal(null)
+      expect(formula.freshwater_Zinc__Dissolved_CA_Acute({DOC:1})).to.equal(null)
+      expect(formula.freshwater_Zinc__Dissolved_CA_Acute({TH:0,DOC:1})).to.equal(null)
 
-      expect(formula.zincDissolvedFreshwaterAcuteUS({
+      expect(formula.freshwater_Zinc__Dissolved_CA_Acute({
+        TH: 100,
+        DOC: 1
+      }).toFixed(15)).to.equal((99.694126642648090).toFixed(15))
+
+      expect(formula.freshwater_Zinc__Dissolved_CA_Acute({
+        TH: 1,
+        DOC: 1
+      })).to.equal(37)
+
+      done()
+    })
+
+    it('Should calculate Zinc Dissolved Chronic (CA)', function (done) {
+      expect(formula.freshwater_Zinc__Dissolved_CA_Chronic({})).to.equal(null)
+      expect(formula.freshwater_Zinc__Dissolved_CA_Chronic({TH:1})).to.equal(null)
+      expect(formula.freshwater_Zinc__Dissolved_CA_Chronic({DOC:1})).to.equal(null)
+      expect(formula.freshwater_Zinc__Dissolved_CA_Chronic({pH:1})).to.equal(null)
+
+      expect(formula.freshwater_Zinc__Dissolved_CA_Chronic({TH:0,DOC:0,pH:0})).to.equal(null)
+
+      expect(formula.freshwater_Zinc__Dissolved_CA_Chronic({
+        TH: 100,
+        DOC: 1,
+        pH: 7
+      }).toFixed(15)).to.equal((26.604920134101859).toFixed(15))
+
+      expect(formula.freshwater_Zinc__Dissolved_CA_Chronic({
+        TH: 1,
+        DOC: 1,
+        pH: 1
+      })).to.equal(7)
+
+      done()
+    })
+
+    it('Should calculate Zinc Dissolved Acute (US)', function (done) {
+      expect(formula.freshwater_Zinc__Dissolved_US_Acute({})).to.equal(null)
+      expect(formula.freshwater_Zinc__Dissolved_US_Acute({ TH: 0 })).to.equal(null)
+
+      expect(formula.freshwater_Zinc__Dissolved_US_Acute({
         TH:1
       }).toFixed(15)).to.equal((2.367310240582515).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Zinc Total (Freshwater Chronic)', function (done) {
-      expect(formula.zincTotalFreshwaterChronicUS({})).to.equal(null)
-      expect(formula.zincTotalFreshwaterChronicUS({ TH: 0 })).to.equal(null)
+    it('Should calculate Zinc Dissolved Chronic (US)', function (done) {
+      expect(formula.freshwater_Zinc__Dissolved_US_Chronic({})).to.equal(null)
+      expect(formula.freshwater_Zinc__Dissolved_US_Chronic({ TH: 0 })).to.equal(null)
 
-      expect(formula.zincTotalFreshwaterChronicUS({
+      expect(formula.freshwater_Zinc__Dissolved_US_Chronic({
+        TH:1
+      }).toFixed(15)).to.equal((2.386674741527975).toFixed(15))
+
+      done()
+    })
+
+    it('Should calculate Zinc Total Acute (US)', function (done) {
+      expect(formula.freshwater_Zinc__Total_US_Acute({})).to.equal(null)
+      expect(formula.freshwater_Zinc__Total_US_Acute({ TH: 0 })).to.equal(null)
+
+      expect(formula.freshwater_Zinc__Total_US_Acute({
         TH:1
       }).toFixed(15)).to.equal((2.420562618182530).toFixed(15))
 
       done()
     })
 
-    it('Should calculate Zinc Dissolved (Freshwater Chronic)', function (done) {
-      expect(formula.zincDissolvedFreshwaterChronicUS({})).to.equal(null)
-      expect(formula.zincDissolvedFreshwaterChronicUS({ TH: 0 })).to.equal(null)
+    it('Should calculate Zinc Total Chronic (US)', function (done) {
+      expect(formula.freshwater_Zinc__Total_US_Chronic({})).to.equal(null)
+      expect(formula.freshwater_Zinc__Total_US_Chronic({ TH: 0 })).to.equal(null)
 
-      expect(formula.zincDissolvedFreshwaterChronicUS({
+      expect(formula.freshwater_Zinc__Total_US_Chronic({
         TH:1
-      }).toFixed(15)).to.equal((2.386674741527975).toFixed(15))
+      }).toFixed(15)).to.equal((2.420562618182530).toFixed(15))
 
       done()
     })

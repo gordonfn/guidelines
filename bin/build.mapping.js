@@ -2,23 +2,54 @@ const fs = require('fs')
 const parse = require('csv-parse')
 const formulas = require('../formula')
 const json = {}
-const db = []
 
-const parseGuideline = (col, row) => {
-  if (row[col] !== '-') {
-    if (row['Type'] === 'value' || row[col].toString() === Number.parseFloat(row[col]).toString())
-      return Number.parseFloat(row[col])
-    if (row['Type'] === 'range') return row[col].split('-').map(v => Number.parseFloat(v))
-    if (row['Type'] === 'formula') {
-      const formula = row['Characteristic Name'].toLowerCase().replace(/[^a-z0-9]/g, '')
-        + row['Sample Fraction'].replace(' ', '')
-        + col.replace(' ', '')
-        + row['Region'].replace('-', '')
-      if (Object.keys(formulas).indexOf(formula) === -1) console.log(`Missing: ${formula}()`)
-      return formula
+updateObjProp = (obj, propPath, value) => {
+  const [head, ...rest] = propPath.split('.')
+
+  if (rest.length && !obj[head]) obj[head] = {}
+
+  !rest.length
+    ? obj[head] = value
+    : updateObjProp(obj[head], rest.join('.'), value)
+}
+
+function clean (obj) {
+  for (const propName in obj) {
+    if (obj[propName] === null || obj[propName] === undefined) {
+      delete obj[propName]
+    } else if (typeof obj[propName] === 'object') {
+      obj[propName] = clean(obj[propName])
     }
   }
-  return null
+  return obj
+}
+
+const parseGuideline = (col, row) => {
+  if (row[col] === 'NRG' || row[col] === '') return [null, null]
+
+  const [media, type] = col.split(' ')
+
+  // Value
+  if (row[col].toString() === Number.parseFloat(row[col]).toString()) return ['value', Number.parseFloat(row[col])]
+  // Range
+  if (row[col].match(/^[\d.]+-[\d.]+$/)) return ['range', row[col].split('-').map(v => Number.parseFloat(v))]
+  // Formula
+  if (row[col].length) {
+    const region = row['Region'].split(',').map(v => v.trim())[0].replace('-', '')
+    const formula =
+      media.toLowerCase() + '_'
+      + row['Characteristic Name'].replace(/[^a-zA-Z0-9]/g, '') + '_'
+      + row['Method Speciation'].replace(' ', '') + '_'
+      + row['Sample Fraction'].replace(' ', '') + '_'
+      + region + '_'
+      + type
+    if (Object.keys(formulas).indexOf(formula) === -1) {
+      return [null, null]
+    }
+    //console.log(formula, ',')
+    return ['formula', formula]
+  }
+  return [null, null]
 }
 
 const data = fs.readFileSync(__dirname + '/../lib/Guidelines.csv')
@@ -26,61 +57,62 @@ parse(data, {
   columns: true
 }, (err, output) => {
   let count = 0
-  let varchar = {
-    characteristic_name:118,
-    method_speciation:9,
-    sample_fraction:25,
-    unit:11
-  }
-  output.forEach((row) => {
-    row['Characteristic Name'] = row['DataStream Characteristic Name']
+
+  for (const row of output) {
     if (!row['Characteristic Name']) {
       console.log(`skip '${row['Guideline Name']}' from ${row['Region']}`)
-      return
+      continue
     }
 
-    row['Sample Fraction'].split(',').map(v => v.trim()).forEach(sampleFraction => {
+    row['Sample Fraction'].split(',').map(v => v.trim()).sort().forEach(sampleFraction => {
       count += 1
-      const key = `${row['Characteristic Name']} ${row['Method Speciation']} (${sampleFraction})`
+      let regions = row['Region'].split(',').map(v => v.trim()).sort()
 
-      const obj = json[key] || {type:''}
-      //obj.name = row['Short Name'] || row['Characteristic Name'] || ''
+      const key = `${row['Characteristic Name']} ${row['Method Speciation']} (${sampleFraction}) ${row['Unit']}`
+
+      const obj = json[key] || {}
       obj.characteristic_name = row['Characteristic Name'] || ''
       obj.method_speciation = row['Method Speciation'] || ''
       obj.sample_fraction = sampleFraction || ''
       obj.unit = row['Unit'] || ''
 
-      varchar.characteristic_name = Math.max(varchar.characteristic_name, obj.characteristic_name.length)
-      varchar.method_speciation = Math.max(varchar.method_speciation, obj.method_speciation.length)
-      varchar.sample_fraction = Math.max(varchar.sample_fraction, obj.sample_fraction.length)
-      varchar.unit = Math.max(varchar.unit, obj.unit.length)
-
-      const types = ['','value', 'range', 'formula']
-      obj.type = types.indexOf(obj.type) < types.indexOf(row['Type']) ? obj.type = row['Type'] : obj.type
-
       if (!obj.guidelines) obj.guidelines = {}
-      obj.guidelines[`${row['Region']}_freshwater_acute`] = parseGuideline('Freshwater Acute', row)
-      obj.guidelines[`${row['Region']}_freshwater_chronic`] = parseGuideline('Freshwater Chronic', row)
-      obj.guidelines[`${row['Region']}_marine_acute`] = parseGuideline('Marine Acute', row)
-      obj.guidelines[`${row['Region']}_marine_chronic`] = parseGuideline('Marine Chronic', row)
 
-      // clean nulls
-      Object.keys(obj.guidelines).forEach((key) => (obj.guidelines[key] === null) && delete obj.guidelines[key])
+      let types = []
+      let guidelines = {}
+      ;[types[0], guidelines.freshwater_acute] = parseGuideline('Freshwater Acute', row)
+      ;[types[1], guidelines.freshwater_chronic] = parseGuideline('Freshwater Chronic', row)
+      ;[types[2], guidelines.marine_acute] = parseGuideline('Marine Acute', row)
+      ;[types[3], guidelines.marine_chronic] = parseGuideline('Marine Chronic', row)
+      ;[types[4], guidelines.sediment_acute] = parseGuideline('Sediment Acute', row)
+      ;[types[5], guidelines.sediment_chronic] = parseGuideline('Sediment Chronic', row)
+      obj.type = [...new Set(types.sort())].filter(v => v != null)
+
+      guidelines = clean(guidelines)
+
+      for (const region of regions) {
+        for (const key of Object.keys(guidelines)) {
+          const [media, type] = key.split('_')
+          updateObjProp(obj.guidelines, `${media}.${region}.src`, row['Guideline Publisher'])
+          updateObjProp(obj.guidelines, `${media}.${region}.${type}`, guidelines[key])
+        }
+      }
 
       json[key] = obj
     })
 
-  })
+  }
 
-  let arr = Object.values(json).sort((a,b) => {
-    return `${a.characteristic_name} ${a.method_speciation} (${a.sample_fraction})` < `${b.characteristic_name} ${b.method_speciation} (${b.sample_fraction})`
+  let arr = Object.values(json).sort((a, b) => {
+    return `${a.characteristic_name} ${a.method_speciation} (${a.sample_fraction})`
+      < `${b.characteristic_name} ${b.method_speciation} (${b.sample_fraction})`
   })
 
   console.log('count', count, '=>', arr.length)
 
   fs.writeFileSync(__dirname + '/../metadata.json', JSON.stringify(arr, null, 2))
 
-  console.log('Write SQL Table')
+  /*console.log('Write SQL Table')
   let sql = `
 CREATE SCHEMA IF NOT EXISTS datastream;
 CREATE TABLE IF NOT EXISTS datastream.guidelines (
@@ -107,7 +139,7 @@ CREATE INDEX IF NOT EXISTS guideline_sample_fraction_idx
 
 `
   arr.forEach(char => {
-    const {name,characteristic_name, method_speciation, sample_fraction, unit, type, guidelines} = char
+    const { name, characteristic_name, method_speciation, sample_fraction, unit, type, guidelines } = char
     const values = {}
     Object.keys(guidelines).forEach(key => {
       const value = guidelines[key]
@@ -117,12 +149,12 @@ CREATE INDEX IF NOT EXISTS guideline_sample_fraction_idx
     })
     //db.push({name, characteristic_name, method_speciation, sample_fraction, values})
     sql += `INSERT INTO datastream.guidelines (characteristic_name, method_speciation, sample_fraction, unit, values)
-VALUES ('${characteristic_name.replace("'", "''")}', '${method_speciation}', '${sample_fraction}', '${unit}', '${JSON.stringify(values)}')
+VALUES ('${characteristic_name.replace('\'', '\'\'')}', '${method_speciation}', '${sample_fraction}', '${unit}', '${JSON.stringify(values)}')
 ON CONFLICT (characteristic_name, method_speciation, sample_fraction) DO NOTHING;\n`
   })
 
   fs.writeFileSync(__dirname + '/../guidelines.sql', sql)
-
+*/
   console.log('Done!')
   process.exit(0)
 })

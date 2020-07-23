@@ -6,24 +6,15 @@ describe('Guidelines', function () {
     it('Should get all static metadata', function (done) {
       expect(guidelines.filterMetadata({
         type:['value','range']
-      }).length).to.equal(136)
-
-      expect(guidelines.filterMetadata({
-        type:'value'
-      }, ['CA_freshwater_acute']).length).to.equal(135)
+      }).length).to.equal(539)
 
       done()
     })
 
     it('Should get all formula metadata', function (done) {
       expect(guidelines.filterMetadata({
-        type:'formula'
-      }).length).to.equal(16)
-
-      expect(guidelines.filterMetadata({
-        type:'formula'
-      }, ['CA_freshwater_acute']).length).to.equal(16)
-
+        type:['formula']
+      }).length).to.equal(18)
       done()
     })
 

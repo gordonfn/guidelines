@@ -3,7 +3,8 @@ const formula = require('./formula')
 const metadataArray = require('./metadata.json')
 const formulaParams = require('./formula_params.json')
 
-const filterMetadata = (params = {}/*, guidelineKeys = ['CA_']*/) => {
+// TODO add in region filter
+const filterMetadata = (params = {}, media = null) => {
   const arr = []
   for (let i = 0, l = metadataArray.length; i < l; i++) {
     let match = true
@@ -13,9 +14,16 @@ const filterMetadata = (params = {}/*, guidelineKeys = ['CA_']*/) => {
         match = match && true
       } else if (Array.isArray(params[key])) {
         // cover case type: [value, range]
-        match = match && params[key].indexOf(metadataArray[i][key]) !== -1
+        let submatch = false
+        for (const allowed of metadataArray[i][key]) {
+          submatch = submatch || params[key].includes(allowed)
+        }
+        match = match && submatch
       } else {
         match = match && metadataArray[i][key] === params[key]
+      }
+      if (media && params[key] === 'media') {
+        Object.keys(metadataArray[i].guidelines).includes(media)
       }
     })
 
