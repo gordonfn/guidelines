@@ -6,7 +6,7 @@ describe('Guidelines', function () {
     it('Should get all static metadata', function (done) {
       expect(guidelines.filterMetadata({
         type:['value','range']
-      }).length).to.equal(531)
+      }).length).to.equal(405)
 
       done()
     })
