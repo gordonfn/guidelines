@@ -3,6 +3,7 @@
     "characteristic": ".alpha.-Endosulfan",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "US": {
@@ -21,13 +22,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": ".beta.-Endosulfan",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "US": {
@@ -46,13 +47,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1-Butanol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -64,13 +65,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1-Chloronaphthalene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -86,13 +87,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1-Methylnaphthalene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -103,13 +104,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,1-Dichloroethane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -125,13 +126,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,1-Dichloroethene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -143,13 +144,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,1-Dichloroethylene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -160,13 +161,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,1-Dichloropropane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -178,13 +179,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,1,1-Trichloroethane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -200,13 +201,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,1,1,2-Tetrachloroethane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -222,13 +223,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,1,2-Trichloroethane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -284,13 +285,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,2-Bis(2-chloroethoxy)ethane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -302,13 +303,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,2-Dichloroethane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -364,13 +365,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,2-Dichloroethylene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -381,13 +382,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,2-Dichloropropane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -403,13 +404,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,2-Diphenylhydrazine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -425,13 +426,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,2,3-Trichlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -486,13 +487,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,2,3,4-Tetrachlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -547,13 +548,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,2,3,5-Tetrachlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -564,13 +565,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,2,4-Trichlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -668,13 +669,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,2,4-Trimethylbenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -686,13 +687,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,2,4,5-Tetrachlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -708,13 +709,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,3-Dichloropropane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -726,13 +727,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,3-Dimethylnaphthalene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -743,13 +744,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,3,5-Trichlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -760,13 +761,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,3,5-Trimethylbenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -778,13 +779,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,3,5-Trinitrobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -796,13 +797,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "1,4-Dioxane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -818,13 +819,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2-Amino-4,6-dinitrotoluene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -836,13 +837,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2-Chloronaphthalene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -853,13 +854,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2-Ethylhexanol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -871,13 +872,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2-Methyl-5-nitroaniline",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -889,13 +890,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2-Methylnaphthalene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -906,13 +907,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2-Phenylphenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -923,13 +924,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,2-Dibromo-3-nitrilopropionamide",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -941,13 +942,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,3,3',4,4'-Pentachlorobiphenyl",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -972,13 +973,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,3,4-Trichlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -989,13 +990,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,3,4,5-Tetrachlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1006,13 +1007,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,3,4,6-Tetrachlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1028,13 +1029,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,3,5,6-Tetrachlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1050,13 +1051,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,3,6-Trichlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1067,13 +1068,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,4-D",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -1117,13 +1118,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,4-D 2-butoxyethyl ester",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1134,13 +1135,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,4-DB",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -1157,13 +1158,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,4-Dichlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -1175,13 +1176,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,4-Dimethylphenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1197,13 +1198,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,4-Dinitrophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -1215,13 +1216,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,4-Dinitrotoluene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1237,13 +1238,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,4,5-Trichlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1259,13 +1260,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,4,6-Trichlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1281,13 +1282,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,6-Di-tert-butyl-p-cresol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1298,13 +1299,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,6-Dimethylnaphthalene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1315,13 +1316,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "2,6-Dinitrotoluene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1337,13 +1338,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "3-Iodo-2-propynyl butyl carbamate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -1394,13 +1395,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "3-Trifluoromethyl-4-nitrophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -1412,13 +1413,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "3,3'-Dichlorobenzidine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1434,13 +1435,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "3,3',4,4'-Tetrachlorobiphenyl",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -1465,13 +1466,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "3,3',4,4',5-Pentachlorobiphenyl",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -1496,13 +1497,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "3,3',4,4',5,5'-Hexachlorobiphenyl",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -1527,13 +1528,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "3,4-Dimethylphenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1544,13 +1545,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "3,4,5-Trichloroguaiacol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1561,13 +1562,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "4-Amino-2,6-dinitrotoluene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -1579,13 +1580,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "4-Chloro-2-methylphenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -1597,13 +1598,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "4-Methyl-2-pentanol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1614,13 +1615,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "4,4'-Isopropylidenediphenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -1664,13 +1665,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "4,5,6-Trichloroguaiacol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1681,13 +1682,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "4,6-Dichloro-o-cresol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -1703,13 +1704,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Acenaphthene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -1761,13 +1762,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Acetaldehyde",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -1779,21 +1780,31 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Acetic acid",
     "method_speciation": "",
     "sample_fraction": "",
-    "guidelines": {},
-    "type": [],
-    "unit": null
+    "unit": "ng/L",
+    "guidelines": {
+      "Freshwater": {
+        "CA-QC": {
+          "src": "QC Gov",
+          "acute": "freshwater_Aceticacid___CAQC_Acute",
+          "chronic": "freshwater_Aceticacid___CAQC_Chronic"
+        }
+      }
+    },
+    "type": [
+      "formula"
+    ]
   },
   {
     "characteristic": "Acetic acid, 2-(4-nonylphenoxy)-",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -1805,13 +1816,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Acetone",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -1823,13 +1834,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Acridine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -1872,13 +1883,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Acrolein",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -1912,13 +1923,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Acrylamide",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -1930,13 +1941,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Acrylonitrile",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -1948,13 +1959,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Alachlor",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -1966,13 +1977,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Aldicarb",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -2069,13 +2080,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Aldrin",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -2101,13 +2112,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Aldrin + dieldrin mix, unspecified",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -2118,13 +2129,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Alkalinity, total",
     "method_speciation": "as CaCO3",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -2139,21 +2150,41 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Aluminum",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
-    "guidelines": {},
-    "type": [],
-    "unit": null
+    "unit": "µg/L",
+    "guidelines": {
+      "Freshwater": {
+        "CA-AB": {
+          "src": "BC Gov",
+          "acute": "freshwater_Aluminum__Dissolved_CABC_Acute",
+          "chronic": "freshwater_Aluminum__Dissolved_CABC_Chronic"
+        },
+        "CA-BC": {
+          "src": "BC Gov",
+          "acute": "freshwater_Aluminum__Dissolved_CABC_Acute",
+          "chronic": "freshwater_Aluminum__Dissolved_CABC_Chronic"
+        },
+        "CA-YT": {
+          "src": "BC Gov",
+          "acute": "freshwater_Aluminum__Dissolved_CABC_Acute",
+          "chronic": "freshwater_Aluminum__Dissolved_CABC_Chronic"
+        }
+      }
+    },
+    "type": [
+      "formula"
+    ]
   },
   {
     "characteristic": "Aluminum",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -2196,13 +2227,13 @@
     },
     "type": [
       "formula"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Aminoazobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -2213,13 +2244,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Ammonia",
     "method_speciation": "as N",
     "sample_fraction": "Unfiltered",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -2267,14 +2298,15 @@
       }
     },
     "type": [
-      "formula"
-    ],
-    "unit": null
+      "formula",
+      "value"
+    ]
   },
   {
     "characteristic": "Ammonia",
     "method_speciation": "as NH3",
     "sample_fraction": "Unfiltered",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -2317,13 +2349,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Ammonia and ammonium",
     "method_speciation": "as N",
     "sample_fraction": "Unfiltered",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -2362,13 +2394,13 @@
     },
     "type": [
       "formula"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Ammonia and ammonium",
     "method_speciation": "as NH3",
     "sample_fraction": "Unfiltered",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -2407,13 +2439,13 @@
     },
     "type": [
       "formula"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Aniline",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -2476,13 +2508,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Anthracene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -2533,13 +2565,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Antimony",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -2578,13 +2610,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Arsenic",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -2699,13 +2731,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Arsenic",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-MB": {
@@ -2744,13 +2776,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Atrazine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -2802,13 +2834,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Azinphos-methyl",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -2845,13 +2877,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Barium",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -2861,16 +2893,24 @@
         "CA-YT": {
           "src": "BC Gov",
           "chronic": 1000
+        },
+        "CA-QC": {
+          "src": "QC Gov",
+          "acute": "freshwater_Barium___CAQC_Acute",
+          "chronic": "freshwater_Barium___CAQC_Chronic"
         }
       }
     },
-    "type": [],
-    "unit": null
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
     "characteristic": "Benomyl",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -2882,13 +2922,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Bentazon",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -2900,13 +2940,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Benz[a]anthracene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -2957,13 +2997,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Benzaldehyde",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -2974,13 +3014,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Benzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -3082,13 +3122,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Benzidine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -3099,13 +3139,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Benzo(b)fluoranthene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-MB": {
@@ -3116,13 +3156,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Benzo[a]pyrene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -3181,13 +3221,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Benzo[ghi]perylene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -3198,13 +3238,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Benzo[k]fluoranthene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -3215,13 +3255,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Benzothiazole",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -3232,13 +3272,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Benzyl alcohol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -3249,13 +3289,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Beryllium",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -3265,6 +3305,15 @@
         "CA-YT": {
           "src": "BC Gov",
           "chronic": 0.13
+        },
+        "CA-ON": {
+          "src": "ON Gov",
+          "chronic": "freshwater_Beryllium___CAON_Chronic"
+        },
+        "CA-QC": {
+          "src": "QC Gov",
+          "acute": "freshwater_Beryllium___CAQC_Acute",
+          "chronic": "freshwater_Beryllium___CAQC_Chronic"
         }
       },
       "Marine": {
@@ -3278,13 +3327,16 @@
         }
       }
     },
-    "type": [],
-    "unit": null
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
     "characteristic": "Biphenyl",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -3300,13 +3352,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Bis(2-chloroethyl) ether",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -3317,13 +3369,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Boron",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -3389,13 +3441,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Boron",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -3417,13 +3469,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Branched p-nonylphenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -3435,13 +3487,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Bromacil",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -3488,13 +3540,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Bromate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -3506,13 +3558,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Bromine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -3524,13 +3576,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Bromoxynil",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -3585,13 +3637,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Butyl benzyl phthalate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -3607,13 +3659,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Butylamine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -3625,13 +3677,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Butylate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -3643,13 +3695,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Butyraldehyde",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -3660,13 +3712,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "C10-C16 Hydrocarbons",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -3677,14 +3729,41 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Cadmium",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
+    "unit": "µg/L",
     "guidelines": {
+      "Freshwater": {
+        "CA-BC": {
+          "src": "BC Gov",
+          "acute": "freshwater_Cadmium__Dissolved_CABC_Acute",
+          "chronic": "freshwater_Cadmium__Dissolved_CABC_Chronic"
+        },
+        "CA-YT": {
+          "src": "BC Gov",
+          "acute": "freshwater_Cadmium__Dissolved_CABC_Acute",
+          "chronic": "freshwater_Cadmium__Dissolved_CABC_Chronic"
+        },
+        "CA-MB": {
+          "src": "MB Gov",
+          "acute": "freshwater_Cadmium__Dissolved_CAMB_Acute",
+          "chronic": "freshwater_Cadmium__Dissolved_CAMB_Chronic"
+        },
+        "CA-QC": {
+          "src": "QC Gov",
+          "acute": "freshwater_Cadmium__Dissolved_CAQC_Acute",
+          "chronic": "freshwater_Cadmium__Dissolved_CAQC_Chronic"
+        },
+        "US": {
+          "src": "USEPA",
+          "acute": "freshwater_Cadmium__Dissolved_US_Acute",
+          "chronic": "freshwater_Cadmium__Dissolved_US_Chronic"
+        }
+      },
       "Marine": {
         "CA-BC": {
           "src": "BC Gov",
@@ -3699,25 +3778,18 @@
           "acute": 32.802,
           "chronic": 7.8526
         }
-      },
-      "Freshwater": {
-        "US": {
-          "src": "USEPA",
-          "acute": "freshwater_Cadmium__Dissolved_US_Acute",
-          "chronic": "freshwater_Cadmium__Dissolved_US_Chronic"
-        }
       }
     },
     "type": [
       "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Cadmium",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -3759,6 +3831,11 @@
           "src": "CCME",
           "acute": "freshwater_Cadmium__Total_CA_Acute",
           "chronic": "freshwater_Cadmium__Total_CA_Chronic"
+        },
+        "CA-QC": {
+          "src": "QC Gov",
+          "acute": "freshwater_Cadmium__Total_CAQC_Acute",
+          "chronic": "freshwater_Cadmium__Total_CAQC_Chronic"
         },
         "US": {
           "src": "USEPA",
@@ -3814,28 +3891,35 @@
     "type": [
       "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Cadmium",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
           "src": "ON Gov",
           "chronic": 0.2
+        },
+        "CA-SK": {
+          "src": "SK Gov",
+          "chronic": "freshwater_Cadmium___CASK_Chronic"
         }
       }
     },
-    "type": [],
-    "unit": null
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
     "characteristic": "Camphene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -3846,13 +3930,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Captan",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -3903,13 +3987,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Carbamazepine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -3952,13 +4036,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Carbaryl",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -4090,13 +4174,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Carbazole",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -4108,13 +4192,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Carbofuran",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -4165,13 +4249,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Carbon tetrachloride",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -4223,13 +4307,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Carboxin",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -4241,30 +4325,30 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
-    "characteristic": "Cesium",
+    "characteristic": "Cesium-137",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "pCi/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
           "src": "ON Gov",
-          "chronic": 50
+          "chronic": 1351.3513513513512
         }
       }
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chloramine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -4329,13 +4413,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chlorantraniliprole",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -4347,13 +4431,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chlorate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -4378,13 +4462,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chlordane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -4416,13 +4500,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chloride",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -4484,13 +4568,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chlorinated paraffins, long-chain, C18-C20",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -4533,13 +4617,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chlorinated paraffins, medium-chain, C14-C17",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -4582,13 +4666,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chlorinated paraffins, short-chain, C10-C13",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -4631,13 +4715,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chlorine",
     "method_speciation": "",
     "sample_fraction": "Total Residual",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -4754,13 +4838,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chlorine",
     "method_speciation": "",
     "sample_fraction": "Comb Available",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -4833,13 +4917,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chlorine",
     "method_speciation": "",
     "sample_fraction": "Free Available",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -4912,13 +4996,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chlorite",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -4930,13 +5014,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -4958,13 +5042,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chlorodibromomethane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -4975,13 +5059,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chloroethane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -4993,13 +5077,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chloroform",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -5051,13 +5135,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chloromethane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -5068,13 +5152,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chloroneb",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -5086,13 +5170,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -5139,13 +5223,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chlorophyll a",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/m²",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -5160,13 +5244,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chlorothalonil",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -5263,13 +5347,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chlorpropham",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -5281,13 +5365,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chlorpyrifos",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -5413,13 +5497,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chromium(III)",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -5517,14 +5601,15 @@
       }
     },
     "type": [
-      "formula"
-    ],
-    "unit": null
+      "formula",
+      "value"
+    ]
   },
   {
     "characteristic": "Chromium(III)",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-MB": {
@@ -5546,13 +5631,13 @@
     },
     "type": [
       "formula"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chromium(VI)",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -5669,13 +5754,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chromium(VI)",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-MB": {
@@ -5714,13 +5799,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Chrysene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Marine": {
         "CA-BC": {
@@ -5743,13 +5828,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Clothianidin",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -5761,13 +5846,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Cobalt",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -5811,14 +5896,15 @@
       }
     },
     "type": [
-      "formula"
-    ],
-    "unit": null
+      "formula",
+      "value"
+    ]
   },
   {
     "characteristic": "Cobalt",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -5834,17 +5920,18 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Copper",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
           "src": "AB Gov",
+          "acute": "freshwater_Copper__Total_CAAB_Acute",
           "chronic": 7
         },
         "CA": {
@@ -5874,6 +5961,11 @@
         "CA-YT": {
           "src": "CCME",
           "chronic": "freshwater_Copper__Total_CA_Chronic"
+        },
+        "CA-QC": {
+          "src": "QC Gov",
+          "acute": "freshwater_Copper__Total_CAQC_Acute",
+          "chronic": "freshwater_Copper__Total_CAQC_Chronic"
         }
       },
       "Marine": {
@@ -5900,14 +5992,15 @@
       }
     },
     "type": [
+      "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Copper",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -5937,6 +6030,16 @@
         "CA-YT": {
           "src": "ECCC",
           "chronic": 0.53
+        },
+        "CA-MB": {
+          "src": "QC Gov",
+          "acute": "freshwater_Copper__Dissolved_CAQC_Acute",
+          "chronic": "freshwater_Copper__Dissolved_CAQC_Chronic"
+        },
+        "CA-QC": {
+          "src": "QC Gov",
+          "acute": "freshwater_Copper__Dissolved_CAQC_Acute",
+          "chronic": "freshwater_Copper__Dissolved_CAQC_Chronic"
         }
       },
       "Marine": {
@@ -5958,29 +6061,37 @@
       }
     },
     "type": [
+      "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Copper",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
           "src": "ON Gov",
           "chronic": 5
+        },
+        "CA-SK": {
+          "src": "SK Gov",
+          "chronic": "freshwater_Copper___CASK_Chronic"
         }
       }
     },
-    "type": [],
-    "unit": null
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
     "characteristic": "Cumene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -5992,13 +6103,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Cyanazine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -6092,13 +6203,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Cyanide",
     "method_speciation": "as CN",
     "sample_fraction": "Free Available",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -6197,13 +6308,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Cyclohexanol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -6214,13 +6325,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Cyclohexylamine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -6231,13 +6342,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Cyclonite",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -6249,13 +6360,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Cyclotetramethylenetetranitramine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -6267,13 +6378,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dalapon",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -6284,13 +6395,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "DDT/DDD/DDE, sum of p,p' & o,p' isomers",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -6312,21 +6423,34 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dehydroabietic acid",
     "method_speciation": "",
     "sample_fraction": "",
-    "guidelines": {},
-    "type": [],
-    "unit": null
+    "unit": "mg/L",
+    "guidelines": {
+      "Freshwater": {
+        "CA-BC": {
+          "src": "ON Gov",
+          "acute": "freshwater_Dehydroabieticacid___CAON_Acute"
+        },
+        "CA-ON": {
+          "src": "ON Gov",
+          "acute": "freshwater_Dehydroabieticacid___CAON_Acute"
+        }
+      }
+    },
+    "type": [
+      "formula"
+    ]
   },
   {
     "characteristic": "Deltamethrin",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -6377,13 +6501,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Demeton",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -6416,13 +6540,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Di(2-ethylhexyl) adipate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -6434,13 +6558,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Di(2-ethylhexyl) phthalate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -6496,13 +6620,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Diazinon",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -6540,13 +6664,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dibenz[a,h]anthracene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -6557,13 +6681,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dibenzofuran",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -6579,13 +6703,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dibutyl phthalate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -6641,13 +6765,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dibutyltin dichloride",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -6662,13 +6786,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dicamba",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -6727,13 +6851,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dichlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -6780,13 +6904,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Diclofop-methyl",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -6841,13 +6965,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Didecyl dimethyl ammonium chloride",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -6894,13 +7018,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dieldrin",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -6928,13 +7052,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Diesel fuel",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -6946,13 +7070,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Diethyl phthalate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -6968,13 +7092,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Diethylene glycol monobutyl ether acetate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -6986,13 +7110,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Diisopropanolamine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -7045,13 +7169,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dimethenamid",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -7063,13 +7187,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dimethoate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -7124,13 +7248,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dimethyl phthalate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -7146,13 +7270,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dimethyl sulfoxide",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -7164,13 +7288,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dimethylacetamide",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -7182,13 +7306,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dimethylamine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -7204,13 +7328,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dinoseb",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -7262,13 +7386,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Diphenyl ether",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -7284,13 +7408,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Diphenylamine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -7301,13 +7425,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Diquat",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -7322,21 +7446,21 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dissolved gases",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {},
-    "type": [],
-    "unit": null
+    "type": []
   },
   {
     "characteristic": "Dissolved gases - saturation",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "%",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -7351,13 +7475,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Dissolved oxygen (DO)",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -7497,14 +7621,15 @@
       }
     },
     "type": [
-      "range"
-    ],
-    "unit": null
+      "range",
+      "value"
+    ]
   },
   {
     "characteristic": "Diuron",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -7519,13 +7644,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Divinylbenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -7536,13 +7661,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Endosulfan",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -7663,13 +7788,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Endrin",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -7701,13 +7826,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Escherichia coli",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "#/100mL",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -7718,13 +7843,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Ethanol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -7736,13 +7861,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Ethinyl estradiol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -7764,13 +7889,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Ethylbenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -7872,13 +7997,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Ethylene dibromide",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -7894,13 +8019,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Ethylene glycol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -7956,13 +8081,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Ethylene thiourea",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -7973,13 +8098,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Ethylenediamine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -7990,13 +8115,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Eucalyptol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -8007,13 +8132,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Eugenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -8024,13 +8149,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Fenthion",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -8041,13 +8166,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Flumetsulam",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -8059,13 +8184,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Fluoranthene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -8121,13 +8246,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Fluorene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -8195,29 +8320,24 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Fluoride",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
-      "Marine": {
+      "Freshwater": {
         "CA-BC": {
           "src": "BC Gov",
-          "acute": 1500
+          "acute": "freshwater_Fluoride___CABC_Acute"
         },
         "CA-YT": {
-          "src": "BC Gov",
-          "acute": 1500
+          "src": "CCME",
+          "acute": "freshwater_Fluoride___CABC_Acute",
+          "chronic": 120
         },
-        "CA-QC": {
-          "src": "QC Gov",
-          "chronic": 1500
-        }
-      },
-      "Freshwater": {
         "CA": {
           "src": "CCME",
           "chronic": 120
@@ -8242,10 +8362,6 @@
           "src": "CCME",
           "chronic": 120
         },
-        "CA-YT": {
-          "src": "CCME",
-          "chronic": 120
-        },
         "CA-MB": {
           "src": "MB Gov",
           "chronic": 0.12
@@ -8255,17 +8371,32 @@
           "acute": 4000,
           "chronic": 200
         }
+      },
+      "Marine": {
+        "CA-BC": {
+          "src": "BC Gov",
+          "acute": 1500
+        },
+        "CA-YT": {
+          "src": "BC Gov",
+          "acute": 1500
+        },
+        "CA-QC": {
+          "src": "QC Gov",
+          "chronic": 1500
+        }
       }
     },
     "type": [
+      "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Fluridone",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -8277,13 +8408,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Formaldehyde",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -8299,13 +8430,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Fuel oil no. 2",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -8317,13 +8448,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Gasoline",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -8335,13 +8466,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Gemfibrozil",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -8353,13 +8484,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Glyphosate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -8423,13 +8554,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Guaiacol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -8440,13 +8571,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Heptachlor",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -8474,13 +8605,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Heptachlor epoxide",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "US": {
@@ -8499,13 +8630,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Hexachlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -8516,13 +8647,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Hexachlorobutadiene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -8584,13 +8715,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Hexachlorocyclopentadiene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -8613,13 +8744,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Hexachloroethane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -8635,13 +8766,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Hydrazine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -8714,13 +8845,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Hydrocarbons, petroleum",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -8732,13 +8863,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Hydrogen peroxide",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -8750,13 +8881,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Hydrogen sulfide",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -8772,13 +8903,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Hydroquinone",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -8798,13 +8929,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Imazethapyr",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -8816,13 +8947,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Imidacloprid",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -8916,13 +9047,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Inorganic nitrogen (nitrate and nitrite)",
     "method_speciation": "as N",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -8949,13 +9080,30 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Iodine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
+    "guidelines": {
+      "Freshwater": {
+        "CA-ON": {
+          "src": "ON Gov",
+          "chronic": 0.1
+        }
+      }
+    },
+    "type": [
+      "value"
+    ]
+  },
+  {
+    "characteristic": "Iodine-131",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "Bq/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -8966,13 +9114,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Iprodione",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -8984,13 +9132,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Iron",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -9033,14 +9181,15 @@
       }
     },
     "type": [
+      "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Iron",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -9092,13 +9241,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Iron",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -9114,13 +9263,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Isophorone",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -9132,13 +9281,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Isopropanol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -9153,37 +9302,25 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Lead",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
-      "Marine": {
+      "Freshwater": {
         "CA-BC": {
           "src": "BC Gov",
-          "acute": 140,
-          "chronic": 2
+          "acute": "freshwater_Lead__Total_CABC_Acute",
+          "chronic": "freshwater_Lead__Total_CABC_Chronic"
         },
         "CA-YT": {
-          "src": "BC Gov",
-          "acute": 140,
-          "chronic": 2
+          "src": "CCME",
+          "acute": "freshwater_Lead__Total_CABC_Acute",
+          "chronic": "freshwater_Lead__Total_CA_Chronic"
         },
-        "CA-QC": {
-          "src": "QC Gov",
-          "acute": 220,
-          "chronic": 8.5
-        },
-        "US": {
-          "src": "USEPA",
-          "acute": 140,
-          "chronic": 5.6
-        }
-      },
-      "Freshwater": {
         "CA": {
           "src": "CCME",
           "chronic": "freshwater_Lead__Total_CA_Chronic"
@@ -9212,27 +9349,50 @@
           "src": "CCME",
           "chronic": "freshwater_Lead__Total_CA_Chronic"
         },
-        "CA-YT": {
-          "src": "CCME",
-          "chronic": "freshwater_Lead__Total_CA_Chronic"
+        "CA-QC": {
+          "src": "QC Gov",
+          "acute": "freshwater_Lead__Total_CAQC_Acute",
+          "chronic": "freshwater_Lead__Total_CAQC_Chronic"
         },
         "US": {
           "src": "USEPA",
           "acute": "freshwater_Lead__Total_US_Acute",
           "chronic": "freshwater_Lead__Total_US_Chronic"
         }
+      },
+      "Marine": {
+        "CA-BC": {
+          "src": "BC Gov",
+          "acute": 140,
+          "chronic": 2
+        },
+        "CA-YT": {
+          "src": "BC Gov",
+          "acute": 140,
+          "chronic": 2
+        },
+        "CA-QC": {
+          "src": "QC Gov",
+          "acute": 220,
+          "chronic": 8.5
+        },
+        "US": {
+          "src": "USEPA",
+          "acute": 140,
+          "chronic": 5.6
+        }
       }
     },
     "type": [
       "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Lead",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -9262,6 +9422,11 @@
         "CA-YT": {
           "src": "ECCC",
           "chronic": "freshwater_Lead__Dissolved_CA_Chronic"
+        },
+        "CA-QC": {
+          "src": "QC Gov",
+          "acute": "freshwater_Lead__Dissolved_CAQC_Acute",
+          "chronic": "freshwater_Lead__Dissolved_CAQC_Chronic"
         },
         "CA-MB": {
           "src": "USEPA",
@@ -9295,21 +9460,34 @@
     "type": [
       "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Lead",
     "method_speciation": "",
     "sample_fraction": "",
-    "guidelines": {},
-    "type": [],
-    "unit": null
+    "unit": "µg/L",
+    "guidelines": {
+      "Freshwater": {
+        "CA-ON": {
+          "src": "ON Gov",
+          "chronic": "freshwater_Lead___CAON_Chronic"
+        },
+        "CA-SK": {
+          "src": "SK Gov",
+          "chronic": "freshwater_Lead___CASK_Chronic"
+        }
+      }
+    },
+    "type": [
+      "formula"
+    ]
   },
   {
     "characteristic": "Limonene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -9320,13 +9498,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Lindane",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -9377,13 +9555,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Lindane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -9413,13 +9591,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Linuron",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -9470,13 +9648,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Lithium",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -9488,13 +9666,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "m-Chlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -9505,13 +9683,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "m-Cresol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -9527,13 +9705,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "m-Dichlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -9589,13 +9767,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "m-Dinitrobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -9611,13 +9789,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "m-Nitrotoluene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -9629,13 +9807,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "m-Xylene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -9646,13 +9824,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Malathion",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -9697,14 +9875,26 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Manganese",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
+      "Freshwater": {
+        "CA-BC": {
+          "src": "BC Gov",
+          "acute": "freshwater_Manganese__Total_CABC_Acute",
+          "chronic": "freshwater_Manganese__Total_CABC_Chronic"
+        },
+        "CA-YT": {
+          "src": "BC Gov",
+          "acute": "freshwater_Manganese__Total_CABC_Acute",
+          "chronic": "freshwater_Manganese__Total_CABC_Chronic"
+        }
+      },
       "Marine": {
         "CA-BC": {
           "src": "BC Gov",
@@ -9717,14 +9907,15 @@
       }
     },
     "type": [
+      "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Manganese",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -9761,16 +9952,24 @@
           "src": "CCME",
           "acute": "freshwater_Manganese___CA_Acute",
           "chronic": 430
+        },
+        "CA-QC": {
+          "src": "QC Gov",
+          "acute": "freshwater_Manganese___CAQC_Acute",
+          "chronic": "freshwater_Manganese___CAQC_Chronic"
         }
       }
     },
-    "type": [],
-    "unit": null
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
     "characteristic": "MCPA",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -9867,13 +10066,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "MCPB",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -9885,13 +10084,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Mecoprop",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -9908,19 +10107,27 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Mercury",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
           "src": "AB Gov",
           "acute": 0.013,
           "chronic": 0.005
+        },
+        "CA-BC": {
+          "src": "BC Gov",
+          "chronic": "freshwater_Mercury__Total_CABC_Chronic"
+        },
+        "CA-YT": {
+          "src": "CCME",
+          "chronic": 0.026
         },
         "CA": {
           "src": "CCME",
@@ -9951,10 +10158,6 @@
           "chronic": 0.026
         },
         "CA-SK": {
-          "src": "CCME",
-          "chronic": 0.026
-        },
-        "CA-YT": {
           "src": "CCME",
           "chronic": 0.026
         },
@@ -10019,14 +10222,15 @@
       }
     },
     "type": [
+      "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Mercury",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -10037,13 +10241,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Mercury",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -10072,13 +10276,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Methanol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -10098,13 +10302,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Methoprene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -10147,13 +10351,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Methoxychlor",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -10190,13 +10394,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Methyl bromide",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -10212,13 +10416,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Methyl ethyl ketone",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -10234,13 +10438,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Methyl tert-butyl ether",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -10265,13 +10469,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Methyl tert-butyl ether",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -10365,13 +10569,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Methylamine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -10382,13 +10586,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Methylene chloride",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -10440,13 +10644,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Methylene dithiocyanate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -10457,13 +10661,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Methylmercury(1+)",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -10507,13 +10711,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Methylnaphthalene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Marine": {
         "CA-BC": {
@@ -10530,13 +10734,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Metolachlor",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -10592,13 +10796,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Metribuzin",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -10649,13 +10853,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Mirex",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -10692,13 +10896,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Molybdenum",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -10747,13 +10951,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Molybdenum",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -10769,13 +10973,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Monochlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -10864,13 +11068,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Myclobutanil",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -10882,13 +11086,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "N-Nitrosodimethylamine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -10899,13 +11103,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "N-Nitrosodiphenylamine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -10921,13 +11125,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "N-Nitrosomorpholine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -10938,13 +11142,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "N,N-Diethyl-m-toluamide",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -10955,13 +11159,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "N,N-Dimethylformamide",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -10972,13 +11176,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Naphthalene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -11079,13 +11283,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Naproxen",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -11097,35 +11301,23 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Nickel",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
-      "Marine": {
+      "Freshwater": {
         "CA-BC": {
           "src": "BC Gov",
-          "chronic": 150
+          "chronic": "freshwater_Nickel__Total_CABC_Chronic"
         },
         "CA-YT": {
-          "src": "BC Gov",
-          "chronic": 150
+          "src": "CCME",
+          "chronic": "freshwater_Nickel__Total_CA_Chronic"
         },
-        "CA-QC": {
-          "src": "USEPA",
-          "acute": 74,
-          "chronic": 8.2
-        },
-        "US": {
-          "src": "USEPA",
-          "acute": 74,
-          "chronic": 8.2
-        }
-      },
-      "Freshwater": {
         "CA": {
           "src": "CCME",
           "chronic": "freshwater_Nickel__Total_CA_Chronic"
@@ -11154,10 +11346,6 @@
           "src": "CCME",
           "chronic": "freshwater_Nickel__Total_CA_Chronic"
         },
-        "CA-YT": {
-          "src": "CCME",
-          "chronic": "freshwater_Nickel__Total_CA_Chronic"
-        },
         "CA-QC": {
           "src": "USEPA",
           "acute": "freshwater_Nickel__Total_US_Acute",
@@ -11168,33 +11356,60 @@
           "acute": "freshwater_Nickel__Total_US_Acute",
           "chronic": "freshwater_Nickel__Total_US_Chronic"
         }
+      },
+      "Marine": {
+        "CA-BC": {
+          "src": "BC Gov",
+          "chronic": 150
+        },
+        "CA-YT": {
+          "src": "BC Gov",
+          "chronic": 150
+        },
+        "CA-QC": {
+          "src": "USEPA",
+          "acute": 74,
+          "chronic": 8.2
+        },
+        "US": {
+          "src": "USEPA",
+          "acute": 74,
+          "chronic": 8.2
+        }
       }
     },
     "type": [
       "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Nickel",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
           "src": "ON Gov",
           "chronic": 25
+        },
+        "CA-SK": {
+          "src": "SK Gov",
+          "chronic": "freshwater_Nickel___CASK_Chronic"
         }
       }
     },
-    "type": [],
-    "unit": null
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
     "characteristic": "Nickel",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-MB": {
@@ -11234,13 +11449,13 @@
     "type": [
       "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Nitrate",
     "method_speciation": "as N",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -11352,13 +11567,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Nitrate",
     "method_speciation": "as NO3",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -11437,13 +11652,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Nitrilotriacetic acid",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -11454,15 +11669,25 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Nitrite",
     "method_speciation": "as N",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
+        "CA-BC": {
+          "src": "BC Gov",
+          "acute": "freshwater_Nitrite_asN__CABC_Acute",
+          "chronic": "freshwater_Nitrite_asN__CABC_Chronic"
+        },
+        "CA-YT": {
+          "src": "CCME",
+          "acute": "freshwater_Nitrite_asN__CABC_Acute",
+          "chronic": 60
+        },
         "CA": {
           "src": "CCME",
           "chronic": 60
@@ -11491,10 +11716,6 @@
           "src": "CCME",
           "chronic": 60
         },
-        "CA-YT": {
-          "src": "CCME",
-          "chronic": 60
-        },
         "CA-QC": {
           "src": "QC Gov",
           "acute": 0.06,
@@ -11503,14 +11724,15 @@
       }
     },
     "type": [
+      "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Nitrite",
     "method_speciation": "as NO2",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -11545,13 +11767,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Nitrobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -11567,13 +11789,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Nitroglycerin",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -11585,13 +11807,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Nonylphenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -11696,13 +11918,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "o-Chlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -11718,13 +11940,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "o-Cresol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -11740,13 +11962,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "o-Dichlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -11848,13 +12070,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "O-Dinitrobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -11865,13 +12087,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "o-Nitrophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -11882,13 +12104,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "o-Nitrotoluene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -11900,13 +12122,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "o-Xylene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -11917,13 +12139,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "o-Xylene, mixt. with m-xylene and p-xylene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -11935,13 +12157,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Octylphenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -11953,13 +12175,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Oleic acid",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -11970,13 +12192,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Ozone",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -11988,13 +12210,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "p-Bromophenyl phenyl ether",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -12005,13 +12227,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "p-Chloro-m-cresol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -12027,13 +12249,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "P-Chlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -12049,13 +12271,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "p-Chlorophenyl phenyl ether",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -12066,13 +12288,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "p-Cresol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -12088,13 +12310,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "p-Dichlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -12150,13 +12372,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "p-Nitrophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -12172,13 +12394,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "p-Nitrotoluene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -12190,13 +12412,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "p-Xylene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -12207,13 +12429,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "p,p'-DDT",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "US": {
@@ -12232,13 +12454,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Parathion",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -12264,13 +12486,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Pentachlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -12326,13 +12548,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Pentachloroethane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -12344,13 +12566,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Pentachlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -12424,13 +12646,13 @@
     "type": [
       "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Perfluorooctanesulfonate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -12469,13 +12691,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Perfluorooctanoic acid",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -12487,13 +12709,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Permethrin",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -12583,13 +12805,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Perylene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -12600,13 +12822,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "pH",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "",
     "guidelines": {
       "Marine": {
         "CA-BC": {
@@ -12783,13 +13005,13 @@
     },
     "type": [
       "range"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Phenanthrene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -12852,13 +13074,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Phenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -12874,13 +13096,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Phenols",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -12927,13 +13149,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Phenols",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -12944,13 +13166,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Phenytoin",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -12962,13 +13184,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Picloram",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -13024,13 +13246,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Potassium permanganate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -13041,13 +13263,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Propylene glycol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -13103,13 +13325,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Propylene oxide",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -13121,13 +13343,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Pyrene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -13170,13 +13392,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Pyrethrins",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -13191,13 +13413,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Quinoline",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -13248,30 +13470,30 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
-    "characteristic": "Radium",
+    "characteristic": "Radium-226",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "pCi/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
           "src": "ON Gov",
-          "chronic": 1
+          "chronic": 27.027027027027028
         }
       }
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Resorcinol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -13286,13 +13508,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "S-Ethyl dipropylthiocarbamate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -13304,13 +13526,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Selenium",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -13390,13 +13612,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Selenium",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -13407,13 +13629,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Selenium",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -13435,14 +13657,63 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Silver",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
+      "Freshwater": {
+        "CA-BC": {
+          "src": "BC Gov",
+          "acute": "freshwater_Silver__Total_CABC_Acute",
+          "chronic": "freshwater_Silver__Total_CABC_Chronic"
+        },
+        "CA-YT": {
+          "src": "CCME",
+          "acute": "freshwater_Silver__Total_CABC_Acute",
+          "chronic": 0.25
+        },
+        "CA": {
+          "src": "CCME",
+          "chronic": 0.25
+        },
+        "CA-AB": {
+          "src": "CCME",
+          "chronic": 0.25
+        },
+        "CA-NB": {
+          "src": "CCME",
+          "chronic": 0.25
+        },
+        "CA-NL": {
+          "src": "CCME",
+          "chronic": 0.25
+        },
+        "CA-NS": {
+          "src": "CCME",
+          "chronic": 0.25
+        },
+        "CA-NT": {
+          "src": "CCME",
+          "chronic": 0.25
+        },
+        "CA-PE": {
+          "src": "CCME",
+          "chronic": 0.25
+        },
+        "CA-QC": {
+          "src": "QC Gov",
+          "acute": "freshwater_Silver__Total_CAQC_Acute",
+          "chronic": 0.1
+        },
+        "US": {
+          "src": "USEPA",
+          "acute": "freshwater_Silver__Total_US_Acute"
+        }
+      },
       "Marine": {
         "CA-BC": {
           "src": "BC Gov",
@@ -13490,60 +13761,18 @@
           "src": "USEPA",
           "acute": 1.9
         }
-      },
-      "Freshwater": {
-        "CA": {
-          "src": "CCME",
-          "chronic": 0.25
-        },
-        "CA-AB": {
-          "src": "CCME",
-          "chronic": 0.25
-        },
-        "CA-NB": {
-          "src": "CCME",
-          "chronic": 0.25
-        },
-        "CA-NL": {
-          "src": "CCME",
-          "chronic": 0.25
-        },
-        "CA-NS": {
-          "src": "CCME",
-          "chronic": 0.25
-        },
-        "CA-NT": {
-          "src": "CCME",
-          "chronic": 0.25
-        },
-        "CA-PE": {
-          "src": "CCME",
-          "chronic": 0.25
-        },
-        "CA-YT": {
-          "src": "CCME",
-          "chronic": 0.25
-        },
-        "CA-QC": {
-          "src": "QC Gov",
-          "chronic": 0.1
-        },
-        "US": {
-          "src": "USEPA",
-          "acute": "freshwater_Silver__Total_US_Acute"
-        }
       }
     },
     "type": [
       "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Silver",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-MB": {
@@ -13562,14 +13791,24 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Silver",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
+    "unit": "µg/L",
     "guidelines": {
+      "Freshwater": {
+        "CA-QC": {
+          "src": "QC Gov",
+          "acute": "freshwater_Silver__Dissolved_CAQC_Acute"
+        },
+        "US": {
+          "src": "USEPA",
+          "acute": "freshwater_Silver__Dissolved_US_Acute"
+        }
+      },
       "Marine": {
         "CA-QC": {
           "src": "QC Gov",
@@ -13579,24 +13818,18 @@
           "src": "USEPA",
           "acute": 1.615
         }
-      },
-      "Freshwater": {
-        "US": {
-          "src": "USEPA",
-          "acute": "freshwater_Silver__Dissolved_US_Acute"
-        }
       }
     },
     "type": [
       "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Silvex",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -13608,13 +13841,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Simazine",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -13670,13 +13903,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Strontium",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -13716,13 +13949,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Strontium-90",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "pCi/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -13733,13 +13966,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Styrene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -13795,13 +14028,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Sulfide",
     "method_speciation": "as S",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -13834,13 +14067,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Sulfite",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -13851,13 +14084,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Sulfolane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -13908,13 +14141,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Surfactants, anionic",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -13925,13 +14158,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Tebuthiuron",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -13982,13 +14215,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Tetrabromobisphenol A",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -14031,13 +14264,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Tetrachloroethane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -14049,13 +14282,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Tetrachloroethylene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -14066,13 +14299,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Tetrachloroguaiacol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -14083,13 +14316,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Tetrachlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -14136,13 +14369,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Tetrahydrofuran",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -14154,13 +14387,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Thallium",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -14207,13 +14440,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Thallium",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -14229,13 +14462,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Thiamethoxam",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -14247,13 +14480,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Toluene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -14347,13 +14580,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Total PCBs",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -14378,13 +14611,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Total PCBs",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -14405,13 +14638,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Total Phosphorus, mixed forms",
     "method_speciation": "as P",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -14422,13 +14655,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Toxaphene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -14460,13 +14693,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Toxicity acute",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "TU",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -14478,21 +14711,21 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Toxicity chronic",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "TU",
     "guidelines": {},
-    "type": [],
-    "unit": null
+    "type": []
   },
   {
     "characteristic": "trans-1,3-Dichloropropene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -14503,13 +14736,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Triallate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -14564,13 +14797,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Tribromomethane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -14586,13 +14819,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Tributlytin",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -14697,13 +14930,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Tributyl phosphate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -14714,13 +14947,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Tributyltin",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -14739,13 +14972,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Trichlorfon",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -14797,13 +15030,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Trichloroethane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -14815,13 +15048,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Trichloroethylene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -14832,13 +15065,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Trichlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -14885,13 +15118,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Trichlorotrifluoroethane",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -14903,13 +15136,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Triclosan",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -14949,13 +15182,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Trifluralin",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -15010,13 +15243,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Trimethylbenzene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -15027,13 +15260,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Trinitrotoluene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -15045,13 +15278,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Triphenyl phosphate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -15063,13 +15296,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Triphenyltin",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -15124,13 +15357,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Tritium",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "Bq/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -15141,13 +15374,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Tungsten",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -15158,13 +15391,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Uranium",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -15178,16 +15411,24 @@
         "CA-ON": {
           "src": "ON Gov",
           "chronic": 5
+        },
+        "CA-QC": {
+          "src": "QC Gov",
+          "acute": "freshwater_Uranium___CAQC_Acute",
+          "chronic": "freshwater_Uranium___CAQC_Chronic"
         }
       }
     },
-    "type": [],
-    "unit": null
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
     "characteristic": "Uranium",
     "method_speciation": "",
     "sample_fraction": "Total Recoverable",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -15244,13 +15485,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Vanadium",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-BC": {
@@ -15274,13 +15515,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Vanadium",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -15345,13 +15586,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Vinyl acetate",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-QC": {
@@ -15363,13 +15604,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Vinyl chloride",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -15380,13 +15621,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Xylene",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "ng/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
@@ -15405,18 +15646,33 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Zinc",
     "method_speciation": "",
     "sample_fraction": "Total",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-AB": {
           "src": "AB Gov",
           "chronic": 30
+        },
+        "CA-BC": {
+          "src": "BC Gov",
+          "acute": "freshwater_Zinc__Total_CABC_Acute",
+          "chronic": "freshwater_Zinc__Total_CABC_Chronic"
+        },
+        "CA-YT": {
+          "src": "BC Gov",
+          "acute": "freshwater_Zinc__Total_CABC_Acute",
+          "chronic": "freshwater_Zinc__Total_CABC_Chronic"
+        },
+        "CA-QC": {
+          "src": "QC Gov",
+          "acute": "freshwater_Zinc__Total_CAQC_Acute",
+          "chronic": "freshwater_Zinc__Total_CAQC_Chronic"
         },
         "US": {
           "src": "USEPA",
@@ -15450,13 +15706,13 @@
     "type": [
       "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Zinc",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
@@ -15494,6 +15750,11 @@
           "acute": "freshwater_Zinc__Dissolved_CA_Acute",
           "chronic": "freshwater_Zinc__Dissolved_CA_Chronic"
         },
+        "CA-QC": {
+          "src": "QC Gov",
+          "acute": "freshwater_Zinc__Dissolved_CAQC_Acute",
+          "chronic": "freshwater_Zinc__Dissolved_CAQC_Chronic"
+        },
         "CA-MB": {
           "src": "USEPA",
           "acute": "freshwater_Zinc__Dissolved_US_Acute",
@@ -15526,13 +15787,13 @@
     "type": [
       "formula",
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Zinc",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -15547,13 +15808,13 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   },
   {
     "characteristic": "Zirconium",
     "method_speciation": "",
     "sample_fraction": "",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA-ON": {
@@ -15564,7 +15825,6 @@
     },
     "type": [
       "value"
-    ],
-    "unit": null
+    ]
   }
 ]

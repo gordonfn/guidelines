@@ -2,6 +2,12 @@ const math = require('./math')
 
 const calculateHardness = require('./hardness')
 
+const freshwater_Aceticacid___CAQC_Acute = () => null
+const freshwater_Aceticacid___CAQC_Chronic = () => null
+const freshwater_Aluminum__Dissolved_CABC_Acute = () => null
+const freshwater_Aluminum__Dissolved_CABC_Chronic = () => null
+
+
 const freshwater_Aluminum__Total_CA_Chronic = ({ pH }) => {
   if (!math.isValid(pH)) return null
   if (pH < 6.5) {
@@ -36,6 +42,33 @@ const freshwater_Ammoniaandammonium_asNH3_Unfiltered_CA_Chronic = ({ pH, tempera
   return math.evaluate(`(0.019 / (1 / ( pow(10,(0.0901821 + 2729.92 / (${temperature} + 273.15)) - ${pH}) + 1)))`).toNumber()
 }
 
+const freshwater_Barium___CAQC_Acute = () => null
+const freshwater_Barium___CAQC_Chronic = () => null
+const freshwater_Beryllium___CAON_Chronic = () => null
+const freshwater_Beryllium___CAQC_Acute = () => null
+const freshwater_Beryllium___CAQC_Chronic = () => null
+const freshwater_Cadmium___CASK_Chronic = () => null
+const freshwater_Cadmium__Dissolved_CABC_Acute = () => null
+const freshwater_Cadmium__Dissolved_CABC_Chronic = () => null
+const freshwater_Cadmium__Dissolved_CAMB_Acute = () => null
+const freshwater_Cadmium__Dissolved_CAMB_Chronic = () => null
+const freshwater_Cadmium__Dissolved_CAQC_Acute = () => null
+const freshwater_Cadmium__Dissolved_CAQC_Chronic = () => null
+
+const freshwater_Cadmium__Dissolved_US_Acute = (params) => {
+  const hardness = calculateHardness(params)
+  if (!math.isValid(hardness) || hardness <= 0) return null
+  // EXP(.9789*LN(hardness)-3.866) * (1.136672-(LN(hardness)*(.041838)))
+  return math.evaluate(`exp(.9789 * log(${hardness}, e) - 3.866 ) * ( 1.136672 - log(${hardness}, e) * 0.041838)`).toNumber()
+}
+
+const freshwater_Cadmium__Dissolved_US_Chronic = (params) => {
+  const hardness = calculateHardness(params)
+  if (!math.isValid(hardness) || hardness <= 0) return null
+  // EXP(.7977*(LN(hardness))-3.909)*(1.101672-(LN(hardness)*(.041838)))
+  return math.evaluate(`exp(0.7977 * log(${hardness}, e) - 3.909 ) * ( 1.101672 - log(${hardness}, e) * 0.041838)`).toNumber()
+}
+
 const freshwater_Cadmium__Total_CA_Acute = (params) => {
   const hardness = calculateHardness(params)
   if (!math.isValid(hardness)) return null
@@ -62,19 +95,8 @@ const freshwater_Cadmium__Total_CA_Chronic = (params) => {
   }
 }
 
-const freshwater_Cadmium__Dissolved_US_Acute = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(.9789*LN(hardness)-3.866) * (1.136672-(LN(hardness)*(.041838)))
-  return math.evaluate(`exp(.9789 * log(${hardness}, e) - 3.866 ) * ( 1.136672 - log(${hardness}, e) * 0.041838)`).toNumber()
-}
-
-const freshwater_Cadmium__Dissolved_US_Chronic = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(.7977*(LN(hardness))-3.909)*(1.101672-(LN(hardness)*(.041838)))
-  return math.evaluate(`exp(0.7977 * log(${hardness}, e) - 3.909 ) * ( 1.101672 - log(${hardness}, e) * 0.041838)`).toNumber()
-}
+const freshwater_Cadmium__Total_CAQC_Acute = () => null
+const freshwater_Cadmium__Total_CAQC_Chronic = () => null
 
 const freshwater_Cadmium__Total_US_Acute = (params) => {
   const hardness = calculateHardness(params)
@@ -128,6 +150,13 @@ const freshwater_Cobalt__Total_CA_Chronic = (params) => {
   return null
 }
 
+const freshwater_Copper__Total_CAAB_Acute = () => null
+const freshwater_Copper___CASK_Chronic = () => null
+const freshwater_Copper__Total_CAQC_Acute = () => null
+const freshwater_Copper__Total_CAQC_Chronic = () => null
+const freshwater_Copper__Dissolved_CAQC_Acute = () => null
+const freshwater_Copper__Dissolved_CAQC_Chronic = () => null
+
 const freshwater_Copper__Total_CA_Chronic = (params) => {
   const hardness = calculateHardness(params)
   // If the hardness is unknown, the CWQG is 2 µg/L
@@ -141,11 +170,23 @@ const freshwater_Copper__Total_CA_Chronic = (params) => {
   }
 }
 
+const freshwater_Dehydroabieticacid___CAON_Acute = () => null
+const freshwater_Fluoride___CABC_Acute = () => null
+
 const freshwater_Iron__Total_CA_Chronic = ({ DOC, pH }) => {
   if (!math.isValid(DOC) || !math.isValid(pH)) return null
   // EXP(0.671(LN(DOC))+0.171(pH)+5.586)
   return math.evaluate(`exp(0.671 * log(${DOC}, e) + 0.171 * ${pH} + 5.586)`).toNumber()
 }
+
+const freshwater_Lead__Total_CABC_Acute = () => null
+const freshwater_Lead__Total_CABC_Chronic = () => null
+const freshwater_Lead___CAON_Chronic = () => null
+const freshwater_Lead__Dissolved_CAQC_Acute = () => null
+const freshwater_Lead__Dissolved_CAQC_Chronic = () => null
+const freshwater_Lead__Total_CAQC_Acute = () => null
+const freshwater_Lead__Total_CAQC_Chronic = () => null
+const freshwater_Lead___CASK_Chronic = () => null
 
 const freshwater_Lead__Dissolved_CA_Chronic = ({ DOC, pH }) => {
   if (!math.isValid(DOC) || !math.isValid(pH)) return null
@@ -201,6 +242,12 @@ const freshwater_Manganese___CA_Acute = (params) => {
   return math.evaluate(`exp(0.878 * log(${hardness}, e) + 4.76 )`).toNumber()
 }
 
+const freshwater_Manganese__Total_CABC_Acute = () => null
+const freshwater_Manganese__Total_CABC_Chronic = () => null
+const freshwater_Manganese___CAQC_Acute = () => null
+const freshwater_Manganese___CAQC_Chronic = () => null
+const freshwater_Mercury__Total_CABC_Chronic = () => null
+
 const freshwater_Nickel__Dissolved_US_Acute = (params) => {
   const hardness = calculateHardness(params)
   if (!math.isValid(hardness) || hardness <= 0) return null
@@ -242,6 +289,11 @@ const freshwater_Nickel__Total_US_Chronic = (params) => {
   return math.evaluate(`exp(0.846 * log(${hardness}, e) + 0.0584 )`).toNumber()
 }
 
+const freshwater_Nickel__Total_CABC_Chronic = () => null
+const freshwater_Nickel___CASK_Chronic = () => null
+const freshwater_Nitrite_asN__CABC_Acute = () => null
+const freshwater_Nitrite_asN__CABC_Chronic = () => null
+
 const freshwater_Pentachlorophenol___US_Acute = ({ pH }) => {
   if (!math.isValid(pH)) return null
   // EXP(1.005*pH - 4.869)
@@ -267,6 +319,13 @@ const freshwater_Silver__Total_US_Acute = (params) => {
   // EXP(1.72*(LN(hardness))-6.59)
   return math.evaluate(`exp(1.72 * log(${hardness}, e) - 6.59 )`).toNumber()
 }
+
+const freshwater_Silver__Total_CABC_Acute = () => null
+const freshwater_Silver__Total_CABC_Chronic = () => null
+const freshwater_Silver__Total_CAQC_Acute = () => null
+const freshwater_Silver__Dissolved_CAQC_Acute = () => null
+const freshwater_Uranium___CAQC_Acute = () => null
+const freshwater_Uranium___CAQC_Chronic = () => null
 
 const freshwater_Zinc__Dissolved_CA_Acute = (params) => {
   const hardness = calculateHardness(params)
@@ -324,115 +383,107 @@ const freshwater_Zinc__Total_US_Chronic = (params) => {
   return math.evaluate(`exp(0.8473 * log(${hardness}, e) + 0.884 )`).toNumber()
 }
 
+const freshwater_Zinc__Total_CABC_Acute = () => null
+const freshwater_Zinc__Total_CABC_Chronic = () => null
+const freshwater_Zinc__Total_CAQC_Acute = () => null
+const freshwater_Zinc__Total_CAQC_Chronic = () => null
+const freshwater_Zinc__Dissolved_CAQC_Acute = () => null
+const freshwater_Zinc__Dissolved_CAQC_Chronic = () => null
+
 module.exports = {
   calculateHardness,
 
-  // freshwater_Aceticacid___CAQC_Acute ,
-  // freshwater_Aceticacid___CAQC_Chronic ,
-  // freshwater_Aldrin___US_Chronic ,
-  // freshwater_Aluminum__Dissolved_CABC_Acute ,
-  // freshwater_Aluminum__Dissolved_CABC_Chronic ,
+  freshwater_Aceticacid___CAQC_Acute ,
+  freshwater_Aceticacid___CAQC_Chronic ,
+  freshwater_Aluminum__Dissolved_CABC_Acute ,
+  freshwater_Aluminum__Dissolved_CABC_Chronic ,
   freshwater_Aluminum__Total_CA_Chronic,
   freshwater_Ammonia_asN_Unfiltered_US_Acute,
   freshwater_Ammonia_asN_Unfiltered_US_Chronic,
   freshwater_Ammoniaandammonium_asN_Unfiltered_CA_Chronic,
   freshwater_Ammoniaandammonium_asNH3_Unfiltered_CA_Chronic,
-  // freshwater_Barium___CAQC_Acute ,
-  // freshwater_Barium___CAQC_Chronic ,
-  // freshwater_Beryllium___CAON_Chronic ,
-  // freshwater_Beryllium___CAQC_Acute ,
-  // freshwater_Beryllium___CAQC_Chronic ,
-  // freshwater_Cadmium__Dissolved_CABC_Acute ,
-  // freshwater_Cadmium__Dissolved_CABC_Chronic ,
+  freshwater_Barium___CAQC_Acute ,
+  freshwater_Barium___CAQC_Chronic ,
+  freshwater_Beryllium___CAON_Chronic ,
+  freshwater_Beryllium___CAQC_Acute ,
+  freshwater_Beryllium___CAQC_Chronic ,
+  freshwater_Cadmium__Dissolved_CABC_Acute ,
+  freshwater_Cadmium__Dissolved_CABC_Chronic ,
   freshwater_Cadmium__Total_CA_Acute,
   freshwater_Cadmium__Total_CA_Chronic,
-  // freshwater_Cadmium__Dissolved_CAMB_Acute ,
-  // freshwater_Cadmium__Dissolved_CAMB_Chronic ,
-  // freshwater_Cadmium__Total_CAQC_Acute ,
-  // freshwater_Cadmium__Total_CAQC_Chronic ,
-  // freshwater_Cadmium__Dissolved_CAQC_Acute ,
-  // freshwater_Cadmium__Dissolved_CAQC_Chronic ,
-  // freshwater_Cadmium___CASK_Chronic ,
+  freshwater_Cadmium__Dissolved_CAMB_Acute ,
+  freshwater_Cadmium__Dissolved_CAMB_Chronic ,
+  freshwater_Cadmium__Total_CAQC_Acute ,
+  freshwater_Cadmium__Total_CAQC_Chronic ,
+  freshwater_Cadmium__Dissolved_CAQC_Acute ,
+  freshwater_Cadmium__Dissolved_CAQC_Chronic ,
+  freshwater_Cadmium___CASK_Chronic ,
   freshwater_Cadmium__Total_US_Acute,
   freshwater_Cadmium__Total_US_Chronic,
   freshwater_Cadmium__Dissolved_US_Acute,
   freshwater_Cadmium__Dissolved_US_Chronic,
-  // freshwater_Chloroform___CA_Acute ,
-  // freshwater_Chlorophenol___CA_Acute ,
   freshwater_ChromiumIII__Total_US_Acute,
   freshwater_ChromiumIII__Total_US_Chronic,
   freshwater_ChromiumIII__Dissolved_US_Acute,
   freshwater_ChromiumIII__Dissolved_US_Chronic,
   freshwater_Cobalt__Total_CA_Chronic,
-  // freshwater_Copper__Total_CAAB_Acute ,
+  freshwater_Copper__Total_CAAB_Acute ,
   freshwater_Copper__Total_CA_Chronic,
-  // freshwater_Copper___CASK_Chronic ,
-  // freshwater_Copper__Total_US_Acute ,
-  // freshwater_Copper__Total_US_Chronic ,
-  // freshwater_Copper__Dissolved_US_Acute ,
-  // freshwater_Copper__Dissolved_US_Chronic ,
-  // freshwater_Copper__Total_CAQC_Acute ,
-  // freshwater_Copper__Total_CAQC_Chronic ,
-  // freshwater_Copper__Dissolved_CAQC_Acute ,
-  // freshwater_Copper__Dissolved_CAQC_Chronic ,
-  // freshwater_Dehydroabieticacid___CAON_Acute ,
-  // freshwater_Fluoride___CABC_Acute ,
+  freshwater_Copper___CASK_Chronic ,
+  freshwater_Copper__Total_CAQC_Acute ,
+  freshwater_Copper__Total_CAQC_Chronic ,
+  freshwater_Copper__Dissolved_CAQC_Acute ,
+  freshwater_Copper__Dissolved_CAQC_Chronic ,
+  freshwater_Dehydroabieticacid___CAON_Acute ,
+  freshwater_Fluoride___CABC_Acute ,
   freshwater_Iron__Total_CA_Chronic,
-  // freshwater_Lead__Total_CABC_Acute ,
-  // freshwater_Lead__Total_CABC_Chronic ,
+  freshwater_Lead__Total_CABC_Acute ,
+  freshwater_Lead__Total_CABC_Chronic ,
   freshwater_Lead__Total_CA_Chronic,
-  // marine_Lead__Total_CA_Acute ,
   freshwater_Lead__Dissolved_CA_Chronic,
-  // freshwater_Lead___CAON_Chronic ,
-  // freshwater_Lead__Total_CAQC_Acute ,
-  // freshwater_Lead__Total_CAQC_Chronic ,
-  // freshwater_Lead__Dissolved_CAQC_Acute ,
-  // freshwater_Lead__Dissolved_CAQC_Chronic ,
-  // freshwater_Lead___CASK_Chronic ,
+  freshwater_Lead___CAON_Chronic ,
+  freshwater_Lead__Total_CAQC_Acute ,
+  freshwater_Lead__Total_CAQC_Chronic ,
+  freshwater_Lead__Dissolved_CAQC_Acute ,
+  freshwater_Lead__Dissolved_CAQC_Chronic ,
+  freshwater_Lead___CASK_Chronic ,
   freshwater_Lead__Total_US_Acute,
   freshwater_Lead__Total_US_Chronic,
   freshwater_Lead__Dissolved_US_Acute,
   freshwater_Lead__Dissolved_US_Chronic,
-  // freshwater_Lindane___US_Chronic ,
-  // freshwater_Manganese__Total_CABC_Acute ,
-  // freshwater_Manganese__Total_CABC_Chronic ,
+  freshwater_Manganese__Total_CABC_Acute ,
+  freshwater_Manganese__Total_CABC_Chronic ,
   freshwater_Manganese___CA_Acute,
-  // freshwater_Manganese___CAQC_Acute ,
-  // freshwater_Manganese___CAQC_Chronic ,
-  // freshwater_Mercury__Total_CABC_Chronic ,
-  // freshwater_Nickel__Total_CABC_Chronic ,
+  freshwater_Manganese___CAQC_Acute ,
+  freshwater_Manganese___CAQC_Chronic ,
+  freshwater_Mercury__Total_CABC_Chronic ,
+  freshwater_Nickel__Total_CABC_Chronic ,
   freshwater_Nickel__Total_CA_Chronic,
-  // freshwater_Nickel___CASK_Chronic ,
+  freshwater_Nickel___CASK_Chronic ,
   freshwater_Nickel__Total_US_Acute,
   freshwater_Nickel__Total_US_Chronic,
   freshwater_Nickel__Dissolved_US_Acute,
   freshwater_Nickel__Dissolved_US_Chronic,
-  // freshwater_Nitrite_asN__CABC_Acute ,
-  // freshwater_Nitrite_asN__CABC_Chronic ,
+  freshwater_Nitrite_asN__CABC_Acute ,
+  freshwater_Nitrite_asN__CABC_Chronic ,
   freshwater_Pentachlorophenol___US_Acute,
   freshwater_Pentachlorophenol___US_Chronic,
-  // freshwater_Silver__Total_CABC_Acute ,
-  // freshwater_Silver__Total_CABC_Chronic ,
-  // freshwater_Silver__Total_CAQC_Acute ,
-  // freshwater_Silver__Dissolved_CAQC_Acute ,
-  // freshwater_Silver__Dissolved_CAQC_Chronic ,
+  freshwater_Silver__Total_CABC_Acute ,
+  freshwater_Silver__Total_CABC_Chronic ,
+  freshwater_Silver__Total_CAQC_Acute ,
+  freshwater_Silver__Dissolved_CAQC_Acute ,
   freshwater_Silver__Total_US_Acute,
-  // freshwater_Silver__Total_US_Chronic ,
   freshwater_Silver__Dissolved_US_Acute,
-  // freshwater_Silver__Dissolved_US_Chronic ,
-  // marine_TotalPCBs___US_Acute ,
-  // freshwater_Uranium___CAQC_Acute ,
-  // freshwater_Uranium___CAQC_Chronic ,
-  // freshwater_Zinc__Total_CABC_Acute ,
-  // freshwater_Zinc__Total_CABC_Chronic ,
+  freshwater_Uranium___CAQC_Acute ,
+  freshwater_Uranium___CAQC_Chronic ,
+  freshwater_Zinc__Total_CABC_Acute ,
+  freshwater_Zinc__Total_CABC_Chronic ,
   freshwater_Zinc__Dissolved_CA_Acute,
   freshwater_Zinc__Dissolved_CA_Chronic,
-  // marine_Zinc__Dissolved_CA_Acute ,
-  // marine_Zinc__Dissolved_CA_Chronic ,
-  // freshwater_Zinc__Total_CAQC_Acute ,
-  // freshwater_Zinc__Total_CAQC_Chronic ,
-  // freshwater_Zinc__Dissolved_CAQC_Acute ,
-  // freshwater_Zinc__Dissolved_CAQC_Chronic ,
+  freshwater_Zinc__Total_CAQC_Acute ,
+  freshwater_Zinc__Total_CAQC_Chronic ,
+  freshwater_Zinc__Dissolved_CAQC_Acute ,
+  freshwater_Zinc__Dissolved_CAQC_Chronic ,
   freshwater_Zinc__Total_US_Acute,
   freshwater_Zinc__Total_US_Chronic,
   freshwater_Zinc__Dissolved_US_Acute,

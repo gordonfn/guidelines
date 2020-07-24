@@ -47,7 +47,7 @@ const parseGuideline = (col, row) => {
       + region + '_'
       + type
     if (Object.keys(formulas).indexOf(formula) === -1) {
-      //console.log(`skip '${formula}' formula missing`)
+      console.log(`skip '${formula}' formula missing`)
       return [null, null]
     }
     //console.log(formula, ',')
@@ -78,6 +78,7 @@ parse(data, {
       obj.characteristic = row['Characteristic Name'] || ''
       obj.method_speciation = row['Method Speciation'] || ''
       obj.sample_fraction = sampleFraction || ''
+      obj.unit = row['Unit'] || ''
 
       if (!obj.guidelines) obj.guidelines = {}
 
@@ -89,6 +90,7 @@ parse(data, {
       ;[types[3], guidelines.Marine_chronic] = parseGuideline('Marine Chronic', row)
       ;[types[4], guidelines.Sediment_acute] = parseGuideline('Sediment Acute', row)
       ;[types[5], guidelines.Sediment_chronic] = parseGuideline('Sediment Chronic', row)
+      if (json[key] && json[key].type) types = types.concat(json[key].type) // add in previous
       obj.type = [...new Set(types.sort())].filter(v => v != null)
 
       guidelines = clean(guidelines)
@@ -101,15 +103,9 @@ parse(data, {
         }
       }
 
-      // test unit normalizations integrity
-      //if (regions.includes('CA') || regions.includes('US')) {
-        const [measure, unit] = normalize.characteristic(obj.characteristic, 1, obj.unit)
+      // get normalized unit
+      const [, unit] = normalize.characteristic(obj.characteristic, 1, obj.unit)
       obj.unit = unit
-        if (measure !== 1) {
-          //console.log(obj.unit)//, ',', obj.unit, regions[0], regions[regions.length-1])
-          console.log('**',obj.characteristic, regions[0], regions[regions.length-1], obj.type, obj.unit, '=>', unit, '(normalized)')
-        }
-      //}
 
       json[key] = obj
     })
@@ -125,49 +121,6 @@ parse(data, {
 
   fs.writeFileSync(__dirname + '/../metadata.json', JSON.stringify(arr, null, 2))
 
-  /*console.log('Write SQL Table')
-  let sql = `
-CREATE SCHEMA IF NOT EXISTS datastream;
-CREATE TABLE IF NOT EXISTS datastream.guidelines (
-  characteristic_name    VARCHAR(${varchar.characteristic_name}) NOT NULL DEFAULT '',
-  method_speciation      VARCHAR(${varchar.method_speciation})  NOT NULL DEFAULT '',
-  sample_fraction        VARCHAR(${varchar.sample_fraction})  NOT NULL DEFAULT '',
-  unit                   VARCHAR(${varchar.unit})   NOT NULL DEFAULT '',
-  values                 JSONB        NOT NULL DEFAULT '{}'
-);
-
-CREATE UNIQUE INDEX IF NOT EXISTS guidelines_pkey
-    ON datastream.guidelines (
-       characteristic_name,
-       method_speciation,
-       sample_fraction
-    );
-
-CREATE INDEX IF NOT EXISTS guideline_characteristic_name_idx
-  ON datastream.guidelines (characteristic_name);
-CREATE INDEX IF NOT EXISTS guideline_method_speciation_idx
-  ON datastream.guidelines (method_speciation);
-CREATE INDEX IF NOT EXISTS guideline_sample_fraction_idx
-  ON datastream.guidelines (sample_fraction);
-
-`
-  arr.forEach(char => {
-    const { name, characteristic_name, method_speciation, sample_fraction, unit, type, guidelines } = char
-    const values = {}
-    Object.keys(guidelines).forEach(key => {
-      const value = guidelines[key]
-      if (value === null) return
-      if (typeof value === 'string') values[key] = true
-      else values[key] = value
-    })
-    //db.push({name, characteristic_name, method_speciation, sample_fraction, values})
-    sql += `INSERT INTO datastream.guidelines (characteristic_name, method_speciation, sample_fraction, unit, values)
-VALUES ('${characteristic_name.replace('\'', '\'\'')}', '${method_speciation}', '${sample_fraction}', '${unit}', '${JSON.stringify(values)}')
-ON CONFLICT (characteristic_name, method_speciation, sample_fraction) DO NOTHING;\n`
-  })
-
-  fs.writeFileSync(__dirname + '/../guidelines.sql', sql)
-*/
   console.log('Done!')
   process.exit(0)
 })
