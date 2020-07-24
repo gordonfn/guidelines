@@ -1,6 +1,7 @@
 const fs = require('fs')
 const parse = require('csv-parse')
 const formulas = require('../formula')
+const normalize = require('../../datastream-import/import/calc/normalize')  // for unit testing
 const json = {}
 
 updateObjProp = (obj, propPath, value) => {
@@ -30,7 +31,9 @@ const parseGuideline = (col, row) => {
   const [media, type] = col.split(' ')
 
   // Value
-  if (row[col].toString() === Number.parseFloat(row[col]).toString()) return ['value', Number.parseFloat(row[col])]
+  if (row[col].toString() === Number.parseFloat(row[col]).toString()) {
+    return ['value', normalize.characteristic(row['Characteristic Name'], Number.parseFloat(row[col]), row['Unit'])[0]]
+  }
   // Range
   if (row[col].match(/^[\d.]+-[\d.]+$/)) return ['range', row[col].split('-').map(v => Number.parseFloat(v))]
   // Formula
@@ -44,6 +47,7 @@ const parseGuideline = (col, row) => {
       + region + '_'
       + type
     if (Object.keys(formulas).indexOf(formula) === -1) {
+      //console.log(`skip '${formula}' formula missing`)
       return [null, null]
     }
     //console.log(formula, ',')
@@ -60,7 +64,7 @@ parse(data, {
 
   for (const row of output) {
     if (!row['Characteristic Name']) {
-      console.log(`skip '${row['Guideline Name']}' from ${row['Region']}`)
+      //console.log(`skip '${row['Guideline Name']}' from ${row['Region']}`)
       continue
     }
 
@@ -68,13 +72,12 @@ parse(data, {
       count += 1
       let regions = row['Region'].split(',').map(v => v.trim()).sort()
 
-      const key = `${row['Characteristic Name']} ${row['Method Speciation']} (${sampleFraction}) ${row['Unit']}`
+      const key = `${row['Characteristic Name']} ${row['Method Speciation']} (${sampleFraction})`
 
       const obj = json[key] || {}
       obj.characteristic = row['Characteristic Name'] || ''
       obj.method_speciation = row['Method Speciation'] || ''
       obj.sample_fraction = sampleFraction || ''
-      obj.unit = row['Unit'] || ''
 
       if (!obj.guidelines) obj.guidelines = {}
 
@@ -97,6 +100,16 @@ parse(data, {
           updateObjProp(obj.guidelines, `${media}.${region}.${type}`, guidelines[key])
         }
       }
+
+      // test unit normalizations integrity
+      //if (regions.includes('CA') || regions.includes('US')) {
+        const [measure, unit] = normalize.characteristic(obj.characteristic, 1, obj.unit)
+      obj.unit = unit
+        if (measure !== 1) {
+          //console.log(obj.unit)//, ',', obj.unit, regions[0], regions[regions.length-1])
+          console.log('**',obj.characteristic, regions[0], regions[regions.length-1], obj.type, obj.unit, '=>', unit, '(normalized)')
+        }
+      //}
 
       json[key] = obj
     })

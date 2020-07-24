@@ -56,7 +56,7 @@ describe('Guideline Formulas', function () {
       done()
     })
 
-    /*it('Should calculate Ammonia and ammonium as N Unfiltered (CA)', function (done) {
+    it('Should calculate Ammonia and ammonium as N Unfiltered (CA)', function (done) {
       expect(formula.freshwater_Ammoniaandammonium_asN_Unfiltered_CA_Chronic({})).to.equal(null)
       expect(formula.freshwater_Ammoniaandammonium_asN_Unfiltered_CA_Chronic({pH:1})).to.equal(null)
       expect(formula.freshwater_Ammoniaandammonium_asN_Unfiltered_CA_Chronic({temperature:1})).to.equal(null)
@@ -64,12 +64,12 @@ describe('Guideline Formulas', function () {
       expect(formula.freshwater_Ammoniaandammonium_asN_Unfiltered_CA_Chronic({
         temperature: 0,
         pH: 0
-      }).toFixed(15)).to.equal((2.746278579842297).toFixed(15))
+      }).toFixed(15)).to.equal((189773005.218902647495270).toFixed(15))
 
       expect(formula.freshwater_Ammoniaandammonium_asN_Unfiltered_CA_Chronic({
         temperature: 100,
         pH: 7
-      }).toFixed(15)).to.equal((0.005698696304634).toFixed(15))
+      }).toFixed(15)).to.equal((0.055426888853467).toFixed(15))
 
       done()
     })
@@ -82,15 +82,15 @@ describe('Guideline Formulas', function () {
       expect(formula.freshwater_Ammoniaandammonium_asNH3_Unfiltered_CA_Chronic({
         temperature: 0,
         pH: 0
-      }).toFixed(15)).to.equal((2.746278579842297).toFixed(15))
+      }).toFixed(15)).to.equal((230755113.349833011627197).toFixed(15))
 
       expect(formula.freshwater_Ammoniaandammonium_asNH3_Unfiltered_CA_Chronic({
         temperature: 100,
         pH: 7
-      }).toFixed(15)).to.equal((0.005698696304634).toFixed(15))
+      }).toFixed(15)).to.equal((0.067396508819878).toFixed(15))
 
       done()
-    })*/
+    })
 
     it('Should calculate Cadmium Total Acute (CA)', function (done) {
       expect(formula.freshwater_Cadmium__Total_CA_Acute({})).to.equal(null)

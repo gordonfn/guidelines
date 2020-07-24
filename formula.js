@@ -26,14 +26,14 @@ const freshwater_Ammonia_asN_Unfiltered_US_Chronic = ({ pH, temperature }) => {
 
 const freshwater_Ammoniaandammonium_asN_Unfiltered_CA_Chronic = ({ pH, temperature }) => {
   if (!math.isValid(pH) || !math.isValid(temperature)) return null
-  // (0.019/(1/(10^((0.0901821+2729.92/(T(°C)+273.15))-pH)+1)*0.8223*1.216
-  return math.evaluate(`(0.019 / (1 / ( pow(10,(0.0901821 + 2729.92 / (${temperature} + 273.15)) - ${pH}) + 1))) * 0.8223 * 1.216`).toNumber()
+  // (0.019/(1/(10^((0.0901821+2729.92/(T(°C)+273.15))-pH)+1)*0.8223 //*1.216
+  return math.evaluate(`(0.019 / (1 / ( pow(10,(0.0901821 + 2729.92 / (${temperature} + 273.15)) - ${pH}) + 1))) * 0.8224`).toNumber()
 }
 
 const freshwater_Ammoniaandammonium_asNH3_Unfiltered_CA_Chronic = ({ pH, temperature }) => {
   if (!math.isValid(pH) || !math.isValid(temperature)) return null
-  // (0.019/(1/(10^((0.0901821+2729.92/(T(°C)+273.15))-pH)+1)*0.8224
-  return math.evaluate(`(0.019 / (1 / ( pow(10,(0.0901821 + 2729.92 / (${temperature} + 273.15)) - ${pH}) + 1))) * 0.8223`).toNumber()
+  // (0.019/(1/(10^((0.0901821+2729.92/(T(°C)+273.15))-pH)+1)
+  return math.evaluate(`(0.019 / (1 / ( pow(10,(0.0901821 + 2729.92 / (${temperature} + 273.15)) - ${pH}) + 1)))`).toNumber()
 }
 
 const freshwater_Cadmium__Total_CA_Acute = (params) => {
