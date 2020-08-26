@@ -5979,15 +5979,15 @@
           "acute": 3,
           "chronic": 2
         },
-        "US": {
-          "src": "USEPA",
-          "acute": 4.8,
-          "chronic": 3.1
-        },
         "CA-QC": {
           "src": "QC Gov",
           "acute": 5.8,
           "chronic": 3.7
+        },
+        "US": {
+          "src": "USEPA",
+          "acute": 4.8,
+          "chronic": 3.1
         }
       }
     },
@@ -6003,34 +6003,6 @@
     "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
-        "CA": {
-          "src": "ECCC",
-          "chronic": 0.53
-        },
-        "CA-NB": {
-          "src": "ECCC",
-          "chronic": 0.53
-        },
-        "CA-NL": {
-          "src": "ECCC",
-          "chronic": 0.53
-        },
-        "CA-NS": {
-          "src": "ECCC",
-          "chronic": 0.53
-        },
-        "CA-NT": {
-          "src": "ECCC",
-          "chronic": 0.53
-        },
-        "CA-PE": {
-          "src": "ECCC",
-          "chronic": 0.53
-        },
-        "CA-YT": {
-          "src": "ECCC",
-          "chronic": 0.53
-        },
         "CA-MB": {
           "src": "QC Gov",
           "acute": "freshwater_Copper__Dissolved_CAQC_Acute",
@@ -6043,11 +6015,6 @@
         }
       },
       "Marine": {
-        "US": {
-          "src": "USEPA",
-          "acute": 3.984,
-          "chronic": 2.573
-        },
         "CA-MB": {
           "src": "QC Gov",
           "acute": 4.814,
@@ -6057,6 +6024,11 @@
           "src": "QC Gov",
           "acute": 4.814,
           "chronic": 3.071
+        },
+        "US": {
+          "src": "USEPA",
+          "acute": 3.984,
+          "chronic": 2.573
         }
       }
     },
@@ -9146,32 +9118,32 @@
           "acute": 1000
         },
         "CA-YT": {
-          "src": "ECCC",
+          "src": "ECCC - Draft",
           "acute": 1000,
           "chronic": "freshwater_Iron__Total_CA_Chronic"
         },
         "CA": {
-          "src": "ECCC",
+          "src": "ECCC - Draft",
           "chronic": "freshwater_Iron__Total_CA_Chronic"
         },
         "CA-NB": {
-          "src": "ECCC",
+          "src": "ECCC - Draft",
           "chronic": "freshwater_Iron__Total_CA_Chronic"
         },
         "CA-NL": {
-          "src": "ECCC",
+          "src": "ECCC - Draft",
           "chronic": "freshwater_Iron__Total_CA_Chronic"
         },
         "CA-NS": {
-          "src": "ECCC",
+          "src": "ECCC - Draft",
           "chronic": "freshwater_Iron__Total_CA_Chronic"
         },
         "CA-NT": {
-          "src": "ECCC",
+          "src": "ECCC - Draft",
           "chronic": "freshwater_Iron__Total_CA_Chronic"
         },
         "CA-PE": {
-          "src": "ECCC",
+          "src": "ECCC - Draft",
           "chronic": "freshwater_Iron__Total_CA_Chronic"
         },
         "US": {
@@ -12652,40 +12624,40 @@
     "characteristic": "Perfluorooctanesulfonate",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/L",
+    "unit": "µg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
           "src": "ECCC",
-          "chronic": 0.0068
+          "chronic": 6.8
         },
         "CA-NB": {
           "src": "ECCC",
-          "chronic": 0.0068
+          "chronic": 6.8
         },
         "CA-NL": {
           "src": "ECCC",
-          "chronic": 0.0068
+          "chronic": 6.8
         },
         "CA-NS": {
           "src": "ECCC",
-          "chronic": 0.0068
+          "chronic": 6.8
         },
         "CA-NT": {
           "src": "ECCC",
-          "chronic": 0.0068
+          "chronic": 6.8
         },
         "CA-PE": {
           "src": "ECCC",
-          "chronic": 0.0068
+          "chronic": 6.8
         },
         "CA-QC": {
           "src": "ECCC",
-          "chronic": 0.0068
+          "chronic": 6.8
         },
         "CA-YT": {
           "src": "ECCC",
-          "chronic": 0.0068
+          "chronic": 6.8
         }
       }
     },
@@ -12826,6 +12798,189 @@
   },
   {
     "characteristic": "pH",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "",
+    "guidelines": {
+      "Marine": {
+        "CA-BC": {
+          "src": "BC Gov",
+          "chronic": [
+            7,
+            8.7
+          ]
+        },
+        "CA-YT": {
+          "src": "CCME",
+          "chronic": [
+            7,
+            8.7
+          ]
+        },
+        "CA": {
+          "src": "CCME",
+          "chronic": [
+            7,
+            8.7
+          ]
+        },
+        "CA-MB": {
+          "src": "CCME",
+          "chronic": [
+            7,
+            8.7
+          ]
+        },
+        "CA-NB": {
+          "src": "CCME",
+          "chronic": [
+            7,
+            8.7
+          ]
+        },
+        "CA-NL": {
+          "src": "CCME",
+          "chronic": [
+            7,
+            8.7
+          ]
+        },
+        "CA-NS": {
+          "src": "CCME",
+          "chronic": [
+            7,
+            8.7
+          ]
+        },
+        "CA-NT": {
+          "src": "CCME",
+          "chronic": [
+            7,
+            8.7
+          ]
+        },
+        "CA-PE": {
+          "src": "CCME",
+          "chronic": [
+            7,
+            8.7
+          ]
+        },
+        "CA-QC": {
+          "src": "CCME",
+          "chronic": [
+            7,
+            8.7
+          ]
+        },
+        "CA-AB": {
+          "src": "USEPA",
+          "chronic": [
+            6.5,
+            8.5
+          ]
+        },
+        "US": {
+          "src": "USEPA",
+          "chronic": [
+            6.5,
+            8.5
+          ]
+        }
+      },
+      "Freshwater": {
+        "CA": {
+          "src": "CCME",
+          "chronic": [
+            6.5,
+            9
+          ]
+        },
+        "CA-MB": {
+          "src": "CCME",
+          "chronic": [
+            6.5,
+            9
+          ]
+        },
+        "CA-NB": {
+          "src": "CCME",
+          "chronic": [
+            6.5,
+            9
+          ]
+        },
+        "CA-NL": {
+          "src": "CCME",
+          "chronic": [
+            6.5,
+            9
+          ]
+        },
+        "CA-NS": {
+          "src": "CCME",
+          "chronic": [
+            6.5,
+            9
+          ]
+        },
+        "CA-NT": {
+          "src": "CCME",
+          "chronic": [
+            6.5,
+            9
+          ]
+        },
+        "CA-PE": {
+          "src": "CCME",
+          "chronic": [
+            6.5,
+            9
+          ]
+        },
+        "CA-QC": {
+          "src": "CCME",
+          "chronic": [
+            6.5,
+            9
+          ]
+        },
+        "CA-YT": {
+          "src": "CCME",
+          "chronic": [
+            6.5,
+            9
+          ]
+        },
+        "CA-ON": {
+          "src": "ON Gov",
+          "chronic": [
+            6.5,
+            8.5
+          ]
+        },
+        "CA-AB": {
+          "src": "USEPA",
+          "chronic": [
+            6.5,
+            9
+          ]
+        },
+        "US": {
+          "src": "USEPA",
+          "chronic": [
+            6.5,
+            9
+          ]
+        }
+      }
+    },
+    "type": [
+      "range"
+    ]
+  },
+  {
+    "characteristic": "pH, lab",
     "method_speciation": "",
     "sample_fraction": "",
     "unit": "",
@@ -13424,7 +13579,7 @@
       "Freshwater": {
         "CA": {
           "src": "ECCC",
-          "chronic": 130
+          "chronic": 150
         },
         "CA-AB": {
           "src": "CCME",
@@ -13440,27 +13595,27 @@
         },
         "CA-NB": {
           "src": "ECCC",
-          "chronic": 130
+          "chronic": 150
         },
         "CA-NL": {
           "src": "ECCC",
-          "chronic": 130
+          "chronic": 150
         },
         "CA-NS": {
           "src": "ECCC",
-          "chronic": 130
+          "chronic": 150
         },
         "CA-NT": {
           "src": "ECCC",
-          "chronic": 130
+          "chronic": 150
         },
         "CA-PE": {
           "src": "ECCC",
-          "chronic": 130
+          "chronic": 150
         },
         "CA-YT": {
           "src": "ECCC",
-          "chronic": 130
+          "chronic": 150
         },
         "CA-ON": {
           "src": "ON Gov",
@@ -13907,39 +14062,52 @@
   },
   {
     "characteristic": "Strontium",
-    "method_speciation": "",
+    "method_speciation": "Dissolved",
     "sample_fraction": "",
     "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
         "CA": {
           "src": "ECCC",
-          "chronic": 1.7
+          "chronic": 2.5
         },
         "CA-NB": {
           "src": "ECCC",
-          "chronic": 1.7
+          "chronic": 2.5
         },
         "CA-NL": {
           "src": "ECCC",
-          "chronic": 1.7
+          "chronic": 2.5
         },
         "CA-NS": {
           "src": "ECCC",
-          "chronic": 1.7
+          "chronic": 2.5
         },
         "CA-NT": {
           "src": "ECCC",
-          "chronic": 1.7
+          "chronic": 2.5
         },
         "CA-PE": {
           "src": "ECCC",
-          "chronic": 1.7
+          "chronic": 2.5
         },
         "CA-YT": {
           "src": "ECCC",
-          "chronic": 1.7
-        },
+          "chronic": 2.5
+        }
+      }
+    },
+    "type": [
+      "value"
+    ]
+  },
+  {
+    "characteristic": "Strontium",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "mg/L",
+    "guidelines": {
+      "Freshwater": {
         "CA-QC": {
           "src": "QC Gov",
           "acute": 40,
@@ -15820,6 +15988,300 @@
         "CA-ON": {
           "src": "ON Gov",
           "chronic": 4
+        }
+      }
+    },
+    "type": [
+      "value"
+    ]
+  },
+  {
+    "characteristic": "Hexabromocyclododecane",
+    "method_speciation": "",
+    "sample_fraction": "",
+    "unit": "mg/L",
+    "guidelines": {
+      "Freshwater": {
+        "CA": {
+          "src": "ECCC",
+          "chronic": 0.00056
+        },
+        "CA-AB": {
+          "src": "ECCC",
+          "chronic": 0.00056
+        },
+        "CA-NB": {
+          "src": "ECCC",
+          "chronic": 0.00056
+        },
+        "CA-NL": {
+          "src": "ECCC",
+          "chronic": 0.00056
+        },
+        "CA-NS": {
+          "src": "ECCC",
+          "chronic": 0.00056
+        },
+        "CA-NT": {
+          "src": "ECCC",
+          "chronic": 0.00056
+        },
+        "CA-PE": {
+          "src": "ECCC",
+          "chronic": 0.00056
+        },
+        "CA-QC": {
+          "src": "ECCC",
+          "chronic": 0.00056
+        },
+        "CA-YT": {
+          "src": "ECCC",
+          "chronic": 0.00056
+        }
+      }
+    },
+    "type": [
+      "value"
+    ]
+  },
+  {
+    "characteristic": "Heptabromodiphenyl ether",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "ng/L",
+    "guidelines": {
+      "Freshwater": {
+        "CA": {
+          "src": "ECCC",
+          "chronic": 17
+        },
+        "CA-AB": {
+          "src": "ECCC",
+          "chronic": 17
+        },
+        "CA-NB": {
+          "src": "ECCC",
+          "chronic": 17
+        },
+        "CA-NL": {
+          "src": "ECCC",
+          "chronic": 17
+        },
+        "CA-NS": {
+          "src": "ECCC",
+          "chronic": 17
+        },
+        "CA-NT": {
+          "src": "ECCC",
+          "chronic": 17
+        },
+        "CA-PE": {
+          "src": "ECCC",
+          "chronic": 17
+        },
+        "CA-QC": {
+          "src": "ECCC",
+          "chronic": 17
+        },
+        "CA-YT": {
+          "src": "ECCC",
+          "chronic": 17
+        }
+      }
+    },
+    "type": [
+      "value"
+    ]
+  },
+  {
+    "characteristic": "Hexabromodiphenyl ether",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "ng/L",
+    "guidelines": {
+      "Freshwater": {
+        "CA": {
+          "src": "ECCC",
+          "chronic": 120
+        },
+        "CA-AB": {
+          "src": "ECCC",
+          "chronic": 120
+        },
+        "CA-NB": {
+          "src": "ECCC",
+          "chronic": 120
+        },
+        "CA-NL": {
+          "src": "ECCC",
+          "chronic": 120
+        },
+        "CA-NS": {
+          "src": "ECCC",
+          "chronic": 120
+        },
+        "CA-NT": {
+          "src": "ECCC",
+          "chronic": 120
+        },
+        "CA-PE": {
+          "src": "ECCC",
+          "chronic": 120
+        },
+        "CA-QC": {
+          "src": "ECCC",
+          "chronic": 120
+        },
+        "CA-YT": {
+          "src": "ECCC",
+          "chronic": 120
+        }
+      }
+    },
+    "type": [
+      "value"
+    ]
+  },
+  {
+    "characteristic": "Pentabromodiphenyl ether",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "ng/L",
+    "guidelines": {
+      "Freshwater": {
+        "CA": {
+          "src": "ECCC",
+          "chronic": 0.2
+        },
+        "CA-AB": {
+          "src": "ECCC",
+          "chronic": 0.2
+        },
+        "CA-NB": {
+          "src": "ECCC",
+          "chronic": 0.2
+        },
+        "CA-NL": {
+          "src": "ECCC",
+          "chronic": 0.2
+        },
+        "CA-NS": {
+          "src": "ECCC",
+          "chronic": 0.2
+        },
+        "CA-NT": {
+          "src": "ECCC",
+          "chronic": 0.2
+        },
+        "CA-PE": {
+          "src": "ECCC",
+          "chronic": 0.2
+        },
+        "CA-QC": {
+          "src": "ECCC",
+          "chronic": 0.2
+        },
+        "CA-YT": {
+          "src": "ECCC",
+          "chronic": 0.2
+        }
+      }
+    },
+    "type": [
+      "value"
+    ]
+  },
+  {
+    "characteristic": "Tetrabromodiphenyl ether",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "ng/L",
+    "guidelines": {
+      "Freshwater": {
+        "CA": {
+          "src": "ECCC",
+          "chronic": 24
+        },
+        "CA-AB": {
+          "src": "ECCC",
+          "chronic": 24
+        },
+        "CA-NB": {
+          "src": "ECCC",
+          "chronic": 24
+        },
+        "CA-NL": {
+          "src": "ECCC",
+          "chronic": 24
+        },
+        "CA-NS": {
+          "src": "ECCC",
+          "chronic": 24
+        },
+        "CA-NT": {
+          "src": "ECCC",
+          "chronic": 24
+        },
+        "CA-PE": {
+          "src": "ECCC",
+          "chronic": 24
+        },
+        "CA-QC": {
+          "src": "ECCC",
+          "chronic": 24
+        },
+        "CA-YT": {
+          "src": "ECCC",
+          "chronic": 24
+        }
+      }
+    },
+    "type": [
+      "value"
+    ]
+  },
+  {
+    "characteristic": "Tribromodiphenyl ether",
+    "method_speciation": "",
+    "sample_fraction": "Total",
+    "unit": "mg/L",
+    "guidelines": {
+      "Freshwater": {
+        "CA": {
+          "src": "ECCC",
+          "chronic": 0.000046
+        },
+        "CA-AB": {
+          "src": "ECCC",
+          "chronic": 0.000046
+        },
+        "CA-NB": {
+          "src": "ECCC",
+          "chronic": 0.000046
+        },
+        "CA-NL": {
+          "src": "ECCC",
+          "chronic": 0.000046
+        },
+        "CA-NS": {
+          "src": "ECCC",
+          "chronic": 0.000046
+        },
+        "CA-NT": {
+          "src": "ECCC",
+          "chronic": 0.000046
+        },
+        "CA-PE": {
+          "src": "ECCC",
+          "chronic": 0.000046
+        },
+        "CA-QC": {
+          "src": "ECCC",
+          "chronic": 0.000046
+        },
+        "CA-YT": {
+          "src": "ECCC",
+          "chronic": 0.000046
         }
       }
     },
