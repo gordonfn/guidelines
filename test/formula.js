@@ -280,13 +280,13 @@ describe('Guideline Formulas', function () {
 
       expect(formula.freshwater_Lead__Dissolved_CA_Chronic({
         DOC: 0,
-        pH: 0
-      })).to.equal(0)
+        TH:0
+      })).to.equal(null)
 
       expect(formula.freshwater_Lead__Dissolved_CA_Chronic({
         DOC: 10,
-        pH: 7
-      }).toFixed(15)).to.equal((2.054367888118551).toFixed(15))
+        TH:5
+      }).toFixed(15)).to.equal((6.980694783890016).toFixed(15))
 
       done()
     })

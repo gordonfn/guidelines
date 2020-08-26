@@ -188,10 +188,16 @@ const freshwater_Lead__Total_CAQC_Acute = () => null
 const freshwater_Lead__Total_CAQC_Chronic = () => null
 const freshwater_Lead___CASK_Chronic = () => null
 
-const freshwater_Lead__Dissolved_CA_Chronic = ({ DOC, pH }) => {
-  if (!math.isValid(DOC) || !math.isValid(pH)) return null
-  // EXP(0.684(LN(DOC))+0.924(pH)-7.323)
-  return math.evaluate(`exp(0.684 * log(${DOC}, e) + 0.924 * ${pH} - 7.323)`).toNumber()
+const freshwater_Lead__Dissolved_CA_Chronic = (params) => {
+  const hardness = calculateHardness(params)
+  const {DOC} = params
+  if (!math.isValid(hardness) || hardness <= 0 || !math.isValid(DOC)) return null
+
+  // if (DOC ≥ 0.5 and DOC ≤ 31.5, and hardness ≥ 4.7 and hardness  ≤ 511) {EXP(0.514(LN(DOC))+ 0.214(LN(hardness)) + 0.4152)}
+  if (0.5 <= DOC && DOC <= 31.5 && 4.7 <= hardness && hardness <= 511) {
+    return math.evaluate(`exp(0.514 * log(${DOC}, e) + 0.214 * log(${hardness}, e) + 0.4152)`).toNumber()
+  }
+  return null
 }
 
 const freshwater_Lead__Dissolved_US_Acute = (params) => {

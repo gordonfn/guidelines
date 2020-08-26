@@ -88,8 +88,8 @@ parse(data, {
       ;[types[1], guidelines.Freshwater_chronic] = parseGuideline('Freshwater Chronic', row)
       ;[types[2], guidelines.Marine_acute] = parseGuideline('Marine Acute', row)
       ;[types[3], guidelines.Marine_chronic] = parseGuideline('Marine Chronic', row)
-      ;[types[4], guidelines.Sediment_acute] = parseGuideline('Sediment Acute', row)
-      ;[types[5], guidelines.Sediment_chronic] = parseGuideline('Sediment Chronic', row)
+      //;[types[4], guidelines.Sediment_acute] = parseGuideline('Sediment Acute', row)
+      //;[types[5], guidelines.Sediment_chronic] = parseGuideline('Sediment Chronic', row)
       if (json[key] && json[key].type) types = types.concat(json[key].type) // add in previous
       obj.type = [...new Set(types.sort())].filter(v => v != null)
 
