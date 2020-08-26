@@ -631,7 +631,7 @@ Silvex,,,Fenoprop,mg/L,CA-QC,QC Gov,0.27,0.03,,,,,,,,,,,(1) Characteristic choic
 Simazine,,,Simazine,µg/L,"CA,CA-AB,CA-MB,CA-BC,CA-NB,CA-NL,CA-NT,CA-NS,CA-PE,CA-YT",CCME,NRG,10,,NRG,NRG,,,,,,,,http://ceqg-rcqe.ccme.ca/download/en/210/
 Simazine,,,Simazine,µg/L,CA-ON,ON Gov,,10,,,,,,,,,,,https://www.ontario.ca/page/water-management-policies-guidelines-provincial-water-quality-objectives
 Simazine,,,Simazine,mg/L,CA-QC,QC Gov,0.16,0.01,,,,,,,,,,,(1) Characteristic choice list (translatable to english): http://www.environnement.gouv.qc.ca/eau/criteres_eau/index.asp (2) 2013 guideline document (French): http://www.environnement.gouv.qc.ca/eau/criteres_eau
-Strontium,Dissolved,,Strontium,mg/L,"CA,CA-NB,CA-NL,CA-NT,CA-NS,CA-PE,CA-YT",ECCC,NRG,2.5,,,,,,,,,,,https://www.canada.ca/content/dam/eccc/documents/pdf/pded/feqg-strontium/Federal-environmental-quality-guidelines-strontium.pdf
+Strontium,,Dissolved,Strontium,mg/L,"CA,CA-NB,CA-NL,CA-NT,CA-NS,CA-PE,CA-YT",ECCC,NRG,2.5,,,,,,,,,,,https://www.canada.ca/content/dam/eccc/documents/pdf/pded/feqg-strontium/Federal-environmental-quality-guidelines-strontium.pdf
 Strontium,,,Strontium,mg/L,CA-QC,QC Gov,40,21,,,,,,,,,,,(1) Characteristic choice list (translatable to english): http://www.environnement.gouv.qc.ca/eau/criteres_eau/index.asp (2) 2013 guideline document (French): http://www.environnement.gouv.qc.ca/eau/criteres_eau
 Strontium-90,,,Strontium,Bq/L,CA-ON,ON Gov,,10,,,,,,,,,,,https://www.ontario.ca/page/water-management-policies-guidelines-provincial-water-quality-objectives
 Styrene,,,Styrene,µg/L,"CA,CA-AB,CA-MB,CA-BC,CA-NB,CA-NL,CA-NT,CA-NS,CA-PE,CA-YT",CCME,NRG,72,,NRG,NRG,,,,,,,,http://ceqg-rcqe.ccme.ca/download/en/211/

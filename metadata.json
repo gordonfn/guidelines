@@ -14062,8 +14062,8 @@
   },
   {
     "characteristic": "Strontium",
-    "method_speciation": "Dissolved",
-    "sample_fraction": "",
+    "method_speciation": "",
+    "sample_fraction": "Dissolved",
     "unit": "mg/L",
     "guidelines": {
       "Freshwater": {
