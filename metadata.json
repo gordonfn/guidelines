@@ -1,8 +1,5 @@
 [
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "1,2-Dichloroethylene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16,17 +13,16 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula",
-      "value"
-    ],
     "characteristic": "Copper",
     "method_speciation": "",
     "sample_fraction": "Total",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -154,12 +150,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Dissolved gases - saturation",
     "method_speciation": "",
     "sample_fraction": "",
@@ -177,16 +174,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Hydrazine",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/L",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -258,17 +255,16 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "value",
-      "formula"
-    ],
     "characteristic": "Mercury",
     "method_speciation": "",
     "sample_fraction": "Total",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -443,12 +439,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value",
+      "formula"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Methanol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -471,12 +468,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Methylmercury(1+)",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -523,13 +520,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "value",
-      "range"
-    ],
     "characteristic": "Dissolved oxygen (DO)",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
@@ -684,12 +680,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value",
+      "range"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Toxicity acute",
     "method_speciation": "",
     "sample_fraction": "",
@@ -704,13 +701,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "value",
-      "formula"
-    ],
     "characteristic": "Zinc",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -766,17 +762,17 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value",
       "formula"
-    ],
+    ]
+  },
+  {
     "characteristic": "Iron",
     "method_speciation": "",
     "sample_fraction": "Total",
-    "unit": "µg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -828,17 +824,17 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value",
+      "formula"
+    ]
   },
   {
-    "type": [
-      "formula",
-      "value"
-    ],
     "characteristic": "Manganese",
     "method_speciation": "",
     "sample_fraction": "Total",
-    "unit": "µg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -873,17 +869,17 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "formula",
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Nickel",
     "method_speciation": "",
     "sample_fraction": "Total",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -975,17 +971,17 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "formula",
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Silver",
     "method_speciation": "",
     "sample_fraction": "Total",
-    "unit": "µg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -1101,12 +1097,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Resorcinol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -1124,12 +1121,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Hydroquinone",
     "method_speciation": "",
     "sample_fraction": "",
@@ -1152,12 +1149,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Kjeldahl nitrogen",
     "method_speciation": "as N",
     "sample_fraction": "Unfiltered",
@@ -1172,12 +1169,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "p,p'-DDE",
     "method_speciation": "",
     "sample_fraction": "",
@@ -1192,12 +1189,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "p,p'-DDD",
     "method_speciation": "",
     "sample_fraction": "",
@@ -1212,12 +1209,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Organic carbon",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -1232,12 +1229,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Decabromodiphenyl ether",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -1255,16 +1252,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "DDT, o,p'- and p,p'- isomers",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/kgdryweight",
     "guidelines": {
       "Sediment": {
         "Freshwater": {
@@ -1333,16 +1330,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "DDE, o,p'- and p,p'- isomers",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/kgdryweight",
     "guidelines": {
       "Sediment": {
         "Freshwater": {
@@ -1406,16 +1403,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "DDD, o,p'- and p,p'- isomers",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/kgdryweight",
     "guidelines": {
       "Sediment": {
         "Freshwater": {
@@ -1479,16 +1476,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Polycyclic aromatic hydrocarbons",
     "method_speciation": "",
     "sample_fraction": "Total",
-    "unit": "µg/gdryweight",
+    "unit": "µg/kgdryweight",
     "guidelines": {
       "Sediment": {
         "Freshwater": {
@@ -1509,12 +1506,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Polycyclic aromatic hydrocarbons, low molecular weight",
     "method_speciation": "",
     "sample_fraction": "",
@@ -1535,12 +1532,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Polycyclic aromatic hydrocarbons, high molecular weight",
     "method_speciation": "",
     "sample_fraction": "",
@@ -1561,16 +1558,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Indeno[1,2,3-cd]pyrene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/kgdryweight",
     "guidelines": {
       "Sediment": {
         "Freshwater": {
@@ -1593,16 +1590,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Hexachlorocyclohexane",
     "method_speciation": "",
     "sample_fraction": "Total",
-    "unit": "µg/gdryweight",
+    "unit": "µg/kgdryweight",
     "guidelines": {
       "Sediment": {
         "Freshwater": {
@@ -1623,12 +1620,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Di-n-octyl phthalate",
     "method_speciation": "",
     "sample_fraction": "",
@@ -1643,12 +1640,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Sulfide",
     "method_speciation": "as S",
     "sample_fraction": "Total",
@@ -1684,13 +1681,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula",
-      "value"
-    ],
     "characteristic": "Nickel",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
@@ -1732,16 +1728,17 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Heptachlor epoxide",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -1768,12 +1765,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Demeton",
     "method_speciation": "",
     "sample_fraction": "",
@@ -1809,12 +1806,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Cyanide",
     "method_speciation": "as CN",
     "sample_fraction": "Free Available",
@@ -1916,12 +1913,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Diisopropanolamine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -1977,12 +1974,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Endosulfan",
     "method_speciation": "",
     "sample_fraction": "",
@@ -2106,12 +2103,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Ethinyl estradiol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -2136,12 +2133,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Ethylbenzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -2246,16 +2243,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Fluoranthene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -2377,16 +2374,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Fluorene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -2520,13 +2517,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula",
-      "value"
-    ],
     "characteristic": "Fluoride",
     "method_speciation": "",
     "sample_fraction": "",
@@ -2592,12 +2588,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Glyphosate",
     "method_speciation": "",
     "sample_fraction": "",
@@ -2659,17 +2656,17 @@
             "Chronic": 65
           },
           "CA-SK": {
-            "src": "SK Gov",
+            "src": "SK Gov EPB 356",
             "Chronic": 65
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Iron",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
@@ -2724,17 +2721,16 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula",
-      "value"
-    ],
     "characteristic": "Lead",
     "method_speciation": "",
     "sample_fraction": "Total",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -2872,12 +2868,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Methyl tert-butyl ether",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -2905,12 +2902,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Methylnaphthalene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -2930,12 +2927,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Molybdenum",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -2987,16 +2984,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Naphthalene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -3148,12 +3145,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Nitrate",
     "method_speciation": "as N",
     "sample_fraction": "",
@@ -3268,12 +3265,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Inorganic nitrogen (nitrate and nitrite)",
     "method_speciation": "as N",
     "sample_fraction": "",
@@ -3303,13 +3300,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula",
-      "value"
-    ],
     "characteristic": "Nitrite",
     "method_speciation": "as N",
     "sample_fraction": "",
@@ -3362,12 +3358,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "p,p'-DDT",
     "method_speciation": "",
     "sample_fraction": "",
@@ -3389,12 +3386,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "o-Xylene, mixt. with m-xylene and p-xylene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -3409,12 +3406,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Vinyl acetate",
     "method_speciation": "",
     "sample_fraction": "",
@@ -3429,12 +3426,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Triphenyl phosphate",
     "method_speciation": "",
     "sample_fraction": "",
@@ -3449,12 +3446,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Total PCBs",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -3482,13 +3479,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula",
-      "range"
-    ],
     "characteristic": "pH",
     "method_speciation": "",
     "sample_fraction": "",
@@ -3665,13 +3661,13 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "formula",
       "range"
-    ],
+    ]
+  },
+  {
     "characteristic": "pH, lab",
     "method_speciation": "",
     "sample_fraction": "",
@@ -3848,16 +3844,17 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula",
+      "range"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Phenanthrene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -3986,12 +3983,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Selenium",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -4074,12 +4071,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Toluene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -4176,13 +4173,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "value",
-      "formula"
-    ],
     "characteristic": "Uranium",
     "method_speciation": "",
     "sample_fraction": "",
@@ -4209,12 +4205,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value",
+      "formula"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Vanadium",
     "method_speciation": "",
     "sample_fraction": "",
@@ -4241,12 +4238,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Xylene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -4268,12 +4265,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Trichloroethane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -4288,16 +4285,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Total Phosphorus, mixed forms",
     "method_speciation": "as P",
     "sample_fraction": "Unfiltered",
-    "unit": "µg/gdryweight",
+    "unit": "mg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -4316,16 +4313,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Lindane",
     "method_speciation": "",
     "sample_fraction": "Total",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -4437,16 +4434,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Nonylphenol",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -4596,16 +4593,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Pyrene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -4714,17 +4711,16 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula",
-      "value"
-    ],
     "characteristic": "Zinc",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -4859,12 +4855,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Thiamethoxam",
     "method_speciation": "",
     "sample_fraction": "",
@@ -4879,16 +4876,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "o-Dichlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -4997,12 +4994,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Tetrahydrofuran",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5017,12 +5014,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Tetrachloroethane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5037,12 +5034,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Sulfite",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5056,12 +5053,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Strontium",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5076,16 +5073,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "m-Dichlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/L",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -5140,16 +5137,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "p-Dichlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -5213,12 +5210,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "MCPA",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5318,13 +5315,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula",
-      "value"
-    ],
     "characteristic": "Silver",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
@@ -5352,12 +5348,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Selenium",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
@@ -5382,12 +5379,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Potassium permanganate",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5401,12 +5398,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Phenytoin",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5421,12 +5418,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Tributyltin",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5448,12 +5445,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Perfluorooctanoic acid",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5468,12 +5465,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Pentachloroethane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5488,12 +5485,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Ozone",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5508,12 +5505,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Octylphenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5528,12 +5525,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Nitrilotriacetic acid",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5547,12 +5544,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Naproxen",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5567,12 +5564,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Dimethylacetamide",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5587,12 +5584,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Myclobutanil",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5607,12 +5604,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Propylene oxide",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5627,12 +5624,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Methylene dithiocyanate",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5646,12 +5643,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Mercury",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
@@ -5683,12 +5680,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Mecoprop",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5708,12 +5705,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "MCPB",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5728,12 +5725,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Cyanazine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5830,12 +5827,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Deltamethrin",
     "method_speciation": "",
     "sample_fraction": "",
@@ -5889,16 +5886,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Dibutyl phthalate",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -5962,16 +5959,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Di(2-ethylhexyl) phthalate",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -6035,12 +6032,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Dicamba",
     "method_speciation": "",
     "sample_fraction": "",
@@ -6102,12 +6099,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Methylene chloride",
     "method_speciation": "",
     "sample_fraction": "",
@@ -6162,12 +6159,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Dichlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -6217,12 +6214,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Diclofop-methyl",
     "method_speciation": "",
     "sample_fraction": "",
@@ -6280,12 +6277,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Didecyl dimethyl ammonium chloride",
     "method_speciation": "",
     "sample_fraction": "",
@@ -6335,12 +6332,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Dimethoate",
     "method_speciation": "",
     "sample_fraction": "",
@@ -6398,12 +6395,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Dinoseb",
     "method_speciation": "",
     "sample_fraction": "",
@@ -6458,12 +6455,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Ethylene glycol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -6522,16 +6519,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Hexachlorobutadiene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -6601,12 +6598,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Imidacloprid",
     "method_speciation": "",
     "sample_fraction": "",
@@ -6703,12 +6700,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Linuron",
     "method_speciation": "",
     "sample_fraction": "",
@@ -6762,17 +6759,16 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula",
-      "value"
-    ],
     "characteristic": "Manganese",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -6832,12 +6828,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Methoprene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -6883,12 +6880,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Methyl tert-butyl ether",
     "method_speciation": "",
     "sample_fraction": "",
@@ -6985,12 +6982,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Metolachlor",
     "method_speciation": "",
     "sample_fraction": "",
@@ -7049,12 +7046,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Metribuzin",
     "method_speciation": "",
     "sample_fraction": "",
@@ -7108,12 +7105,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Monochlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -7205,12 +7202,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Lithium",
     "method_speciation": "",
     "sample_fraction": "",
@@ -7225,12 +7222,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Nitrate",
     "method_speciation": "as NO3",
     "sample_fraction": "",
@@ -7312,12 +7309,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Nitrite",
     "method_speciation": "as NO2",
     "sample_fraction": "",
@@ -7355,12 +7352,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Pentachlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -7419,13 +7416,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "value",
-      "formula"
-    ],
     "characteristic": "Pentachlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -7501,12 +7497,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value",
+      "formula"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Permethrin",
     "method_speciation": "",
     "sample_fraction": "",
@@ -7599,12 +7596,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Phenols",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -7654,12 +7651,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Isophorone",
     "method_speciation": "",
     "sample_fraction": "",
@@ -7674,12 +7671,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Picloram",
     "method_speciation": "",
     "sample_fraction": "",
@@ -7738,12 +7735,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Propylene glycol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -7802,12 +7799,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Quinoline",
     "method_speciation": "",
     "sample_fraction": "",
@@ -7861,12 +7858,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Iprodione",
     "method_speciation": "",
     "sample_fraction": "",
@@ -7881,12 +7878,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Imazethapyr",
     "method_speciation": "",
     "sample_fraction": "",
@@ -7901,12 +7898,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Hydrogen peroxide",
     "method_speciation": "",
     "sample_fraction": "",
@@ -7921,12 +7918,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Simazine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -7985,12 +7982,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Styrene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -8049,12 +8046,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Sulfolane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -8108,12 +8105,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Tebuthiuron",
     "method_speciation": "",
     "sample_fraction": "",
@@ -8167,16 +8164,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Heptachlor",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -8269,12 +8266,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Tetrachlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -8324,12 +8321,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Thallium",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -8379,12 +8376,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Nitroglycerin",
     "method_speciation": "",
     "sample_fraction": "",
@@ -8399,12 +8396,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Gemfibrozil",
     "method_speciation": "",
     "sample_fraction": "",
@@ -8419,12 +8416,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Triallate",
     "method_speciation": "",
     "sample_fraction": "",
@@ -8482,12 +8479,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Tributlytin",
     "method_speciation": "",
     "sample_fraction": "",
@@ -8595,12 +8592,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Trichlorfon",
     "method_speciation": "",
     "sample_fraction": "",
@@ -8655,12 +8652,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Gasoline",
     "method_speciation": "",
     "sample_fraction": "",
@@ -8675,12 +8672,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Trichlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -8730,12 +8727,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Trifluralin",
     "method_speciation": "",
     "sample_fraction": "",
@@ -8793,12 +8790,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Triphenyltin",
     "method_speciation": "",
     "sample_fraction": "",
@@ -8856,12 +8853,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Uranium",
     "method_speciation": "",
     "sample_fraction": "Total Recoverable",
@@ -8921,12 +8918,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Fluridone",
     "method_speciation": "",
     "sample_fraction": "",
@@ -8941,12 +8938,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Flumetsulam",
     "method_speciation": "",
     "sample_fraction": "",
@@ -8961,12 +8958,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Silvex",
     "method_speciation": "",
     "sample_fraction": "",
@@ -8981,12 +8978,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Ethanol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -9001,16 +8998,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Hexabromocyclododecane",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "mg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -9064,16 +9061,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Tetrabromobisphenol A",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -9127,16 +9124,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Hexabromodiphenyl ether",
     "method_speciation": "",
     "sample_fraction": "Total",
-    "unit": "ng/kgdryweight",
+    "unit": "ng/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -9190,16 +9187,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Pentabromodiphenyl ether",
     "method_speciation": "",
     "sample_fraction": "Total",
-    "unit": "ng/kgdryweight",
+    "unit": "ng/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -9253,16 +9250,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Tetrabromodiphenyl ether",
     "method_speciation": "",
     "sample_fraction": "Total",
-    "unit": "ng/kgdryweight",
+    "unit": "ng/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -9316,16 +9313,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Tribromodiphenyl ether",
     "method_speciation": "",
     "sample_fraction": "Total",
-    "unit": "ng/kgdryweight",
+    "unit": "mg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -9379,12 +9376,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Heptabromodiphenyl ether",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -9430,13 +9427,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula",
-      "value"
-    ],
     "characteristic": "Lead",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
@@ -9506,12 +9502,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Perfluorooctanesulfonate",
     "method_speciation": "",
     "sample_fraction": "",
@@ -9553,12 +9550,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Strontium",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
@@ -9596,12 +9593,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Triclosan",
     "method_speciation": "",
     "sample_fraction": "",
@@ -9644,12 +9641,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Vanadium",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -9717,12 +9714,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "S-Ethyl dipropylthiocarbamate",
     "method_speciation": "",
     "sample_fraction": "",
@@ -9737,12 +9734,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Silver",
     "method_speciation": "",
     "sample_fraction": "",
@@ -9759,21 +9756,21 @@
             "Chronic": 0.1
           },
           "CA-SK": {
-            "src": "SK Gov",
+            "src": "SK Gov EPB 356",
             "Chronic": 0.1
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Iron",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "%",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -9797,12 +9794,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Dimethyl sulfoxide",
     "method_speciation": "",
     "sample_fraction": "",
@@ -9817,12 +9814,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Dimethenamid",
     "method_speciation": "",
     "sample_fraction": "",
@@ -9837,12 +9834,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Fuel oil no. 2",
     "method_speciation": "",
     "sample_fraction": "",
@@ -9857,12 +9854,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Diesel fuel",
     "method_speciation": "",
     "sample_fraction": "",
@@ -9877,16 +9874,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Dieldrin",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -9981,16 +9978,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Dibenz[a,h]anthracene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "ng/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -10057,16 +10054,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Endrin",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -10165,16 +10162,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Hexachlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -10201,17 +10198,16 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula",
-      "value"
-    ],
     "characteristic": "Lead",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -10220,7 +10216,7 @@
             "Chronic": "water_Freshwater_Chronic_Lead___CAON"
           },
           "CA-SK": {
-            "src": "SK Gov",
+            "src": "SK Gov EPB 356",
             "Chronic": "water_Freshwater_Chronic_Lead___CASK"
           }
         }
@@ -10234,16 +10230,17 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Lindane",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -10282,16 +10279,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Mercury",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -10310,16 +10307,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Mirex",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -10374,17 +10371,16 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "value",
-      "formula"
-    ],
     "characteristic": "Nickel",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -10393,7 +10389,7 @@
             "Chronic": 25
           },
           "CA-SK": {
-            "src": "SK Gov",
+            "src": "SK Gov EPB 356",
             "Chronic": "water_Freshwater_Chronic_Nickel___CASK"
           }
         }
@@ -10412,16 +10408,17 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value",
+      "formula"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Total PCBs",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -10509,16 +10506,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Zinc",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -10527,7 +10524,7 @@
             "Chronic": 30
           },
           "CA-SK": {
-            "src": "SK Gov",
+            "src": "SK Gov EPB 356",
             "Chronic": 30
           }
         }
@@ -10541,12 +10538,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Di(2-ethylhexyl) adipate",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10561,12 +10558,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Cyclotetramethylenetetranitramine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10581,12 +10578,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Cyclonite",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10601,12 +10598,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Cumene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10621,12 +10618,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Hydrocarbons, petroleum",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10641,12 +10638,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Surfactants, anionic",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10660,12 +10657,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "p-Nitrotoluene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10680,12 +10677,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "m-Nitrotoluene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10700,12 +10697,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Trinitrotoluene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10720,12 +10717,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "o-Nitrotoluene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10740,12 +10737,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Tribromomethane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10764,12 +10761,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Methyl bromide",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10788,12 +10785,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "p-Bromophenyl phenyl ether",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10807,12 +10804,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Diethylene glycol monobutyl ether acetate",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10827,12 +10824,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Trichlorotrifluoroethane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10847,12 +10844,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Zirconium",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10866,12 +10863,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "p-Xylene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10885,12 +10882,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "p-Chloro-m-cresol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10909,12 +10906,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "o-Xylene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10928,12 +10925,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "m-Xylene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10947,12 +10944,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Vinyl chloride",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10966,12 +10963,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Tungsten",
     "method_speciation": "",
     "sample_fraction": "",
@@ -10985,12 +10982,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Tritium",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11004,12 +11001,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "o-Chlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11028,12 +11025,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "m-Chlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11047,12 +11044,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "P-Chlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11071,12 +11068,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "p-Chlorophenyl phenyl ether",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11090,12 +11087,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Eucalyptol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11109,12 +11106,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Trimethylbenzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11128,12 +11125,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "m-Cresol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11152,12 +11149,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "o-Cresol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11176,12 +11173,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "p-Cresol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11200,12 +11197,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Cyclohexylamine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11219,12 +11216,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Cyclohexanol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11238,12 +11235,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Dalapon",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11257,12 +11254,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "DDT/DDD/DDE, sum of p,p' & o,p' isomers",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11287,12 +11284,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula"
-    ],
     "characteristic": "Dehydroabietic acid",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11310,12 +11307,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Dibutyltin dichloride",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11333,12 +11330,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Trichloroethylene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11352,12 +11349,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Diazinon",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11398,16 +11395,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Dibenzofuran",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/kgdryweight",
+    "unit": "ng/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -11431,12 +11428,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Tributyl phosphate",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11450,16 +11447,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Toxaphene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -11536,12 +11533,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Thallium",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11560,12 +11557,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Tetrachloroguaiacol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11579,12 +11576,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Tetrachloroethylene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11598,12 +11595,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "trans-1,3-Dichloropropene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11617,12 +11614,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "N,N-Diethyl-m-toluamide",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11636,16 +11633,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Diethyl phthalate",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/kgdryweight",
+    "unit": "ng/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -11669,12 +11666,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Dimethylamine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11693,12 +11690,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "N,N-Dimethylformamide",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11712,12 +11709,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Strontium-90",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11731,16 +11728,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Selenium",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -11758,12 +11755,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Radium-226",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11777,12 +11774,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Pyrethrins",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11800,16 +11797,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Dimethyl phthalate",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/kgdryweight",
+    "unit": "ng/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -11833,12 +11830,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Phenols",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11852,12 +11849,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "m-Dinitrobenzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11876,12 +11873,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "O-Dinitrobenzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11895,12 +11892,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Phenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11919,12 +11916,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Perylene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11938,12 +11935,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Parathion",
     "method_speciation": "",
     "sample_fraction": "",
@@ -11972,16 +11969,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Diphenyl ether",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/L",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -11996,12 +11993,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Diphenylamine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12015,12 +12012,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Oleic acid",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12034,12 +12031,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Diquat",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12057,12 +12054,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Diuron",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12080,12 +12077,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Divinylbenzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12099,12 +12096,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Escherichia coli",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12118,12 +12115,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Ethylenediamine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12137,12 +12134,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Ethylene dibromide",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12161,12 +12158,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Ethylene thiourea",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12180,12 +12177,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Eugenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12199,12 +12196,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Fenthion",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12218,12 +12215,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Formaldehyde",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12242,12 +12239,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Guaiacol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12261,12 +12258,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "N-Nitrosomorpholine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12280,12 +12277,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Hexachlorocyclopentadiene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12311,12 +12308,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Hexachloroethane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12335,12 +12332,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Hydrogen sulfide",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12359,16 +12356,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "N-Nitrosodiphenylamine",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/kgdryweight",
+    "unit": "ng/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -12392,12 +12389,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Iodine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12411,12 +12408,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Iodine-131",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12430,12 +12427,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Isopropanol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12453,12 +12450,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Limonene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12472,12 +12469,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Malathion",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12525,12 +12522,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Methoxychlor",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12570,12 +12567,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Methyl ethyl ketone",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12594,12 +12591,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "N-Nitrosodimethylamine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12613,12 +12610,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "p-Nitrophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12637,12 +12634,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "o-Nitrophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12656,12 +12653,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Molybdenum",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12680,12 +12677,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Methylamine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12699,12 +12696,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Nitrobenzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12723,12 +12720,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Benzidine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12742,12 +12739,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Benz(a)pyrene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12763,16 +12760,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Benz[a]anthracene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -12886,12 +12883,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Benzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -12996,16 +12993,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chromium",
     "method_speciation": "",
     "sample_fraction": "Total",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/kgdryweight",
     "guidelines": {
       "Sediment": {
         "Freshwater": {
@@ -13074,16 +13071,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Benzo[a]pyrene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -13205,13 +13202,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "value",
-      "formula"
-    ],
     "characteristic": "Beryllium",
     "method_speciation": "",
     "sample_fraction": "",
@@ -13248,12 +13244,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value",
+      "formula"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Boron",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -13322,13 +13319,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula",
-      "value"
-    ],
     "characteristic": "Cadmium",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
@@ -13378,12 +13374,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Chlorate",
     "method_speciation": "",
     "sample_fraction": "",
@@ -13411,12 +13408,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chloride",
     "method_speciation": "",
     "sample_fraction": "",
@@ -13481,12 +13478,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Benzofluoranthene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -13500,12 +13497,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chlorine",
     "method_speciation": "",
     "sample_fraction": "Total Residual",
@@ -13625,12 +13622,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chlorophyll a",
     "method_speciation": "",
     "sample_fraction": "",
@@ -13648,16 +13645,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chrysene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "ng/L",
     "guidelines": {
       "Water": {
         "Marine": {
@@ -13746,13 +13743,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "value",
-      "formula"
-    ],
     "characteristic": "Cobalt",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -13800,12 +13796,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value",
+      "formula"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Chromium(VI)",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
@@ -13847,12 +13844,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula"
-    ],
     "characteristic": "Chromium(III)",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
@@ -13877,12 +13874,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "C10-C16 Hydrocarbons",
     "method_speciation": "",
     "sample_fraction": "",
@@ -13896,17 +13893,16 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula",
-      "value"
-    ],
     "characteristic": "Cadmium",
     "method_speciation": "",
     "sample_fraction": "Total",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -14058,12 +14054,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Bromacil",
     "method_speciation": "",
     "sample_fraction": "",
@@ -14113,12 +14110,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Branched p-nonylphenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -14133,12 +14130,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Bromoxynil",
     "method_speciation": "",
     "sample_fraction": "",
@@ -14196,12 +14193,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Captan",
     "method_speciation": "",
     "sample_fraction": "",
@@ -14255,12 +14252,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Carbamazepine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -14306,12 +14303,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Carbaryl",
     "method_speciation": "",
     "sample_fraction": "",
@@ -14446,12 +14443,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Carbofuran",
     "method_speciation": "",
     "sample_fraction": "",
@@ -14505,12 +14502,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chlorothalonil",
     "method_speciation": "",
     "sample_fraction": "",
@@ -14610,12 +14607,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chlorpyrifos",
     "method_speciation": "",
     "sample_fraction": "",
@@ -14683,7 +14680,7 @@
             "Chronic": 0.001
           },
           "CA-SK": {
-            "src": "SK Gov",
+            "src": "SK Gov EPB 356",
             "Chronic": 0.0035
           },
           "US": {
@@ -14744,12 +14741,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chromium(VI)",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -14869,13 +14866,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "value",
-      "formula"
-    ],
     "characteristic": "Chromium(III)",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -14977,12 +14973,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value",
+      "formula"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Chlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -15032,12 +15029,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chloramine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -15105,12 +15102,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chlorine",
     "method_speciation": "",
     "sample_fraction": "Comb Available",
@@ -15186,12 +15183,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Cobalt",
     "method_speciation": "",
     "sample_fraction": "",
@@ -15210,12 +15207,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chlorine",
     "method_speciation": "",
     "sample_fraction": "Free Available",
@@ -15291,12 +15288,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Carbon tetrachloride",
     "method_speciation": "",
     "sample_fraction": "",
@@ -15351,12 +15348,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chloromethane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -15370,12 +15367,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chlorodibromomethane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -15389,12 +15386,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -15419,12 +15416,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Cesium-137",
     "method_speciation": "",
     "sample_fraction": "",
@@ -15438,12 +15435,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Camphene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -15457,12 +15454,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chloroform",
     "method_speciation": "",
     "sample_fraction": "",
@@ -15517,16 +15514,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chlorinated paraffins, long-chain, C18-C20",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -15580,16 +15577,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Butyl benzyl phthalate",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/kgdryweight",
+    "unit": "ng/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -15613,16 +15610,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chlorinated paraffins, medium-chain, C14-C17",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -15676,16 +15673,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chlorinated paraffins, short-chain, C10-C13",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -15739,12 +15736,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Benzo(b)fluoranthene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -15758,16 +15755,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Benzo[ghi]perylene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "ng/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -15798,16 +15795,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Benzo[k]fluoranthene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "ng/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -15831,12 +15828,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Butyraldehyde",
     "method_speciation": "",
     "sample_fraction": "",
@@ -15850,17 +15847,16 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "value",
-      "formula"
-    ],
     "characteristic": "Cadmium",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -15869,7 +15865,7 @@
             "Chronic": 0.2
           },
           "CA-SK": {
-            "src": "SK Gov",
+            "src": "SK Gov EPB 356",
             "Chronic": "water_Freshwater_Chronic_Cadmium___CASK"
           }
         }
@@ -15883,16 +15879,17 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value",
+      "formula"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Chlordane",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -15991,17 +15988,16 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "value",
-      "formula"
-    ],
     "characteristic": "Copper",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -16010,7 +16006,7 @@
             "Chronic": 5
           },
           "CA-SK": {
-            "src": "SK Gov",
+            "src": "SK Gov EPB 356",
             "Chronic": "water_Freshwater_Chronic_Copper___CASK"
           }
         }
@@ -16024,12 +16020,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value",
+      "formula"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Boron",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16054,12 +16051,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Benzaldehyde",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16073,13 +16070,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula",
-      "value"
-    ],
     "characteristic": "Copper",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
@@ -16116,12 +16112,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula",
+      "value"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Clothianidin",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16136,12 +16133,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chlorpropham",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16156,12 +16153,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Bis(2-chloroethyl) ether",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16175,12 +16172,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Biphenyl",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16199,12 +16196,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chloroneb",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16219,12 +16216,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chloroethane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16239,12 +16236,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chlorite",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16259,12 +16256,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Benzyl alcohol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16278,12 +16275,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Chlorantraniliprole",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16298,12 +16295,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Carboxin",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16318,12 +16315,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Carbazole",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16338,12 +16335,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Butylate",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16358,12 +16355,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Butylamine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16378,12 +16375,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Bromine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16398,12 +16395,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Bromate",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16418,12 +16415,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Benzothiazole",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16437,12 +16434,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Aniline",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16508,12 +16505,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Benomyl",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16528,12 +16525,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Benz(a)anthracene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16549,12 +16546,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Bentazon",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16569,13 +16566,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "value",
-      "formula"
-    ],
     "characteristic": "Ammonia",
     "method_speciation": "as N",
     "sample_fraction": "Unfiltered",
@@ -16627,16 +16623,17 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value",
+      "formula"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "2-Methylnaphthalene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "ng/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -16708,12 +16705,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Acrylamide",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16728,12 +16725,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Acetone",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16748,12 +16745,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula"
-    ],
     "characteristic": "Acetic acid",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16768,12 +16765,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Acetaldehyde",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16788,12 +16785,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "4-Chloro-2-methylphenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16808,12 +16805,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "4-Amino-2,6-dinitrotoluene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16828,12 +16825,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "3-Trifluoromethyl-4-nitrophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -16848,16 +16845,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Aldrin",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -16907,16 +16904,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Acenaphthene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -17029,12 +17026,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Acrolein",
     "method_speciation": "",
     "sample_fraction": "",
@@ -17071,12 +17068,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula"
-    ],
     "characteristic": "Aluminum",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
@@ -17101,16 +17098,16 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Anthracene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -17227,12 +17224,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Aminoazobenzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -17246,12 +17243,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Aldrin + dieldrin mix, unspecified",
     "method_speciation": "",
     "sample_fraction": "",
@@ -17265,12 +17262,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Antimony",
     "method_speciation": "",
     "sample_fraction": "",
@@ -17312,13 +17309,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "value",
-      "formula"
-    ],
     "characteristic": "Barium",
     "method_speciation": "",
     "sample_fraction": "",
@@ -17341,12 +17337,13 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value",
+      "formula"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "4-Methyl-2-pentanol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -17360,12 +17357,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2-Phenylphenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -17379,12 +17376,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Azinphos-methyl",
     "method_speciation": "",
     "sample_fraction": "",
@@ -17424,16 +17421,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Acenaphthylene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/kgdryweight",
     "guidelines": {
       "Sediment": {
         "Freshwater": {
@@ -17497,16 +17494,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "3,3',5,5'-Tetrachlorobiphenyl",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/kgdryweight",
     "guidelines": {
       "Sediment": {
         "Freshwater": {
@@ -17522,16 +17519,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "3,3',5-Trichlorobiphenyl",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/kgdryweight",
     "guidelines": {
       "Sediment": {
         "Freshwater": {
@@ -17547,12 +17544,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "4,6-Dichloro-o-cresol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -17571,12 +17568,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "3,4-Dimethylphenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -17590,16 +17587,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "4,4'-Isopropylidenediphenol",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -17650,12 +17647,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Arsenic",
     "method_speciation": "",
     "sample_fraction": "Dissolved",
@@ -17697,12 +17694,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula"
-    ],
     "characteristic": "Ammonia and ammonium",
     "method_speciation": "as NH3",
     "sample_fraction": "Unfiltered",
@@ -17744,12 +17741,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "formula"
-    ],
+    ]
+  },
+  {
     "characteristic": "Ammonia and ammonium",
     "method_speciation": "as N",
     "sample_fraction": "Unfiltered",
@@ -17791,12 +17788,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Alkalinity, total",
     "method_speciation": "as CaCO3",
     "sample_fraction": "",
@@ -17814,12 +17811,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "3,3',4,4',5-Pentachlorobiphenyl",
     "method_speciation": "",
     "sample_fraction": "",
@@ -17847,12 +17844,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "3,3',4,4',5,5'-Hexachlorobiphenyl",
     "method_speciation": "",
     "sample_fraction": "",
@@ -17880,12 +17877,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "3,3',4,4'-Tetrachlorobiphenyl",
     "method_speciation": "",
     "sample_fraction": "",
@@ -17913,16 +17910,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Arsenic",
     "method_speciation": "",
     "sample_fraction": "Total",
-    "unit": "mg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -18103,12 +18100,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "3-Iodo-2-propynyl butyl carbamate",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18162,12 +18159,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Acridine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18213,12 +18210,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "4,5,6-Trichloroguaiacol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18232,12 +18229,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "3,4,5-Trichloroguaiacol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18251,12 +18248,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Aldicarb",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -18356,12 +18353,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   },
   {
-    "type": [
-      "formula"
-    ],
     "characteristic": "Aluminum",
     "method_speciation": "",
     "sample_fraction": "Total",
@@ -18407,12 +18404,12 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "formula"
+    ]
   },
   {
-    "type": [
-      "value"
-    ],
     "characteristic": "Acetic acid, 2-(4-nonylphenoxy)-",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18427,12 +18424,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Acrylonitrile",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18447,12 +18444,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "3,3'-Dichlorobenzidine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18471,12 +18468,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Ammonia",
     "method_speciation": "as NH3",
     "sample_fraction": "Unfiltered",
@@ -18522,12 +18519,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Alachlor",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18542,12 +18539,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "Atrazine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18602,12 +18599,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,2,3,5-Tetrachlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18621,12 +18618,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,3,4,6-Tetrachlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18645,12 +18642,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,4-Dinitrophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18665,12 +18662,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,4-Dichlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18685,12 +18682,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,4-DB",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18710,12 +18707,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,4-D 2-butoxyethyl ester",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18729,12 +18726,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,6-Di-tert-butyl-p-cresol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18748,12 +18745,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,3,4-Trichlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18767,12 +18764,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,3,6-Trichlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18786,12 +18783,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2-Ethylhexanol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18806,12 +18803,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2-Amino-4,6-dinitrotoluene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18826,12 +18823,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2-Methyl-5-nitroaniline",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18846,12 +18843,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,6-Dinitrotoluene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18870,12 +18867,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,4-Dinitrotoluene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18894,12 +18891,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,4-Dimethylphenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18918,12 +18915,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,4-D",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18970,12 +18967,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,4,5-Trichlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -18994,12 +18991,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,4,6-Trichlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19018,12 +19015,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2-Chloronaphthalene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19037,12 +19034,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,6-Dimethylnaphthalene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19056,12 +19053,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,3,5,6-Tetrachlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19080,16 +19077,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,2',3,3',4,4'-Hexachlorobiphenyl",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/kgdryweight",
     "guidelines": {
       "Sediment": {
         "Freshwater": {
@@ -19105,12 +19102,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1-Butanol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19125,12 +19122,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1-Methylnaphthalene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19144,12 +19141,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,2-Dibromo-3-nitrilopropionamide",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19164,16 +19161,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,2',3,3',4-Pentachlorobiphenyl",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/kgdryweight",
     "guidelines": {
       "Sediment": {
         "Freshwater": {
@@ -19216,12 +19213,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,3,4,5-Tetrachlorophenol",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19235,12 +19232,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1-Chloronaphthalene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19259,12 +19256,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "2,3,3',4,4'-Pentachlorobiphenyl",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19292,12 +19289,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,3,5-Trimethylbenzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19312,12 +19309,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,3-Dimethylnaphthalene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19331,12 +19328,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,4-Dioxane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19355,12 +19352,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,1,1,2-Tetrachloroethane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19379,16 +19376,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": ".alpha.-Hexachlorocyclohexane",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/kgdryweight",
     "guidelines": {
       "Sediment": {
         "Freshwater": {
@@ -19409,12 +19406,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,2-Bis(2-chloroethoxy)ethane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19429,12 +19426,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,1,2-Trichloroethane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19493,12 +19490,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,2,4-Trimethylbenzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19513,12 +19510,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,3-Dichloropropane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19533,12 +19530,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,1-Dichloroethene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19553,12 +19550,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,2-Dichloroethane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19617,12 +19614,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,1-Dichloropropane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19637,12 +19634,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,2-Diphenylhydrazine",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19661,12 +19658,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,2,4,5-Tetrachlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19685,16 +19682,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": ".beta.-Hexachlorocyclohexane",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/gdryweight",
+    "unit": "µg/kgdryweight",
     "guidelines": {
       "Sediment": {
         "Freshwater": {
@@ -19715,12 +19712,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,3,5-Trinitrobenzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19735,12 +19732,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,2,3-Trichlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -19798,16 +19795,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,2,3,4-Tetrachlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "mg/L",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -19861,16 +19858,16 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,2,4-Trichlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
-    "unit": "µg/kgdryweight",
+    "unit": "µg/L",
     "guidelines": {
       "Water": {
         "Freshwater": {
@@ -19976,12 +19973,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,1,1-Trichloroethane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -20000,12 +19997,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,2-Dichloropropane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -20024,12 +20021,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": ".beta.-Endosulfan",
     "method_speciation": "",
     "sample_fraction": "",
@@ -20051,12 +20048,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,3,5-Trichlorobenzene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -20070,12 +20067,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,1-Dichloroethane",
     "method_speciation": "",
     "sample_fraction": "",
@@ -20094,12 +20091,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": "1,1-Dichloroethylene",
     "method_speciation": "",
     "sample_fraction": "",
@@ -20113,12 +20110,12 @@
           }
         }
       }
-    }
-  },
-  {
+    },
     "type": [
       "value"
-    ],
+    ]
+  },
+  {
     "characteristic": ".alpha.-Endosulfan",
     "method_speciation": "",
     "sample_fraction": "",
@@ -20140,6 +20137,9 @@
           }
         }
       }
-    }
+    },
+    "type": [
+      "value"
+    ]
   }
 ]

@@ -417,7 +417,7 @@ const water_Freshwater_Acute_Beryllium___CAQC = (params) => {
 
 const water_Freshwater_Chronic_Beryllium___CAQC = (params) => {
   const hardness = calculateHardness(params)
-  return math.evaluate(`e^(1.6839*(log(${hardness}, e))-5.8575}`)
+  return math.evaluate(`exp(1.6839*(log(${hardness}, e))-5.8575)`)
 }
 
 const water_Freshwater_Acute_Cadmium__Total_CAQC = (params) => {
@@ -701,7 +701,7 @@ const water_Freshwater_Chronic_Nickel__Dissolved_US = (params) => {
 const water_Freshwater_Acute_Pentachlorophenol___US = (params) => {
   const { pH } = params
   if ( !math.isValid(pH) ) { return null }
-  return math.evaluate(`e^(1.005*${pH} - 4.869}`)
+  return math.evaluate(`exp(1.005*${pH} - 4.869)`)
 }
 
 const water_Freshwater_Chronic_Pentachlorophenol___US = (params) => {

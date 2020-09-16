@@ -2,12 +2,36 @@ const fs = require('fs')
 const parse = require('csv-parse')
 const normalize = require('../../datastream-import/import/calc/normalize')  // for unit testing
 
+// Metadata
+const json = {}
+// Formula Code
 const params = Object.keys(require('../formula_params.json'))
 params.push('hardness')
 const hardnessParams = ['TH', 'CaCO3', 'CH', 'NCH', 'Ca', 'Mg', 'CaIon', 'MgIon', 'hardness']
 
-const json = {}
-let formulaCode = ''
+let code = `
+/* This page is generated during the build process. */
+const math = require('./math')
+const calculateHardness = require('./hardness')
+`
+
+// HTML Preview
+const htmlPromises = []
+let html = '<html><head></head><body>'
+// https://docs.mathjax.org/en/latest/options/accessibility.html
+let mathjax = require('mathjax').init({
+  loader: {load: ['input/tex', 'output/svg', 'output/chtml']},
+  /*options: {
+    enableEnrichment: true,
+    enrichSpeech: 'deep',
+    a11y:{
+      speech: true,
+      braille: true,
+      subtitles: true,
+      speechRules: 'mathspeak-default',
+    }
+  }*/
+}) // need node 14 to support root await
 
 updateObjProp = (obj, propPath, value) => {
   const [head, ...rest] = propPath.split('.')
@@ -75,8 +99,18 @@ const ${name} = (params) => {
   ${(formula.indexOf('return') !== 0 && !formula.includes('else {')) ? `return null` : ''}
 }
 `
-  formulaCode += formula.replace(/\n\s*\n/g, '\n')
+  code += formula.replace(/\n\s*\n/g, '\n')
   return formula
+}
+
+const buildHtml = async (name, formula) => {
+  const MathJax = await mathjax
+  const svg = MathJax.tex2svg(formula, {display: true});
+  //const chtml = MathJax.tex2chtml(formula, {display: true});
+  //console.log(MathJax.startup.adaptor.outerHTML(svg));
+  //console.log(MathJax.startup.adaptor.outerHTML(chtml));
+
+  html += `<br><br>${name}<br>${MathJax.startup.adaptor.outerHTML(svg)}`
 }
 
 const parseGuideline = (row) => {
@@ -103,6 +137,7 @@ const parseGuideline = (row) => {
       + region
 
     buildCode(formulaName, value)
+    htmlPromises.push(buildHtml(formulaName, value))  // ugly hack
 
     return ['formula', formulaName]
   }
@@ -116,11 +151,6 @@ parse(data, {
   let count = 0
 
   const formulaNames = []
-  formulaCode = `
-/* This page is generated during the build process. */
-const math = require('./math')
-const calculateHardness = require('./hardness')
-`
 
   for (const row of output) {
     if (!row['Characteristic Name']) {
@@ -144,7 +174,7 @@ const calculateHardness = require('./hardness')
 
       let obj = json[key]
       if (!obj) {
-        const [, unit] = normalize.characteristic(obj.characteristic, 1, row['Unit'])
+        const [, unit] = normalize.characteristic(row['Characteristic Name'], 1, row['Unit'])
         obj = {
           characteristic: row['Characteristic Name'] || '',
           method_speciation: row['Method Speciation'] || '',
@@ -176,23 +206,31 @@ const calculateHardness = require('./hardness')
       < `${b.characteristic} ${b.method_speciation} (${b.sample_fraction})`
   })
 
-  formulaCode += `
+  code += `
 module.exports = {
-  calculateHardness,
   ${formulaNames.join(',\n  ')}
 }
 `
+  html += `</body></html>`
 
   console.log('count', count, '=>', arr.length)
 
   fs.writeFileSync(__dirname + '/../metadata.json', JSON.stringify(arr, null, 2))
-  fs.writeFileSync(__dirname + '/../formula.js', formulaCode)
+  fs.writeFileSync(__dirname + '/../formula.js', code)
 
-  console.log('Done!')
+  Promise.all(htmlPromises).then(() => {
+    fs.writeFileSync(__dirname + '/../public/index.html', html)
 
-  // test
+    console.log('Done!')
+    process.exit(0)
+  })
 
-  console.log(buildCode('test', 'if (hardness < 25) \\{ {e^{1.273[ln(hardness)]-4.705} \\over 1000} \\} else \\{ (1.46203-0.145712[ln(hardness)]) {e^{1.273[ln(hardness)]-4.705} \\over 1000} \\}'))
 
-  process.exit(0)
 })
+
+// const run = async() => {
+//   const f = 'if (0 ≤ hardness ≤ 48.5) \\{ 0.017 \\} else if (48.5 < hardness ≤ 97) \\{ 0.032 \\} else if (97 < hardness ≤ 194) \\{ 0.058 \\} else \\{ 0.1 \\}'
+//   await buildHtml('', f)
+// }
+//
+// run()
