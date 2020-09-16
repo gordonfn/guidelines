@@ -1,26 +1,27 @@
 const expect = require('chai').expect
+const calculateHardness = require('../hardness.js')
 const formula = require('../formula.js')
 
 describe('Hardness', function () {
 
   it('Should not calculate', function (done) {
-    expect(formula.calculateHardness({})).to.equal(null)
+    expect(calculateHardness({})).to.equal(null)
 
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       Ca: 0.1,
       CaIon: 1,
       CH: 2,
     })).to.equal(null)
 
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       TH: '1'
     })).to.equal(null)
 
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       TH: Infinity
     })).to.equal(null)
 
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       TH: null
     })).to.equal(null)
 
@@ -28,11 +29,11 @@ describe('Hardness', function () {
   })
 
   it('Should calculate from `Total Hardness` (TH)', function (done) {
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       TH: 1
     })).to.equal(1)
 
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       TH: 2
     })).to.equal(2)
 
@@ -40,11 +41,11 @@ describe('Hardness', function () {
   })
 
   it('Should calculate from `Hardness, Ca, Mg` (CaCO3)', function (done) {
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       CaCO3: 2
     })).to.equal(2)
 
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       CaCO3: 3
     })).to.equal(3)
 
@@ -52,17 +53,17 @@ describe('Hardness', function () {
   })
 
   it('Should calculate from `Hardness, Calcium` (Ca) & `Hardness, magnesium` (Mg)', function (done) {
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       Ca: 0.1,
       Mg: 0.2
     })).to.equal(0.3)
 
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       Ca: 1,
       Mg: 2
     })).to.equal(3)
 
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       Ca: 2,
       Mg: 3
     })).to.equal(5)
@@ -71,12 +72,12 @@ describe('Hardness', function () {
   })
 
   it('Should calculate from `Calcium` (CaIon) & `Magnesium` (MgIon)', function (done) {
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       CaIon: 1,
       MgIon: 1
     })).to.equal(6.615)
 
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       CaIon: 2,
       MgIon: 2
     })).to.equal(13.23)
@@ -85,12 +86,12 @@ describe('Hardness', function () {
   })
 
   it('Should calculate from `Hardness, carbonate` (CH) & `Hardness, non-carbonate` (NCH)', function (done) {
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       CH: 2,
       NCH: 3
     })).to.equal(5)
 
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       CH: 3,
       NCH: 4
     })).to.equal(7)
@@ -99,7 +100,7 @@ describe('Hardness', function () {
   })
 
   it('Should apply calculate in proper order', function (done) {
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       TH: 1,
       CaCO3: 2,
       Ca: 1,
@@ -110,7 +111,7 @@ describe('Hardness', function () {
       NCH: 3
     })).to.equal(1)
 
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       CaCO3: 2,
       Ca: 1,
       Mg: 2,
@@ -120,7 +121,7 @@ describe('Hardness', function () {
       NCH: 3
     })).to.equal(2)
 
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       Ca: 1,
       Mg: 2,
       CaIon: 1,
@@ -129,19 +130,19 @@ describe('Hardness', function () {
       NCH: 3
     })).to.equal(3)
 
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       CaIon: 1,
       MgIon: 1,
       CH: 2,
       NCH: 3
     })).to.equal(6.615)
 
-    expect(formula.calculateHardness({
+    expect(calculateHardness({
       CH: 2,
       NCH: 3
     })).to.equal(5)
 
-    expect(formula.calculateHardness({})).to.equal(null)
+    expect(calculateHardness({})).to.equal(null)
 
     done()
   })

@@ -3494,7 +3494,10 @@
         "Marine": {
           "CA-BC": {
             "src": "BC Gov",
-            "Chronic": "water_Marine_Chronic_pH___CABC"
+            "Chronic": [
+              7,
+              8.7
+            ]
           },
           "CA-YT": {
             "src": "CCME CEQG",
@@ -3663,7 +3666,6 @@
       }
     },
     "type": [
-      "formula",
       "range"
     ]
   },
@@ -3677,7 +3679,10 @@
         "Marine": {
           "CA-BC": {
             "src": "BC Gov",
-            "Chronic": "water_Marine_Chronic_pHlab___CABC"
+            "Chronic": [
+              7,
+              8.7
+            ]
           },
           "CA-YT": {
             "src": "CCME CEQG",
@@ -3846,7 +3851,6 @@
       }
     },
     "type": [
-      "formula",
       "range"
     ]
   },

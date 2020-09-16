@@ -49,12 +49,13 @@ const buildCode = (name, formula) => {
     // math formulas
     .replace(/log_(\d+)\(([^\{\}]*?)\)/g, 'log($2, $1)')
     .replace(/ln\(([^\{\}]*?)\)/g, 'log($1, e)')
+    .replace(new RegExp(`(\\)|\\d+|${params.join('|')})\\^\\{([^\\{\\}]*?)\\}`, 'g'), 'pow($1, $2)')  // 10^x, pH^2
     .replace(/e\^\{([^\{\}]*?)\}/g, 'exp($1)')
-    .replace(/10\^\{([^\{\}]*?)\}/g, 'pow(10, $1)')
-    .replace(/\{([^\{\}]*?) \\over ([^\{\}]*?)\}/g, '($1/$2)')
-    .replace(/\{([^\{\}]*?) \\over ([^\{\}]*?)\}/g, '($1/$2)')  // Allow for nested
+    .replace(/\{([^\{\}]*?) \\over ([^\{\}]*?)\}/g, '(($1)/($2))')
+    .replace(/\{([^\{\}]*?) \\over ([^\{\}]*?)\}/g, '(($1)/($2))')  // Allow for nested
     // excess brackets
-    .replace(/\[(.*?)\]/g, '($1)')
+    .replace(/\[([^\[\]]*?)\]/g, '($1)')
+    .replace(/\[([^\[\]]*?)\]/g, '($1)')  // Allow for nested
     // multipliers
     .replace(new RegExp(`(\\)|\\d+)\\s*(\\(|exp|pow|ln|log|${params.join('|')})`, 'g'), '$1*$2')
     .replace(/×/g, '*')
@@ -93,6 +94,7 @@ const buildCode = (name, formula) => {
   formula = `
 const ${name} = (params) => {
   ${hardness.length ? `const hardness = calculateHardness(params)` : ``}
+  ${hardness.length ? `if ( !math.isValid(hardness) || hardness <=0 ) { return ${fallback} }` : ``}
   ${variables.length ? `const { ${variables.join(', ')} } = params` : ''}
   ${variables.length ? `if ( !math.isValid(${variables.join(') || !math.isValid(')}) ) { return ${fallback} }` : ''}
   ${formula}
@@ -219,13 +221,14 @@ module.exports = {
   fs.writeFileSync(__dirname + '/../formula.js', code)
 
   Promise.all(htmlPromises).then(() => {
-    fs.writeFileSync(__dirname + '/../public/index.html', html)
+    fs.writeFileSync(__dirname + '/../public/preview.html', html)
 
     console.log('Done!')
     process.exit(0)
   })
 
 
+  //console.log(buildCode('tst','if (pH < 6.5) \\{ e^{1.6 - 3.327pH + 0.402pH^{2}} \\} else \\{ 0.05 \\}'))
 })
 
 // const run = async() => {
