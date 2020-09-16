@@ -1,4 +1,5 @@
 {
+
   "pH": {
     "characteristic": "pH",
     "method_speciation": "*",
@@ -17,9 +18,37 @@
     "sample_fraction": "*",
     "unit": "degC"
   },
+  "Cl": {
+    "characteristic": "Chloride",
+    "method_speciation": "*",
+    "sample_fraction": "*",
+    "unit": "mg/L"
+  },
+  "MeHg": {
+    "characteristic": "Methylmercury(1+)",
+    "method_speciation": "*",
+    "sample_fraction": "Total",
+    "unit": "ug/L"
+  },
+  "Hg": {
+    "characteristic": "Mercury",
+    "method_speciation": "*",
+    "sample_fraction": "Total",
+    "unit": "ug/L"
+  },
+  "alkalinity": {
+    "characteristic": "Alkalinity",
+    "method_speciation": ["as CaCO3"],
+    "sample_fraction": "Total",
+    "unit": "mg/L"
+  },
   "TH": {
     "characteristic": "Total hardness",
-    "method_speciation": ["as CaCO3", "as CaO", ""],
+    "method_speciation": [
+      "as CaCO3",
+      "as CaO",
+      ""
+    ],
     "sample_fraction": "*",
     "unit": "mg/L"
   },

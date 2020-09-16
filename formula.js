@@ -1,497 +1,843 @@
-const math = require('./math')
 
+/* This page is generated during the build process. */
+const math = require('./math')
 const calculateHardness = require('./hardness')
 
-const freshwater_Aceticacid___CAQC_Acute = () => null
-const freshwater_Aceticacid___CAQC_Chronic = () => null
-const freshwater_Aluminum__Dissolved_CABC_Acute = () => null
-const freshwater_Aluminum__Dissolved_CABC_Chronic = () => null
+const water_Freshwater_Acute_Copper__Total_CAAB = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`1000*exp(0.979123*log(${hardness}, e)-8.64497)`)
+}
 
+const water_Freshwater_Acute_Manganese__Total_CABC = (params) => {
+  const hardness = calculateHardness(params)
+  if (25 < hardness && hardness < 259) {
+    return math.evaluate(`0.01102*${hardness} + 0.54`)
+  }
+  return null
+}
 
-const freshwater_Aluminum__Total_CA_Chronic = ({ pH }) => {
-  if (!math.isValid(pH)) return null
-  if (pH < 6.5) {
-    return 5
-  } else if (6.5 <= pH) {
-    return 100
+const water_Freshwater_Chronic_Manganese__Total_CABC = (params) => {
+  const hardness = calculateHardness(params)
+  if (37 < hardness && hardness < 450) {
+    return math.evaluate(`0.0044*${hardness} + 0.605`)
+  }
+  return null
+}
+
+const water_Freshwater_Chronic_Nickel__Total_CABC = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness <= 60) {
+    return 25
+  } else if (60 < hardness && hardness < 180) {
+    return math.evaluate(`exp(0.76*log(${hardness}, e)+1.06)`)
+  } else {
+    return 150
+  } 
+}
+
+const water_Freshwater_Acute_Silver__Total_CABC = (params) => {
+  const hardness = calculateHardness(params)
+  if (100 < hardness) {
+    return 3.0
+  } else {
+    return 0.1
   }
 }
 
-const freshwater_Ammonia_asN_Unfiltered_US_Acute = ({ pH, temperature }) => {
-  if (!math.isValid(pH) || !math.isValid(temperature)) return null
-
-  // MIN({0.275/[1+10^(7.204-ph)]}+{39/[1+10^(ph-7.204)]}, 0.7249*{0.0114/[1+10^(7.204-ph)]+1.6181/[1+10^(ph-7.204)]}*{23.12*10^[0.036*(20-T)]})
-  return math.evaluate(`min( (0.275 / (1 + pow(10, (7.204 - ${pH})))) + (39 / (1 + pow(10, (${pH} - 7.204)) )), 0.7249 * (0.0114 / (1 + pow(10, (7.204 - ${pH}))) + 1.6181 / (1 + pow(10, ( ${pH} - 7.204)))) * (23.12 * pow(10, (0.036 * (20 - ${temperature})))) )`).toNumber()
-}
-
-const freshwater_Ammonia_asN_Unfiltered_US_Chronic = ({ pH, temperature }) => {
-  if (!math.isValid(pH) || !math.isValid(temperature)) return null
-  // 0.8876*{0.0278/[1+10^(7.688-pH)]+1.1994/[1+10^(pH-7.688)]}*{2.126*10^[0.028*(10-MAX(T,7))]}
-  return math.evaluate(`0.8876 * (0.0278 / (1 + pow(10, (7.688 - ${pH}))) + 1.1994 / (1 + pow(10, (${pH} - 7.688)))) * (2.126 * pow(10, (0.028 * (10 - max(${temperature}, 7)))))`).toNumber()
-}
-
-const freshwater_Ammoniaandammonium_asN_Unfiltered_CA_Chronic = ({ pH, temperature }) => {
-  if (!math.isValid(pH) || !math.isValid(temperature)) return null
-  // (0.019/(1/(10^((0.0901821+2729.92/(T(°C)+273.15))-pH)+1)*0.8223 //*1.216
-  return math.evaluate(`(0.019 / (1 / ( pow(10,(0.0901821 + 2729.92 / (${temperature} + 273.15)) - ${pH}) + 1))) * 0.8224`).toNumber()
-}
-
-const freshwater_Ammoniaandammonium_asNH3_Unfiltered_CA_Chronic = ({ pH, temperature }) => {
-  if (!math.isValid(pH) || !math.isValid(temperature)) return null
-  // (0.019/(1/(10^((0.0901821+2729.92/(T(°C)+273.15))-pH)+1)
-  return math.evaluate(`(0.019 / (1 / ( pow(10,(0.0901821 + 2729.92 / (${temperature} + 273.15)) - ${pH}) + 1)))`).toNumber()
-}
-
-const freshwater_Barium___CAQC_Acute = () => null
-const freshwater_Barium___CAQC_Chronic = () => null
-const freshwater_Beryllium___CAON_Chronic = () => null
-const freshwater_Beryllium___CAQC_Acute = () => null
-const freshwater_Beryllium___CAQC_Chronic = () => null
-const freshwater_Cadmium___CASK_Chronic = () => null
-const freshwater_Cadmium__Dissolved_CABC_Acute = () => null
-const freshwater_Cadmium__Dissolved_CABC_Chronic = () => null
-const freshwater_Cadmium__Dissolved_CAMB_Acute = () => null
-const freshwater_Cadmium__Dissolved_CAMB_Chronic = () => null
-const freshwater_Cadmium__Dissolved_CAQC_Acute = () => null
-const freshwater_Cadmium__Dissolved_CAQC_Chronic = () => null
-
-const freshwater_Cadmium__Dissolved_US_Acute = (params) => {
+const water_Freshwater_Chronic_Silver__Total_CABC = (params) => {
   const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(.9789*LN(hardness)-3.866) * (1.136672-(LN(hardness)*(.041838)))
-  return math.evaluate(`exp(.9789 * log(${hardness}, e) - 3.866 ) * ( 1.136672 - log(${hardness}, e) * 0.041838)`).toNumber()
+  if (100 < hardness) {
+    return 1.5
+  } else {
+    return 0.05
+  }
 }
 
-const freshwater_Cadmium__Dissolved_US_Chronic = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(.7977*(LN(hardness))-3.909)*(1.101672-(LN(hardness)*(.041838)))
-  return math.evaluate(`exp(0.7977 * log(${hardness}, e) - 3.909 ) * ( 1.101672 - log(${hardness}, e) * 0.041838)`).toNumber()
+const water_Freshwater_Acute_Aluminum__Dissolved_CABC = (params) => {
+  const { pH } = params
+  if ( !math.isValid(pH) ) { return null }
+  if (pH < 6.5) {
+    return math.evaluate(`exp(1.209 - 2.426*${pH} + 0.286*${pH}^2)`)
+  } else {
+    return 0.1
+  }
 }
 
-const freshwater_Cadmium__Total_CA_Acute = (params) => {
+const water_Freshwater_Chronic_Aluminum__Dissolved_CABC = (params) => {
+  const { pH } = params
+  if ( !math.isValid(pH) ) { return null }
+  if (pH < 6.5) {
+    return math.evaluate(`exp(1.6 - 3.327*${pH} + 0.402*${pH}^2)`)
+  } else {
+    return 0.05
+  }
+}
+
+const water_Freshwater_Acute_Cadmium__Dissolved_CABC = (params) => {
   const hardness = calculateHardness(params)
-  if (!math.isValid(hardness)) return null
+  if (7 < hardness && hardness < 455) {
+    return math.evaluate(`exp(1.03*log(${hardness}, e)-5.274)`)
+  }
+  return null
+}
+
+const water_Freshwater_Chronic_Cadmium__Dissolved_CABC = (params) => {
+  const hardness = calculateHardness(params)
+  if (3.4 < hardness && hardness < 285) {
+    return math.evaluate(`exp(0.736*log(${hardness}, e)-4.943)`)
+  }
+  return null
+}
+
+const water_Freshwater_Acute_Fluoride___CABC = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness <=10) {
+    return 0.4
+  } else if (10 < hardness && hardness < 385) {
+    return math.evaluate(`0.01*(-51.73+92.57*log(${hardness}))`)
+  }
+  return null
+}
+
+const water_Freshwater_Acute_Lead__Total_CABC = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness <= 8) {
+    return 3
+  } else if (8 < hardness && hardness < 360) {
+    return math.evaluate(`exp(1.273*log(${hardness}, e)-1.460)`)
+  }
+  return null
+}
+
+const water_Freshwater_Chronic_Lead__Total_CABC = (params) => {
+  const hardness = calculateHardness(params)
+  if (8 < hardness && hardness < 360) {
+    return math.evaluate(`exp(1.273*log(${hardness}, e)-4.705)`)
+  }
+  return null
+}
+
+const water_Freshwater_Chronic_Mercury__Total_CABC = (params) => {
+  const { MeHg, Hg } = params
+  if ( !math.isValid(MeHg) || !math.isValid(Hg) ) { return null }
+  if (MeHg <= 0.005*Hg) {
+    return 0.02
+  } else {
+    return math.evaluate(`(0.0001/(${MeHg}/${Hg}))`)
+  }
+}
+
+const water_Marine_Chronic_Mercury__Total_CABC = (params) => {
+  const { MeHg, Hg } = params
+  if ( !math.isValid(MeHg) || !math.isValid(Hg) ) { return null }
+  if (MeHg <= 0.005*Hg) {
+    return 0.02
+  } else {
+    return math.evaluate(`(0.0001/(${MeHg}/${Hg}))`)
+  }
+}
+
+const water_Freshwater_Acute_Nitrite_asN__CABC = (params) => {
+  const { Cl } = params
+  if ( !math.isValid(Cl) ) { return null }
+  if (Cl <= 2) {
+    return 0.06
+  } else if (2 < Cl && Cl <= 4) {
+    return 0.12
+  } else if (4 < Cl && Cl <= 6) {
+    return 0.18
+  } else if (6 < Cl && Cl <= 8) {
+    return 0.24
+  } else if (8 < Cl && Cl <= 10) {
+    return 0.30
+  } else {
+    return 0.60
+  }
+}
+
+const water_Freshwater_Chronic_Nitrite_asN__CABC = (params) => {
+  const { Cl } = params
+  if ( !math.isValid(Cl) ) { return null }
+  if (Cl <= 2) {
+    return 0.02
+  } else if (2 < Cl && Cl <= 4) {
+    return 0.04
+  } else if (4 < Cl && Cl <= 6) {
+    return 0.06
+  } else if (6 < Cl && Cl <= 8) {
+    return 0.08
+  } else if (8 < Cl && Cl <= 10) {
+    return 0.10
+  } else {
+    return 0.20
+  }
+}
+
+const water_Marine_Chronic_pH___CABC = (params) => {
+  const { pH } = params
+  if ( !math.isValid(pH) ) { return null }
+  return math.evaluate(`7 <= ${pH} && ${pH} <= 8.7`)
+}
+
+const water_Marine_Chronic_pHlab___CABC = (params) => {
+  const { pH } = params
+  if ( !math.isValid(pH) ) { return null }
+  return math.evaluate(`7 <= ${pH} && ${pH} <= 8.7`)
+}
+
+const water_Freshwater_Acute_Zinc__Total_CABC = (params) => {
+  const hardness = calculateHardness(params)
+  if (90 < hardness) {
+    return math.evaluate(`33+0.75*(${hardness}-90)`)
+  } else {
+    return 33
+  }
+}
+
+const water_Freshwater_Chronic_Zinc__Total_CABC = (params) => {
+  const hardness = calculateHardness(params)
+  if (90 < hardness ) {
+    return math.evaluate(`7.5+0.75*(${hardness}-90)`)
+  } else {
+    return 7.5
+  }
+}
+
+const water_Freshwater_Acute_Cadmium__Total_CA = (params) => {
+  const hardness = calculateHardness(params)
   if (hardness < 5.3) {
     return 0.11
   } else if (360 < hardness) {
     return 7.7
   } else {
-    // 10^(1.016(log*(hardness))-1.71)
-    return math.evaluate(`pow(10, (1.016 * log(${hardness}, 10) - 1.71))`).toNumber()
+    return math.evaluate(`pow(10, 1.016*(log(${hardness}))-1.71)`)
   }
 }
 
-const freshwater_Cadmium__Total_CA_Chronic = (params) => {
+const water_Freshwater_Chronic_Cadmium__Total_CA = (params) => {
   const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
   if (0 < hardness && hardness < 17) {
     return 0.04
   } else if (280 < hardness) {
     return 0.37
   } else {
-    // 10^(0.83(log*(hardness))-2.46)
-    return math.evaluate(`pow(10, (0.83 * log(${hardness}, 10) - 2.46))`).toNumber()
+    return math.evaluate(`10^(0.83*(log(${hardness}))-2.46)`)
   }
 }
 
-const freshwater_Cadmium__Total_CAQC_Acute = () => null
-const freshwater_Cadmium__Total_CAQC_Chronic = () => null
-
-const freshwater_Cadmium__Total_US_Acute = (params) => {
+const water_Freshwater_Chronic_Copper__Total_CA = (params) => {
   const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(.9789*LN(hardness)-3.866)
-  return math.evaluate(`exp(.9789 * log(${hardness}, e) - 3.866 )`).toNumber()
-}
-
-const freshwater_Cadmium__Total_US_Chronic = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(.7977*(LN(hardness))-3.909)
-  return math.evaluate(`exp(0.7977 * log(${hardness}, e) - 3.909 )`).toNumber()
-}
-
-const freshwater_ChromiumIII__Dissolved_US_Acute = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP*(0.819*LN(hardness)+3.7256)*0.316
-  return math.evaluate(`exp(0.819 * log(${hardness}, e) + 3.7256 ) * 0.316`).toNumber()
-}
-
-const freshwater_ChromiumIII__Dissolved_US_Chronic = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(.8190*(LN(hardness))+.6848)*.86
-  return math.evaluate(`exp(0.819 * log(${hardness}, e) + 0.6848 ) * 0.86`).toNumber()
-}
-
-const freshwater_ChromiumIII__Total_US_Acute = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP*(0.819*LN(hardness)+3.7256)
-  return math.evaluate(`exp(0.819 * log(${hardness}, e) + 3.7256 )`).toNumber()
-}
-
-const freshwater_ChromiumIII__Total_US_Chronic = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(.8190*(LN(hardness))+.6848)
-  return math.evaluate(`exp(0.819 * log(${hardness}, e) + 0.6848 )`).toNumber()
-}
-
-const freshwater_Cobalt__Total_CA_Chronic = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // if (hardness ≥ 52 and ≤ 396) {EXP((0.414(ln(hardness))-1.887)}
-  if (52 <= hardness && hardness <= 396) {
-    return math.evaluate(`exp(0.414 * log(${hardness}, e) - 1.887 )`).toNumber()
-  }
-  return null
-}
-
-const freshwater_Copper__Total_CAAB_Acute = () => null
-const freshwater_Copper___CASK_Chronic = () => null
-const freshwater_Copper__Total_CAQC_Acute = () => null
-const freshwater_Copper__Total_CAQC_Chronic = () => null
-const freshwater_Copper__Dissolved_CAQC_Acute = () => null
-const freshwater_Copper__Dissolved_CAQC_Chronic = () => null
-
-const freshwater_Copper__Total_CA_Chronic = (params) => {
-  const hardness = calculateHardness(params)
-  // If the hardness is unknown, the CWQG is 2 µg/L
-  if (!math.isValid(hardness) || hardness < 82) {
+  if (hardness < 82) {
     return 2
+  } else if (82 <= hardness && hardness <= 180) {
+    return math.evaluate(`0.2*exp(0.8545*(log(${hardness}, e))-1.465)`)
   } else if (180 < hardness) {
     return 4
   } else {
-    // 0.2*EXP(0.8545*(ln(hardness))-1.465)
-    return math.evaluate(`0.2 * exp(0.8545 * log(${hardness}, e) - 1.465)`).toNumber()
+    return 2
   }
 }
 
-const freshwater_Dehydroabieticacid___CAON_Acute = () => null
-const freshwater_Fluoride___CABC_Acute = () => null
-
-const freshwater_Iron__Total_CA_Chronic = ({ DOC, pH }) => {
-  if (!math.isValid(DOC) || !math.isValid(pH)) return null
-  // EXP(0.671(LN(DOC))+0.171(pH)+5.586)
-  return math.evaluate(`exp(0.671 * log(${DOC}, e) + 0.171 * ${pH} + 5.586)`).toNumber()
-}
-
-const freshwater_Lead__Total_CABC_Acute = () => null
-const freshwater_Lead__Total_CABC_Chronic = () => null
-const freshwater_Lead___CAON_Chronic = () => null
-const freshwater_Lead__Dissolved_CAQC_Acute = () => null
-const freshwater_Lead__Dissolved_CAQC_Chronic = () => null
-const freshwater_Lead__Total_CAQC_Acute = () => null
-const freshwater_Lead__Total_CAQC_Chronic = () => null
-const freshwater_Lead___CASK_Chronic = () => null
-
-const freshwater_Lead__Dissolved_CA_Chronic = (params) => {
+const water_Freshwater_Chronic_Lead__Total_CA = (params) => {
   const hardness = calculateHardness(params)
-  const {DOC} = params
-  if (!math.isValid(hardness) || hardness <= 0 || !math.isValid(DOC)) return null
-
-  // if (DOC ≥ 0.5 and DOC ≤ 31.5, and hardness ≥ 4.7 and hardness  ≤ 511) {EXP(0.514(LN(DOC))+ 0.214(LN(hardness)) + 0.4152)}
-  if (0.5 <= DOC && DOC <= 31.5 && 4.7 <= hardness && hardness <= 511) {
-    return math.evaluate(`exp(0.514 * log(${DOC}, e) + 0.214 * log(${hardness}, e) + 0.4152)`).toNumber()
-  }
-  return null
-}
-
-const freshwater_Lead__Dissolved_US_Acute = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(1.273*(LN(hardness))-1.460)*(1.46203-(LN(hardness)*(.145712)))
-  return math.evaluate(`exp(1.273 * log(${hardness}, e) - 1.460 ) * ( 1.46203 - log(${hardness}, e) * 0.145712)`).toNumber()
-}
-
-const freshwater_Lead__Dissolved_US_Chronic = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(1.273*(LN(hardness))-4.705)*(1.46203-(LN(hardness))*(.145712))
-  return math.evaluate(`exp(1.273 * log(${hardness}, e) - 4.705 ) * ( 1.46203 - log(${hardness}, e) * 0.145712)`).toNumber()
-}
-
-const freshwater_Lead__Total_US_Acute = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(1.273*(LN(hardness))-1.460)
-  return math.evaluate(`exp(1.273 * log(${hardness}, e) - 1.460 )`).toNumber()
-}
-
-const freshwater_Lead__Total_CA_Chronic = (params) => {
-  const hardness = calculateHardness(params)
-  // If the hardness is unknown, the CWQG is 1 µg/L
-  if (!math.isValid(hardness) || hardness <= 60) {
+  if (hardness <= 60) {
     return 1
   } else if (180 < hardness) {
     return 7
   } else {
-    // EXP(1.273*ln(hardness)-4.705)
-    return math.evaluate(`exp(1.273 * log(${hardness}, e) - 4.705)`).toNumber()
+    return math.evaluate(`exp(1.273*(log(${hardness}, e))-4.705)`)
   }
 }
 
-const freshwater_Lead__Total_US_Chronic = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(1.273*(LN(hardness))-4.705)
-  return math.evaluate(`exp(1.273 * log(${hardness}, e) - 4.705 )`).toNumber()
-}
-
-const freshwater_Manganese___CA_Acute = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(0.878(LN(hardness))+4.76
-  return math.evaluate(`exp(0.878 * log(${hardness}, e) + 4.76 )`).toNumber()
-}
-
-const freshwater_Manganese__Total_CABC_Acute = () => null
-const freshwater_Manganese__Total_CABC_Chronic = () => null
-const freshwater_Manganese___CAQC_Acute = () => null
-const freshwater_Manganese___CAQC_Chronic = () => null
-const freshwater_Mercury__Total_CABC_Chronic = () => null
-
-const freshwater_Nickel__Dissolved_US_Acute = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(.846*(LN(hardness))+2.255)*(.998)
-  return math.evaluate(`exp(0.846 * log(${hardness}, e) + 2.255 ) * 0.998`).toNumber()
-}
-
-const freshwater_Nickel__Dissolved_US_Chronic = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(.846*(LN(hardness))+.0584)*(.997)
-  return math.evaluate(`exp(0.846 * log(${hardness}, e) + 0.0584 ) * 0.997`).toNumber()
-}
-
-const freshwater_Nickel__Total_US_Acute = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(.846*(LN(hardness))+2.255)
-  return math.evaluate(`exp(0.846 * log(${hardness}, e) + 2.255 )`).toNumber()
-}
-
-const freshwater_Nickel__Total_CA_Chronic = (params) => {
-  const hardness = calculateHardness(params)
-  // If the hardness is unknown, the CWQG is 25 µg/L
-  if (!math.isValid(hardness) || hardness <= 60) {
-    return 25
-  } else if (180 < hardness) {
-    return 150
-  } else {
-    // EXP(0.76*(ln(hardness))+1.06)
-    return math.evaluate(`exp(0.76 * log(${hardness}, e) + 1.06)`).toNumber()
-  }
-}
-
-const freshwater_Nickel__Total_US_Chronic = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(.846*(LN(hardness))+.0584)
-  return math.evaluate(`exp(0.846 * log(${hardness}, e) + 0.0584 )`).toNumber()
-}
-
-const freshwater_Nickel__Total_CABC_Chronic = () => null
-const freshwater_Nickel___CASK_Chronic = () => null
-const freshwater_Nitrite_asN__CABC_Acute = () => null
-const freshwater_Nitrite_asN__CABC_Chronic = () => null
-
-const freshwater_Pentachlorophenol___US_Acute = ({ pH }) => {
-  if (!math.isValid(pH)) return null
-  // EXP(1.005*pH - 4.869)
-  return math.evaluate(`exp(1.005 * ${pH} - 4.869 )`).toNumber()
-}
-
-const freshwater_Pentachlorophenol___US_Chronic = ({ pH }) => {
-  if (!math.isValid(pH)) return null
-  // EXP(1.005*pH - 5.134)
-  return math.evaluate(`exp(1.005 * ${pH} - 5.134 )`).toNumber()
-}
-
-const freshwater_Silver__Dissolved_US_Acute = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(1.72*(LN(hardness))-6.59)*(.85)
-  return math.evaluate(`exp(1.72 * log(${hardness}, e) - 6.59 ) * 0.85`).toNumber()
-}
-
-const freshwater_Silver__Total_US_Acute = (params) => {
-  const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(1.72*(LN(hardness))-6.59)
-  return math.evaluate(`exp(1.72 * log(${hardness}, e) - 6.59 )`).toNumber()
-}
-
-const freshwater_Silver__Total_CABC_Acute = () => null
-const freshwater_Silver__Total_CABC_Chronic = () => null
-const freshwater_Silver__Total_CAQC_Acute = () => null
-const freshwater_Silver__Dissolved_CAQC_Acute = () => null
-const freshwater_Uranium___CAQC_Acute = () => null
-const freshwater_Uranium___CAQC_Chronic = () => null
-
-const freshwater_Zinc__Dissolved_CA_Acute = (params) => {
+const water_Freshwater_Acute_Zinc__Dissolved_CA = (params) => {
   const hardness = calculateHardness(params)
   const { DOC } = params
-  if (!math.isValid(hardness) || hardness <= 0 || !math.isValid(DOC)) {
-    return null
+  if ( !math.isValid(DOC) ) { return null }
+  if (0.3 <= DOC && DOC <= 17.3 && 13.8 <= hardness && hardness <= 250.5) {
+    return math.evaluate(`exp(0.833*(log(${hardness}, e))+0.240*${DOC}+0.526)`)
+  } else {
+    return 37
   }
-
-  if (13.8 <= hardness && hardness <= 250.5 && 0.3 <= DOC && DOC <= 17.3) {
-    // EXP(0.833*(ln(hardness))+0.240*(DOC)+0.526);
-    return math.evaluate(`exp(0.833 * log(${hardness}, e) + 0.24 * ${DOC} + 0.5260)`).toNumber()
-  }
-  return 37
 }
 
-const freshwater_Zinc__Dissolved_CA_Chronic = (params) => {
+const water_Freshwater_Chronic_Zinc__Dissolved_CA = (params) => {
   const hardness = calculateHardness(params)
   const { pH, DOC } = params
-  if (!math.isValid(hardness) || hardness <= 0 || !math.isValid(pH) || !math.isValid(DOC)) {
-    return null
+  if ( !math.isValid(pH) || !math.isValid(DOC) ) { return null }
+  if (0.3 <= DOC && DOC <= 22.9 && 23.4 <= hardness && hardness <= 399 && 6.5 <= pH && pH <= 8.13) {
+    return math.evaluate(`exp(0.947*(log(${hardness}, e))-0.815*${pH}+0.398*(log(${DOC}, e))+4.625)`)
+  } else {
+    return 7
   }
+}
 
-  if (23.4 <= hardness && hardness <= 399 && 0.3 <= DOC && DOC <= 22.9 && 6.5 <= pH && pH <= 8.13) {
-    // EXP(0.947*(ln(hardness))-0.815*(pH)+0.398*(ln(DOC))+4.625)
-    return math.evaluate(`exp(0.947 * log(${hardness}, e) - 0.815 * ${pH} + 0.398 * log(${DOC}, e) + 4.625)`).toNumber()
+const water_Freshwater_Chronic_Aluminum__Total_CA = (params) => {
+  const { pH } = params
+  if ( !math.isValid(pH) ) { return null }
+  if (pH < 6.5) {
+    return 5
+  } else if (6.5 <= pH) {
+    return 100
   }
-  return 7
+  return null
 }
 
-const freshwater_Zinc__Dissolved_US_Acute = (params) => {
+const water_Freshwater_Acute_Manganese___CA = (params) => {
   const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(.8473*(LN(hardness))+.884)*(.978)
-  return math.evaluate(`exp(0.8473 * log(${hardness}, e) + 0.884 ) * 0.978`).toNumber()
+  return math.evaluate(`exp(0.878*(log(${hardness}, e))+4.76)`)
 }
 
-const freshwater_Zinc__Dissolved_US_Chronic = (params) => {
+const water_Freshwater_Chronic_Nickel__Total_CA = (params) => {
   const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(.8473*(LN(hardness))+.884)*(.986)
-  return math.evaluate(`exp(0.8473 * log(${hardness}, e) + 0.884 ) * 0.986`).toNumber()
+  if (hardness <= 60) {
+    return 25
+  } else if (180 <= hardness) {
+    return 150
+  } else {
+    return math.evaluate(`exp(0.76*(log(${hardness}, e))+1.06)`)
+  }
 }
 
-const freshwater_Zinc__Total_US_Acute = (params) => {
+const water_Freshwater_Chronic_Ammoniaandammonium_asN_Unfiltered_CA = (params) => {
+  const { pH, temperature } = params
+  if ( !math.isValid(pH) || !math.isValid(temperature) ) { return null }
+  return math.evaluate(`0.8224*(1/pow(10, (0.0901821+2729.92/(${temperature} +273.15)) - ${pH})+1)`)
+}
+
+const water_Freshwater_Chronic_Ammoniaandammonium_asNH3_Unfiltered_CA = (params) => {
+  const { pH, temperature } = params
+  if ( !math.isValid(pH) || !math.isValid(temperature) ) { return null }
+  return math.evaluate(`(1/pow(10, (0.0901821+2729.92/(${temperature} + 273.15)) - ${pH})+1)`)
+}
+
+const water_Freshwater_Chronic_Cobalt__Total_CA = (params) => {
   const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(.8473*(LN(hardness))+.884)
-  return math.evaluate(`exp(0.8473 * log(${hardness}, e) + 0.884 )`).toNumber()
+  if (52 <= hardness && hardness <= 396) {
+    return math.evaluate(`exp(0.414*(log(${hardness}, e))-1.887)`)
+  }
+  return null
 }
 
-const freshwater_Zinc__Total_US_Chronic = (params) => {
+const water_Freshwater_Chronic_Lead__Dissolved_CA = (params) => {
   const hardness = calculateHardness(params)
-  if (!math.isValid(hardness) || hardness <= 0) return null
-  // EXP(.8473*(LN(hardness))+.884)
-  return math.evaluate(`exp(0.8473 * log(${hardness}, e) + 0.884 )`).toNumber()
+  const { DOC } = params
+  if ( !math.isValid(DOC) ) { return null }
+  if (0.5 <= DOC && DOC <= 31.5 && 4.7 <= hardness && hardness <= 511) {
+    return math.evaluate(`exp(0.514*(log(${DOC}, e))+ 0.214*(log(${hardness}, e)) + 0.4152)`)
+  }
+  return null
 }
 
-const freshwater_Zinc__Total_CABC_Acute = () => null
-const freshwater_Zinc__Total_CABC_Chronic = () => null
-const freshwater_Zinc__Total_CAQC_Acute = () => null
-const freshwater_Zinc__Total_CAQC_Chronic = () => null
-const freshwater_Zinc__Dissolved_CAQC_Acute = () => null
-const freshwater_Zinc__Dissolved_CAQC_Chronic = () => null
+const water_Freshwater_Chronic_Iron__Total_CA = (params) => {
+  const { pH, DOC } = params
+  if ( !math.isValid(pH) || !math.isValid(DOC) ) { return null }
+  return math.evaluate(`exp(0.671*(log(${DOC}, e))+0.171*(${pH})+5.586)`)
+}
+
+const water_Freshwater_Acute_Cadmium__Dissolved_CAMB = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(1.0166*(log(${hardness}, e)-3.924)*(1.136672-0.041838*(log(${hardness}, e)))`)
+}
+
+const water_Freshwater_Chronic_Cadmium__Dissolved_CAMB = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.7409*(log(${hardness}, e))-4.719)*(1.101672-0.041838*(log(${hardness}, e)))`)
+}
+
+const water_Freshwater_Chronic_Lead___CAON = (params) => {
+  const { alkalinity } = params
+  if ( !math.isValid(alkalinity) ) { return null }
+  if (alkalinity < 20) {
+    return 5
+  } else if (20 <= alkalinity && alkalinity < 40) {
+    return 10
+  } else if (40 <= alkalinity && alkalinity < 80) {
+    return 20
+  } else {
+    return 25
+  }
+}
+
+const water_Freshwater_Chronic_Beryllium___CAON = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness < 75) {
+    return 11
+  } else {
+    return 1100
+  }
+}
+
+const water_Freshwater_Acute_Dehydroabieticacid___CAON = (params) => {
+  const { pH } = params
+  if ( !math.isValid(pH) ) { return null }
+  if (0 <= pH && pH <= 5) {
+    return 1
+  } else if (5 < pH && pH <= 6) {
+    return 2
+  } else if (6 < pH && pH <= 6.5) {
+    return 4
+  } else if (6.5 < pH && pH <= 7) {
+    return 8
+  } else if (7 < pH && pH <= 7.5) {
+    return 12
+  } else if (7.5 < pH && pH <= 8) {
+    return 13
+  } else if (8 < pH && pH <= 14) {
+    return 14
+  }
+  return null
+}
+
+const water_Freshwater_Acute_Aceticacid___CAQC = (params) => {
+  const { pH } = params
+  if ( !math.isValid(pH) ) { return null }
+  return math.evaluate(`exp(0.2732*(${pH})+9.2333)`)
+}
+
+const water_Freshwater_Chronic_Aceticacid___CAQC = (params) => {
+  const { pH } = params
+  if ( !math.isValid(pH) ) { return null }
+  return math.evaluate(`exp(0.2732*(${pH})+7.0362)`)
+}
+
+const water_Freshwater_Acute_Barium___CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(1.0629*(log(${hardness}, e))+2.2354)`)
+}
+
+const water_Freshwater_Chronic_Barium___CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(1.0629*(log(${hardness}, e))+1.1869)`)
+}
+
+const water_Freshwater_Acute_Beryllium___CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(1.6839*(log(${hardness}, e))-3.6603)`)
+}
+
+const water_Freshwater_Chronic_Beryllium___CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`e^(1.6839*(log(${hardness}, e))-5.8575}`)
+}
+
+const water_Freshwater_Acute_Cadmium__Total_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(1.0166*(log(${hardness}, e))-3.924)`)
+}
+
+const water_Freshwater_Chronic_Cadmium__Total_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.7409*(log(${hardness}, e))-4.719)`)
+}
+
+const water_Freshwater_Acute_Cadmium__Dissolved_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness < 25) {
+    return math.evaluate(`exp(1.0166*(log(${hardness}, e))-3.924)`)
+  } else {
+    return math.evaluate(`exp((1.0166*((${hardness}))-3.924)*(1.136672-0.041838*(log(${hardness}, e))))`)
+  }
+}
+
+const water_Freshwater_Chronic_Cadmium__Dissolved_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness < 25) {
+    return math.evaluate(`exp(0.7409*(log(${hardness}, e))-4.719)`)
+  } else {
+    return math.evaluate(`exp((0.7409*(log(${hardness}, e))-4.719)*(1.101672-0.041838*(log(${hardness}, e))))`)
+  }
+}
+
+const water_Freshwater_Acute_Copper__Total_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.9422*(log(${hardness}, e))-1.700)`)
+}
+
+const water_Freshwater_Chronic_Copper__Total_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.8545*(log(${hardness}, e))-1.702)`)
+}
+
+const water_Freshwater_Acute_Copper__Dissolved_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`0.96*exp(0.9422*(log(${hardness}, e))-1.700)`)
+}
+
+const water_Freshwater_Chronic_Copper__Dissolved_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`96*exp(0.8545*(log(${hardness}, e))-1.702)`)
+}
+
+const water_Freshwater_Acute_Lead__Dissolved_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness < 25) {
+    return math.evaluate(`(exp(1.273*(log(${hardness}, e))-1.460)/1000)`)
+  } else {
+    return math.evaluate(`(1.46203-0.145712*(log(${hardness}, e)))*(exp(1.273*(log(${hardness}, e))-1.460)/1000)`)
+  }
+}
+
+const water_Freshwater_Chronic_Lead__Dissolved_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  if (hardness < 25) {
+    return math.evaluate(`(exp(1.273*(log(${hardness}, e))-4.705)/1000)`)
+  } else {
+    return math.evaluate(`(1.46203-0.145712*(log(${hardness}, e)))*(exp(1.273*(log(${hardness}, e))-4.705)/1000)`)
+  }
+}
+
+const water_Freshwater_Acute_Lead__Total_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`( exp(1.273*(log(${hardness}, e))-1.460)/1000 )`)
+}
+
+const water_Freshwater_Chronic_Lead__Total_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`( exp(1.273*(log(${hardness}, e))-4.705)/1000 )`)
+}
+
+const water_Freshwater_Acute_Manganese___CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.8784*(log(${hardness}, e))+4.9820)`)
+}
+
+const water_Freshwater_Chronic_Manganese___CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.8784*(log(${hardness}, e))+3.5199)`)
+}
+
+const water_Freshwater_Acute_Silver__Total_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(1.72*(log(${hardness}, e))-6.52)/2`)
+}
+
+const water_Freshwater_Acute_Silver__Dissolved_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`0.85*exp(1.72*(log(${hardness}, e))-6.59)/2`)
+}
+
+const water_Freshwater_Acute_Uranium___CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  if (20 <= hardness && hardness <= 100) {
+    return 0.32
+  } else if (100 < hardness && hardness <= 210) {
+    return 2.3
+  }
+  return null
+}
+
+const water_Freshwater_Chronic_Uranium___CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  if (20 <= hardness && hardness <= 100) {
+    return 0.014
+  } else if (100 < hardness && hardness <= 210) {
+    return 0.1
+  }
+  return null
+}
+
+const water_Freshwater_Acute_Zinc__Total_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.8473*(log(${hardness}, e))+0.884)`)
+}
+
+const water_Freshwater_Chronic_Zinc__Total_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.8473*(log(${hardness}, e))+0.884)`)
+}
+
+const water_Freshwater_Acute_Zinc__Dissolved_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`0.978*exp(0.8473*(log(${hardness}, e))+0.884)`)
+}
+
+const water_Freshwater_Chronic_Zinc__Dissolved_CAQC = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`0.986*exp(0.8473*(log(${hardness}, e))+0.884)`)
+}
+
+const water_Freshwater_Chronic_Cadmium___CASK = (params) => {
+  const hardness = calculateHardness(params)
+  if (0 <= hardness && hardness <= 48.5) {
+    return 0.017
+  } else if (48.5 < hardness && hardness <= 97) {
+    return 0.032
+  } else if (97 < hardness && hardness <= 194) {
+    return 0.058
+  } else {
+    return 0.1
+  }
+}
+
+const water_Freshwater_Chronic_Copper___CASK = (params) => {
+  const hardness = calculateHardness(params)
+  if (0 <= hardness && hardness <= 120) {
+    return 2
+  } else if (120 < hardness && hardness <= 180) {
+    return 3
+  } else {
+    return 4
+  }
+}
+
+const water_Freshwater_Chronic_Lead___CASK = (params) => {
+  const hardness = calculateHardness(params)
+  if (0 <= hardness && hardness <= 60) {
+    return 1
+  } else if (60 < hardness && hardness <= 120) {
+    return 2
+  } else if (120 < hardness && hardness <= 180) {
+    return 4
+  } else {
+    return 7
+  }
+}
+
+const water_Freshwater_Chronic_Nickel___CASK = (params) => {
+  const hardness = calculateHardness(params)
+  if (0 <= hardness && hardness <= 60) {
+    return 25
+  } else if (60 < hardness && hardness <= 120) {
+    return 65
+  } else if (120 < hardness && hardness <= 180) {
+    return 110
+  } else {
+    return 150
+  }
+}
+
+const water_Freshwater_Acute_Ammonia_asN_Unfiltered_US = (params) => {
+  const { pH, temperature } = params
+  if ( !math.isValid(pH) || !math.isValid(temperature) ) { return null }
+  return math.evaluate(`min(( 0.275/1 + pow(10, 7.204-${pH})) + (39/1+pow(10, ${pH}-7.204)), 0.7249*(0.0114/1+pow(10, 7.204-${pH})) + (1.6181/1+pow(10, ${pH}-7.204))*(23.12*(pow(10, 0.036*(20-${temperature})))) )`)
+}
+
+const water_Freshwater_Chronic_Ammonia_asN_Unfiltered_US = (params) => {
+  const { pH, temperature } = params
+  if ( !math.isValid(pH) || !math.isValid(temperature) ) { return null }
+  return math.evaluate(`0.8876*((0.0278/1 + pow(10, 7.688 - ${pH})) + (1.1994/1 + pow(10, ${pH} - 7.688)))*(2.126*(pow(10, 0.028[10 - max(${temperature}, 7))))]`)
+}
+
+const water_Freshwater_Acute_Cadmium__Total_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.9789*(log(${hardness}, e))-3.866)`)
+}
+
+const water_Freshwater_Chronic_Cadmium__Total_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.7977*(log(${hardness}, e))-3.909)`)
+}
+
+const water_Freshwater_Acute_Cadmium__Dissolved_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.9789*(log(${hardness}, e))-3.866)*(1.136672-0.041838*(log(${hardness}, e))))`)
+}
+
+const water_Freshwater_Chronic_Cadmium__Dissolved_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.7977*(log(${hardness}, e))-3.909)*(1.101672-0.041838*(log(${hardness}, e)))`)
+}
+
+const water_Freshwater_Acute_ChromiumIII__Total_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.819*(log(${hardness}, e))+3.7256)`)
+}
+
+const water_Freshwater_Chronic_ChromiumIII__Total_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.8190*(log(${hardness}, e))+0.6848)`)
+}
+
+const water_Freshwater_Acute_ChromiumIII__Dissolved_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`0.316*exp(0.819*(log(${hardness}, e))+3.7256)`)
+}
+
+const water_Freshwater_Chronic_ChromiumIII__Dissolved_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`0.86*exp(0.8190*(log(${hardness}, e))+0.6848)`)
+}
+
+const water_Freshwater_Acute_Lead__Dissolved_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(1.273*(log(${hardness}, e))-1.460)*(1.46203-0.145712*(log(${hardness}, e)))`)
+}
+
+const water_Freshwater_Chronic_Lead__Dissolved_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(1.273*(log(${hardness}, e))-4.705)*(1.46203-0.145712*(log(${hardness}, e)))`)
+}
+
+const water_Freshwater_Acute_Lead__Total_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(1.273*(log(${hardness}, e))-1.460)`)
+}
+
+const water_Freshwater_Chronic_Lead__Total_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(1.273*(log(${hardness}, e))-4.705)`)
+}
+
+const water_Freshwater_Acute_Nickel__Total_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.846*(log(${hardness}, e))+2.255)`)
+}
+
+const water_Freshwater_Chronic_Nickel__Total_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.846*(log(${hardness}, e))+.0584)`)
+}
+
+const water_Freshwater_Acute_Nickel__Dissolved_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`0.998*exp(0.846*(log(${hardness}, e))+2.255)`)
+}
+
+const water_Freshwater_Chronic_Nickel__Dissolved_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`0.997*exp(0.846*(log(${hardness}, e))+.0584)`)
+}
+
+const water_Freshwater_Acute_Pentachlorophenol___US = (params) => {
+  const { pH } = params
+  if ( !math.isValid(pH) ) { return null }
+  return math.evaluate(`e^(1.005*${pH} - 4.869}`)
+}
+
+const water_Freshwater_Chronic_Pentachlorophenol___US = (params) => {
+  const { pH } = params
+  if ( !math.isValid(pH) ) { return null }
+  return math.evaluate(`exp(1.005*${pH} - 5.134)`)
+}
+
+const water_Freshwater_Acute_Silver__Total_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(1.72*(log(${hardness}, e))-6.59)`)
+}
+
+const water_Freshwater_Acute_Silver__Dissolved_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`0.85*exp(1.72*(log(${hardness}, e))-6.59)`)
+}
+
+const water_Freshwater_Acute_Zinc__Total_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.8473*(log(${hardness}, e))+0.884)`)
+}
+
+const water_Freshwater_Chronic_Zinc__Total_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`exp(0.8473*(log(${hardness}, e))+0.884)`)
+}
+
+const water_Freshwater_Acute_Zinc__Dissolved_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`0.978*exp(0.8473*(log(${hardness}, e))+0.884)`)
+}
+
+const water_Freshwater_Chronic_Zinc__Dissolved_US = (params) => {
+  const hardness = calculateHardness(params)
+  return math.evaluate(`0.986*exp(0.8473*(log(${hardness}, e))+0.884)`)
+}
 
 module.exports = {
   calculateHardness,
-
-  freshwater_Aceticacid___CAQC_Acute ,
-  freshwater_Aceticacid___CAQC_Chronic ,
-  freshwater_Aluminum__Dissolved_CABC_Acute ,
-  freshwater_Aluminum__Dissolved_CABC_Chronic ,
-  freshwater_Aluminum__Total_CA_Chronic,
-  freshwater_Ammonia_asN_Unfiltered_US_Acute,
-  freshwater_Ammonia_asN_Unfiltered_US_Chronic,
-  freshwater_Ammoniaandammonium_asN_Unfiltered_CA_Chronic,
-  freshwater_Ammoniaandammonium_asNH3_Unfiltered_CA_Chronic,
-  freshwater_Barium___CAQC_Acute ,
-  freshwater_Barium___CAQC_Chronic ,
-  freshwater_Beryllium___CAON_Chronic ,
-  freshwater_Beryllium___CAQC_Acute ,
-  freshwater_Beryllium___CAQC_Chronic ,
-  freshwater_Cadmium__Dissolved_CABC_Acute ,
-  freshwater_Cadmium__Dissolved_CABC_Chronic ,
-  freshwater_Cadmium__Total_CA_Acute,
-  freshwater_Cadmium__Total_CA_Chronic,
-  freshwater_Cadmium__Dissolved_CAMB_Acute ,
-  freshwater_Cadmium__Dissolved_CAMB_Chronic ,
-  freshwater_Cadmium__Total_CAQC_Acute ,
-  freshwater_Cadmium__Total_CAQC_Chronic ,
-  freshwater_Cadmium__Dissolved_CAQC_Acute ,
-  freshwater_Cadmium__Dissolved_CAQC_Chronic ,
-  freshwater_Cadmium___CASK_Chronic ,
-  freshwater_Cadmium__Total_US_Acute,
-  freshwater_Cadmium__Total_US_Chronic,
-  freshwater_Cadmium__Dissolved_US_Acute,
-  freshwater_Cadmium__Dissolved_US_Chronic,
-  freshwater_ChromiumIII__Total_US_Acute,
-  freshwater_ChromiumIII__Total_US_Chronic,
-  freshwater_ChromiumIII__Dissolved_US_Acute,
-  freshwater_ChromiumIII__Dissolved_US_Chronic,
-  freshwater_Cobalt__Total_CA_Chronic,
-  freshwater_Copper__Total_CAAB_Acute ,
-  freshwater_Copper__Total_CA_Chronic,
-  freshwater_Copper___CASK_Chronic ,
-  freshwater_Copper__Total_CAQC_Acute ,
-  freshwater_Copper__Total_CAQC_Chronic ,
-  freshwater_Copper__Dissolved_CAQC_Acute ,
-  freshwater_Copper__Dissolved_CAQC_Chronic ,
-  freshwater_Dehydroabieticacid___CAON_Acute ,
-  freshwater_Fluoride___CABC_Acute ,
-  freshwater_Iron__Total_CA_Chronic,
-  freshwater_Lead__Total_CABC_Acute ,
-  freshwater_Lead__Total_CABC_Chronic ,
-  freshwater_Lead__Total_CA_Chronic,
-  freshwater_Lead__Dissolved_CA_Chronic,
-  freshwater_Lead___CAON_Chronic ,
-  freshwater_Lead__Total_CAQC_Acute ,
-  freshwater_Lead__Total_CAQC_Chronic ,
-  freshwater_Lead__Dissolved_CAQC_Acute ,
-  freshwater_Lead__Dissolved_CAQC_Chronic ,
-  freshwater_Lead___CASK_Chronic ,
-  freshwater_Lead__Total_US_Acute,
-  freshwater_Lead__Total_US_Chronic,
-  freshwater_Lead__Dissolved_US_Acute,
-  freshwater_Lead__Dissolved_US_Chronic,
-  freshwater_Manganese__Total_CABC_Acute ,
-  freshwater_Manganese__Total_CABC_Chronic ,
-  freshwater_Manganese___CA_Acute,
-  freshwater_Manganese___CAQC_Acute ,
-  freshwater_Manganese___CAQC_Chronic ,
-  freshwater_Mercury__Total_CABC_Chronic ,
-  freshwater_Nickel__Total_CABC_Chronic ,
-  freshwater_Nickel__Total_CA_Chronic,
-  freshwater_Nickel___CASK_Chronic ,
-  freshwater_Nickel__Total_US_Acute,
-  freshwater_Nickel__Total_US_Chronic,
-  freshwater_Nickel__Dissolved_US_Acute,
-  freshwater_Nickel__Dissolved_US_Chronic,
-  freshwater_Nitrite_asN__CABC_Acute ,
-  freshwater_Nitrite_asN__CABC_Chronic ,
-  freshwater_Pentachlorophenol___US_Acute,
-  freshwater_Pentachlorophenol___US_Chronic,
-  freshwater_Silver__Total_CABC_Acute ,
-  freshwater_Silver__Total_CABC_Chronic ,
-  freshwater_Silver__Total_CAQC_Acute ,
-  freshwater_Silver__Dissolved_CAQC_Acute ,
-  freshwater_Silver__Total_US_Acute,
-  freshwater_Silver__Dissolved_US_Acute,
-  freshwater_Uranium___CAQC_Acute ,
-  freshwater_Uranium___CAQC_Chronic ,
-  freshwater_Zinc__Total_CABC_Acute ,
-  freshwater_Zinc__Total_CABC_Chronic ,
-  freshwater_Zinc__Dissolved_CA_Acute,
-  freshwater_Zinc__Dissolved_CA_Chronic,
-  freshwater_Zinc__Total_CAQC_Acute ,
-  freshwater_Zinc__Total_CAQC_Chronic ,
-  freshwater_Zinc__Dissolved_CAQC_Acute ,
-  freshwater_Zinc__Dissolved_CAQC_Chronic ,
-  freshwater_Zinc__Total_US_Acute,
-  freshwater_Zinc__Total_US_Chronic,
-  freshwater_Zinc__Dissolved_US_Acute,
-  freshwater_Zinc__Dissolved_US_Chronic,
+  water_Freshwater_Acute_Copper__Total_CAAB,
+  water_Freshwater_Acute_Manganese__Total_CABC,
+  water_Freshwater_Chronic_Manganese__Total_CABC,
+  water_Freshwater_Chronic_Nickel__Total_CABC,
+  water_Freshwater_Acute_Silver__Total_CABC,
+  water_Freshwater_Chronic_Silver__Total_CABC,
+  water_Freshwater_Acute_Aluminum__Dissolved_CABC,
+  water_Freshwater_Chronic_Aluminum__Dissolved_CABC,
+  water_Freshwater_Acute_Cadmium__Dissolved_CABC,
+  water_Freshwater_Chronic_Cadmium__Dissolved_CABC,
+  water_Freshwater_Acute_Fluoride___CABC,
+  water_Freshwater_Acute_Lead__Total_CABC,
+  water_Freshwater_Chronic_Lead__Total_CABC,
+  water_Freshwater_Chronic_Mercury__Total_CABC,
+  water_Marine_Chronic_Mercury__Total_CABC,
+  water_Freshwater_Acute_Nitrite_asN__CABC,
+  water_Freshwater_Chronic_Nitrite_asN__CABC,
+  water_Marine_Chronic_pH___CABC,
+  water_Marine_Chronic_pHlab___CABC,
+  water_Freshwater_Acute_Zinc__Total_CABC,
+  water_Freshwater_Chronic_Zinc__Total_CABC,
+  water_Freshwater_Acute_Cadmium__Total_CA,
+  water_Freshwater_Chronic_Cadmium__Total_CA,
+  water_Freshwater_Chronic_Copper__Total_CA,
+  water_Freshwater_Chronic_Lead__Total_CA,
+  water_Freshwater_Acute_Zinc__Dissolved_CA,
+  water_Freshwater_Chronic_Zinc__Dissolved_CA,
+  water_Freshwater_Chronic_Aluminum__Total_CA,
+  water_Freshwater_Acute_Manganese___CA,
+  water_Freshwater_Chronic_Nickel__Total_CA,
+  water_Freshwater_Chronic_Ammoniaandammonium_asN_Unfiltered_CA,
+  water_Freshwater_Chronic_Ammoniaandammonium_asNH3_Unfiltered_CA,
+  water_Freshwater_Chronic_Cobalt__Total_CA,
+  water_Freshwater_Chronic_Lead__Dissolved_CA,
+  water_Freshwater_Chronic_Iron__Total_CA,
+  water_Freshwater_Acute_Cadmium__Dissolved_CAMB,
+  water_Freshwater_Chronic_Cadmium__Dissolved_CAMB,
+  water_Freshwater_Chronic_Lead___CAON,
+  water_Freshwater_Chronic_Beryllium___CAON,
+  water_Freshwater_Acute_Dehydroabieticacid___CAON,
+  water_Freshwater_Acute_Aceticacid___CAQC,
+  water_Freshwater_Chronic_Aceticacid___CAQC,
+  water_Freshwater_Acute_Barium___CAQC,
+  water_Freshwater_Chronic_Barium___CAQC,
+  water_Freshwater_Acute_Beryllium___CAQC,
+  water_Freshwater_Chronic_Beryllium___CAQC,
+  water_Freshwater_Acute_Cadmium__Total_CAQC,
+  water_Freshwater_Chronic_Cadmium__Total_CAQC,
+  water_Freshwater_Acute_Cadmium__Dissolved_CAQC,
+  water_Freshwater_Chronic_Cadmium__Dissolved_CAQC,
+  water_Freshwater_Acute_Copper__Total_CAQC,
+  water_Freshwater_Chronic_Copper__Total_CAQC,
+  water_Freshwater_Acute_Copper__Dissolved_CAQC,
+  water_Freshwater_Chronic_Copper__Dissolved_CAQC,
+  water_Freshwater_Acute_Lead__Dissolved_CAQC,
+  water_Freshwater_Chronic_Lead__Dissolved_CAQC,
+  water_Freshwater_Acute_Lead__Total_CAQC,
+  water_Freshwater_Chronic_Lead__Total_CAQC,
+  water_Freshwater_Acute_Manganese___CAQC,
+  water_Freshwater_Chronic_Manganese___CAQC,
+  water_Freshwater_Acute_Silver__Total_CAQC,
+  water_Freshwater_Acute_Silver__Dissolved_CAQC,
+  water_Freshwater_Acute_Uranium___CAQC,
+  water_Freshwater_Chronic_Uranium___CAQC,
+  water_Freshwater_Acute_Zinc__Total_CAQC,
+  water_Freshwater_Chronic_Zinc__Total_CAQC,
+  water_Freshwater_Acute_Zinc__Dissolved_CAQC,
+  water_Freshwater_Chronic_Zinc__Dissolved_CAQC,
+  water_Freshwater_Chronic_Cadmium___CASK,
+  water_Freshwater_Chronic_Copper___CASK,
+  water_Freshwater_Chronic_Lead___CASK,
+  water_Freshwater_Chronic_Nickel___CASK,
+  water_Freshwater_Acute_Ammonia_asN_Unfiltered_US,
+  water_Freshwater_Chronic_Ammonia_asN_Unfiltered_US,
+  water_Freshwater_Acute_Cadmium__Total_US,
+  water_Freshwater_Chronic_Cadmium__Total_US,
+  water_Freshwater_Acute_Cadmium__Dissolved_US,
+  water_Freshwater_Chronic_Cadmium__Dissolved_US,
+  water_Freshwater_Acute_ChromiumIII__Total_US,
+  water_Freshwater_Chronic_ChromiumIII__Total_US,
+  water_Freshwater_Acute_ChromiumIII__Dissolved_US,
+  water_Freshwater_Chronic_ChromiumIII__Dissolved_US,
+  water_Freshwater_Acute_Lead__Dissolved_US,
+  water_Freshwater_Chronic_Lead__Dissolved_US,
+  water_Freshwater_Acute_Lead__Total_US,
+  water_Freshwater_Chronic_Lead__Total_US,
+  water_Freshwater_Acute_Nickel__Total_US,
+  water_Freshwater_Chronic_Nickel__Total_US,
+  water_Freshwater_Acute_Nickel__Dissolved_US,
+  water_Freshwater_Chronic_Nickel__Dissolved_US,
+  water_Freshwater_Acute_Pentachlorophenol___US,
+  water_Freshwater_Chronic_Pentachlorophenol___US,
+  water_Freshwater_Acute_Silver__Total_US,
+  water_Freshwater_Acute_Silver__Dissolved_US,
+  water_Freshwater_Acute_Zinc__Total_US,
+  water_Freshwater_Chronic_Zinc__Total_US,
+  water_Freshwater_Acute_Zinc__Dissolved_US,
+  water_Freshwater_Chronic_Zinc__Dissolved_US
 }
