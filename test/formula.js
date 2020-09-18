@@ -11,18 +11,16 @@ describe('Guideline Formulas', function () {
     done()
   })
 
-  it('Should return null when zeros', function (done) {
+  it('Should run without syntax issues', function (done) {
 
     for(const key of Object.keys(formulas)) {
-      let value = null
-      console.log(key)
       try {
-        value = formulas[key]({ TH: 0, pH: 0, DOC: 0, temperature: 0 })
+        formulas[key]({ TH: 0, pH: 0, DOC: 0, temperature: 0 })
       } catch(e) {
         console.error(key, e)
         throw new Error()
+        expect(true).to.equal(null)
       }
-      //expect(value).to.not.equal(null)
     }
 
     done()

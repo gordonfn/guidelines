@@ -4,16 +4,16 @@ const normalize = require('../../datastream-import/import/calc/normalize')  // f
 
 // Metadata
 const json = {}
-// Formula Code
-const params = Object.keys(require('../formula_params.json'))
-params.push('hardness')
-const hardnessParams = ['TH', 'CaCO3', 'CH', 'NCH', 'Ca', 'Mg', 'CaIon', 'MgIon', 'hardness']
 
-let code = `
-/* This page is generated during the build process. */
-const math = require('./math')
-const calculateHardness = require('./hardness')
-`
+const updateObjProp = (obj, propPath, value) => {
+  const [head, ...rest] = propPath.split('.')
+
+  if (rest.length && !obj[head]) obj[head] = {}
+
+  !rest.length
+    ? obj[head] = value
+    : updateObjProp(obj[head], rest.join('.'), value)
+}
 
 // HTML Preview
 const htmlPromises = []
@@ -33,17 +33,27 @@ let mathjax = require('mathjax').init({
   }*/
 }) // need node 14 to support root await
 
-updateObjProp = (obj, propPath, value) => {
-  const [head, ...rest] = propPath.split('.')
+const buildHtml = async (name, formula) => {
+  const MathJax = await mathjax
+  const svg = MathJax.tex2svg(formula, {display: true});
+  //const chtml = MathJax.tex2chtml(formula, {display: true});
+  //console.log(MathJax.startup.adaptor.outerHTML(svg));
+  //console.log(MathJax.startup.adaptor.outerHTML(chtml));
 
-  if (rest.length && !obj[head]) obj[head] = {}
-
-  !rest.length
-    ? obj[head] = value
-    : updateObjProp(obj[head], rest.join('.'), value)
+  html += `<br><br>${name}<br>${MathJax.startup.adaptor.outerHTML(svg)}`
 }
 
-const buildCode = (name, formula) => {
+// Formula Code
+const params = Object.keys(require('../formula_params.json'))
+params.push('hardness')
+const hardnessParams = ['TH', 'CaCO3', 'CH', 'NCH', 'Ca', 'Mg', 'CaIon', 'MgIon', 'hardness']
+let code = `
+/* This page is generated during the build process. */
+const math = require('./math')
+const calculateHardness = require('./hardness')
+`
+
+const buildCode = (name, formula, multiplier = 1) => {
   //console.log('|>', formula)
   formula = formula
     // math formulas
@@ -87,16 +97,20 @@ const buildCode = (name, formula) => {
     }).join('\n')
   }
 
-  const fallbackMatch = formula.match(/else \{\sreturn ([\d\.]+)\s\}$/) // TODO confirm w/ Mary
+  formula = formula.split('\n').map(condition => {
+    if (condition.includes('return') && multiplier !== 1) condition += `*${multiplier}` // formula normalization
+    return condition
+  }).join('\n')
+
+  const fallbackMatch = formula.match(/else \{\sreturn ([\d\.]+)\s\}$/)
   const fallback = fallbackMatch ? fallbackMatch[1] : 'null'
 
-  // TODO need to add in catch for !math.isValid(hardness) || hardness <= 0
   formula = `
 const ${name} = (params) => {
   ${hardness.length ? `const hardness = calculateHardness(params)` : ``}
-  ${hardness.length ? `if ( !math.isValid(hardness) || hardness <=0 ) { return ${fallback} }` : ``}
+  ${hardness.length ? `if ( !math.isValid(hardness) ) { return ${fallback} }` : ``}
   ${variables.length ? `const { ${variables.join(', ')} } = params` : ''}
-  ${variables.length ? `if ( !math.isValid(${variables.join(') || !math.isValid(')}) ) { return ${fallback} }` : ''}
+  ${variables.length ? `if ( !math.isValid(${variables.join(') || !math.isValid(')}) ) { return null }` : ''}
   ${formula}
   ${(formula.indexOf('return') !== 0 && !formula.includes('else {')) ? `return null` : ''}
 }
@@ -105,25 +119,15 @@ const ${name} = (params) => {
   return formula
 }
 
-const buildHtml = async (name, formula) => {
-  const MathJax = await mathjax
-  const svg = MathJax.tex2svg(formula, {display: true});
-  //const chtml = MathJax.tex2chtml(formula, {display: true});
-  //console.log(MathJax.startup.adaptor.outerHTML(svg));
-  //console.log(MathJax.startup.adaptor.outerHTML(chtml));
-
-  html += `<br><br>${name}<br>${MathJax.startup.adaptor.outerHTML(svg)}`
-}
-
-const parseGuideline = (row) => {
+const parseGuideline = (row, multiplier = 1) => {
   let value = row['Value']
 
   // Value
   if (value.toString() === Number.parseFloat(value).toString()) {
-    return ['value', normalize.characteristic(row['Characteristic Name'], Number.parseFloat(value), row['Unit'])[0]]
+    return ['value', Number.parseFloat(value)*multiplier]
   }
   // Range
-  if (value.match(/^[\d.]+-[\d.]+$/)) return ['range', value.split('-').map(v => Number.parseFloat(v))]
+  if (value.match(/^[\d.]+-[\d.]+$/)) return ['range', value.split('-').map(v => Number.parseFloat(v)*multiplier)]
 
   // Formula
   if (value.length) {
@@ -138,7 +142,7 @@ const parseGuideline = (row) => {
       + row['Sample Fraction'].replace(' ', '') + '_'
       + region
 
-    buildCode(formulaName, value)
+    buildCode(formulaName, value, multiplier)
     htmlPromises.push(buildHtml(formulaName, value))  // ugly hack
 
     return ['formula', formulaName]
@@ -160,7 +164,7 @@ parse(data, {
       continue
     }
     if (!row['Value']) {
-      console.log(`skip ${row['Guideline Publisher']} ${row['Guideline Name']} ${row['Parameter']} from ${row['Region']}: Value missing`)
+      console.log(`skip ${row['Guideline Publisher']} ${row['Guideline Name']} ${row['Parameter']} from ${row['Region']}: Value missing ***`)
       continue
     }
     if (['Historical'].includes(row['Status'])) {
@@ -175,19 +179,19 @@ parse(data, {
       const key = `${row['Characteristic Name']} ${row['Method Speciation']} (${sampleFraction})`
 
       let obj = json[key]
+      const [multiplier, unit] = normalize.characteristic(row['Characteristic Name'], 1, row['Unit'])
       if (!obj) {
-        const [, unit] = normalize.characteristic(row['Characteristic Name'], 1, row['Unit'])
         obj = {
           characteristic: row['Characteristic Name'] || '',
           method_speciation: row['Method Speciation'] || '',
           sample_fraction: sampleFraction || '',
-          unit: unit || '',  // TODO normalize unit
+          unit: unit || '',
           guidelines: {},
           type: []
         }
       }
 
-      const [type, guideline] = parseGuideline(row)
+      const [type, guideline] = parseGuideline(row, multiplier)
       if (!obj.type.includes(type)) obj.type.push(type)
       if (type === 'formula') {
         formulaNames.push(guideline)
@@ -228,7 +232,7 @@ module.exports = {
   })
 
 
-  //console.log(buildCode('tst','if (pH < 6.5) \\{ e^{1.6 - 3.327pH + 0.402pH^{2}} \\} else \\{ 0.05 \\}'))
+  console.log(buildCode('tst','if (0 ≤ hardness < 25) \\{ {e^{1.0166[ln(hardness)]-3.924} \\over 1000} \\} else if (25 ≤ hardness) \\{ ({e^{1.0166[ln(hardness)]-3.924} \\over 1000})(1.136672-0.041838[ln(hardness)]) \\}'), 1000)
 })
 
 // const run = async() => {
