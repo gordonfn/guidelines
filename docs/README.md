@@ -1,5 +1,31 @@
-# @DataStream/Guidelines
-Calculate water quality guidelines.
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/gordonfn/guidelines/master/docs/images/datastream.svg?sanitize=true" alt="DataStream Logo" width="400">
+  <br/>
+  Calculation of water quality guidelines.
+  <br/>
+  <br/>
+</h1>
+
+<a align="center">See our <a href="">master template</a> on Google Sheets</p>
+
+<p align="center">
+  <!--<a href="https://github.com/gordonfn/schema"><img src="https://img.shields.io/github/stars/gordonfn/schema.svg?style=social&label=Stars" alt="Stars" /></a>-->
+  <!--<a href="https://www.npmjs.com/package/schema"><img src="https://img.shields.io/npm/v/schema.svg" alt="npm version"></a>-->
+  <!--<a href="https://www.npmjs.com/package/schema"><img src="https://img.shields.io/npm/dm/schema.svg" alt="npm downloads"></a>-->
+  <!--<a href="https://www.npmjs.com/package/schema"><img src="https://img.shields.io/npm/l/schema.svg" alt="npm license" /></a>-->
+</p>
+
+## DataStream 
+
+DataStream ([www.DataStream.org](http://gordonfoundation.ca/initiatives/datastream)) is an online open-access platform for sharing water quality data. Data is uploaded, stored and shared in DataStream’s Open Data Schema -- a model based on the WQX standard for the Exchange of Water Quality Data. DataStream is free to use and allows users to query, visualize, and download data in this standardized format. To date, over 3 million water quality observations have been published across DataStream’s three regional platforms (Mackenzie DataStream,  Lake Winnipeg DataStream, and Atlantic DataStream) by watershed groups, Indigenous organizations, researchers and governments at all levels.
+
+<!--<div align="center">
+  <a href="http://gordonfoundation.ca"><img src="https://raw.githubusercontent.com/gordonfn/wqx/master/docs/images/the-gordon-foundation.svg" alt="The Gordon Foundation Logo" width="200"></a>
+</div>-->
+
+DataStream is led nationally by [The Gordon Foundation](http://gordonfoundation.ca) and is carried out in collaboration with regional partners and monitoring networks. Data contributors maintain ownership of their data which are published under open data licenses.
+
+
 
 ## Supported Guidelines
 ### CA: Environment and Climate Change Canada
