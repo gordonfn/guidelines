@@ -46,7 +46,6 @@
     "characteristic": "Total hardness",
     "method_speciation": [
       "as CaCO3",
-      "as CaO",
       ""
     ],
     "sample_fraction": "*",
