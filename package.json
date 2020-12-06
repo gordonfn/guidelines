@@ -3,7 +3,7 @@
   "version": "0.3.0-beta.6",
   "description": "Calculate water quality guidelines.",
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/"
   },
   "main": "index.js",
   "files": [
@@ -17,6 +17,7 @@
   ],
   "scripts": {
     "prepublish": "npm run test",
+    "download": "curl -Ls 'https://docs.google.com/spreadsheets/d/1IwvizmcXDDfogyRA5NLoSx2t3GXYNYmOhoI_-TnrVGY/export?format=csv&gid=216582479' -o bin/guidelines.csv",
     "build": "node bin/build.mapping.js",
     "test": "npm run build && mocha"
   },
@@ -42,6 +43,7 @@
   },
   "homepage": "https://github.com/gordonfn/guidelines#readme",
   "devDependencies": {
+    "@gordonfn/normalize": "0.1.9",
     "chai": "4.2.0",
     "csv-parse": "4.8.2",
     "istanbul": "0.4.5",

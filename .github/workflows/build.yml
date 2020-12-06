@@ -27,9 +27,11 @@ jobs:
         name: Install dependencies
         run: |
           npm install
+          npm audit fix
       -
         name: Build and test allowed values
         run: |
+          npm run download
           npm run test
           echo "change=$(git status --porcelain)" >> $GITHUB_ENV
       -
@@ -50,3 +52,11 @@ jobs:
         name: Publish
         run: |
           npm publish
+      -
+        if: env.change
+        name: Trigger @gordonfn/normalize rebuild
+        run: |
+          curl -X POST https://api.github.com/repos/gordonfn/normalize/dispatches \
+          -H 'Accept: application/vnd.github.everest-preview+json' \
+          -u ${{ secrets.GITHUB_TOKEN }} \
+          --data '{"event_type": "guidelines", "client_payload": {}'

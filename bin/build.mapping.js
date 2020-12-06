@@ -1,7 +1,7 @@
 const fs = require('fs')
 const parse = require('csv-parse')
 const formulas = require('../formula')
-const normalize = require('../../datastream-import/import/calc/normalize')  // for unit testing
+const normalize = require('@gordonfn/normalize')  // for unit testing
 const json = {}
 
 updateObjProp = (obj, propPath, value) => {
@@ -56,7 +56,7 @@ const parseGuideline = (col, row) => {
   return [null, null]
 }
 
-const data = fs.readFileSync(__dirname + '/../lib/Guidelines.csv')
+const data = fs.readFileSync(__dirname + '/guidelines.csv')
 parse(data, {
   columns: true
 }, (err, output) => {
