@@ -117,9 +117,6 @@ describe('Parser', function () {
       // expect(two.code).to.equal('return math.evaluate(`((A)/(((B)/(C))))`)')
       done()
     })
-
-    // Over
-    // ({[]})
   })
 
   describe('Variables', function () {
@@ -160,4 +157,15 @@ describe('Parser', function () {
       done()
     })
   })
+
+  // describe('End-to-End Tests', function () {
+    // it('Should remove excess brackets', function (done) {
+      // let one = formulaParser('{A \\over B}')
+      // expect(one.code).to.equal('return math.evaluate(`((A)/(B))`)')
+      //
+      // let two = formulaParser('{A \\over {B \\over C}}')
+      // expect(two.code).to.equal('return math.evaluate(`((A)/(((B)/(C))))`)')
+    //   done()
+    // })
+  // })
 })
