@@ -8,12 +8,7 @@
   "main": "index.js",
   "files": [
     "index.js",
-    "formula.js",
-    "formula_params.json",
-    "hardness.js",
-    "metadata.json",
-    "units.js",
-    "math.js"
+    "lib"
   ],
   "scripts": {
     "lint": "prettier-standard '*/**/*.{js,json}'",
@@ -44,12 +39,12 @@
   },
   "homepage": "https://github.com/gordonfn/guidelines#readme",
   "dependencies": {
+    "@gordonfn/normalize": "0.1.10",
     "mathjs": "6.2.5"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
-    "@gordonfn/normalize": "0.1.9",
     "chai": "4.2.0",
     "csv-parse": "4.8.2",
     "husky": "4.3.6",

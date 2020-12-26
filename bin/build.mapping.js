@@ -46,7 +46,7 @@ const buildHtml = async (name, formula) => {
 const formulaNames = []
 let codeFunctions = `
 /* This page is generated during the build process. */
-const math = require('./math')
+const math = require('@gordonfn/normalize/lib/math')
 const calculateHardness = require('./hardness')
 `
 const codeFunctionsEnd = (functions) => `
@@ -186,12 +186,11 @@ parse(
           for (const region of regions) {
             updateObjProp(
               obj.guidelines,
-              `${row['Media Name']}.${row.Ecosystem}.${region}.src`,
-              `${row.Publisher} ${row['Guideline Name']} ${
-                row.Status !== 'Approved' ? row.Status : ''
-              }`
-                .replace(/\s+/g, ' ')
-                .trim()
+              `${row['Media Name']}.${row.Ecosystem}.${region}.metadata`,
+              {
+                publisher: row.Publisher,
+                status: row.Status,
+              }
             )
             updateObjProp(
               obj.guidelines,
@@ -226,7 +225,7 @@ parse(
     fs.writeFileSync(__dirname + '/../test/formula.js', codeTesting)
 
     Promise.all(htmlPromises).then(() => {
-      fs.writeFileSync(__dirname + '/../public/preview.html', html)
+      fs.writeFileSync(__dirname + '/../test/formula.html', html)
 
       console.log('Done!')
       process.exit(0)

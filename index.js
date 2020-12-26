@@ -1,7 +1,7 @@
-const formula = require('./formula')
+const formula = require('./lib/formula')
 
-const metadataArray = require('./metadata.json')
-const formulaParams = require('./formula_params.json')
+const metadataArray = require('./lib/metadata.json')
+const formulaParams = require('./lib/formula_params.json')
 
 // TODO add in region filter
 const filterMetadata = (params = {}, media = null) => {
