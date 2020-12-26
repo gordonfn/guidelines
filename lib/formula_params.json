@@ -1,10 +1,15 @@
 {
-
   "pH": {
     "characteristic": "pH",
     "method_speciation": "*",
     "sample_fraction": "*",
     "unit": ""
+  },
+  "temperature": {
+    "characteristic": "Temperature, water",
+    "method_speciation": "*",
+    "sample_fraction": "*",
+    "unit": "degC"
   },
   "DOC": {
     "characteristic": "Organic carbon",
@@ -12,11 +17,17 @@
     "sample_fraction": "Dissolved",
     "unit": "mg/L"
   },
-  "temperature": {
-    "characteristic": "Temperature, water",
+  "DCa": {
+    "characteristic": "Calcium",
     "method_speciation": "*",
-    "sample_fraction": "*",
-    "unit": "degC"
+    "sample_fraction": "Dissolved",
+    "unit": "mg/L"
+  },
+  "DCl": {
+    "characteristic": "Chloride",
+    "method_speciation": "*",
+    "sample_fraction": "Dissolved",
+    "unit": "mg/L"
   },
   "Cl": {
     "characteristic": "Chloride",
@@ -42,23 +53,20 @@
     "sample_fraction": "Total",
     "unit": "mg/L"
   },
+  "apparentcolor": {
+    "characteristic": "Apparent Color",
+    "method_speciation": "*",
+    "sample_fraction": "*",
+    "unit": "Pt"
+  },
   "TH": {
     "characteristic": "Total hardness",
-    "method_speciation": [
-      "as CaCO3",
-      ""
-    ],
+    "method_speciation": ["as CaCO3", ""],
     "sample_fraction": "*",
     "unit": "mg/L"
   },
   "CaCO3": {
     "characteristic": "Hardness, Ca, Mg",
-    "method_speciation": "*",
-    "sample_fraction": "*",
-    "unit": "mg/L"
-  },
-  "CH": {
-    "characteristic": "Hardness, carbonate",
     "method_speciation": "*",
     "sample_fraction": "*",
     "unit": "mg/L"
@@ -69,14 +77,8 @@
     "sample_fraction": "*",
     "unit": "mg/L"
   },
-  "Ca": {
-    "characteristic": "Hardness, Calcium",
-    "method_speciation": "*",
-    "sample_fraction": "*",
-    "unit": "mg/L"
-  },
-  "Mg": {
-    "characteristic": "Hardness, magnesium",
+  "CH": {
+    "characteristic": "Hardness, carbonate",
     "method_speciation": "*",
     "sample_fraction": "*",
     "unit": "mg/L"
@@ -91,6 +93,18 @@
     "characteristic": "Magnesium",
     "method_speciation": "*",
     "sample_fraction": "Dissolved",
+    "unit": "mg/L"
+  },
+  "Ca": {
+    "characteristic": "Hardness, Calcium",
+    "method_speciation": "*",
+    "sample_fraction": "*",
+    "unit": "mg/L"
+  },
+  "Mg": {
+    "characteristic": "Hardness, magnesium",
+    "method_speciation": "*",
+    "sample_fraction": "*",
     "unit": "mg/L"
   }
 }
