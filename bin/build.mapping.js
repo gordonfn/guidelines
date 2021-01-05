@@ -75,10 +75,10 @@ const parseGuideline = (row, multiplier = 1) => {
     return ['value', Number.parseFloat(value) * multiplier]
   }
   // Range
-  if (value.match(/^[\d.]+-[\d.]+$/)) {
+  if (value.match(/^\[[\d.]+,[\d.]+\]$/)) {
     return [
       'range',
-      value.split('-').map((v) => Number.parseFloat(v) * multiplier)
+      JSON.parse(value).map((v) => v * multiplier)
     ]
   }
 

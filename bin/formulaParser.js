@@ -56,12 +56,32 @@ const formulaParser = (formula, multiplier = 1) => {
     .replace(/ != /g, ' !== ')
     .replace(/\\\{ (NULL) \\\}/g, '{\n    return null\n  }')
     .replace(/\\\{ ([\d]+[.]?[\d]*) \\\}/g, '{\n    return $1\n  }')
+    .replace(/\\\{ \(([\d.]+),([\d.]+)\) \\\}/g, '{\n    return [$1,$2]\n  }')
+    .replace(/\\\{ \(([\d.]+.*?),([\d.]+.*?)\) \\\}/g, '{\n    return [math.evaluate(`$1`),math.evaluate(`$2`)]\n  }')
     .replace(/\\\{ (.*?) \\\}/g, '{\n    return math.evaluate(`$1`)\n  }')
 
   // code = cleanBrackets(code)
 
   if (!code.includes('if')) {
-    code = `return math.evaluate(\`${code}\`)`
+    if (code === 'NULL') {
+      code = 'return null'
+    } else if (code.match(/^[\d.]+$/)) {
+      code = `return ${code}`
+    } else if (code.match(/\([\d.]+,[\d.]+\)/)) {
+      code = code
+        .replace(/\(\)/, '')
+      code = `return [${code}]`
+    } else if (code.match(/\([\d.]+.*?,[\d.]+.*?\)/)) {
+      code = code
+        .replace(/^\((.*),(.*)\)$/, 'return [math.evaluate(`$1`),math.evaluate(`$2`)]')
+    } else {
+      code = `return math.evaluate(\`${code}\`)`
+    }
+  }
+
+  if (!isBalanced(code.replace(/[^(){}\[\]]/g, ''))) {
+    console.log(code)
+    throw new Error('Formula is unbalanced')
   }
 
   // variables
@@ -88,16 +108,45 @@ const formulaParser = (formula, multiplier = 1) => {
       .join('\n')
   }
 
+  const rangePattern = /^(.*)return \[(.+),(.+)\](.*)$/
   code = code
     .split('\n')
     .map((condition) => {
-      if (condition.includes('return') && multiplier !== 1) {
-        condition += `*${multiplier}`
-      } // formula normalization
+      if (multiplier !== 1 && condition.includes('return') && !condition.includes('null')) {
+        // formula normalization
+        // multiplier are assumed to be multiples of 10, so are safe to to do in raw js
+        if (condition.match(rangePattern)) { // on range
+          condition = condition.replace(rangePattern, `$1return [$2*${multiplier},$3*${multiplier}]$4`)
+        } else {
+          condition += `*${multiplier}`
+        }
+      }
+
       return condition
     })
     .join('\n')
   return { code, hardness, variables }
+}
+
+// Source: https://levelup.gitconnected.com/solving-balanced-brackets-in-javascript-with-stacks-edbc52a57309
+const isBalanced = (input) => {
+  let brackets = "[]{}()"
+  let stack = []
+
+  for(let bracket of input) {
+    let bracketsIndex = brackets.indexOf(bracket)
+    //console.log(`The current element is ${bracket}, which has an index in input of ${input.indexOf(bracket)}, and matches the bracket with index ${bracketsIndex} in brackets`)
+    if(bracketsIndex % 2 === 0) {
+      stack.push(bracketsIndex + 1)
+      //console.log(`this is an opening bracket. The address of its matching closing bracket in brackets is ${bracketsIndex + 1}. Adding that index to the stack makes the stack ${stack}`)
+    } else {
+      //console.log(`this is a closing bracket, so ${stack.pop()} is being popped off the stack`)
+      if(stack.pop() !== bracketsIndex) {
+        return false;
+      }
+    }
+  }
+  return stack.length === 0
 }
 
 const buildCode = (name, parsed) => {
