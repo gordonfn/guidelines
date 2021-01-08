@@ -1,6 +1,6 @@
 /* global describe, it */
 const expect = require('chai').expect
-const { formulaParser, params } = require('../bin/formulaParser.js')
+const { formulaParser, params } = require('../bin/formulaCodeParser.js')
 
 describe('Parser', function () {
   describe('Conditionals', function () {

@@ -1,7 +1,8 @@
 const fs = require('fs')
 const parse = require('csv-parse')
 const { characteristic } = require('@gordonfn/normalize/lib/measure')
-const { build } = require('./formulaParser')
+const {build:buildCode} = require('./formulaCodeParser')
+const {build:buildHtml} = require('./formulaHtmlParser')
 
 // Metadata
 const json = {}
@@ -19,29 +20,6 @@ const updateObjProp = (obj, propPath, value) => {
 // HTML Preview
 const htmlPromises = []
 let html = '<html><head></head><body><!-- This page is generated during the build process. -->'
-// https://docs.mathjax.org/en/latest/options/accessibility.html
-const mathjax = require('mathjax').init({
-  loader: { load: ['input/tex', 'output/svg', 'output/chtml'] }
-  /* options: {
-    enableEnrichment: true,
-    enrichSpeech: 'deep',
-    a11y:{
-      speech: true,
-      braille: true,
-      subtitles: true,
-      speechRules: 'mathspeak-default',
-    }
-  } */
-}) // need node 14 to support root await
-
-const buildHtml = async (name, formula) => {
-  const MathJax = await mathjax
-  const svg = MathJax.tex2svg(formula, { display: true })
-  // const chtml = MathJax.tex2chtml(formula, {display: true});
-  // console.log(MathJax.startup.adaptor.outerHTML(svg));
-  // console.log(MathJax.startup.adaptor.outerHTML(chtml));
-  html += `<br><br>${name}<br>${MathJax.startup.adaptor.outerHTML(svg)}`
-}
 
 const formulaNames = []
 let codeFunctions = `
@@ -101,10 +79,10 @@ const parseGuideline = (row, multiplier = 1) => {
       sampleFraction +
       row.Status.replace(' ', '') +
       region
-
+    const unit = row['Unit']
     if (!formulaNames.includes(formulaName)) {
       formulaNames.push(formulaName)
-      const { code, test } = build(formulaName, value, multiplier)
+      const { code, test } = buildCode(formulaName, value, multiplier)
       codeFunctions += code
       codeTesting += !test
         ? ''
@@ -114,7 +92,8 @@ const parseGuideline = (row, multiplier = 1) => {
   })
       `
 
-      htmlPromises.push(buildHtml(formulaName, value)) // ugly hack
+      // TODO replace var name with full name
+      htmlPromises.push(buildHtml(formulaName, value, unit))
     }
 
     return ['formula', formulaName]
@@ -224,7 +203,8 @@ parse(
     fs.writeFileSync(__dirname + '/../lib/formula.js', codeFunctions)
     fs.writeFileSync(__dirname + '/../test/formula.js', codeTesting)
 
-    Promise.all(htmlPromises).then(() => {
+    Promise.all(htmlPromises).then((data) => {
+      html = html.concat(...data)
       fs.writeFileSync(__dirname + '/../test/formula.html', html)
 
       console.log('Done!')

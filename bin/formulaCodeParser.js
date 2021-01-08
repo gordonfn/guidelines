@@ -79,8 +79,8 @@ const formulaParser = (formula, multiplier = 1) => {
     }
   }
 
-  if (!isBalanced(code.replace(/[^(){}\[\]]/g, ''))) {
-    console.log(code)
+  if (!hasBalancedBrackets(code.replace(/[^(){}\[\]]/g, ''))) {
+    console.error(code)
     throw new Error('Formula is unbalanced')
   }
 
@@ -129,7 +129,7 @@ const formulaParser = (formula, multiplier = 1) => {
 }
 
 // Source: https://levelup.gitconnected.com/solving-balanced-brackets-in-javascript-with-stacks-edbc52a57309
-const isBalanced = (input) => {
+const hasBalancedBrackets = (input) => {
   let brackets = "[]{}()"
   let stack = []
 
@@ -148,6 +148,10 @@ const isBalanced = (input) => {
   }
   return stack.length === 0
 }
+
+// TODO simplify brackets
+// https://codereview.stackexchange.com/questions/188096/simple-parenthesis-removal-javascript
+// https://stackoverflow.com/questions/57410831/how-to-remove-unnecessary-parenthesis
 
 const buildCode = (name, parsed) => {
   const fallbackMatch = parsed.code.match(/else \{\sreturn ([\d.]+)\s\}$/)
@@ -272,10 +276,6 @@ const buildTest = (name, { code, variables, hardness }) => {
   }
   return test
 }
-
-// TODO simplify brackets
-// https://codereview.stackexchange.com/questions/188096/simple-parenthesis-removal-javascript
-// https://stackoverflow.com/questions/57410831/how-to-remove-unnecessary-parenthesis
 
 const build = (name, formula, multiplier = 1) => {
   const parsed = formulaParser(formula, multiplier)
