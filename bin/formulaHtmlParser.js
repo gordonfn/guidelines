@@ -1,5 +1,9 @@
 const params = require('../lib/formula_params.json')
-const metadata = require('../lib/metadata.json')
+const {uglify, prettify} = require('@gordonfn/normalize/lib/unit')
+
+const cleanUnit = (unit) => {
+  return prettify(uglify(unit)).replace('µ', '\\mu ')
+}
 const build = (formulaName, formula, unit) => {
   // Replace var name with proper full name
   for (const param in params) {
@@ -21,7 +25,7 @@ const build = (formulaName, formula, unit) => {
     const characteristic = params[param].characteristic.replace(' ', '\\;')
     const method_speciation = params[param].method_speciation !== '*' ? params[param].method_speciation : ''
     const sample_fraction = params[param].sample_fraction !== '*' ? params[param].sample_fraction : ''
-    const unit = params[param].unit // TODO make pretty
+    const unit = cleanUnit(params[param].unit)
 
     let paramName = characteristic
       + (method_speciation ? `\\;${method_speciation}` : '')
@@ -30,9 +34,9 @@ const build = (formulaName, formula, unit) => {
     formula = formula.replace(variablePattern, `${paramName}`)
   }
 
-  formula = formula.replace(/hardness/g, `Hardness\\;(${params['TH'].unit})`)
+  formula = formula.replace(/hardness/g, `Hardness\\;(${cleanUnit(params['TH'].unit)})`)
 
-  if (!formula.includes('if')) return buildSvg(formulaName, `x (${unit}) = ${formula}`)
+  if (!formula.includes('if')) return buildSvg(formulaName, `x\\;(${cleanUnit(unit)}) = ${formula}`)
 
   // Format to use traditional if/else format
   formula = formula.replace(/\\\{ (.*?) \\\}/g, '{\n$1\n}')
@@ -40,7 +44,7 @@ const build = (formulaName, formula, unit) => {
   // TODO fix unit encoding
   let formatted = `
 \\begin{equation}
-  x\\;(${unit}) =
+  x\\;(${cleanUnit(unit)}) =
   \\begin{cases}
 `
   const lines = formula.split('\n')
@@ -50,7 +54,6 @@ const build = (formulaName, formula, unit) => {
         const parts = line.match(/if \((.*)\)/)
         return `  ${lines[idx + 1]}, & \\text{if ${parts[1].replace(/\\;/g, ' ')}}`
       } else if (line.includes('else')) {
-        console.log('***ELSE')
         return `  ${lines[idx + 1]}, & \\text{else}`
       }
 
