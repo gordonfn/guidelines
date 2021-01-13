@@ -52,7 +52,7 @@ const build = (formulaName, formula, unit) => {
     .map((line, idx) => {
       if (line.includes('if')) {
         const parts = line.match(/if \((.*)\)/)
-        return `  ${lines[idx + 1]}, & \\text{if ${parts[1].replace(/\\;/g, ' ')}}`
+        return `  ${lines[idx + 1]}, & \\text{if}\\;${parts[1]}`
       } else if (line.includes('else')) {
         return `  ${lines[idx + 1]}, & \\text{else}`
       }
