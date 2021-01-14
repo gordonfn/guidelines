@@ -2,7 +2,7 @@
 const expect = require('chai').expect
 const { formulaParser, params } = require('../bin/formulaCodeParser.js')
 
-describe('Parser', function () {
+describe('Formula Code Parser', function () {
   describe('Conditionals', function () {
     it('Should convert A ≤ B < C', function (done) {
       const { code } = formulaParser('if (A ≤ B < C)')

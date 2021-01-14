@@ -41,7 +41,6 @@ const build = (formulaName, formula, unit) => {
   // Format to use traditional if/else format
   formula = formula.replace(/\\\{ (.*?) \\\}/g, '{\n$1\n}')
 
-  // TODO fix unit encoding
   let formatted = `
 \\begin{equation}
   x\\;(${cleanUnit(unit)}) =
