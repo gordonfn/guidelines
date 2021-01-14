@@ -19,6 +19,14 @@ const formulaParser = (formula, multiplier = 1) => {
     // division in functions
     .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))')
     .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
+    .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
+    .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
+    .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
+    .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
+    .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
+    .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
+    .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
+    .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
     // math functions
     .replace(/log_(\d+)\(([^{}]*?)\)/g, 'log($2, $1)')
     .replace(/ln\(([^{}]*?)\)/g, 'log($1, e)')
@@ -30,6 +38,14 @@ const formulaParser = (formula, multiplier = 1) => {
 
     // division out side of functions
     .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))')
+    .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
+    .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
+    .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
+    .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
+    .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
+    .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
+    .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
+    .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
     .replace(/{([^{}]+) \\over ([^{}]+)}/g, '(($1)/($2))') // Allow for nested
 
     // multipliers
@@ -142,6 +158,7 @@ const hasBalancedBrackets = (input) => {
     } else {
       //console.log(`this is a closing bracket, so ${stack.pop()} is being popped off the stack`)
       if(stack.pop() !== bracketsIndex) {
+        console.log(input)
         return false;
       }
     }

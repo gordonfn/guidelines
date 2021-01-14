@@ -1230,8 +1230,8 @@
         "Marine": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US-WA",
+              "status": ""
             },
             "No Effect Level": 23100
           }
@@ -1420,8 +1420,8 @@
         "Marine": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US-WA",
+              "status": ""
             },
             "No Effect Level": 23100
           }
@@ -1453,8 +1453,8 @@
         "Marine": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US-WA",
+              "status": ""
             },
             "No Effect Level": 8109.999999999999,
             "Probable Effect Level ": 18100
@@ -1637,8 +1637,8 @@
         "Marine": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US-WA",
+              "status": ""
             },
             "No Effect Level": 8109.999999999999,
             "Probable Effect Level ": 18100
@@ -1671,8 +1671,8 @@
         "Marine": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US-WA",
+              "status": ""
             },
             "No Effect Level": 31100,
             "Probable Effect Level ": 91000
@@ -1783,8 +1783,8 @@
         "Marine": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US-WA",
+              "status": ""
             },
             "No Effect Level": 31100,
             "Probable Effect Level ": 91000
@@ -2177,8 +2177,8 @@
         "Freshwater": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "ON Gov",
+              "status": ""
             },
             "No Effect Level": 2100,
             "Probable Effect Level ": 81000
@@ -2203,8 +2203,8 @@
         "Marine": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US NOAA",
+              "status": ""
             },
             "No Effect Level": 5000
           }
@@ -2221,7 +2221,7 @@
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 0.15,
@@ -2238,7 +2238,7 @@
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 0.65
@@ -2260,8 +2260,8 @@
         "Freshwater": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "ON Gov",
+              "status": ""
             },
             "No Effect Level": 2100,
             "Probable Effect Level ": 81000
@@ -2286,8 +2286,8 @@
         "Marine": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US NOAA",
+              "status": ""
             },
             "No Effect Level": 5000
           }
@@ -3158,7 +3158,7 @@
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 100,
@@ -3426,8 +3426,8 @@
         "Freshwater": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US EPA",
+              "status": ""
             },
             "No Effect Level": 6600
           }
@@ -3507,7 +3507,7 @@
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 50
@@ -3529,8 +3529,8 @@
         "Freshwater": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US EPA",
+              "status": ""
             },
             "No Effect Level": 6600
           }
@@ -3875,15 +3875,15 @@
         "Freshwater": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US EPA",
+              "status": ""
             },
             "Chronic": 1.14
           },
           "CA-YT": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US EPA",
+              "status": ""
             },
             "Chronic": 1.14
           },
@@ -3935,15 +3935,15 @@
         "Freshwater": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US EPA",
+              "status": ""
             },
             "Chronic": 1.14
           },
           "CA-YT": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US EPA",
+              "status": ""
             },
             "Chronic": 1.14
           }
@@ -4312,8 +4312,8 @@
         "Marine": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US-WA",
+              "status": ""
             },
             "No Effect Level": 0.31,
             "Probable Effect Level ": 0.78
@@ -4364,8 +4364,8 @@
         "Marine": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US-WA",
+              "status": ""
             },
             "No Effect Level": 0.31,
             "Probable Effect Level ": 0.78
@@ -4553,9 +4553,9 @@
           "CA-BC": {
             "metadata": {
               "publisher": "BC Gov",
-              "status": "Working"
+              "status": ""
             },
-            "Chronic": "waterFreshwaterChronicAlkalinityWorkingCABC"
+            "Chronic": "waterFreshwaterChronicAlkalinityCABC"
           }
         }
       }
@@ -4575,9 +4575,9 @@
           "CA-BC": {
             "metadata": {
               "publisher": "BC Gov",
-              "status": "Working"
+              "status": ""
             },
-            "Chronic": "waterFreshwaterChronicAlkalinityWorkingCABC"
+            "Chronic": "waterFreshwaterChronicAlkalinityCABC"
           }
         }
       }
@@ -4940,7 +4940,7 @@
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 1100,
@@ -4964,7 +4964,7 @@
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 1500,
@@ -5539,21 +5539,21 @@
         "Freshwater": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "LIT ",
+              "status": ""
             },
             "Chronic": 1000
           },
           "CA-YT": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "LIT ",
+              "status": ""
             },
             "Chronic": 1000
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": "waterFreshwaterAcuteBariumApprovedCAQC",
@@ -5577,15 +5577,15 @@
         "Freshwater": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "LIT ",
+              "status": ""
             },
             "Chronic": 1000
           },
           "CA-YT": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "LIT ",
+              "status": ""
             },
             "Chronic": 1000
           }
@@ -5683,7 +5683,7 @@
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 950
@@ -6001,15 +6001,15 @@
         "Freshwater": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "ANZECC",
+              "status": ""
             },
             "Chronic": 0.13
           },
           "CA-YT": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "ANZECC",
+              "status": ""
             },
             "Chronic": 0.13
           },
@@ -6022,7 +6022,7 @@
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": "waterFreshwaterAcuteBerylliumApprovedCAQC",
@@ -6032,15 +6032,15 @@
         "Marine": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US NAS-NAE",
+              "status": ""
             },
             "Chronic": 100
           },
           "CA-YT": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US NAS-NAE",
+              "status": ""
             },
             "Chronic": 100
           }
@@ -6062,15 +6062,15 @@
         "Freshwater": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "ANZECC",
+              "status": ""
             },
             "Chronic": 0.13
           },
           "CA-YT": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "ANZECC",
+              "status": ""
             },
             "Chronic": 0.13
           }
@@ -6078,15 +6078,15 @@
         "Marine": {
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US NAS-NAE",
+              "status": ""
             },
             "Chronic": 100
           },
           "CA-YT": {
             "metadata": {
-              "publisher": "BC Gov",
-              "status": "Working"
+              "publisher": "US NAS-NAE",
+              "status": ""
             },
             "Chronic": 100
           }
@@ -6128,7 +6128,7 @@
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 28000,
@@ -6152,7 +6152,7 @@
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Chronic": 1000
@@ -6760,7 +6760,7 @@
           },
           "CA-MB": {
             "metadata": {
-              "publisher": "MB Gov",
+              "publisher": "US EPA",
               "status": "Approved"
             },
             "Acute": "waterFreshwaterAcuteCadmiumDissolvedApprovedCAMB",
@@ -9615,7 +9615,7 @@
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 18,
@@ -9625,7 +9625,7 @@
         "Marine": {
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 77,
@@ -13881,7 +13881,7 @@
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 54000,
@@ -14019,7 +14019,7 @@
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Chronic": 3.5,
@@ -17596,7 +17596,7 @@
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 320000,
@@ -18444,7 +18444,7 @@
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 67000,
@@ -18731,7 +18731,7 @@
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 160000,
@@ -18827,7 +18827,7 @@
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 0.14,
@@ -27707,7 +27707,7 @@
         "Freshwater": {
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 13000000,
@@ -27852,7 +27852,7 @@
         "Freshwater": {
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 2300000,
@@ -28404,7 +28404,7 @@
         "Freshwater": {
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 1200000,
@@ -28427,7 +28427,7 @@
         "Freshwater": {
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": "waterFreshwaterAcuteAceticacidApprovedCAQC",
@@ -28450,7 +28450,7 @@
         "Freshwater": {
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 15000000,
@@ -28473,7 +28473,7 @@
         "Freshwater": {
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 5300000,
@@ -28496,7 +28496,7 @@
         "Freshwater": {
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 590000,
@@ -28519,7 +28519,7 @@
         "Freshwater": {
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 150000,
@@ -28610,7 +28610,7 @@
         "Freshwater": {
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 6.9,
@@ -28633,7 +28633,7 @@
         "Freshwater": {
           "CA-QC": {
             "metadata": {
-              "publisher": "QC Gov",
+              "publisher": "US-MI",
               "status": "Approved"
             },
             "Acute": 0.0024,
@@ -31654,14 +31654,14 @@
           },
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
+              "publisher": "LIT ",
               "status": "Working"
             },
             "Chronic": 0.8
           },
           "CA-YT": {
             "metadata": {
-              "publisher": "BC Gov",
+              "publisher": "LIT ",
               "status": "Working"
             },
             "Chronic": 0.8
@@ -31951,35 +31951,35 @@
         "Freshwater": {
           "CA": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
           },
           "CA-AB": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
           },
           "CA-BC": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
           },
           "CA-MB": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
@@ -31988,35 +31988,35 @@
         "Marine": {
           "CA": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
           },
           "CA-AB": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
           },
           "CA-BC": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
           },
           "CA-MB": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
@@ -34448,7 +34448,7 @@
           },
           "CA-BC": {
             "metadata": {
-              "publisher": "BC Gov",
+              "publisher": "LIT ",
               "status": "Working"
             },
             "Chronic": 0.8
@@ -34497,7 +34497,7 @@
           },
           "CA-YT": {
             "metadata": {
-              "publisher": "BC Gov",
+              "publisher": "LIT ",
               "status": "Working"
             },
             "Chronic": 0.8
@@ -34651,35 +34651,35 @@
         "Freshwater": {
           "CA": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
           },
           "CA-AB": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
           },
           "CA-BC": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
           },
           "CA-MB": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
@@ -34688,35 +34688,35 @@
         "Marine": {
           "CA": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
           },
           "CA-AB": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
           },
           "CA-BC": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
           },
           "CA-MB": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100
           },
           "CA-QC": {
             "metadata": {
-              "publisher": "CCME",
+              "publisher": "US-NY",
               "status": ""
             },
             "Threshold Effect Level ": 100

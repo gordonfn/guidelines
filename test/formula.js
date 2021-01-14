@@ -6,12 +6,12 @@ const formula = require('../lib/formula.js')
 
 describe('Formulas', function () {
 
-  describe('waterFreshwaterChronicAlkalinityWorkingCABC', function () {
+  describe('waterFreshwaterChronicAlkalinityCABC', function () {
   
     it('Should not break with no DCa', function (done) {
       try {
-        formula.waterFreshwaterChronicAlkalinityWorkingCABC({"DCa":0})
-        formula.waterFreshwaterChronicAlkalinityWorkingCABC({"DCa":null})
+        formula.waterFreshwaterChronicAlkalinityCABC({"DCa":0})
+        formula.waterFreshwaterChronicAlkalinityCABC({"DCa":null})
       } catch (e) {
         expect.fail(e.message)
       }
@@ -20,8 +20,8 @@ describe('Formulas', function () {
     
     it('Should not break with DCa lowerbounds', function (done) {
       try {
-        formula.waterFreshwaterChronicAlkalinityWorkingCABC({"DCa":3})
-        formula.waterFreshwaterChronicAlkalinityWorkingCABC({"DCa":7})
+        formula.waterFreshwaterChronicAlkalinityCABC({"DCa":3})
+        formula.waterFreshwaterChronicAlkalinityCABC({"DCa":7})
       } catch (e) {
         expect.fail(e.message)
       }
@@ -30,8 +30,8 @@ describe('Formulas', function () {
     
     it('Should not break with DCa upperbounds', function (done) {
       try {
-        formula.waterFreshwaterChronicAlkalinityWorkingCABC({"DCa":5})
-        formula.waterFreshwaterChronicAlkalinityWorkingCABC({"DCa":9})
+        formula.waterFreshwaterChronicAlkalinityCABC({"DCa":5})
+        formula.waterFreshwaterChronicAlkalinityCABC({"DCa":9})
       } catch (e) {
         expect.fail(e.message)
       }
@@ -133,6 +133,7 @@ describe('Formulas', function () {
     
     it('Should not break with pH upperbounds', function (done) {
       try {
+        formula.waterFreshwaterAcuteAmmoniaAsNApprovedCABC({"pH":9,"temperature":0})
         formula.waterFreshwaterAcuteAmmoniaAsNApprovedCABC({"pH":10,"temperature":0})
         formula.waterFreshwaterAcuteAmmoniaAsNApprovedCABC({"pH":7.5,"temperature":0})
         formula.waterFreshwaterAcuteAmmoniaAsNApprovedCABC({"pH":15,"temperature":0})
@@ -199,10 +200,10 @@ describe('Formulas', function () {
     
     it('Should not break with pH upperbounds', function (done) {
       try {
+        formula.waterFreshwaterChronicAmmoniaAsNApprovedCABC({"pH":7.5,"temperature":0})
         formula.waterFreshwaterChronicAmmoniaAsNApprovedCABC({"pH":8.7,"temperature":0})
         formula.waterFreshwaterChronicAmmoniaAsNApprovedCABC({"pH":9,"temperature":0})
         formula.waterFreshwaterChronicAmmoniaAsNApprovedCABC({"pH":10,"temperature":0})
-        formula.waterFreshwaterChronicAmmoniaAsNApprovedCABC({"pH":7.5,"temperature":0})
         formula.waterFreshwaterChronicAmmoniaAsNApprovedCABC({"pH":15,"temperature":0})
       } catch (e) {
         expect.fail(e.message)
@@ -233,8 +234,8 @@ describe('Formulas', function () {
     
     it('Should not break with temperature upperbounds', function (done) {
       try {
-        formula.waterFreshwaterChronicAmmoniaAsNApprovedCABC({"pH":0,"temperature":16})
         formula.waterFreshwaterChronicAmmoniaAsNApprovedCABC({"pH":0,"temperature":21})
+        formula.waterFreshwaterChronicAmmoniaAsNApprovedCABC({"pH":0,"temperature":16})
       } catch (e) {
         expect.fail(e.message)
       }
