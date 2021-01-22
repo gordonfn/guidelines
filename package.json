@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/gordonfn/guidelines#readme",
   "dependencies": {
-    "@gordonfn/normalize": "0.1.11"
+    "@gordonfn/normalize": "0.1.18"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
